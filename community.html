@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community — Scythe FFXI</title>
+    <meta name="description" content="Join the Scythe FFXI community. Discord, bug reports, new player help, and development updates.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-brand">SCYTHE</a>
+        <button class="mobile-toggle" onclick="document.querySelector('.navbar-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="server-info.html">Server Info</a></li>
+            <li><a href="getting-started.html">Play</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="community.html" class="active">Community</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="page-header">
+    <h1 class="page-title">Community</h1>
+    <p class="page-subtitle">Everything starts in Discord</p>
+</section>
+
+<section class="section">
+
+    <div class="community-grid">
+
+        <div class="community-card">
+            <h3>Discord</h3>
+            <p>
+                The hub for everything Scythe. Get the server IP and connection info,
+                find a group, ask questions, report bugs, and keep up with development
+                updates. All announcements go here first.
+            </p>
+            <a href="#" class="btn btn-primary">Join Discord</a>
+        </div>
+
+        <div class="community-card">
+            <h3>Bug Reports</h3>
+            <p>
+                Found something broken? The <strong>#bug-reports</strong> channel in
+                Discord is the fastest way to get it fixed. Include the zone name, what
+                you were doing, what happened, and screenshots if possible.
+            </p>
+            <a href="#" class="btn btn-outline">Report a Bug</a>
+        </div>
+
+        <div class="community-card">
+            <h3>New Player Help</h3>
+            <p>
+                Never played FFXI before? Returning after years away? The
+                <strong>#new-player-guide</strong> channel has setup help, job
+                recommendations, and veteran players happy to answer questions.
+            </p>
+            <a href="#" class="btn btn-outline">Get Help</a>
+        </div>
+
+    </div>
+
+    <div class="content-block" style="margin-top: 3rem; text-align: center;">
+        <h3 style="color: var(--text-bright); margin-bottom: 1rem;">Discord Channels</h3>
+        <p>
+            Here's what you'll find when you join:
+        </p>
+    </div>
+
+    <div class="features-grid" style="margin-top: 1.5rem;">
+
+        <div class="feature-card">
+            <h3>#connection-info</h3>
+            <p>
+                Server IP, port, and account registration instructions. This is where
+                you go first to get connected.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>#announcements</h3>
+            <p>
+                Server updates, patch notes, maintenance windows, and new content
+                releases. Follow this channel to stay current.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>#general</h3>
+            <p>
+                General chat about the server, FFXI, and whatever else. This is where
+                the community hangs out.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>#new-player-guide</h3>
+            <p>
+                Setup help, beginner tips, recommended jobs, leveling guides, and trust
+                unlocks. Ask anything — no question is too basic.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>#bug-reports</h3>
+            <p>
+                Found a bug? Report it here with zone, steps to reproduce, and what you
+                expected to happen. Bug reporters are appreciated.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h3>#nm-hunt</h3>
+            <p>
+                Discussion about the NM hunt system — strategies, locations, elite hunt
+                tips, and kill tracking. Share your progress with other hunters.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+    <p>
+        Scythe is a fan-made project and is not affiliated with or endorsed by Square Enix Co., Ltd.
+        FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.
+    </p>
+    <p style="margin-top: 0.5rem;">
+        Powered by <a href="https://github.com/LandSandBoat/server" target="_blank" rel="noopener">LandSandBoat</a>.
+    </p>
+</footer>
+
+<script>
+document.querySelectorAll('.navbar-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.navbar-links').classList.remove('open');
+    });
+});
+</script>
+
+</body>
+</html>
