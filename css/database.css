@@ -1,0 +1,261 @@
+/* ============================================
+   DATABASE PAGE STYLES
+   ============================================ */
+
+.db-section {
+    max-width: 1200px;
+}
+
+/* --- Search --- */
+.db-search-wrapper {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.db-search {
+    width: 100%;
+    padding: 0.9rem 1.2rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text-bright);
+    font-size: 1rem;
+    font-family: var(--font-body);
+    transition: border-color 0.2s;
+}
+
+.db-search:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.db-search::placeholder {
+    color: var(--text-dim);
+}
+
+.db-search-count {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-dim);
+    font-size: 0.85rem;
+}
+
+/* --- Tabs --- */
+.db-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.db-tab {
+    padding: 0.5rem 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    font-family: var(--font-body);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.db-tab:hover {
+    color: var(--text);
+    border-color: var(--text-dim);
+}
+
+.db-tab.active {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: var(--accent-glow);
+}
+
+.db-tab-count {
+    color: var(--text-dim);
+    font-size: 0.75rem;
+    margin-left: 0.25rem;
+}
+
+.db-tab.active .db-tab-count {
+    color: var(--accent);
+    opacity: 0.7;
+}
+
+/* --- Filters --- */
+.db-filters {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    min-height: 0;
+}
+
+.db-filter-select {
+    padding: 0.4rem 0.8rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text);
+    font-size: 0.85rem;
+    font-family: var(--font-body);
+    cursor: pointer;
+}
+
+.db-filter-select:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+/* --- Table --- */
+.db-results-wrapper {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.db-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+}
+
+.db-table th {
+    background: var(--bg-card);
+    color: var(--accent);
+    font-weight: 600;
+    text-align: left;
+    padding: 0.7rem 0.9rem;
+    border-bottom: 2px solid var(--border);
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.db-table th:hover {
+    color: var(--text-bright);
+}
+
+.db-table th .sort-arrow {
+    margin-left: 0.3rem;
+    font-size: 0.7rem;
+    opacity: 0.4;
+}
+
+.db-table th.sorted .sort-arrow {
+    opacity: 1;
+    color: var(--accent);
+}
+
+.db-table td {
+    padding: 0.55rem 0.9rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    white-space: nowrap;
+}
+
+.db-table tr:hover td {
+    background: var(--bg-card-hover);
+}
+
+.db-table .name-cell {
+    color: var(--text-bright);
+    font-weight: 500;
+    white-space: normal;
+    min-width: 200px;
+}
+
+.db-table .num-cell {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.db-table .dim {
+    color: var(--text-dim);
+}
+
+/* --- Pagination --- */
+.db-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.db-page-btn {
+    padding: 0.4rem 0.8rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text);
+    font-size: 0.85rem;
+    font-family: var(--font-body);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.db-page-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.db-page-btn.active {
+    background: var(--accent-glow);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.db-page-btn:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.db-page-info {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    margin: 0 0.5rem;
+}
+
+/* --- Loading --- */
+.db-loading {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-dim);
+    font-size: 1.1rem;
+    display: none;
+}
+
+.db-loading.visible {
+    display: block;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .db-tabs {
+        gap: 0.3rem;
+    }
+
+    .db-tab {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.78rem;
+    }
+
+    .db-tab-count {
+        display: none;
+    }
+
+    .db-table {
+        font-size: 0.8rem;
+    }
+
+    .db-table th, .db-table td {
+        padding: 0.4rem 0.5rem;
+    }
+}

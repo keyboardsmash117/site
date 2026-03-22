@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database — Scythe FFXI</title>
+    <meta name="description" content="Searchable database of items, equipment, spells, weapon skills, mob skills, zones, and NM hunts on the Scythe FFXI private server.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/database.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-brand">SCYTHE</a>
+        <button class="mobile-toggle" onclick="document.querySelector('.navbar-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="server-info.html">Server Info</a></li>
+            <li><a href="getting-started.html">Play</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="page-header">
+    <h1 class="page-title">Database</h1>
+    <p class="page-subtitle">Search 22,000+ items, 938 spells, 224 weapon skills, and more</p>
+</section>
+
+<section class="section db-section">
+
+    <!-- Search bar -->
+    <div class="db-search-wrapper">
+        <input type="text" id="db-search" class="db-search" placeholder="Search by name..." autocomplete="off">
+        <span class="db-search-count" id="db-count"></span>
+    </div>
+
+    <!-- Category tabs -->
+    <div class="db-tabs">
+        <button class="db-tab active" data-tab="equipment">Equipment <span class="db-tab-count">14,874</span></button>
+        <button class="db-tab" data-tab="items">Items <span class="db-tab-count">7,736</span></button>
+        <button class="db-tab" data-tab="spells">Spells <span class="db-tab-count">938</span></button>
+        <button class="db-tab" data-tab="weaponskills">Weapon Skills <span class="db-tab-count">224</span></button>
+        <button class="db-tab" data-tab="mobskills">Mob Skills <span class="db-tab-count">2,179</span></button>
+        <button class="db-tab" data-tab="nm_hunts">NM Hunts <span class="db-tab-count">524</span></button>
+        <button class="db-tab" data-tab="zones">Zones <span class="db-tab-count">335</span></button>
+    </div>
+
+    <!-- Filters (dynamic per tab) -->
+    <div class="db-filters" id="db-filters"></div>
+
+    <!-- Results table -->
+    <div class="db-results-wrapper">
+        <table class="db-table" id="db-table">
+            <thead id="db-thead"></thead>
+            <tbody id="db-tbody"></tbody>
+        </table>
+    </div>
+
+    <!-- Pagination -->
+    <div class="db-pagination" id="db-pagination"></div>
+
+    <!-- Loading -->
+    <div class="db-loading" id="db-loading">Loading database...</div>
+
+</section>
+
+<footer class="footer">
+    <p>
+        Scythe is a fan-made project and is not affiliated with or endorsed by Square Enix Co., Ltd.
+        FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.
+    </p>
+    <p style="margin-top: 0.5rem;">
+        Powered by <a href="https://github.com/LandSandBoat/server" target="_blank" rel="noopener">LandSandBoat</a>.
+    </p>
+</footer>
+
+<script>
+document.querySelectorAll('.navbar-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.navbar-links').classList.remove('open');
+    });
+});
+</script>
+<script src="js/database.js"></script>
+
+</body>
+</html>
