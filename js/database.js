@@ -95,6 +95,13 @@ const COLUMNS = {
         {key:'name', label:'Name', cls:'name-cell', w:250},
         {key:'zoneName', label:'Zone', w:250},
     ],
+    drops: [
+        {key:'mob', label:'Monster', cls:'name-cell', w:200},
+        {key:'item', label:'Item', cls:'name-cell', w:200},
+        {key:'zone', label:'Zone', w:180},
+        {key:'drop_pct', label:'Drop %', cls:'num-cell', w:70},
+        {key:'type_name', label:'Type', w:80},
+    ],
     zones: [
         {key:'id', label:'ID', cls:'num-cell', w:60},
         {key:'name', label:'Name', cls:'name-cell', w:300},
@@ -115,6 +122,9 @@ const FILTERS = {
     ],
     weaponskills: [
         {key:'type_name', label:'Weapon', vals:() => uniqueVals('weaponskills','type_name')},
+    ],
+    drops: [
+        {key:'type_name', label:'Drop Type', vals:() => uniqueVals('drops','type_name')},
     ],
     zones: [
         {key:'type', label:'Type', vals:() => uniqueVals('zones','type')},
@@ -178,6 +188,15 @@ function enrichData() {
     });
     (DB.data.nm_hunts || []).forEach(r => {
         r.zoneName = formatName(r.zoneName || '');
+    });
+    const DROP_TYPES = {0:'Normal',1:'Steal',2:'Despoil',4:'Quarry'};
+    (DB.data.drops || []).forEach(r => {
+        r.mob = formatName(r.mob);
+        r.item = formatName(r.item);
+        r.zone = formatName(r.zone);
+        r.type_name = DROP_TYPES[r.type] || 'Normal';
+        // Drop rate = (groupRate/1000) * (itemRate/1000) * 100
+        r.drop_pct = ((r.gRate / 1000) * (r.iRate / 1000) * 100).toFixed(1) + '%';
     });
     (DB.data.zones || []).forEach(r => {
         r.name = formatName(r.name);
@@ -367,7 +386,7 @@ document.querySelectorAll('.db-tab').forEach(t => {
 async function loadData() {
     document.getElementById('db-loading').classList.add('visible');
 
-    const tabs = ['equipment','items','spells','weaponskills','mobskills','nm_hunts','zones'];
+    const tabs = ['equipment','items','spells','weaponskills','mobskills','nm_hunts','drops','zones'];
     const promises = tabs.map(async t => {
         try {
             const res = await fetch(`data/${t}.json`);
