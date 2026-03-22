@@ -104,9 +104,20 @@
     cursor: pointer;
 }
 
-.db-filter-select:focus {
+.db-filter-select:focus,
+.db-filter-input:focus {
     outline: none;
     border-color: var(--accent);
+}
+
+.db-filter-input {
+    padding: 0.4rem 0.6rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text);
+    font-size: 0.85rem;
+    font-family: var(--font-body);
 }
 
 /* --- Table --- */

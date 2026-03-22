@@ -119,6 +119,7 @@ const FILTERS = {
         {key:'slot_name', label:'Slot', vals:() => uniqueVals('equipment','slot_name')},
         {key:'skill_name', label:'Weapon', vals:() => uniqueVals('equipment','skill_name').filter(v => v && v !== 'None')},
         {key:'ilvl_range', label:'iLevel', vals:() => ['119','109','99','<99']},
+        {key:'_mod', label:'Modifier', vals:() => getAllModNames(), custom:true},
     ],
     mobs: [
         {key:'zoneName', label:'Zone', vals:() => uniqueVals('mobs','zoneName')},
@@ -144,6 +145,15 @@ const FILTERS = {
 function uniqueVals(tab, key) {
     const set = new Set();
     (DB.data[tab] || []).forEach(r => { if (r[key]) set.add(r[key]); });
+    return [...set].sort();
+}
+
+function getAllModNames() {
+    const set = new Set();
+    const mods = DB.data.item_mods || {};
+    for (const arr of Object.values(mods)) {
+        for (const m of arr) set.add(m.n);
+    }
     return [...set].sort();
 }
 
@@ -412,7 +422,24 @@ function applyFilters() {
 
     for (const [key, val] of Object.entries(DB.filterValues)) {
         if (!val) continue;
-        if (key === 'ilvl_range') {
+        if (key === '_mod_min') continue; // handled with _mod
+        if (key === '_mod') {
+            const minVal = DB.filterValues['_mod_min'] || null;
+            const mods = DB.data.item_mods || {};
+            data = data.filter(r => {
+                const itemMods = mods[r.id];
+                if (!itemMods) return false;
+                const found = itemMods.find(m => m.n === val);
+                if (!found) return false;
+                if (minVal != null) return found.v >= minVal;
+                return true;
+            });
+            // Add mod value column to results for visibility
+            data = data.map(r => {
+                const itemMods = (mods[r.id] || []).find(m => m.n === val);
+                return {...r, _mod_val: itemMods ? itemMods.v : 0};
+            });
+        } else if (key === 'ilvl_range') {
             data = data.filter(r => {
                 if (val === '119') return r.ilvl === 119;
                 if (val === '109') return r.ilvl === 109;
@@ -442,7 +469,16 @@ function applyFilters() {
 
 // === RENDER TABLE ===
 function render() {
-    const cols = COLUMNS[DB.current] || [];
+    let cols = [...(COLUMNS[DB.current] || [])];
+    // Inject mod value column when filtering by modifier
+    if (DB.current === 'equipment' && DB.filterValues['_mod']) {
+        const modName = DB.filterValues['_mod'];
+        cols = [
+            cols[0], cols[1], // ID, Name
+            {key:'_mod_val', label:modName, cls:'num-cell', w:80},
+            ...cols.slice(2)
+        ];
+    }
     const data = DB.filtered;
     const start = (DB.page - 1) * DB.perPage;
     const page = data.slice(start, start + DB.perPage);
@@ -498,6 +534,15 @@ function renderFilters() {
     DB.filterValues = {};
     if (defs.length === 0) { el.innerHTML = ''; return; }
     el.innerHTML = defs.map(f => {
+        if (f.custom && f.key === '_mod') {
+            const opts = f.vals();
+            return `<select class="db-filter-select" data-filter="_mod" onchange="onFilter(this)">
+                <option value="">Any Modifier</option>
+                ${opts.map(v => `<option value="${v}">${v}</option>`).join('')}
+            </select>
+            <input type="number" class="db-filter-input" id="mod-min" placeholder="Min value"
+                   onchange="onModMinChange(this)" style="width:90px">`;
+        }
         const opts = f.vals();
         return `<select class="db-filter-select" data-filter="${f.key}" onchange="onFilter(this)">
             <option value="">All ${f.label}</option>
@@ -508,6 +553,11 @@ function renderFilters() {
 
 function onFilter(sel) {
     DB.filterValues[sel.dataset.filter] = sel.value;
+    applyFilters();
+}
+
+function onModMinChange(input) {
+    DB.filterValues['_mod_min'] = input.value ? parseInt(input.value) : null;
     applyFilters();
 }
 
