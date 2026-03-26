@@ -112,6 +112,13 @@ const COLUMNS = {
         {key:'name', label:'Name', cls:'name-cell', w:300},
         {key:'type', label:'Type', w:100},
     ],
+    shops: [
+        {key:'shop', label:'Shop', w:200},
+        {key:'item', label:'Item', cls:'name-cell', w:200},
+        {key:'price', label:'Price', cls:'num-cell', w:80},
+        {key:'command', label:'Command', w:120},
+        {key:'note', label:'Notes', w:200},
+    ],
 };
 
 const FILTERS = {
@@ -139,6 +146,9 @@ const FILTERS = {
     ],
     zones: [
         {key:'type', label:'Type', vals:() => uniqueVals('zones','type')},
+    ],
+    shops: [
+        {key:'shop', label:'Shop', vals:() => uniqueVals('shops','shop')},
     ],
 };
 
@@ -615,7 +625,7 @@ async function loadData() {
     document.getElementById('db-loading').classList.add('visible');
 
     const files = ['equipment','items','mobs','spells','weaponskills','mobskills',
-                   'nm_hunts','drops','recipes','zones','item_mods','item_drops'];
+                   'nm_hunts','drops','recipes','zones','item_mods','item_drops','shops'];
     await Promise.all(files.map(async t => {
         try {
             const res = await fetch(`data/${t}.json`);
