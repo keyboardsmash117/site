@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missions & Story Content — Scythe FFXI</title>
+    <meta name="description" content="Every expansion mission line fully implemented and playable. Mission skip, adjusted Magian Trials, and full cutscene support.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-brand">SCYTHE</a>
+        <button class="mobile-toggle" onclick="document.querySelector('.navbar-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html" class="active">Features</a></li>
+            <li><a href="server-info.html">Server Info</a></li>
+            <li><a href="getting-started.html">Play</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="database.html">Database</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="page-header">
+    <h1 class="page-title">Missions & Story Content</h1>
+    <p class="page-subtitle">Every expansion fully playable</p>
+</section>
+
+<section class="section">
+    <div class="content-block">
+        <ul class="content-list">
+            <li><strong>All Missions Implemented</strong> — every expansion mission line is
+                fully implemented and playable from start to finish. Zilart, CoP, ToAU,
+                WotG, Adoulin, Rhapsodies — all complete with proper cutscenes,
+                battlefields, and rewards.</li>
+            <li><strong>Mission Skip</strong> — already cleared an expansion's story on
+                retail? Skip completed mission lines and jump straight to endgame content.
+                No replaying hours of cutscenes you've already seen.</li>
+            <li><strong>Magian Trials Adjusted</strong> — streamlined trial paths with
+                adjusted requirements. Still meaningful progression, less tedious grinding.</li>
+        </ul>
+
+        <p style="margin-top: 2rem;">
+            <a href="features.html">&larr; Back to Features</a>
+        </p>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>Scythe is a fan-made project and is not affiliated with or endorsed by Square Enix Co., Ltd. FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</p>
+    <p style="margin-top: 0.5rem;">Powered by <a href="https://github.com/LandSandBoat/server" target="_blank" rel="noopener">LandSandBoat</a>.</p>
+</footer>
+<script>
+document.querySelectorAll('.navbar-links a').forEach(link => {
+    link.addEventListener('click', () => { document.querySelector('.navbar-links').classList.remove('open'); });
+});
+</script>
+
+</body>
+</html>

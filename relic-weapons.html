@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relic Weapons Reborn — Scythe FFXI</title>
+    <meta name="description" content="All 14 relic weapons rebalanced for endgame with aggressive fTP scaling, multi-hit replication, and OCC 3x.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-brand">SCYTHE</a>
+        <button class="mobile-toggle" onclick="document.querySelector('.navbar-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html" class="active">Features</a></li>
+            <li><a href="server-info.html">Server Info</a></li>
+            <li><a href="getting-started.html">Play</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="database.html">Database</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="page-header">
+    <h1 class="page-title">Relic Weapons Reborn</h1>
+    <p class="page-subtitle">All 14 relics rebalanced for endgame</p>
+</section>
+
+<section class="section">
+    <div class="content-block">
+        <p>
+            All 14 relic weapons have been rebalanced to be genuinely endgame-competitive.
+            The numbers:
+        </p>
+
+        <ul class="content-list">
+            <li><strong>fTP 5.0 / 9.0 / 13.0</strong> — every relic weaponskill scales
+                aggressively with TP</li>
+            <li><strong>Multi-hit fTP replication</strong> — all hits get the full fTP
+                value, not just the first. This is what makes them competitive with
+                empyrean and mythic WSes.</li>
+            <li><strong>Occasionally Attacks 3 Times</strong> — every relic 119-III weapon
+                has a 50% chance to triple its hits</li>
+            <li><strong>Ranged relics</strong> — Coronach and Namas Arrow have 2 base hits</li>
+            <li><strong>H2H exception</strong> — Final Heaven has 2 hits but no fTP
+                replication (intentional balance)</li>
+        </ul>
+
+        <p>
+            All 14 relics: Mandau, Excalibur, Ragnarok, Guttler, Bravura, Gungnir,
+            Apocalypse, Kikoku, Amanomurakumo, Mjollnir, Claustrum, Yoichinoyumi,
+            Annihilator, Spharai.
+        </p>
+
+        <p style="margin-top: 2rem;">
+            <a href="features.html">&larr; Back to Features</a>
+        </p>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>Scythe is a fan-made project and is not affiliated with or endorsed by Square Enix Co., Ltd. FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</p>
+    <p style="margin-top: 0.5rem;">Powered by <a href="https://github.com/LandSandBoat/server" target="_blank" rel="noopener">LandSandBoat</a>.</p>
+</footer>
+<script>
+document.querySelectorAll('.navbar-links a').forEach(link => {
+    link.addEventListener('click', () => { document.querySelector('.navbar-links').classList.remove('open'); });
+});
+</script>
+
+</body>
+</html>
