@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The NM Hunt — Scythe FFXI</title>
-    <meta name="description" content="475 regular NMs and 25 elite bosses spread across 150 zones. Every NM built from scratch with unique names, models, and AI.">
+    <meta name="description" content="500 hunt NMs — 475 regular across 146 zones + 25 elite bosses. Every NM built from scratch with unique names, models, and AI.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -28,43 +28,344 @@
 
 <section class="page-header">
     <h1 class="page-title">The NM Hunt</h1>
-    <p class="page-subtitle">475 regular NMs + 25 elite bosses across 150 zones</p>
+    <p class="page-subtitle">500 hunt NMs — 475 regular + 25 elite across 146 zones</p>
 </section>
 
+<!-- ============ REGULAR NMs ============ -->
+<div class="section-alt">
 <section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Regular Hunt NMs</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Detail</th><th>Value</th></tr>
+                <tr><td>Total NMs</td><td>475</td></tr>
+                <tr><td>Zones</td><td>146 zones across the entire world</td></tr>
+                <tr><td>NMs per zone</td><td>3–4 per zone</td></tr>
+                <tr><td>Level</td><td>100 with 10x HP/MP/stat multipliers</td></tr>
+                <tr><td>Respawn</td><td>9–11 minutes</td></tr>
+                <tr><td>Scyld reward</td><td>25 Scyld per kill (awarded to party)</td></tr>
+                <tr><td>Kill tracking</td><td>Per-character, unique kills only</td></tr>
+            </table>
+        </div>
+
+        <ul class="content-list" style="margin-top: 1.5rem;">
+            <li><strong>Unique names</strong> — drawn from real-world mythology and folklore.
+                Chelona, Nuckelavee, Girtablilu, Lamashtu, Brollachan. No generic names, no duplicates.</li>
+            <li><strong>Distinct models</strong> — every NM uses a unique model. No two share the same appearance.</li>
+            <li><strong>Dynamic entity spawning</strong> — NMs appear in the overworld with no instancing. Walk up and fight them.</li>
+            <li><strong>Scyld currency</strong> — every kill awards Scyld to your party. Spend it at the Hunts Master NPC.</li>
+        </ul>
+    </div>
+</section>
+</div>
+
+<!-- ============ MILESTONE REWARDS ============ -->
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Milestone Rewards</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>Rewards are granted automatically on reaching each unique kill milestone.</p>
+
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Unique Kills</th><th>Reward</th><th>Description</th></tr>
+                <tr><td>50</td><td>Golden Bomb Mount</td><td>Exclusive mount, auto-awarded</td></tr>
+                <tr><td>100</td><td>Kupon I-Skill</td><td>Skill book</td></tr>
+                <tr><td>150</td><td>Kupon AW-WK</td><td>Wildskeeper Reive gear</td></tr>
+                <tr><td>200</td><td>Kupon I-Seal</td><td>Empyrean +1 seals</td></tr>
+                <tr><td>250</td><td>Kupon AW-UWIII</td><td>Unity gear</td></tr>
+                <tr><td>300</td><td>Kupon I-AF119</td><td>Omen scales</td></tr>
+                <tr><td>350</td><td>Kupon AW-GFIII</td><td>Geas Fete gear</td></tr>
+                <tr><td>400</td><td>Kupon I-RME</td><td>300 REMA upgrade materials</td></tr>
+                <tr><td>450</td><td>Kupon W-A119</td><td>Aeonic weapon of your choice</td></tr>
+                <tr><td>500</td><td>Kupon W-RMEA</td><td>Any REMA weapon 119-III</td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ============ DAILY / HARD / WEEKLY HUNTS ============ -->
+<div class="section-alt">
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Daily &amp; Weekly Bounties</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>The Hunts Master assigns bonus bounties that reset on a timer. Each bounty targets
+        a specific NM — kill it to earn bonus Scyld on top of the normal per-kill reward.
+        Each player's assigned NM is unique to them.</p>
+
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Bounty</th><th>Target Pool</th><th>Bonus Scyld</th><th>Reset</th></tr>
+                <tr><td>Daily</td><td>Regular NMs (475)</td><td>+50</td><td>Every Vana'diel day (~58 real min)</td></tr>
+                <tr><td>Hard</td><td>Elite NMs</td><td>+100</td><td>Every Vana'diel day</td></tr>
+                <tr><td>Weekly</td><td>All NMs (500)</td><td>+500</td><td>Every 8 Vana'diel days</td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+</div>
+
+<!-- ============ ELITE HUNTS ============ -->
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Elite Hunt NMs</h2>
+        <div class="divider"></div>
+    </div>
+
     <div class="content-block">
         <p>
-            The core of Scythe's endgame. 475 regular hunt NMs spread across 150 zones,
-            plus 25 elite bosses gated behind full completion. Every NM is built from scratch.
+            Kill all 475 regular NMs to unlock the elite hunt system. Elite NMs use a
+            <strong>strict progressive gating system — there is no skipping tiers.</strong>
+            You must clear lower tiers before higher tiers will spawn. Each elite also has
+            its own individual prereqs (prior kills, weather, time of day, moon phase,
+            player titles) that must be satisfied.
         </p>
 
-        <ul class="content-list">
-            <li><strong>Unique names</strong> — drawn from real-world mythology and folklore
-                across dozens of cultures. Chelona, Nuckelavee, Girtablilu, Pandaemonium,
-                Lamashtu. No generic names, no duplicates.</li>
-            <li><strong>Distinct models</strong> — every NM has a unique visual appearance.
-                No two NMs share the same model.</li>
-            <li><strong>Level 160 with 10x stat multipliers</strong> — they hit hard, have
-                real HP pools, and use actual mob skill lists with proper AI. Some have
-                AV-style 2-hour cycling and phase transitions.</li>
-            <li><strong>Scyld currency</strong> — every kill awards Scyld. Spend it at the
-                Hunts Master.</li>
-            <li><strong>Per-character kill tracking</strong> — every unique NM you kill is
-                recorded. Milestones at every 50 kills. Kill all 475 to unlock elite hunts.</li>
-            <li><strong>9-11 minute respawn</strong> — no waiting hours. If someone gets
-                there first, come back in 10 minutes.</li>
-            <li><strong>150 zones</strong> — NMs are distributed across the entire world,
-                from starter zones to Abyssea to Seekers of Adoulin areas. Every zone
-                has 3 NMs.</li>
-            <li><strong>Dynamic entity spawning</strong> — NMs appear in the overworld
-                with no instancing required. Walk up and fight them.</li>
-        </ul>
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Detail</th><th>Value</th></tr>
+                <tr><td>Entry requirement</td><td>All 475 regular NMs cleared</td></tr>
+                <tr><td>Level</td><td>119 with 15x HP/MP, 5x combat stats</td></tr>
+                <tr><td>Scyld reward</td><td>250 Scyld per kill</td></tr>
+            </table>
+        </div>
 
-        <p style="margin-top: 2rem;">
-            <a href="features.html">&larr; Back to Features</a>
+        <h3 style="color: var(--text-bright); margin: 1.5rem 0 0.75rem;">Tier Breakdown</h3>
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Tier</th><th>Name</th><th>Count</th><th>Unlock Condition</th></tr>
+                <tr><td>Tier 4</td><td>Elemental Gyves (Seals)</td><td>8</td><td>Kill 10+ matching elemental mobs in zone + correct weather</td></tr>
+                <tr><td>Tier 3</td><td>Humanoid Champions</td><td>6</td><td>Specific Gyve clears + time / weather / title conditions</td></tr>
+                <tr><td>Tier 2</td><td>Special Bosses</td><td>2</td><td>Multiple Gyve + Champion clears + unique spawn conditions</td></tr>
+                <tr><td>Tier 1</td><td>Supreme Beings</td><td>7</td><td>Chain-pop from lower tier kills + extreme conditions</td></tr>
+                <tr><td>Final</td><td>Absolute Virtue</td><td>1</td><td>All field elites cleared — Hunts Master exclusive spawn</td></tr>
+                <tr><td>BCNM</td><td>Time Devourer</td><td>1</td><td>NPC-assisted battlefield encounter</td></tr>
+            </table>
+        </div>
+
+        <h3 style="color: var(--text-bright); margin: 1.5rem 0 0.75rem;">Elemental Gyves</h3>
+        <p>The 8 Elemental Seals are the entry point into the elite system. Each is bound
+        to a specific zone. Kill the matching elemental family in that zone to build up your
+        kill counter, then wait for the right weather to force the spawn.</p>
+
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Gyve</th><th>Zone</th><th>Kill Family</th><th>Spawn Weather</th></tr>
+                <tr><td>Fire Seal</td><td>Den of Rancor</td><td>Fire Elemental</td><td>Hot Spell / Heat Wave</td></tr>
+                <tr><td>Ice Seal</td><td>Fei'Yin</td><td>Ice Elemental / Snoll</td><td>Snow / Blizzards + night</td></tr>
+                <tr><td>Wind Seal</td><td>Mamook</td><td>Air Elemental / Puk</td><td>Wind / Gales</td></tr>
+                <tr><td>Earth Seal</td><td>Halvung</td><td>Earth Elemental</td><td>Dust / Sand Storm + Earthsday</td></tr>
+                <tr><td>Thunder Seal</td><td>Sacrarium</td><td>Thunder Elemental</td><td>Thunder weather</td></tr>
+                <tr><td>Water Seal</td><td>Crawlers' Nest</td><td>Water Elemental</td><td>Rain / Squall + moon &ge;80%</td></tr>
+                <tr><td>Light Seal</td><td>Upper Delkfutt's Tower</td><td>Light Elemental</td><td>Auroras / Stellar Glare + daytime</td></tr>
+                <tr><td>Dark Seal</td><td>Castle Zvahl Keep [S]</td><td>Dark Elemental / Ghost</td><td>Gloom / Darkness + deep night</td></tr>
+            </table>
+        </div>
+
+        <p style="margin-top: 1rem;">
+            Clearing Gyves unlocks the Humanoid Champions, each with unique spawn conditions
+            (Lightsday + dawn, full moon + dusk, solo player + Windsday, etc.). Champions
+            unlock the Special Bosses and Supreme Beings. Clear all field elites to face
+            Absolute Virtue. Time Devourer is a separate BCNM encounter.
         </p>
     </div>
 </section>
+
+<!-- ============ NM LOCATIONS ============ -->
+<div class="section-alt">
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">NM Locations by Zone</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>All 498 hunt NMs listed by zone. Grid positions (e.g. <span class="grid-pos">(F-8)</span>)
+        are included where verified from in-game screenshots. 494 of 498 NMs have confirmed positions.</p>
+
+        <input type="text" id="nmSearch" placeholder="Search by NM name or zone..."
+            style="width: 100%; padding: 0.6rem 1rem; margin: 1rem 0; background: var(--bg-card);
+            border: 1px solid var(--border); color: var(--text-main); border-radius: 4px;
+            font-size: 0.95rem;" oninput="filterNMs()">
+
+        <div class="info-table-wrapper" style="max-height: 600px; overflow-y: auto;">
+            <table class="info-table" id="nmTable">
+                <thead style="position: sticky; top: 0; z-index: 1;">
+                    <tr><th>Zone</th><th>#</th><th>NMs</th></tr>
+                </thead>
+                <tbody>
+                <tr><td>Abyssea Altepa</td><td>3</td><td>Agathion <span class="grid-pos">(H-5)</span>, Aporia <span class="grid-pos">(M-7)</span>, Decarabia <span class="grid-pos">(L-7)</span></td></tr>
+                <tr><td>Abyssea Attohwa</td><td>3</td><td>Aker <span class="grid-pos">(I-9)</span>, Neith <span class="grid-pos">(F-9)</span>, Wadjet <span class="grid-pos">(J-7)</span></td></tr>
+                <tr><td>Abyssea Grauberg</td><td>3</td><td>Abyzou <span class="grid-pos">(I-8)</span>, Alastor <span class="grid-pos">(H-13)</span>, Halphas <span class="grid-pos">(H-11)</span></td></tr>
+                <tr><td>Abyssea Konschtat</td><td>4</td><td>Sarkany <span class="grid-pos">(H-6)</span>, Tenzen <span class="grid-pos">(E-9)</span>, Typhon <span class="grid-pos">(J-7)</span>, Uridimmu <span class="grid-pos">(H-11)</span></td></tr>
+                <tr><td>Abyssea La Theine</td><td>4</td><td>Khepri <span class="grid-pos">(K-7)</span>, Nuada <span class="grid-pos">(H-9)</span>, Phi Krasue <span class="grid-pos">(F-8)</span>, Sekhmet <span class="grid-pos">(H-8)</span></td></tr>
+                <tr><td>Abyssea Misareaux</td><td>4</td><td>Atum <span class="grid-pos">(J-11)</span>, Khonsu <span class="grid-pos">(H-9)</span>, Prov. Watcher <span class="grid-pos">(D-6)</span>, Serqet <span class="grid-pos">(I-6)</span></td></tr>
+                <tr><td>Abyssea Tahrongi</td><td>4</td><td>Airavata <span class="grid-pos">(F-5)</span>, Hamadryas <span class="grid-pos">(H-6)</span>, Pabilsag <span class="grid-pos">(I-6)</span>, Perih Vashai <span class="grid-pos">(H-10)</span></td></tr>
+                <tr><td>Abyssea Uleguerand</td><td>3</td><td>Akhlut <span class="grid-pos">(F-5)</span>, Amdusias <span class="grid-pos">(J-10)</span>, Anamnesis <span class="grid-pos">(I-10)</span></td></tr>
+                <tr><td>Abyssea Vunkerl</td><td>3</td><td>Mafdet <span class="grid-pos">(F-6)</span>, Shu <span class="grid-pos">(H-9)</span>, Tefnut <span class="grid-pos">(G-10)</span></td></tr>
+                <tr><td>Altaieu</td><td>4</td><td>Anthracite <span class="grid-pos">(F-6)</span>, Bonasus <span class="grid-pos">(L-11)</span>, Cheliceron <span class="grid-pos">(K-5)</span>, Ephialtes <span class="grid-pos">(D-8)</span></td></tr>
+                <tr><td>Alzadaal Undersea Ruins</td><td>4</td><td>Abzu <span class="grid-pos">(E-8)</span>, Atargatis <span class="grid-pos">(H-11)</span>, Basileus <span class="grid-pos">(I-10)</span>, Nephthys <span class="grid-pos">(F-7)</span></td></tr>
+                <tr><td>Arrapago Reef</td><td>4</td><td>Drakon <span class="grid-pos">(H-10)</span>, Inkanyamba <span class="grid-pos">(H-7)</span>, Jorogumo <span class="grid-pos">(G-5)</span>, Unktehi <span class="grid-pos">(G-8)</span></td></tr>
+                <tr><td>Attohwa Chasm</td><td>3</td><td>Formicaleo <span class="grid-pos">(K-8)</span>, Girtablilu <span class="grid-pos">(I-10)</span>, Myrmidion <span class="grid-pos">(E-7)</span></td></tr>
+                <tr><td>Aydeewa Subterrane</td><td>4</td><td>Ammit <span class="grid-pos">(I-8)</span>, Cocytus <span class="grid-pos">(K-6)</span>, Pyrausta <span class="grid-pos">(I-8)</span>, Rabisu <span class="grid-pos">(F-9)</span></td></tr>
+                <tr><td>Batallia Downs</td><td>3</td><td>Forneus <span class="grid-pos">(G-6)</span>, Lamassu <span class="grid-pos">(J-11)</span>, Phorcys <span class="grid-pos">(G-6)</span></td></tr>
+                <tr><td>Batallia Downs S</td><td>3</td><td>Cipactli <span class="grid-pos">(I-7)</span>, Oberon <span class="grid-pos">(J-9)</span>, Zaratan <span class="grid-pos">(I-7)</span></td></tr>
+                <tr><td>Beadeaux</td><td>4</td><td>Hundun <span class="grid-pos">(G-10)</span>, Longma <span class="grid-pos">(F-7)</span>, Menshen <span class="grid-pos">(J-7)</span>, Taowu <span class="grid-pos">(J-8)</span></td></tr>
+                <tr><td>Beaucedine Glacier</td><td>3</td><td>Garmr <span class="grid-pos">(J-9)</span>, Kokabiel <span class="grid-pos">(I-8)</span>, Orobas <span class="grid-pos">(J-5)</span></td></tr>
+                <tr><td>Beaucedine Glacier S</td><td>4</td><td>Bumba <span class="grid-pos">(I-8)</span>, Inkosazana <span class="grid-pos">(H-8)</span>, Kibuka <span class="grid-pos">(H-10)</span>, Mbaba <span class="grid-pos">(J-9)</span></td></tr>
+                <tr><td>Behemoths Dominion</td><td>4</td><td>Deumus <span class="grid-pos">(H-8)</span>, Gaap <span class="grid-pos">(G-8)</span>, Pruflas <span class="grid-pos">(K-9)</span>, Rahovart <span class="grid-pos">(G-8)</span></td></tr>
+                <tr><td>Bhaflau Thickets</td><td>4</td><td>Akhkhazu <span class="grid-pos">(G-6)</span>, Bukavac <span class="grid-pos">(H-9)</span>, Galatea <span class="grid-pos">(G-8)</span>, Stuhac <span class="grid-pos">(F-6)</span></td></tr>
+                <tr><td>Bibiki Bay</td><td>3</td><td>Formless One <span class="grid-pos">(I-6)</span>, Nepenthe <span class="grid-pos">(H-8)</span>, Peluda <span class="grid-pos">(G-7)</span></td></tr>
+                <tr><td>Bostaunieux Oubliette</td><td>3</td><td>Andvari <span class="grid-pos">(I-11)</span>, Mimir <span class="grid-pos">(H-10)</span>, Modgudr <span class="grid-pos">(E-9)</span></td></tr>
+                <tr><td>Buburimu Peninsula</td><td>3</td><td>Beleth <span class="grid-pos">(H-6)</span>, Sitri <span class="grid-pos">(H-7)</span>, Uvall <span class="grid-pos">(J-7)</span></td></tr>
+                <tr><td>Caedarva Mire</td><td>4</td><td>Eidolon <span class="grid-pos">(G-10)</span>, Empusa <span class="grid-pos">(G-7)</span>, Gogmagog <span class="grid-pos">(F-6)</span>, Hades <span class="grid-pos">(I-10)</span></td></tr>
+                <tr><td>Cape Teriggan</td><td>3</td><td>Acheri <span class="grid-pos">(F-7)</span>, Fenodyree <span class="grid-pos">(G-5)</span>, Taotie <span class="grid-pos">(H-8)</span></td></tr>
+                <tr><td>Carpenters Landing</td><td>3</td><td>Carcinus <span class="grid-pos">(I-11)</span>, Chelona <span class="grid-pos">(H-8)</span>, Nuckelavee <span class="grid-pos">(I-9)</span></td></tr>
+                <tr><td>Castle Oztroja</td><td>4</td><td>Aengus <span class="grid-pos">(I-8)</span>, Brigantia <span class="grid-pos">(I-9)</span>, Epona <span class="grid-pos">(H-8)</span>, Llyr <span class="grid-pos">(H-8)</span></td></tr>
+                <tr><td>Castle Oztroja S</td><td>1</td><td>Robel-Akbel <span class="grid-pos">(H-11)</span></td></tr>
+                <tr><td>Castle Zvahl Baileys</td><td>3</td><td>Azaziel <span class="grid-pos">(G-7)</span>, Batariel <span class="grid-pos">(F-8)</span>, Ezekeel <span class="grid-pos">(F-8)</span></td></tr>
+                <tr><td>Castle Zvahl Baileys S</td><td>1</td><td>Cl. of Darkness <span class="grid-pos">(F-6)</span></td></tr>
+                <tr><td>Castle Zvahl Keep</td><td>3</td><td>Harut <span class="grid-pos">(H-10)</span>, Marut <span class="grid-pos">(G-9)</span>, Mastema <span class="grid-pos">(H-7)</span></td></tr>
+                <tr><td>Castle Zvahl Keep S</td><td>5</td><td>Black Seal <span class="grid-pos">(I-7)</span>, Chiyou <span class="grid-pos">(G-7)</span>, Houyi <span class="grid-pos">(G-9)</span>, Jiangshi <span class="grid-pos">(H-8)</span>, Qiongqi <span class="grid-pos">(G-9)</span></td></tr>
+                <tr><td>Ceizak Battlegrounds</td><td>4</td><td>Ilmarinen <span class="grid-pos">(F-6)</span>, Joukahainen <span class="grid-pos">(J-8)</span>, Lemminkain <span class="grid-pos">(G-11)</span>, Louhi <span class="grid-pos">(G-10)</span></td></tr>
+                <tr><td>Cirdas Caverns</td><td>3</td><td>Adlivun <span class="grid-pos">(K-9)</span>, Apotamkin <span class="grid-pos">(L-4)</span>, Pukwudgie <span class="grid-pos">(D-8)</span></td></tr>
+                <tr><td>Crawlers Nest</td><td>5</td><td>Arsay <span class="grid-pos">(I-6)</span>, Au Co <span class="grid-pos">(G-7)</span>, Horon <span class="grid-pos">(J-8)</span>, Nikkal <span class="grid-pos">(G-9)</span>, Water Seal <span class="grid-pos">(E-8)</span></td></tr>
+                <tr><td>Crawlers Nest S</td><td>3</td><td>Noesis <span class="grid-pos">(H-8)</span>, Raum <span class="grid-pos">(I-10)</span>, Vanara <span class="grid-pos">(F-9)</span></td></tr>
+                <tr><td>Dangruf Wadi</td><td>3</td><td>Camael <span class="grid-pos">(G-11)</span>, Haniel <span class="grid-pos">(F-12)</span>, Jophiel <span class="grid-pos">(I-3)</span></td></tr>
+                <tr><td>Davoi</td><td>4</td><td>Credne <span class="grid-pos">(I-10)</span>, Cuchulainn <span class="grid-pos">(K-7)</span>, Fionn <span class="grid-pos">(I-6)</span>, Nudd <span class="grid-pos">(I-8)</span></td></tr>
+                <tr><td>Den Of Rancor</td><td>4</td><td>Arakiel <span class="grid-pos">(I-7)</span>, Danel <span class="grid-pos">(G-8)</span>, Fire Seal <span class="grid-pos">(K-13)</span>, Gadreel <span class="grid-pos">(J-8)</span></td></tr>
+                <tr><td>Dho Gates</td><td>3</td><td>Atahensic <span class="grid-pos">(G-7)</span>, Glooskap <span class="grid-pos">(E-7)</span>, Malsumis <span class="grid-pos">(I-7)</span></td></tr>
+                <tr><td>Dragons Aery</td><td>3</td><td>Armaros <span class="grid-pos">(I-8)</span>, Baraqiel <span class="grid-pos">(G-8)</span>, Chazaqiel <span class="grid-pos">(J-6)</span></td></tr>
+                <tr><td>East Ronfaure</td><td>3</td><td>Basaltshell <span class="grid-pos">(G-6)</span>, Pelesit <span class="grid-pos">(J-7)</span>, Pishacha <span class="grid-pos">(I-7)</span></td></tr>
+                <tr><td>East Ronfaure S</td><td>3</td><td>Pele <span class="grid-pos">(J-5)</span>, Rongo <span class="grid-pos">(G-7)</span>, Tawhiri <span class="grid-pos">(I-11)</span></td></tr>
+                <tr><td>East Sarutabaruta</td><td>3</td><td>Caim <span class="grid-pos">(H-8)</span>, Dantalion <span class="grid-pos">(J-7)</span>, Eligos <span class="grid-pos">(H-8)</span></td></tr>
+                <tr><td>Eastern Altepa Desert</td><td>3</td><td>Asag <span class="grid-pos">(H-11)</span>, Ushioni <span class="grid-pos">(J-9)</span>, Xaphan <span class="grid-pos">(G-6)</span></td></tr>
+                <tr><td>Escha Ruaun</td><td>5</td><td>Apam Napat <span class="grid-pos">(E-7)</span>, Azhi Dahaka <span class="grid-pos">(H-10)</span>, Khshathra <span class="grid-pos">(K-9)</span>, Shinryu <span class="grid-pos">(E-7)</span>, Tethra <span class="grid-pos">(E-8)</span></td></tr>
+                <tr><td>Escha Zitah</td><td>5</td><td>Anahita <span class="grid-pos">(K-11)</span>, Iroha <span class="grid-pos">(E-11)</span>, Rashnu <span class="grid-pos">(F-8)</span>, Sraosha <span class="grid-pos">(I-9)</span>, Tishtrya <span class="grid-pos">(G-11)</span></td></tr>
+                <tr><td>Feiyin</td><td>5</td><td>Cangjie <span class="grid-pos">(I-8)</span>, Dijun <span class="grid-pos">(F-9)</span>, Ice Seal, Lac Long Quan <span class="grid-pos">(H-5)</span>, Pixiu <span class="grid-pos">(I-6)</span></td></tr>
+                <tr><td>Foret De Hennetiel</td><td>4</td><td>Balamor <span class="grid-pos">(F-5)</span>, Kalma <span class="grid-pos">(E-11)</span>, Loviatar <span class="grid-pos">(I-7)</span>, Perkele <span class="grid-pos">(F-10)</span></td></tr>
+                <tr><td>Fort Ghelsba</td><td>3</td><td>Badb <span class="grid-pos">(J-8)</span>, Gwydion <span class="grid-pos">(F-9)</span>, Medb <span class="grid-pos">(G-6)</span></td></tr>
+                <tr><td>Fort Karugo Narugo S</td><td>3</td><td>Edimmu <span class="grid-pos">(H-11)</span>, Rancura <span class="grid-pos">(H-11)</span>, Vrykolakas <span class="grid-pos">(F-5)</span></td></tr>
+                <tr><td>Garlaige Citadel</td><td>3</td><td>Focalor <span class="grid-pos">(I-7)</span>, Irminsul <span class="grid-pos">(I-8)</span>, Pandora <span class="grid-pos">(H-8)</span></td></tr>
+                <tr><td>Garlaige Citadel S</td><td>3</td><td>Ismenios <span class="grid-pos">(H-9)</span>, Minokawa <span class="grid-pos">(G-6)</span>, Naberius <span class="grid-pos">(J-8)</span></td></tr>
+                <tr><td>Ghelsba Outpost</td><td>3</td><td>Arawn <span class="grid-pos">(G-7)</span>, Dagda <span class="grid-pos">(J-9)</span>, Manannan <span class="grid-pos">(J-7)</span></td></tr>
+                <tr><td>Giddeus</td><td>4</td><td>Cailleach <span class="grid-pos">(F-11)</span>, Deirdre <span class="grid-pos">(G-6)</span>, Etain <span class="grid-pos">(H-13)</span>, Manawyddan <span class="grid-pos">(K-12)</span></td></tr>
+                <tr><td>Grand Palace Of Huxzoi</td><td>3</td><td>Keythong <span class="grid-pos">(J-8)</span>, Kodama <span class="grid-pos">(G-10)</span>, Stellio <span class="grid-pos">(I-9)</span></td></tr>
+                <tr><td>Grauberg S</td><td>3</td><td>Boreas <span class="grid-pos">(G-13)</span>, Qareen <span class="grid-pos">(H-13)</span>, Tethys <span class="grid-pos">(I-11)</span></td></tr>
+                <tr><td>Gusgen Mines</td><td>3</td><td>Anath <span class="grid-pos">(F-8)</span>, Eshmun <span class="grid-pos">(I-7)</span>, Reshef <span class="grid-pos">(J-7)</span></td></tr>
+                <tr><td>Gustav Tunnel</td><td>3</td><td>Chandra <span class="grid-pos">(K-8)</span>, Indra <span class="grid-pos">(G-8)</span>, Kubera <span class="grid-pos">(G-8)</span></td></tr>
+                <tr><td>Halvung</td><td>4</td><td>Earth Seal <span class="grid-pos">(L-7)</span>, Niflhel <span class="grid-pos">(E-9)</span>, Oriax <span class="grid-pos">(G-8)</span>, Tenebrus <span class="grid-pos">(J-6)</span></td></tr>
+                <tr><td>Ifrits Cauldron</td><td>3</td><td>Brahma <span class="grid-pos">(F-9)</span>, Durga <span class="grid-pos">(H-6)</span>, Ganesha <span class="grid-pos">(F-9)</span></td></tr>
+                <tr><td>Inner Horutoto Ruins</td><td>3</td><td>Bergelmir <span class="grid-pos">(H-7)</span>, Bestla <span class="grid-pos">(F-11)</span>, Dvalin <span class="grid-pos">(J-9)</span></td></tr>
+                <tr><td>Jugner Forest</td><td>4</td><td>Aswang <span class="grid-pos">(F-10)</span>, Baku <span class="grid-pos">(K-6)</span>, Dullahan <span class="grid-pos">(G-8)</span>, Excenmille <span class="grid-pos">(I-8)</span></td></tr>
+                <tr><td>Jugner Forest S</td><td>3</td><td>Brollachan <span class="grid-pos">(I-7)</span>, Kelpie <span class="grid-pos">(H-8)</span>, Nihilum <span class="grid-pos">(J-9)</span></td></tr>
+                <tr><td>Kamihr Drifts</td><td>5</td><td>Coyote <span class="grid-pos">(F-10)</span>, Kokopelli <span class="grid-pos">(F-7)</span>, Metus <span class="grid-pos">(G-8)</span>, Nanabozho <span class="grid-pos">(H-11)</span>, Thunderbird <span class="grid-pos">(I-8)</span></td></tr>
+                <tr><td>King Ranperres Tomb</td><td>3</td><td>Daksha <span class="grid-pos">(F-9)</span>, Hamaliel <span class="grid-pos">(G-10)</span>, Israfil <span class="grid-pos">(J-8)</span></td></tr>
+                <tr><td>Konschtat Highlands</td><td>4</td><td>Curupira <span class="grid-pos">(G-7)</span>, Draugr <span class="grid-pos">(F-9)</span>, Erlking <span class="grid-pos">(K-6)</span>, Gashadokuro <span class="grid-pos">(K-7)</span></td></tr>
+                <tr><td>Korroloka Tunnel</td><td>4</td><td>Belenus <span class="grid-pos">(I-7)</span>, Borvo <span class="grid-pos">(I-7)</span>, Damona <span class="grid-pos">(H-7)</span>, Phra Rahu <span class="grid-pos">(I-8)</span></td></tr>
+                <tr><td>Kuftal Tunnel</td><td>4</td><td>Abandinus <span class="grid-pos">(I-6)</span>, Cernowain <span class="grid-pos">(G-7)</span>, Esus <span class="grid-pos">(I-6)</span>, Preah Thorani <span class="grid-pos">(I-7)</span></td></tr>
+                <tr><td>La Theine Plateau</td><td>3</td><td>Ammut <span class="grid-pos">(F-8)</span>, Fenrisulfr <span class="grid-pos">(H-6)</span>, Rusalka <span class="grid-pos">(G-5)</span></td></tr>
+                <tr><td>Labyrinth Of Onzozo</td><td>3</td><td>Aryaman <span class="grid-pos">(J-5)</span>, Bhaga <span class="grid-pos">(H-4)</span>, Mitra <span class="grid-pos">(H-6)</span></td></tr>
+                <tr><td>Lower Delkfutts Tower</td><td>4</td><td>Kingu <span class="grid-pos">(G-10)</span>, Kishar <span class="grid-pos">(E-8)</span>, Lahamu <span class="grid-pos">(I-6)</span>, Lahmu <span class="grid-pos">(F-7)</span></td></tr>
+                <tr><td>Lufaise Meadows</td><td>3</td><td>Calypso <span class="grid-pos">(F-7)</span>, Nereid <span class="grid-pos">(I-8)</span>, Thalassa <span class="grid-pos">(H-8)</span></td></tr>
+                <tr><td>Mamook</td><td>4</td><td>Aegaeon <span class="grid-pos">(H-7)</span>, Echidna <span class="grid-pos">(G-7)</span>, Pontus <span class="grid-pos">(C-5)</span>, Wind Seal <span class="grid-pos">(I-8)</span></td></tr>
+                <tr><td>Marjami Ravine</td><td>3</td><td>Ajatar <span class="grid-pos">(E-11)</span>, Antero <span class="grid-pos">(K-7)</span>, Kokko <span class="grid-pos">(G-9)</span></td></tr>
+                <tr><td>Maze Of Shakhrami</td><td>4</td><td>Athtar <span class="grid-pos">(L-9)</span>, Neak Ta <span class="grid-pos">(D-8)</span>, Shahar <span class="grid-pos">(F-8)</span>, Shalim <span class="grid-pos">(E-7)</span></td></tr>
+                <tr><td>Meriphataud Mountains</td><td>3</td><td>Crocell <span class="grid-pos">(D-6)</span>, Furfur <span class="grid-pos">(D-5)</span>, Gamigin <span class="grid-pos">(E-5)</span></td></tr>
+                <tr><td>Meriphataud Mountains S</td><td>3</td><td>Jikininki <span class="grid-pos">(J-7)</span>, Panoptes <span class="grid-pos">(L-8)</span>, Varcolaci <span class="grid-pos">(E-5)</span></td></tr>
+                <tr><td>Middle Delkfutts Tower</td><td>3</td><td>Aegir <span class="grid-pos">(G-10)</span>, Hermod <span class="grid-pos">(H-7)</span>, Magni <span class="grid-pos">(H-6)</span></td></tr>
+                <tr><td>Misareaux Coast</td><td>4</td><td>Azazel <span class="grid-pos">(E-7)</span>, Barghest <span class="grid-pos">(H-8)</span>, Prishe <span class="grid-pos">(L-12)</span>, Tarasque <span class="grid-pos">(J-7)</span></td></tr>
+                <tr><td>Moh Gates</td><td>3</td><td>Asgaya <span class="grid-pos">(I-7)</span>, Chimalma <span class="grid-pos">(F-8)</span>, Gitche <span class="grid-pos">(H-8)</span></td></tr>
+                <tr><td>Monastic Cavern</td><td>4</td><td>Bragi <span class="grid-pos">(G-10)</span>, Forseti <span class="grid-pos">(J-9)</span>, Hodr <span class="grid-pos">(G-11)</span>, Hoenir <span class="grid-pos">(H-7)</span></td></tr>
+                <tr><td>Morimar Basalt Fields</td><td>4</td><td>Akka <span class="grid-pos">(I-7)</span>, Hiisi <span class="grid-pos">(I-7)</span>, Kiputytto <span class="grid-pos">(F-9)</span>, Tuoni <span class="grid-pos">(F-11)</span></td></tr>
+                <tr><td>Mount Kamihr</td><td>1</td><td>Abs. Virtue</td></tr>
+                <tr><td>Mount Zhayolm</td><td>4</td><td>Agares <span class="grid-pos">(I-10)</span>, Chernobog <span class="grid-pos">(H-8)</span>, Kagutsuchi <span class="grid-pos">(H-7)</span>, Nahual <span class="grid-pos">(H-10)</span></td></tr>
+                <tr><td>Newton Movalpolos</td><td>3</td><td>Asmodeus <span class="grid-pos">(J-9)</span>, Bunyip <span class="grid-pos">(F-10)</span>, Tatzelwurm <span class="grid-pos">(G-7)</span></td></tr>
+                <tr><td>North Gustaberg</td><td>3</td><td>Kikimora <span class="grid-pos">(G-9)</span>, Rarog <span class="grid-pos">(I-8)</span>, Toyol <span class="grid-pos">(J-6)</span></td></tr>
+                <tr><td>North Gustaberg S</td><td>3</td><td>Ouroboros <span class="grid-pos">(L-8)</span>, Undine <span class="grid-pos">(G-9)</span>, Vodyanoy <span class="grid-pos">(L-8)</span></td></tr>
+                <tr><td>Oldton Movalpolos</td><td>3</td><td>Kolossos <span class="grid-pos">(K-10)</span>, Malakhim <span class="grid-pos">(E-5)</span>, Phlogiston <span class="grid-pos">(H-9)</span></td></tr>
+                <tr><td>Ordelles Caves</td><td>4</td><td>Cassiel <span class="grid-pos">(I-5)</span>, Cerviel <span class="grid-pos">(G-7)</span>, Muriel <span class="grid-pos">(F-4)</span>, Phi Pop <span class="grid-pos">(I-6)</span></td></tr>
+                <tr><td>Outer Horutoto Ruins</td><td>3</td><td>Astaroth <span class="grid-pos">(G-8)</span>, Azazil <span class="grid-pos">(G-6)</span>, Baal <span class="grid-pos">(I-8)</span></td></tr>
+                <tr><td>Outer Rakaznar</td><td>3</td><td>Lamashtu <span class="grid-pos">(I-4)</span>, Mahuika <span class="grid-pos">(E-5)</span>, Titivillus <span class="grid-pos">(G-7)</span></td></tr>
+                <tr><td>Palborough Mines</td><td>3</td><td>Abhartach <span class="grid-pos">(J-8)</span>, Cathbad <span class="grid-pos">(I-9)</span>, Danu <span class="grid-pos">(G-8)</span></td></tr>
+                <tr><td>Pashhow Marshlands</td><td>3</td><td>Churel <span class="grid-pos">(I-9)</span>, Kitsune <span class="grid-pos">(H-6)</span>, Rakshasa <span class="grid-pos">(E-5)</span></td></tr>
+                <tr><td>Pashhow Marshlands S</td><td>3</td><td>Aamon <span class="grid-pos">(H-10)</span>, Erinys <span class="grid-pos">(J-10)</span>, Nocnitsa <span class="grid-pos">(I-10)</span></td></tr>
+                <tr><td>Phomiuna Aqueducts</td><td>3</td><td>Hafgufa <span class="grid-pos">(G-9)</span>, Moloch <span class="grid-pos">(E-4)</span>, Nethersquid <span class="grid-pos">(C-7)</span></td></tr>
+                <tr><td>Promyvion Dem</td><td>3</td><td>Glaistig <span class="grid-pos">(J-10)</span>, Moirai <span class="grid-pos">(F-8)</span>, Sthenno <span class="grid-pos">(E-9)</span></td></tr>
+                <tr><td>Promyvion Holla</td><td>3</td><td>Achlys <span class="grid-pos">(H-10)</span>, Phosphor <span class="grid-pos">(E-6)</span>, Tisiphone <span class="grid-pos">(H-9)</span></td></tr>
+                <tr><td>Promyvion Mea</td><td>3</td><td>Liminal <span class="grid-pos">(G-5)</span>, Polyphemos <span class="grid-pos">(K-7)</span>, Thumos <span class="grid-pos">(E-11)</span></td></tr>
+                <tr><td>Promyvion Vahzl</td><td>3</td><td>Acheron <span class="grid-pos">(H-9)</span>, Pyrrhus <span class="grid-pos">(G-6)</span>, Venomscale <span class="grid-pos">(I-11)</span></td></tr>
+                <tr><td>Psoxja</td><td>3</td><td>Colchis <span class="grid-pos">(H-7)</span>, Daevas <span class="grid-pos">(I-7)</span>, Palimpsest <span class="grid-pos">(H-8)</span></td></tr>
+                <tr><td>Qufim Island</td><td>4</td><td>Abigor <span class="grid-pos">(H-7)</span>, Ayperos <span class="grid-pos">(G-8)</span>, Gressil <span class="grid-pos">(H-9)</span>, Morax <span class="grid-pos">(H-8)</span></td></tr>
+                <tr><td>Quicksand Caves</td><td>3</td><td>Agni <span class="grid-pos">(I-7)</span>, Lakshmi <span class="grid-pos">(I-8)</span>, Saraswati <span class="grid-pos">(G-8)</span></td></tr>
+                <tr><td>Rala Waterways</td><td>3</td><td>Adaro <span class="grid-pos">(L-5)</span>, Shax <span class="grid-pos">(H-6)</span>, Tantalus <span class="grid-pos">(J-6)</span></td></tr>
+                <tr><td>Ranguemont Pass</td><td>3</td><td>Alviss <span class="grid-pos">(J-8)</span>, Grimnir <span class="grid-pos">(H-6)</span>, Hymir <span class="grid-pos">(J-10)</span></td></tr>
+                <tr><td>Reisenjima</td><td>5</td><td>Div-e Sepid <span class="grid-pos">(G-7)</span>, Gordafarid <span class="grid-pos">(G-6)</span>, Hades Ascended <span class="grid-pos">(G-9)</span>, Kaveh <span class="grid-pos">(J-6)</span>, Rustam <span class="grid-pos">(J-5)</span></td></tr>
+                <tr><td>Riverne Site A01</td><td>4</td><td>Grendak <span class="grid-pos">(G-8)</span>, Lithowing <span class="grid-pos">(I-10)</span>, Mossheart <span class="grid-pos">(H-9)</span>, Tiddalik <span class="grid-pos">(G-11)</span></td></tr>
+                <tr><td>Riverne Site B01</td><td>3</td><td>Anzu <span class="grid-pos">(G-8)</span>, Illuyanka <span class="grid-pos">(M-7)</span>, Penanggal <span class="grid-pos">(K-8)</span></td></tr>
+                <tr><td>Rolanberry Fields</td><td>3</td><td>Caladrius <span class="grid-pos">(E-11)</span>, Camazotz <span class="grid-pos">(I-9)</span>, Eurynomos <span class="grid-pos">(J-6)</span></td></tr>
+                <tr><td>Rolanberry Fields S</td><td>3</td><td>Gorgon <span class="grid-pos">(J-6)</span>, Malphas <span class="grid-pos">(F-10)</span>, Vetala <span class="grid-pos">(J-6)</span></td></tr>
+                <tr><td>Romaeve</td><td>3</td><td>Ronove <span class="grid-pos">(K-11)</span>, Sallos <span class="grid-pos">(G-11)</span>, Seere <span class="grid-pos">(I-9)</span></td></tr>
+                <tr><td>Ruaun Gardens</td><td>5</td><td>Andromalius <span class="grid-pos">(F-6)</span>, Gremory <span class="grid-pos">(H-9)</span>, Kamlanaut <span class="grid-pos">(J-9)</span>, Malacoda <span class="grid-pos">(J-9)</span>, Sargatanas <span class="grid-pos">(F-7)</span></td></tr>
+                <tr><td>Sacrarium</td><td>4</td><td>Apep <span class="grid-pos">(G-8)</span>, Fetch <span class="grid-pos">(G-6)</span>, Shabti <span class="grid-pos">(H-9)</span>, Thunder Seal <span class="grid-pos">(J-8)</span></td></tr>
+                <tr><td>Sauromugue Champaign</td><td>3</td><td>Alloces <span class="grid-pos">(K-10)</span>, Andras <span class="grid-pos">(L-7)</span>, Bael <span class="grid-pos">(J-9)</span></td></tr>
+                <tr><td>Sauromugue Champaign S</td><td>3</td><td>Chalkydri <span class="grid-pos">(K-6)</span>, Kongamato <span class="grid-pos">(F-5)</span>, Redcap <span class="grid-pos">(H-7)</span></td></tr>
+                <tr><td>Sea Serpent Grotto</td><td>4</td><td>Ghul <span class="grid-pos">(H-8)</span>, Iblis <span class="grid-pos">(C-8)</span>, Khamsin <span class="grid-pos">(H-10)</span>, Nang Tani <span class="grid-pos">(H-10)</span></td></tr>
+                <tr><td>Sih Gates</td><td>3</td><td>Dzunukwa <span class="grid-pos">(G-6)</span>, Haokah <span class="grid-pos">(F-9)</span>, Michabo <span class="grid-pos">(H-8)</span></td></tr>
+                <tr><td>South Gustaberg</td><td>3</td><td>Ahuizotl <span class="grid-pos">(J-8)</span>, Jotunn <span class="grid-pos">(F-8)</span>, Mot <span class="grid-pos">(I-7)</span></td></tr>
+                <tr><td>Tahrongi Canyon</td><td>3</td><td>Haures <span class="grid-pos">(I-5)</span>, Kimaris <span class="grid-pos">(H-5)</span>, Leraje <span class="grid-pos">(J-6)</span></td></tr>
+                <tr><td>Temple Of Uggalepih</td><td>4</td><td>Ananel <span class="grid-pos">(H-8)</span>, Bezaliel <span class="grid-pos">(F-9)</span>, Sariel <span class="grid-pos">(H-7)</span>, Turael <span class="grid-pos">(L-8)</span></td></tr>
+                <tr><td>The Boyahda Tree</td><td>3</td><td>Adramelech <span class="grid-pos">(L-8)</span>, Aphelion <span class="grid-pos">(G-5)</span>, Surtr <span class="grid-pos">(N-10)</span></td></tr>
+                <tr><td>The Eldieme Necropolis</td><td>3</td><td>Chemosh <span class="grid-pos">(N-10)</span>, Dagan <span class="grid-pos">(A-8)</span>, Hadad <span class="grid-pos">(I-8)</span></td></tr>
+                <tr><td>The Eldieme Necropolis S</td><td>4</td><td>Chernava <span class="grid-pos">(I-7)</span>, Jarilo <span class="grid-pos">(K-8)</span>, Porevit <span class="grid-pos">(O-9)</span>, Svantevit <span class="grid-pos">(M-10)</span></td></tr>
+                <tr><td>The Garden Of Ruhmet</td><td>3</td><td>Amphora <span class="grid-pos">(G-9)</span>, Graeae <span class="grid-pos">(F-8)</span>, Sirin <span class="grid-pos">(H-6)</span></td></tr>
+                <tr><td>The Sanctuary Of Zitah</td><td>3</td><td>Buer <span class="grid-pos">(L-9)</span>, Furcas <span class="grid-pos">(I-7)</span>, Gusion <span class="grid-pos">(F-11)</span></td></tr>
+                <tr><td>The Shrine Of Ruavitau</td><td>3</td><td>Adad <span class="grid-pos">(J-5)</span>, Anshar <span class="grid-pos">(J-5)</span>, Anu <span class="grid-pos">(G-10)</span></td></tr>
+                <tr><td>Toraimarai Canal</td><td>3</td><td>Andraste <span class="grid-pos">(I-8)</span>, Grannus <span class="grid-pos">(H-7)</span>, Nantosuelta <span class="grid-pos">(G-11)</span></td></tr>
+                <tr><td>Uleguerand Range</td><td>3</td><td>Baihu <span class="grid-pos">(K-9)</span>, Hrimthurs <span class="grid-pos">(J-10)</span>, Qalupalik <span class="grid-pos">(F-11)</span></td></tr>
+                <tr><td>Upper Delkfutts Tower</td><td>4</td><td>Enki <span class="grid-pos">(G-7)</span>, Enlil <span class="grid-pos">(G-9)</span>, Light Seal <span class="grid-pos">(J-10)</span>, Nammu <span class="grid-pos">(F-8)</span></td></tr>
+                <tr><td>Valkurm Dunes</td><td>3</td><td>Hantu <span class="grid-pos">(H-7)</span>, Hecatoncheir <span class="grid-pos">(I-7)</span>, Ibaraki <span class="grid-pos">(K-8)</span></td></tr>
+                <tr><td>Valley Of Sorrows</td><td>4</td><td>Cagrino <span class="grid-pos">(F-9)</span>, Eliphas <span class="grid-pos">(I-8)</span>, Ornias <span class="grid-pos">(G-8)</span>, Ravana <span class="grid-pos">(H-8)</span></td></tr>
+                <tr><td>Velugannon Palace</td><td>3</td><td>Dumuzi <span class="grid-pos">(C-6)</span>, Inanna <span class="grid-pos">(J-9)</span>, Marduk <span class="grid-pos">(H-9)</span></td></tr>
+                <tr><td>Vunkerl Inlet S</td><td>3</td><td>Aethon <span class="grid-pos">(G-8)</span>, Makhira <span class="grid-pos">(I-7)</span>, Rangda <span class="grid-pos">(H-7)</span></td></tr>
+                <tr><td>Wajaom Woodlands</td><td>4</td><td>Bakhtak <span class="grid-pos">(E-10)</span>, Bultungin <span class="grid-pos">(D-10)</span>, Psoglav <span class="grid-pos">(E-12)</span>, Tezcatl <span class="grid-pos">(C-8)</span></td></tr>
+                <tr><td>West Ronfaure</td><td>3</td><td>Gytrash <span class="grid-pos">(H-6)</span>, Hulder <span class="grid-pos">(G-9)</span>, Jatayu <span class="grid-pos">(F-11)</span></td></tr>
+                <tr><td>West Sarutabaruta</td><td>3</td><td>Agaliarept <span class="grid-pos">(F-11)</span>, Bathin <span class="grid-pos">(G-9)</span>, Berith <span class="grid-pos">(F-11)</span></td></tr>
+                <tr><td>West Sarutabaruta S</td><td>3</td><td>Asura <span class="grid-pos">(J-4)</span>, Selket <span class="grid-pos">(H-6)</span>, Tursas <span class="grid-pos">(F-6)</span></td></tr>
+                <tr><td>Western Altepa Desert</td><td>3</td><td>Kobal <span class="grid-pos">(D-11)</span>, Valefar <span class="grid-pos">(J-7)</span>, Vetis <span class="grid-pos">(G-7)</span></td></tr>
+                <tr><td>Woh Gates</td><td>3</td><td>Atar <span class="grid-pos">(G-8)</span>, Daena <span class="grid-pos">(F-6)</span>, Fravashi <span class="grid-pos">(I-6)</span></td></tr>
+                <tr><td>Xarcabard</td><td>3</td><td>Alichino <span class="grid-pos">(I-7)</span>, Balaam <span class="grid-pos">(F-8)</span>, Daidarabotchi <span class="grid-pos">(I-8)</span></td></tr>
+                <tr><td>Xarcabard S</td><td>4</td><td>Fuxi <span class="grid-pos">(F-7)</span>, Gonggong <span class="grid-pos">(I-9)</span>, Nuwa <span class="grid-pos">(G-8)</span>, Pangu <span class="grid-pos">(I-9)</span></td></tr>
+                <tr><td>Yahse Hunting Grounds</td><td>4</td><td>Bereginya <span class="grid-pos">(J-6)</span>, Devana <span class="grid-pos">(H-6)</span>, Marena <span class="grid-pos">(F-9)</span>, Poludnitsa <span class="grid-pos">(K-7)</span></td></tr>
+                <tr><td>Yhoator Jungle</td><td>3</td><td>Abhoth <span class="grid-pos">(H-7)</span>, Adranos <span class="grid-pos">(G-8)</span>, Shadhavar <span class="grid-pos">(I-7)</span></td></tr>
+                <tr><td>Yorcia Weald</td><td>4</td><td>Ahti <span class="grid-pos">(I-10)</span>, Luonnotar <span class="grid-pos">(J-6)</span>, Pellervo <span class="grid-pos">(G-8)</span>, Sampo <span class="grid-pos">(J-10)</span></td></tr>
+                <tr><td>Yughott Grotto</td><td>3</td><td>Ailill <span class="grid-pos">(F-9)</span>, Bodb <span class="grid-pos">(G-7)</span>, Donn <span class="grid-pos">(J-7)</span></td></tr>
+                <tr><td>Yuhtunga Jungle</td><td>3</td><td>Knucker <span class="grid-pos">(H-6)</span>, Krakatoa <span class="grid-pos">(K-8)</span>, Senmurv <span class="grid-pos">(I-12)</span></td></tr>
+                <tr><td>Zeruhn Mines</td><td>3</td><td>Koschei <span class="grid-pos">(J-9)</span>, Kupala <span class="grid-pos">(I-9)</span>, Radegast <span class="grid-pos">(I-11)</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+</div>
+
+<div style="text-align: center; padding: 2rem;">
+    <a href="elite-hunts.html" class="btn btn-outline">Elite Hunts Detail</a>
+    <a href="scyld-shop.html" class="btn btn-outline" style="margin-left: 1rem;">Scyld Reward Shop</a>
+    <a href="features.html" class="btn btn-outline" style="margin-left: 1rem;">Back to Features</a>
+</div>
 
 <footer class="footer">
     <p>Scythe is a fan-made project and is not affiliated with or endorsed by Square Enix Co., Ltd. FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</p>
@@ -74,6 +375,14 @@
 document.querySelectorAll('.navbar-links a').forEach(link => {
     link.addEventListener('click', () => { document.querySelector('.navbar-links').classList.remove('open'); });
 });
+function filterNMs() {
+    const q = document.getElementById('nmSearch').value.toLowerCase();
+    const rows = document.querySelectorAll('#nmTable tbody tr');
+    rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(q) ? '' : 'none';
+    });
+}
 </script>
 
 </body>

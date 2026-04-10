@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empress's Repair Decree — Scythe FFXI</title>
+    <meta name="description" content="Server-wide crafting event in Aht Urhgan Whitegate. Donate self-crafted materials to earn guild points during the Empress's Repair Decree.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-brand">SCYTHE</a>
+        <button class="mobile-toggle" onclick="document.querySelector('.navbar-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html" class="active">Features</a></li>
+            <li><a href="server-info.html">Server Info</a></li>
+            <li><a href="getting-started.html">Play</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="database.html">Database</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="page-header">
+    <h1 class="page-title">Empress's Repair Decree</h1>
+    <p class="page-subtitle">Server-wide crafting event</p>
+</section>
+
+<div class="section-alt">
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Overview</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>
+            By order of Empress Nashmeira II, all skilled craftsmen are called to aid in
+            Al Zahbi's restoration. The Imperial Herald appears in Aht Urhgan Whitegate
+            twice per week, issuing an emergency repair decree for the city's defenses.
+        </p>
+
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Detail</th><th>Value</th></tr>
+                <tr><td>Location</td><td>Aht Urhgan Whitegate (Imperial Herald NPC)</td></tr>
+                <tr><td>Duration</td><td>45 minutes per event</td></tr>
+                <tr><td>Frequency</td><td>Twice weekly (every 3.5 days)</td></tr>
+                <tr><td>Announcement</td><td>Server-wide at 30, 15, 5, and 1 minute before start</td></tr>
+                <tr><td>Reward</td><td>Guild Points (GP) per accepted item</td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+</div>
+
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">How It Works</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>
+            Each event, one item is chosen at random from each guild's pool. The Imperial Herald
+            posts a list of required materials at the start of the decree.
+        </p>
+        <p>
+            Donate items you have crafted yourself (signed with your character name) to earn
+            guild points. The Empire only accepts materials wrought by the artisan who presents
+            them — purchased items are rejected.
+        </p>
+        <p>
+            HQ crafted items earn a <strong>50% GP bonus</strong>. Server-wide milestone
+            announcements fire at 50, 100, and 200 items donated per guild.
+        </p>
+
+        <h3 style="color: var(--text-bright); margin: 1.5rem 0 0.75rem;">Participating Guilds & GP Rewards</h3>
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Guild</th><th>GP per Item (NQ)</th><th>GP per Item (HQ)</th></tr>
+                <tr><td>Goldsmithing</td><td>600</td><td>900</td></tr>
+                <tr><td>Alchemy</td><td>500</td><td>750</td></tr>
+                <tr><td>Smithing</td><td>500</td><td>750</td></tr>
+                <tr><td>Clothcraft</td><td>400</td><td>600</td></tr>
+                <tr><td>Woodworking</td><td>400</td><td>600</td></tr>
+                <tr><td>Leathercraft</td><td>350</td><td>525</td></tr>
+                <tr><td>Cooking</td><td>300</td><td>450</td></tr>
+                <tr><td>Bonecraft</td><td>300</td><td>450</td></tr>
+            </table>
+        </div>
+
+        <p>
+            GP earned contributes to each guild's point total and unlocks higher-tier
+            guild shop items over time.
+        </p>
+    </div>
+</section>
+
+<div class="section-alt">
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Tips</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <ul class="content-list">
+            <li>Watch for the server announcement — the event starts with a 1-minute warning.</li>
+            <li>Check the Imperial Herald immediately on arrival to see which items are needed this event.</li>
+            <li>HQ items always yield 50% more GP. Worth the extra synth attempt if your skill is high enough.</li>
+            <li>Items must be signed by your own character. Pre-crafting before the event starts is the most efficient approach.</li>
+            <li>Each item donated counts toward guild milestones. Server announcements fire at 50, 100, and 200 per guild.</li>
+        </ul>
+    </div>
+</section>
+</div>
+
+<div style="text-align: center; padding: 2rem;">
+    <a href="features.html" class="btn btn-outline">Back to Features</a>
+</div>
+
+<footer class="footer">
+    <p>Scythe is a fan-made project and is not affiliated with or endorsed by Square Enix Co., Ltd. FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</p>
+    <p style="margin-top: 0.5rem;">Powered by <a href="https://github.com/LandSandBoat/server" target="_blank" rel="noopener">LandSandBoat</a>.</p>
+</footer>
+
+<script>
+document.querySelectorAll('.navbar-links a').forEach(link => {
+    link.addEventListener('click', () => { document.querySelector('.navbar-links').classList.remove('open'); });
+});
+</script>
+
+</body>
+</html>

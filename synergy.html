@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synergy — Scythe FFXI</title>
+    <meta name="description" content="Synergy crafting system fully implemented on Scythe. Synergy Furnaces and Engineers in 17 zones including all major cities and Whitegate.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-brand">SCYTHE</a>
+        <button class="mobile-toggle" onclick="document.querySelector('.navbar-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html" class="active">Features</a></li>
+            <li><a href="server-info.html">Server Info</a></li>
+            <li><a href="getting-started.html">Play</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="database.html">Database</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="page-header">
+    <h1 class="page-title">Synergy</h1>
+    <p class="page-subtitle">Advanced crafting via elemental fusion</p>
+</section>
+
+<div class="section-alt">
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Overview</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>
+            Synergy is a crafting system introduced in Wings of the Goddess that combines
+            materials using elemental energy. Synergy Furnaces and Engineers are available
+            in 17 zones across Vana'diel, including all major cities and Aht Urhgan Whitegate.
+        </p>
+
+        <p>
+            Synergy produces HQ versions of monster suits, event gear, select weapons,
+            and other unique items not obtainable through standard crafting guilds.
+        </p>
+    </div>
+</section>
+</div>
+
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Available Locations</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Zone</th></tr>
+                <tr><td>Aht Urhgan Whitegate</td></tr>
+                <tr><td>Bastok Markets</td></tr>
+                <tr><td>Bastok Mines</td></tr>
+                <tr><td>Chocobo Circuit</td></tr>
+                <tr><td>Kazham</td></tr>
+                <tr><td>Lower Jeuno</td></tr>
+                <tr><td>Metalworks</td></tr>
+                <tr><td>Northern San d'Oria</td></tr>
+                <tr><td>Port Bastok</td></tr>
+                <tr><td>Port Jeuno</td></tr>
+                <tr><td>Port San d'Oria</td></tr>
+                <tr><td>Port Windurst</td></tr>
+                <tr><td>Rabao</td></tr>
+                <tr><td>Southern San d'Oria</td></tr>
+                <tr><td>Tavnazian Safehold</td></tr>
+                <tr><td>Upper Jeuno</td></tr>
+                <tr><td>Windurst Walls</td></tr>
+                <tr><td>Windurst Waters</td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<div style="text-align: center; padding: 2rem;">
+    <a href="features.html" class="btn btn-outline">Back to Features</a>
+</div>
+
+<footer class="footer">
+    <p>Scythe is a fan-made project and is not affiliated with or endorsed by Square Enix Co., Ltd. FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</p>
+    <p style="margin-top: 0.5rem;">Powered by <a href="https://github.com/LandSandBoat/server" target="_blank" rel="noopener">LandSandBoat</a>.</p>
+</footer>
+
+<script>
+document.querySelectorAll('.navbar-links a').forEach(link => {
+    link.addEventListener('click', () => { document.querySelector('.navbar-links').classList.remove('open'); });
+});
+</script>
+
+</body>
+</html>

@@ -617,3 +617,10 @@ img {
         padding: 5rem 1.5rem 3rem;
     }
 }
+
+/* Grid position badges in NM table */
+.grid-pos {
+    color: #6cf;
+    font-size: 0.85em;
+    white-space: nowrap;
+}

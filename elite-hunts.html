@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elite Hunts — Scythe FFXI</title>
-    <meta name="description" content="25 legendary bosses drawn from FFXI's story, reimagined as endgame encounters. The ultimate challenge on Scythe.">
+    <meta name="description" content="Gated elite bosses drawn from FFXI's story. Progressive tier system — no skipping. Elemental Gyves, Humanoid Champions, Special Bosses, and Absolute Virtue.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -28,39 +28,198 @@
 
 <section class="page-header">
     <h1 class="page-title">Elite Hunts</h1>
-    <p class="page-subtitle">25 legendary bosses — the ultimate challenge</p>
+    <p class="page-subtitle">Progressive gated bosses — no skipping</p>
 </section>
 
+<!-- ============ OVERVIEW ============ -->
+<div class="section-alt">
 <section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Overview</h2>
+        <div class="divider"></div>
+    </div>
+
     <div class="content-block">
         <p>
-            Kill all 475 regular hunt NMs and the real challenge begins. 25 legendary
-            bosses — characters drawn from FFXI's own story, reimagined as endgame encounters.
+            Kill all 475 regular hunt NMs and the elite system unlocks. Elite NMs are
+            characters drawn from FFXI's own story — reimagined as open-world endgame encounters
+            with custom dialogue, spawn conditions, and AI.
+        </p>
+        <p>
+            <strong>There is no skipping.</strong> The tiers must be cleared in sequence.
+            You cannot access Humanoid Champions until you've cleared the Elemental Gyves.
+            You cannot reach the Special Bosses without clearing the Champions. Every
+            elite also has its own individual prerequisites — time of day, weather, moon phase,
+            player titles, kill counts in the zone — on top of the tier requirement.
         </p>
 
-        <ul class="content-list">
-            <li><strong>Linear progression</strong> — elites must be cleared in order.
-                Each one unlocks the next. Difficulty escalates from serious to punishing.</li>
-            <li><strong>Story characters as bosses</strong> — Excenmille, Robel-Akbel,
-                Perih Vashai, Prishe, Tenzen, Iroha, Kamlanaut, Balamor, and more. Each
-                has custom dialogue, personality, and weaponskills.</li>
-            <li><strong>Spawn conditions</strong> — some require specific weather, day of
-                the week, nation control, or pre-kill requirements (e.g., kill 50 Orcs in
-                the zone before Excenmille will spawn).</li>
-            <li><strong>Scyld cost</strong> — early elites cost 500-1,000. Mid-tier
-                2,000-5,000. The final boss costs 25,000.</li>
-            <li><strong>3 expansion tiers</strong> — distributed across FFXI's expansions
-                (base game through RoV), each with an elemental seal and two named bosses.</li>
-            <li><strong>The Time Devourer</strong> — elite #25. Requires all 24 previous
-                elites cleared. Multi-phase, form-shifting. Clearing it means you've
-                beaten Scythe.</li>
-        </ul>
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Detail</th><th>Value</th></tr>
+                <tr><td>Entry requirement</td><td>All 475 regular NMs cleared</td></tr>
+                <tr><td>Level</td><td>119 with 15x HP/MP, 5x combat stats</td></tr>
+                <tr><td>Scyld reward</td><td>250 Scyld per kill</td></tr>
+                <tr><td>Progression</td><td>Strict — tiers must be cleared in order</td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+</div>
 
-        <p style="margin-top: 2rem;">
-            <a href="features.html">&larr; Back to Features</a>
+<!-- ============ TIER 4: GYVES ============ -->
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Tier 4 — Elemental Seals (Entry Point)</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>
+            The 8 Elemental Seals are the starting point. Each is bound to a specific zone
+            and a matching elemental family. Kill enough of the right mobs in that zone, then
+            wait for the correct weather condition to force the spawn.
+        </p>
+
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Seal</th><th>Zone</th><th>Kill Requirement</th><th>Spawn Weather</th></tr>
+                <tr><td>Fire Seal</td><td>Den of Rancor</td><td>Fire Elementals</td><td>Hot Spell / Heat Wave</td></tr>
+                <tr><td>Ice Seal</td><td>Fei'Yin</td><td>Ice Elementals / Snolls</td><td>Snow / Blizzards + night</td></tr>
+                <tr><td>Wind Seal</td><td>Mamook</td><td>Air Elementals / Puks</td><td>Wind / Gales</td></tr>
+                <tr><td>Earth Seal</td><td>Halvung</td><td>Earth Elementals</td><td>Dust Storm / Sand Storm + Earthsday</td></tr>
+                <tr><td>Thunder Seal</td><td>Sacrarium</td><td>Thunder Elementals</td><td>Thunder weather</td></tr>
+                <tr><td>Water Seal</td><td>Crawlers' Nest</td><td>Water Elementals</td><td>Rain / Squall + moon &ge;80%</td></tr>
+                <tr><td>Light Seal</td><td>Upper Delkfutt's Tower</td><td>Light Elementals</td><td>Auroras / Stellar Glare + daytime</td></tr>
+                <tr><td>Dark Seal</td><td>Castle Zvahl Keep [S]</td><td>Dark Elementals / Ghosts</td><td>Gloom / Darkness + deep night</td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ============ TIER 3: HUMANOID CHAMPIONS ============ -->
+<div class="section-alt">
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Tier 3 — Humanoid Champions</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>
+            Six story characters from across FFXI's expansions. Each requires at least one
+            specific Elemental Seal cleared, plus unique spawn conditions.
+        </p>
+
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Boss</th><th>Required Seal(s)</th><th>Additional Conditions</th></tr>
+                <tr><td>Perih Vashai</td><td>—</td><td>Solo player + Windsday</td></tr>
+                <tr><td>Excenmille</td><td>—</td><td>Sandy controls region + Lightsday</td></tr>
+                <tr><td>Tenzen</td><td>Thunder Seal</td><td>Lightsday + dawn (5-7am) + Tenzen's Ally title + 25 Empty kills in zone</td></tr>
+                <tr><td>Prishe</td><td>Ice Seal</td><td>Half Moon + Cursed Soup active</td></tr>
+                <tr><td>Robel-Akbel</td><td>Dark Seal</td><td>New Moon + night + Darksday</td></tr>
+                <tr><td>Iroha</td><td>Wind Seal + Tenzen cleared</td><td>Full Moon + dusk</td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+</div>
+
+<!-- ============ TIER 2: SPECIAL BOSSES ============ -->
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Tier 2 — Special Bosses</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>
+            Two bosses that require multiple Seal clears and Champion clears, plus
+            demanding zone-state conditions.
+        </p>
+
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Boss</th><th>Prereqs</th><th>Spawn Condition</th></tr>
+                <tr><td>Balamor</td><td>Earth Seal + Robel-Akbel</td><td>All 10 Broadleaf Palms alive (reives untouched) in Foret de Hennetiel</td></tr>
+                <tr><td>Kamlanaut</td><td>Light Seal + Prishe</td><td>25 Light Elemental kills in Ru'Aun Gardens</td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ============ FINAL: ABSOLUTE VIRTUE ============ -->
+<div class="section-alt">
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Final — Absolute Virtue</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>
+            Clear all field elites and speak to the Hunts Master to spawn Absolute Virtue
+            in Mount Kamihr. AV does not auto-spawn — it is a deliberate act. It uses every
+            job ability in the game on rotating cooldowns.
+        </p>
+        <p>
+            Killing Absolute Virtue resets the entire elite progression. The Seals, the
+            Champions, the Special Bosses, the Supreme Beings — everything clears. You start over.
         </p>
     </div>
 </section>
+</div>
+
+<!-- ============ TIER 1: SUPREME BEINGS ============ -->
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Tier 1 — Supreme Beings</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>
+            Seven of FFXI's most powerful entities, reimagined as the hardest field encounters
+            in the hunt system. Each chain-pops from lower tier kills and requires extreme
+            conditions to spawn.
+        </p>
+
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Boss</th><th>Zone</th><th>Prereqs</th><th>Spawn Condition</th></tr>
+                <tr><td>Promathia</td><td>Grand Palace of Hu'Xzoi</td><td>Hades cleared</td><td>100 kills in zone + Full Moon</td></tr>
+                <tr><td>Shinryu</td><td>Escha-Ru'Aun</td><td>Iroha + Metus cleared</td><td>Player completely unequipped</td></tr>
+                <tr><td>Prov. Watcher</td><td>Abyssea-Misareaux</td><td>All 8 Seals cleared</td><td>4 dragon titles</td></tr>
+                <tr><td>Metus</td><td>Kamihr Drifts</td><td>Balamor + Hades cleared</td><td>All reive palisades dead in zone</td></tr>
+                <tr><td>Cl. of Darkness</td><td>Castle Zvahl Baileys [S]</td><td>Robel-Akbel + Dark Seal</td><td>Medal of Altana + Darksday + night</td></tr>
+                <tr><td>Hades</td><td>Caedarva Mire</td><td>—</td><td>All 6 ToAU kings dead in zone</td></tr>
+                <tr><td>Hades Ascended</td><td>Reisenjima</td><td>Water Seal + Kamlanaut</td><td>30 Poroggo kills (Toad death resets counter)</td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ============ BCNM: TIME DEVOURER ============ -->
+<div class="section-alt">
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">BCNM — Time Devourer</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>
+            Time Devourer is a battlefield encounter, not a field spawn. It requires NPC
+            assistance to access and is separate from the field elite progression.
+        </p>
+    </div>
+</section>
+</div>
+
+<div style="text-align: center; padding: 2rem;">
+    <a href="nm-hunt.html" class="btn btn-outline">Regular NM Hunt</a>
+    <a href="features.html" class="btn btn-outline" style="margin-left: 1rem;">Back to Features</a>
+</div>
 
 <footer class="footer">
     <p>Scythe is a fan-made project and is not affiliated with or endorsed by Square Enix Co., Ltd. FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</p>
