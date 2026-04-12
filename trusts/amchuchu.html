@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amchuchu — Trust Guide — Scythe FFXI</title>
+    <meta name="description" content="Amchuchu trust guide for Scythe FFXI. Job, abilities, role, and tips.">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="../index.html" class="navbar-brand">SCYTHE</a>
+        <button class="mobile-toggle" onclick="document.querySelector('.navbar-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+        <ul class="navbar-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../features.html">Features</a></li>
+            <li><a href="../server-info.html">Server Info</a></li>
+            <li><a href="../getting-started.html">Play</a></li>
+            <li><a href="../rules.html">Rules</a></li>
+            <li><a href="../faq.html">FAQ</a></li>
+            <li><a href="../database.html">Database</a></li>
+            <li><a href="../community.html">Community</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="page-header">
+    <h1 class="page-title">Amchuchu</h1>
+    <p class="page-subtitle">Magic Tank — Rune Fencer</p>
+</section>
+
+<section class="section">
+    <div class="content-block">
+        <h3 style="color: var(--text-bright); margin-bottom: 1rem;">Who is Amchuchu?</h3>
+        <p>Amchuchu is a Mithra adventurer from the Sacred City of Adoulin who appears during the Seekers of Adoulin expansion. Cheerful and energetic, she is a skilled Rune Fencer who uses elemental runes to protect herself and her allies from magical attacks. While most tanks in FFXI focus on absorbing physical hits, Amchuchu specializes in shrugging off spells and magical damage.</p>
+
+        <h3 style="color: var(--text-bright); margin: 2rem 0 1rem;">What They Do</h3>
+        <table class="info-table">
+            <tbody>
+                <tr><td>Role</td><td>Magic Tank</td></tr>
+                <tr><td>Main Job</td><td>Rune Fencer (RUN)</td></tr>
+                <tr><td>Sub Job</td><td>Warrior (WAR)</td></tr>
+                <tr><td>Expansion</td><td>Seekers of Adoulin</td></tr>
+                <tr><td>Login Points Cost</td><td>100 points (Set 4)</td></tr>
+            </tbody>
+        </table>
+
+        <h3 style="color: var(--text-bright); margin: 2rem 0 1rem;">Key Abilities</h3>
+        <ul class="content-list">
+            <li><strong>Runes</strong> — Rune Fencer is a unique job that applies elemental "runes" to itself. Each rune boosts resistance to a specific element. For example, an ice rune increases resistance to ice-based spells. Amchuchu stacks these runes to become highly resistant to whatever element the enemy is throwing at her.</li>
+            <li><strong>Vallation</strong> — An ability that activates her accumulated runes to create a magical barrier. This barrier absorbs incoming magic damage based on which runes she has applied. Think of it as a magic-specific version of a Paladin's Sentinel ability.</li>
+            <li><strong>Flash</strong> — The same enmity-generating spell that Paladins use. It forces the enemy to attack Amchuchu instead of the rest of the party.</li>
+            <li><strong>Provoke</strong> — From her Warrior sub job, this ability instantly generates a burst of enmity. "Provoke" is a classic FFXI tanking tool that taunts the enemy into attacking you. Between Flash and Provoke, Amchuchu has two ways to grab the enemy's attention.</li>
+        </ul>
+
+        <h3 style="color: var(--text-bright); margin: 2rem 0 1rem;">When to Use Amchuchu</h3>
+        <p>Amchuchu shines when you are fighting enemies that rely heavily on magic. Many bosses and Notorious Monsters in FFXI use devastating area-of-effect spells that can wipe out a party. While a Paladin like August excels at soaking physical hits, Amchuchu's rune-based magic resistance lets her laugh off spells that would crush other tanks.</p>
+        <p style="margin-top: 1rem;">Use her when you notice the enemy casting a lot of spells, especially if those spells are all the same element. For general-purpose tanking against physical enemies, August is still the better choice. But for magic-heavy fights, Amchuchu is the specialist you want.</p>
+
+        <h3 style="color: var(--text-bright); margin: 2rem 0 1rem;">Tips for New Players</h3>
+        <ul class="content-list">
+            <li>Rune Fencer is a newer job added in the Seekers of Adoulin expansion. It fills a niche that no other job covers: tanking magic damage. If you see a fight where the healer cannot keep up because of constant spell damage, try swapping in Amchuchu.</li>
+            <li>She is not as durable against physical attacks as a Paladin. Do not use her as your default tank for everything; save her for magic-heavy situations.</li>
+            <li>Pairing Amchuchu with a Paladin tank like August can cover both physical and magical threats, though this uses two Trust slots on tanks, leaving fewer slots for damage dealers.</li>
+        </ul>
+
+        <p style="margin-top: 2rem;">
+            <a href="../trusts.html">&larr; Back to Trust Guide</a>
+        </p>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>Scythe is a fan-made project and is not affiliated with or endorsed by Square Enix Co., Ltd. FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</p>
+    <p style="margin-top: 0.5rem;">Powered by <a href="https://github.com/LandSandBoat/server" target="_blank" rel="noopener">LandSandBoat</a>.</p>
+</footer>
+<script>
+document.querySelectorAll('.navbar-links a').forEach(link => {
+    link.addEventListener('click', () => { document.querySelector('.navbar-links').classList.remove('open'); });
+});
+</script>
+
+</body>
+</html>

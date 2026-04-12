@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust Guide — Scythe FFXI</title>
+    <meta name="description" content="Complete guide to every Trust available through Login Points on Scythe. Roles, jobs, abilities, upgrades, and team-building tips.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .trust-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; }
+        .trust-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; transition: border-color 0.2s; }
+        .trust-card:hover { border-color: var(--accent); }
+        .trust-card h4 { color: var(--text-bright); margin: 0 0 0.25rem 0; }
+        .trust-card .trust-meta { color: var(--text-dim); font-size: 0.85rem; margin-bottom: 0.5rem; }
+        .trust-card p { color: var(--text); font-size: 0.9rem; margin: 0; }
+        .role-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; }
+        .role-tank { background: #1a3a5c; color: #5b9bd5; }
+        .role-healer { background: #1a4a2e; color: #6bcf7f; }
+        .role-support { background: #4a3a1a; color: #d4a54a; }
+        .role-dd { background: #4a1a1a; color: #d45b5b; }
+        .role-magic { background: #3a1a4a; color: #a55bd4; }
+        .role-ranged { background: #1a4a4a; color: #5bd4c0; }
+        .upgrade-note { background: var(--surface); border-left: 3px solid var(--accent); padding: 0.5rem 1rem; margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-dim); }
+        a.trust-card { text-decoration: none; color: inherit; display: block; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-brand">SCYTHE</a>
+        <button class="mobile-toggle" onclick="document.querySelector('.navbar-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html" class="active">Features</a></li>
+            <li><a href="server-info.html">Server Info</a></li>
+            <li><a href="getting-started.html">Play</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="database.html">Database</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="page-header">
+    <h1 class="page-title">Trust Guide</h1>
+    <p class="page-subtitle">Your NPC party members, explained</p>
+</section>
+
+<section class="section">
+    <div class="content-block">
+
+        <h3 style="color: var(--text-bright); margin-bottom: 1rem;">What Are Trusts?</h3>
+        <p>Trusts are NPC companions you can summon to fight alongside you. They fill party roles
+            just like real players &mdash; tanking, healing, dealing damage, and casting buffs. You can
+            have up to <strong>5 trusts</strong> active at once (filling a full party of 6 with you).</p>
+        <p style="margin-top: 0.75rem;">Each trust has a specific <strong>job</strong> and
+            <strong>role</strong>. Some trusts have upgraded <strong>II versions</strong> that are
+            stronger or behave differently. Building a good trust party is the key to soloing
+            most content in FFXI.</p>
+        <p style="margin-top: 0.75rem;">All trusts listed here are available from the
+            <a href="login-points.html">Login Points</a> campaign &mdash; just log in daily
+            and spend your points at the Greeter Moogle.</p>
+
+        <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin: 2rem 0;">
+            <h4 style="color: var(--text-bright); margin: 0 0 0.75rem 0;">Quick Team-Building Tips</h4>
+            <ul class="content-list" style="margin: 0;">
+                <li><strong>Every party needs a healer.</strong> Start with Karaha-Baruha (free at 100 pts) or save for Nashmeira II (the best).</li>
+                <li><strong>A tank makes everything safer.</strong> August is the strongest tank trust in the game. Rughadjeen and Amchuchu are solid budget picks.</li>
+                <li><strong>Support trusts multiply your damage.</strong> Koru-Moru (Haste + Refresh), Ovjang (Haste + Refresh), and Qultada (Corsair rolls) are top-tier.</li>
+                <li><strong>Fill remaining slots with damage.</strong> Zeid II, Prishe II, and Gilgamesh are strong melee. Shantotto II and Ullegore nuke well.</li>
+                <li><strong>II versions are upgrades.</strong> If you see a trust and their II version, the II is almost always better. Get both if you can.</li>
+            </ul>
+        </div>
+
+        <div style="margin: 2rem 0; text-align: center;">
+            <span class="role-badge role-tank">Tank</span>
+            <span class="role-badge role-healer">Healer</span>
+            <span class="role-badge role-support">Support</span>
+            <span class="role-badge role-dd">Melee DD</span>
+            <span class="role-badge role-magic">Magic DD</span>
+            <span class="role-badge role-ranged">Ranged DD</span>
+        </div>
+
+        <!-- ======================== TANKS ======================== -->
+        <h3 style="color: var(--text-bright); margin: 2rem 0 1rem;"><span class="role-badge role-tank">Tank</span> Tanks</h3>
+        <p>Tanks hold the enemy's attention so your party doesn't get hit. They use abilities like Provoke, Flash, and high defense to keep hate.</p>
+
+        <div class="trust-grid">
+            <a href="trusts/august.html" class="trust-card">
+                <h4>August <span class="role-badge role-tank">Tank</span></h4>
+                <div class="trust-meta">Paladin &bull; Seekers of Adoulin</div>
+                <p>The best tank trust in the game. Extremely high defense, uses Flash, Holy II, Cure, and has massive HP. Your go-to tank for any content.</p>
+            </a>
+            <a href="trusts/rughadjeen.html" class="trust-card">
+                <h4>Rughadjeen <span class="role-badge role-tank">Tank</span></h4>
+                <div class="trust-meta">Paladin &bull; Treasures of Aht Urhgan</div>
+                <p>Solid Paladin tank with Cure, Holy, and Fast Cast. One of the Serpent Generals. Reliable for early-to-mid content.</p>
+            </a>
+            <a href="trusts/amchuchu.html" class="trust-card">
+                <h4>Amchuchu <span class="role-badge role-tank">Tank</span></h4>
+                <div class="trust-meta">Rune Fencer / Warrior &bull; Seekers of Adoulin</div>
+                <p>Magic-focused tank using Rune Fencer. Vallation absorbs magic damage. Great against caster enemies where Paladin defense isn't enough.</p>
+            </a>
+            <a href="trusts/halver.html" class="trust-card">
+                <h4>Halver <span class="role-badge role-tank">Tank</span></h4>
+                <div class="trust-meta">Paladin / Warrior &bull; San d'Oria</div>
+                <p>Temple Knight of San d'Oria. Hybrid PLD/WAR tank with both defensive and offensive abilities. Decent all-rounder.</p>
+            </a>
+            <a href="trusts/rahal.html" class="trust-card">
+                <h4>Rahal <span class="role-badge role-tank">Tank</span></h4>
+                <div class="trust-meta">Paladin &bull; San d'Oria</div>
+                <p>Royal Knight commander. Classic Paladin with Cure, Flash, and Holy. Straightforward tank that does the job.</p>
+            </a>
+            <a href="trusts/mnejing.html" class="trust-card">
+                <h4>Mnejing <span class="role-badge role-tank">Tank</span></h4>
+                <div class="trust-meta">Puppetmaster (Automaton) &bull; Treasures of Aht Urhgan</div>
+                <p>Nashmeira's automaton, configured as a PLD-style tank. Uses Provoke and Flash. Unique in that it's a mechanical puppet, not a person.</p>
+            </a>
+        </div>
+
+        <!-- ======================== HEALERS ======================== -->
+        <h3 style="color: var(--text-bright); margin: 2rem 0 1rem;"><span class="role-badge role-healer">Healer</span> Healers</h3>
+        <p>Healers keep the party alive with Cure spells, status removal, and sometimes Raise to revive fallen members. You always want at least one.</p>
+
+        <div class="trust-grid">
+            <a href="trusts/nashmeira_ii.html" class="trust-card">
+                <h4>Nashmeira II <span class="role-badge role-healer">Healer</span></h4>
+                <div class="trust-meta">White Mage &bull; Treasures of Aht Urhgan</div>
+                <p>The best healer trust. Afflatus Solace boosts her Cures, she prioritizes healing, and has Raise. Upgrade from base Nashmeira who was a melee hybrid.</p>
+                <div class="upgrade-note">Upgrade of Nashmeira (not in Login Points). The II version is a dedicated healer instead of a melee/healer hybrid.</div>
+            </a>
+            <a href="trusts/karaha-baruha.html" class="trust-card">
+                <h4>Karaha-Baruha <span class="role-badge role-healer">Healer</span></h4>
+                <div class="trust-meta">White Mage &bull; Windurst</div>
+                <p>Windurst's greatest summoner in the story, but functions as a WHM trust. Cures, bar-element spells, and basic buffs. A solid starter healer available in Set 1.</p>
+            </a>
+            <a href="trusts/cid.html" class="trust-card">
+                <h4>Cid <span class="role-badge role-healer">Healer</span></h4>
+                <div class="trust-meta">Scholar (Light Arts) &bull; Bastok</div>
+                <p>The legendary engineer, here as a Scholar healer. Light Arts mode gives him Cure, Regen, and Raise. A good alternative healer with Scholar's versatility.</p>
+            </a>
+            <a href="trusts/adelheid.html" class="trust-card">
+                <h4>Adelheid <span class="role-badge role-healer">Healer</span></h4>
+                <div class="trust-meta">Scholar &bull; Seekers of Adoulin</div>
+                <p>Switches between Light Arts (healing) and Dark Arts (nuking). Flexible Scholar who can heal when needed and deal magic damage when the party is healthy.</p>
+            </a>
+            <a href="trusts/ferreous_coffin.html" class="trust-card">
+                <h4>Ferreous Coffin <span class="role-badge role-healer">Healer</span></h4>
+                <div class="trust-meta">Paladin (Healer) &bull; Chains of Promathia</div>
+                <p>Despite being a PLD, this trust functions primarily as a healer. Has Cure and Raise. An unusual pick but works in a pinch.</p>
+            </a>
+            <a href="trusts/uka_totlihn.html" class="trust-card">
+                <h4>Uka Totlihn <span class="role-badge role-healer">Healer</span></h4>
+                <div class="trust-meta">Dancer &bull; Wings of the Goddess</div>
+                <p>Dancer healer who uses Waltzes (TP-based heals) instead of MP. Sambas give the party drain effects on melee hits. Great for sustained fights where MP runs low.</p>
+            </a>
+            <a href="trusts/mumor.html" class="trust-card">
+                <h4>Mumor <span class="role-badge role-healer">Healer</span></h4>
+                <div class="trust-meta">Dancer &bull; Wings of the Goddess</div>
+                <p>Another Dancer healer/support. Uses Sambas and Waltzes to sustain the party. The famous Star Onion Brigade dancer from the Wings era.</p>
+                <div class="upgrade-note">Has an upgrade: <a href="trusts/mumor_ii.html">Mumor II</a> shifts to magic DD focus with magic burst damage.</div>
+            </a>
+            <a href="trusts/prishe_ii.html" class="trust-card">
+                <h4>Prishe II <span class="role-badge role-healer">Healer</span></h4>
+                <div class="trust-meta">Monk &bull; Chains of Promathia</div>
+                <p>Primarily a melee DD, but has emergency Cures. Not a main healer &mdash; think of her as a damage dealer who can spot-heal when things get rough.</p>
+            </a>
+        </div>
+
+        <!-- ======================== SUPPORT ======================== -->
+        <h3 style="color: var(--text-bright); margin: 2rem 0 1rem;"><span class="role-badge role-support">Support</span> Support &amp; Buffers</h3>
+        <p>Support trusts buff your party with Haste, Refresh, Protect, Shell, auras, and Corsair rolls. They multiply everyone else's effectiveness.</p>
+
+        <div class="trust-grid">
+            <a href="trusts/koru-moru.html" class="trust-card">
+                <h4>Koru-Moru <span class="role-badge role-support">Support</span></h4>
+                <div class="trust-meta">Red Mage &bull; Windurst</div>
+                <p>Top-tier support. Casts Haste, Refresh, Protect, Shell, and Dispel on enemies. Red Mage buffs are the backbone of any party. One of the most recommended trusts.</p>
+            </a>
+            <a href="trusts/ovjang.html" class="trust-card">
+                <h4>Ovjang <span class="role-badge role-support">Support</span></h4>
+                <div class="trust-meta">Red Mage &bull; Treasures of Aht Urhgan</div>
+                <p>Nashmeira's other automaton. Functions as a RDM support with Haste, Refresh, and nukes. Pairs perfectly with Nashmeira II for a healer+buffer combo.</p>
+            </a>
+            <a href="trusts/king_of_hearts.html" class="trust-card">
+                <h4>King of Hearts <span class="role-badge role-support">Support</span></h4>
+                <div class="trust-meta">Red Mage / White Mage &bull; Chains of Promathia</div>
+                <p>Cardian automaton from Windurst. Primary buffer with RDM spells. Haste, Refresh, and healing backup. Reliable all-around support.</p>
+            </a>
+            <a href="trusts/qultada.html" class="trust-card">
+                <h4>Qultada <span class="role-badge role-support">Support</span></h4>
+                <div class="trust-meta">Corsair &bull; Treasures of Aht Urhgan</div>
+                <p>Corsair who rolls party buffs (Phantom Roll). Rolls give percentage-based boosts to stats, attack, magic, and more. Unique buff source that stacks with everything.</p>
+            </a>
+            <a href="trusts/luzaf.html" class="trust-card">
+                <h4>Luzaf <span class="role-badge role-support">Support</span></h4>
+                <div class="trust-meta">Corsair / Ninja &bull; Treasures of Aht Urhgan</div>
+                <p>Another Corsair with rolls, plus Quick Draw ranged attacks. More offense-oriented than Qultada. The legendary pirate king from the TOAU story.</p>
+            </a>
+            <a href="trusts/star_sibyl.html" class="trust-card">
+                <h4>Star Sibyl <span class="role-badge role-support">Support</span></h4>
+                <div class="trust-meta">Geomancer &bull; Windurst</div>
+                <p>Leader of Windurst. Provides an Indi-Acumen aura (magic attack bonus) to nearby allies. Passive support &mdash; she doesn't fight, just boosts. Unkillable.</p>
+            </a>
+            <a href="trusts/sakura.html" class="trust-card">
+                <h4>Sakura <span class="role-badge role-support">Support</span></h4>
+                <div class="trust-meta">Geomancer &bull; Treasures of Aht Urhgan</div>
+                <p>Geomancer who provides a Regen aura to nearby allies. Passive healing that ticks constantly. Stack her with a real healer for extra safety.</p>
+            </a>
+            <a href="trusts/moogle.html" class="trust-card">
+                <h4>A Moogle <span class="role-badge role-support">Support</span></h4>
+                <div class="trust-meta">Geomancer &bull; General</div>
+                <p>Provides a Refresh aura (MP regen) to nearby allies. Essential for mage-heavy parties. Pair with Sakura for Regen + Refresh passive healing.</p>
+            </a>
+            <a href="trusts/rainemard.html" class="trust-card">
+                <h4>Rainemard <span class="role-badge role-support">Support</span></h4>
+                <div class="trust-meta">Red Mage &bull; Wings of the Goddess</div>
+                <p>Red Mage who specializes in Enspell buffs (elemental damage on melee swings). Good for melee-heavy parties. Also provides standard RDM buffs.</p>
+            </a>
+            <a href="trusts/fablinix.html" class="trust-card">
+                <h4>Fablinix <span class="role-badge role-support">Support</span></h4>
+                <div class="trust-meta">Red Mage &bull; Windurst</div>
+                <p>Goblin Red Mage with ranged attacks. Provides RDM support buffs. A quirky choice &mdash; functional but not top-tier compared to Koru-Moru.</p>
+            </a>
+            <a href="trusts/kupofried.html" class="trust-card">
+                <h4>Kupofried <span class="role-badge role-support">Support</span></h4>
+                <div class="trust-meta">Moogle &bull; Rhapsodies of Vana'diel</div>
+                <p>The Moogle hero of Rhapsodies. Pure support with no combat ability. Provides passive benefits to the party. A lore pick more than a power pick.</p>
+            </a>
+            <a href="trusts/monberaux.html" class="trust-card">
+                <h4>Monberaux <span class="role-badge role-support">Support</span></h4>
+                <div class="trust-meta">Alchemist &bull; Jeuno</div>
+                <p>The doctor from Upper Jeuno. Uses Mix abilities for unique support effects. An unusual trust with niche utility.</p>
+            </a>
+        </div>
+
+        <!-- ======================== MELEE DD ======================== -->
+        <h3 style="color: var(--text-bright); margin: 2rem 0 1rem;"><span class="role-badge role-dd">Melee DD</span> Melee Damage Dealers</h3>
+        <p>Melee DDs get in close and deal physical damage with weapons. They build TP through auto-attacks and spend it on weapon skills.</p>
+
+        <div class="trust-grid">
+            <a href="trusts/zeid.html" class="trust-card">
+                <h4>Zeid <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Dark Knight &bull; Bastok / Zilart</div>
+                <p>The mysterious Galka swordsman. Uses Absorb/Drain spells and dark abilities like Last Resort and Souleater for big damage bursts.</p>
+                <div class="upgrade-note">Has an upgrade: <a href="trusts/zeid_ii.html">Zeid II</a> adds Stun priority and improved behavior.</div>
+            </a>
+            <a href="trusts/zeid_ii.html" class="trust-card">
+                <h4>Zeid II <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Dark Knight &bull; Bastok / Zilart</div>
+                <p>Upgraded Zeid with Stun priority. Interrupts dangerous enemy abilities. Stronger overall damage and smarter ability usage than the base version.</p>
+            </a>
+            <a href="trusts/lion.html" class="trust-card">
+                <h4>Lion <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Thief-like &bull; Zilart</div>
+                <p>The heroine of Rise of the Zilart. Uses Grapeshot (stun WS) and evasion. Agile melee with some ranged capability.</p>
+                <div class="upgrade-note">Has an upgrade: <a href="trusts/lion_ii.html">Lion II</a> adds Utsusemi shadows for survivability.</div>
+            </a>
+            <a href="trusts/lion_ii.html" class="trust-card">
+                <h4>Lion II <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Ranger-like &bull; Zilart</div>
+                <p>Upgraded Lion with Utsusemi shadow images. Harder to kill and deals more consistent damage. A solid all-around melee choice.</p>
+            </a>
+            <a href="trusts/naja_salaheem.html" class="trust-card">
+                <h4>Naja Salaheem <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Thief &bull; Treasures of Aht Urhgan</div>
+                <p>The Salaheem's Sentinels president. Uses Focus, Dodge, and Counterstance for evasion-based melee with her signature weapon Peacebreaker.</p>
+            </a>
+            <a href="trusts/aldo.html" class="trust-card">
+                <h4>Aldo <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Thief &bull; Zilart / Jeuno</div>
+                <p>Leader of the Tenshodo. Sneak Attack and Bully for burst damage. A straightforward Thief damage dealer.</p>
+            </a>
+            <a href="trusts/maximilian.html" class="trust-card">
+                <h4>Maximilian <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Thief / Ninja &bull; Seekers of Adoulin</div>
+                <p>Dual-wielding THF/NIN. High attack speed from dual wield. Good sustained damage from the constant stream of hits.</p>
+            </a>
+            <a href="trusts/gilgamesh.html" class="trust-card">
+                <h4>Gilgamesh <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Samurai &bull; Treasures of Aht Urhgan</div>
+                <p>The emperor of Aht Urhgan himself. Samurai with Hasso and Meditate for fast TP gain and powerful weapon skills. A strong melee pick.</p>
+            </a>
+            <a href="trusts/mildaurion.html" class="trust-card">
+                <h4>Mildaurion <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Samurai &bull; Seekers of Adoulin</div>
+                <p>Adoulin Samurai who excels at opening skillchains. Pair with another DD who can close the chain for massive burst damage.</p>
+            </a>
+            <a href="trusts/morimar.html" class="trust-card">
+                <h4>Morimar <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Samurai &bull; Seekers of Adoulin</div>
+                <p>Samurai who closes skillchains instead of opening them. Pairs well with Mildaurion or any trust that opens chains. Strong finisher.</p>
+            </a>
+            <a href="trusts/tenzen_ii.html" class="trust-card">
+                <h4>Tenzen II <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Samurai &bull; Chains of Promathia</div>
+                <p>Upgraded Tenzen, the katana-wielding hero of Promathia. Ranged capability with Samurai skills. Better AI and damage than the base version.</p>
+            </a>
+            <a href="trusts/noillurie.html" class="trust-card">
+                <h4>Noillurie <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Samurai / Paladin &bull; San d'Oria</div>
+                <p>Hybrid SAM/PLD who uses Hasso and Third Eye plus has some healing. An unusual mix that can off-tank in emergencies.</p>
+            </a>
+            <a href="trusts/d_shantotto.html" class="trust-card">
+                <h4>D. Shantotto <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Black Mage / Dark Knight &bull; Windurst</div>
+                <p>The "dark" Shantotto. Wields a scythe and casts nukes &mdash; a true melee/magic hybrid. Darkness-element focused. Unpredictable but powerful.</p>
+            </a>
+            <a href="trusts/areuhat.html" class="trust-card">
+                <h4>Areuhat <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Dark Knight &bull; San d'Oria</div>
+                <p>Aggressive DRK who uses Berserk, Aggressor, and Blood Rage for raw damage output. All offense, no defense. Hits hard.</p>
+            </a>
+            <a href="trusts/rongelouts.html" class="trust-card">
+                <h4>Rongelouts <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Warrior &bull; Seekers of Adoulin</div>
+                <p>Warrior with Berserk, Aggressor, and Warcry (party attack boost). Straightforward physical damage with a party buff.</p>
+            </a>
+            <a href="trusts/abquhbah.html" class="trust-card">
+                <h4>Abquhbah <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Warrior &bull; Seekers of Adoulin</div>
+                <p>Another Warrior with Berserk and Warcry. Similar to Rongelouts. Pick whichever you like &mdash; they fill the same role.</p>
+            </a>
+            <a href="trusts/lhe_lhangavo.html" class="trust-card">
+                <h4>Lhe Lhangavo <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Monk &bull; Seekers of Adoulin</div>
+                <p>Monk with Dodge, Chakra (self-heal), and Impetus (crit boost). Fast attacks with fists. Good sustained damage.</p>
+            </a>
+            <a href="trusts/lilisette_ii.html" class="trust-card">
+                <h4>Lilisette II <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Dancer &bull; Wings of the Goddess</div>
+                <p>The heroine of Wings of the Goddess, upgraded. Dancer who focuses on melee damage with Sambas and Waltzes for self-sustain.</p>
+            </a>
+            <a href="trusts/mayakov.html" class="trust-card">
+                <h4>Mayakov <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Dancer &bull; Seekers of Adoulin</div>
+                <p>Offensive Dancer with Saber Dance and Feather Step. More damage-focused than the healer Dancers (Uka, Mumor).</p>
+            </a>
+            <a href="trusts/lehko_habhoka.html" class="trust-card">
+                <h4>Lehko Habhoka <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Ranger (hybrid) &bull; Treasures of Aht Urhgan</div>
+                <p>Mithra pirate with double/triple attack. Melee/magic hybrid with Debonair Rush WS. Flashy and effective.</p>
+            </a>
+            <a href="trusts/lhu_mhakaracca.html" class="trust-card">
+                <h4>Lhu Mhakaracca <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Beastmaster / Warrior &bull; Treasures of Aht Urhgan</div>
+                <p>Beastmaster who uses Feral Howl. A niche melee pick with some utility from BST abilities.</p>
+            </a>
+            <a href="trusts/ingrid_ii.html" class="trust-card">
+                <h4>Ingrid II <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">White Mage / Warrior &bull; Wings of the Goddess</div>
+                <p>Upgraded Ingrid who shifted from healer to melee DD/nuker. Despite the WHM job, she prioritizes damage. An unexpected powerhouse.</p>
+            </a>
+            <a href="trusts/darrcuiln.html" class="trust-card">
+                <h4>Darrcuiln <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Beast Form &bull; Seekers of Adoulin</div>
+                <p>Fights in beast form. Immune to most buffs but deals solid damage. A unique trust that doesn't play by normal rules.</p>
+            </a>
+            <a href="trusts/teodor.html" class="trust-card">
+                <h4>Teodor <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Physical DD &bull; Seekers of Adoulin</div>
+                <p>Physical melee with some magic burst capability. A hybrid damage dealer from the Adoulin storyline.</p>
+            </a>
+            <a href="trusts/abenzio.html" class="trust-card">
+                <h4>Abenzio <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Goobbue &bull; Seekers of Adoulin</div>
+                <p>A Goobbue creature trust. High HP with counter attacks. Not a person &mdash; literally a plant monster fighting for you. Fun and tanky.</p>
+            </a>
+            <a href="trusts/babban.html" class="trust-card">
+                <h4>Babban <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Mandragora &bull; Seekers of Adoulin</div>
+                <p>A Mandragora creature trust. Small but scrappy with counter attacks. Another creature trust like Abenzio.</p>
+            </a>
+            <a href="trusts/brygid.html" class="trust-card">
+                <h4>Brygid <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">NPC &bull; Seekers of Adoulin</div>
+                <p>Minimal combat ability. More of a lore/collection trust than a combat pick. Use other DDs for serious content.</p>
+            </a>
+            <a href="trusts/rosulatia.html" class="trust-card">
+                <h4>Rosulatia <span class="role-badge role-dd">Melee DD</span></h4>
+                <div class="trust-meta">Plantoid Caster &bull; Seekers of Adoulin</div>
+                <p>A plant creature that casts Earth-element magic. Unusual trust with niche appeal. Not a top damage pick.</p>
+            </a>
+        </div>
+
+        <!-- ======================== MAGIC DD ======================== -->
+        <h3 style="color: var(--text-bright); margin: 2rem 0 1rem;"><span class="role-badge role-magic">Magic DD</span> Magic Damage Dealers</h3>
+        <p>Magic DDs cast offensive spells. They excel at magic bursting (casting right after a skillchain for bonus damage) and AoE situations.</p>
+
+        <div class="trust-grid">
+            <a href="trusts/shantotto_ii.html" class="trust-card">
+                <h4>Shantotto II <span class="role-badge role-magic">Magic DD</span></h4>
+                <div class="trust-meta">Black Mage &bull; Windurst</div>
+                <p>The upgraded version of FFXI's most iconic character. Pure BLM nuker with Haste self-buff and occasional melee. Powerful magic damage.</p>
+            </a>
+            <a href="trusts/ullegore.html" class="trust-card">
+                <h4>Ullegore <span class="role-badge role-magic">Magic DD</span></h4>
+                <div class="trust-meta">Black Mage &bull; Seekers of Adoulin</div>
+                <p>Dedicated BLM nuker with no melee. Pure spellcasting. Drops big nukes and focuses entirely on magic damage.</p>
+            </a>
+            <a href="trusts/kukki-chebukki.html" class="trust-card">
+                <h4>Kukki-Chebukki <span class="role-badge role-magic">Magic DD</span></h4>
+                <div class="trust-meta">Black Mage &bull; Windurst</div>
+                <p>One of the Chebukki triplets. BLM nuker. Pair with siblings Makki-Chebukki and another mage for a fun all-Tarutaru team.</p>
+            </a>
+            <a href="trusts/kayeel-payeel.html" class="trust-card">
+                <h4>Kayeel-Payeel <span class="role-badge role-magic">Magic DD</span></h4>
+                <div class="trust-meta">Black Mage &bull; Windurst</div>
+                <p>Another Tarutaru BLM. Straightforward nuker. Multiple BLM trusts let you build an all-mage party for magic burst chains.</p>
+            </a>
+            <a href="trusts/leonoyne.html" class="trust-card">
+                <h4>Leonoyne <span class="role-badge role-magic">Magic DD</span></h4>
+                <div class="trust-meta">Black Mage / Paladin &bull; San d'Oria</div>
+                <p>Ice-element hybrid BLM/PLD. Unusual combination gives her some survivability along with her nuking. A tankier mage option.</p>
+            </a>
+            <a href="trusts/robel-akbel.html" class="trust-card">
+                <h4>Robel-Akbel <span class="role-badge role-magic">Magic DD</span></h4>
+                <div class="trust-meta">Red Mage (Nuker) &bull; Seekers of Adoulin</div>
+                <p>Unlike support RDMs, this one focuses on nuking and magic bursts. RDM damage spells with magic burst focus. Good magic DD pick.</p>
+            </a>
+            <a href="trusts/mumor_ii.html" class="trust-card">
+                <h4>Mumor II <span class="role-badge role-magic">Magic DD</span></h4>
+                <div class="trust-meta">Dancer (Nuker) &bull; Wings of the Goddess</div>
+                <p>Upgraded Mumor shifted from Dancer healer to magic burst damage dealer. A complete role change from the base version.</p>
+                <div class="upgrade-note">Base <a href="trusts/mumor.html">Mumor</a> is a Dancer healer. Mumor II is a magic DD &mdash; totally different role.</div>
+            </a>
+        </div>
+
+        <!-- ======================== RANGED DD ======================== -->
+        <h3 style="color: var(--text-bright); margin: 2rem 0 1rem;"><span class="role-badge role-ranged">Ranged DD</span> Ranged Damage Dealers</h3>
+        <p>Ranged DDs attack from a distance with bows, guns, or crossbows. They take less damage from AoE attacks and can keep dealing damage while staying safe.</p>
+
+        <div class="trust-grid">
+            <a href="trusts/semih_lafihna.html" class="trust-card">
+                <h4>Semih Lafihna <span class="role-badge role-ranged">Ranged DD</span></h4>
+                <div class="trust-meta">Ranger &bull; Windurst</div>
+                <p>Pure ranged attacker with extremely high TP gain. Fires weapon skills frequently. One of the better ranged DD trusts.</p>
+            </a>
+            <a href="trusts/najelith.html" class="trust-card">
+                <h4>Najelith <span class="role-badge role-ranged">Ranged DD</span></h4>
+                <div class="trust-meta">Ranger &bull; Treasures of Aht Urhgan</div>
+                <p>Stays at range and fires arrows/bolts. A dedicated ranged attacker who avoids melee entirely. Safe and consistent damage.</p>
+            </a>
+            <a href="trusts/elivira.html" class="trust-card">
+                <h4>Elivira <span class="role-badge role-ranged">Ranged DD</span></h4>
+                <div class="trust-meta">Ranger / Warrior &bull; San d'Oria</div>
+                <p>RNG/WAR hybrid who can both melee and shoot. Flexible damage dealer who adapts to the situation.</p>
+            </a>
+            <a href="trusts/margret.html" class="trust-card">
+                <h4>Margret <span class="role-badge role-ranged">Ranged DD</span></h4>
+                <div class="trust-meta">Ranger / Thief &bull; San d'Oria</div>
+                <p>RNG/THF hybrid with both melee and ranged capability. Can close skillchains from range. Versatile damage dealer.</p>
+            </a>
+            <a href="trusts/makki-chebukki.html" class="trust-card">
+                <h4>Makki-Chebukki <span class="role-badge role-ranged">Ranged DD</span></h4>
+                <div class="trust-meta">Ranger / Black Mage &bull; Windurst</div>
+                <p>The ranged Chebukki triplet. RNG/BLM hybrid who shoots and nukes. Pair with Kukki for a double Chebukki magic party.</p>
+            </a>
+            <a href="trusts/kuyin_hathdenna.html" class="trust-card">
+                <h4>Kuyin Hathdenna <span class="role-badge role-ranged">Ranged DD</span></h4>
+                <div class="trust-meta">Ranged Support &bull; Wings of the Goddess</div>
+                <p>Ranged support NPC who doesn't auto-attack. More of a supportive presence than a damage dealer. Niche pick.</p>
+            </a>
+        </div>
+
+        <p style="margin-top: 3rem; text-align: center;">
+            <a href="login-points.html" class="btn btn-primary">View Login Points Prizes</a>
+            <a href="features.html" class="btn btn-outline" style="margin-left: 1rem;">Back to Features</a>
+        </p>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>Scythe is a fan-made project and is not affiliated with or endorsed by Square Enix Co., Ltd. FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</p>
+    <p style="margin-top: 0.5rem;">Powered by <a href="https://github.com/LandSandBoat/server" target="_blank" rel="noopener">LandSandBoat</a>.</p>
+</footer>
+<script>
+document.querySelectorAll('.navbar-links a').forEach(link => {
+    link.addEventListener('click', () => { document.querySelector('.navbar-links').classList.remove('open'); });
+});
+</script>
+
+</body>
+</html>
