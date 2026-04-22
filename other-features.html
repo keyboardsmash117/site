@@ -18,6 +18,7 @@
             <li><a href="features.html" class="active">Features</a></li>
             <li><a href="server-info.html">Server Info</a></li>
             <li><a href="getting-started.html">Play</a></li>
+            <li><a href="guides.html">Guides</a></li>
             <li><a href="rules.html">Rules</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="database.html">Database</a></li>
@@ -34,17 +35,29 @@
 <section class="section">
     <div class="content-block">
 
+        <div class="howto-block">
+            <span class="howto-label">The central hub</span>
+            <p>Most of what's described below lives in one place: <strong>Chocobo Circuit</strong>,
+                the server's custom hub zone. Warp there at any level by typing <code>!cc</code>.
+                It has the auction house, all 9 crafting-guild material vendors (always open, no
+                rank requirement), a crystal vendor, a crystal storage moogle, the Advanced
+                Support NPC for the Imagery craft buff, and the mission-item shop.</p>
+        </div>
+
         <h3 style="color: var(--text-bright); margin-bottom: 1rem;">Custom Content</h3>
         <ul class="content-list">
-            <li><strong>Hub Crafting Area</strong> — a dedicated crafting hub with
-                four custom NPC types: an <em>Advanced Support</em> NPC that grants
-                15 minutes of any craft's Imagery buff (all 9 crafts: Fishing,
-                Woodworking, Smithing, Goldsmithing, Clothcraft, Leathercraft,
-                Bonecraft, Alchemy, Cooking), a <em>Crystal Vendor</em> stocking all
-                8 crystals and clusters, an <em>Ephemeral Moogle</em> for crystal
-                storage (trade crystals or clusters to deposit), and <em>9 Guild
-                Material Vendors</em> — one per craft, always open, no guild rank
-                required.</li>
+            <li><strong>Hub Crafting Area (Chocobo Circuit)</strong> — four custom NPCs at the
+                hub make all crafting accessible from one zone:
+                <span class="npc-loc"><span class="npc-name">Advanced Support</span></span>
+                grants 15 minutes of any craft's Imagery buff (all 9 crafts: Fishing,
+                Woodworking, Smithing, Goldsmithing, Clothcraft, Leathercraft, Bonecraft,
+                Alchemy, Cooking).
+                <span class="npc-loc"><span class="npc-name">Crystal Vendor</span></span>
+                stocks all 8 crystals and their clusters.
+                <span class="npc-loc"><span class="npc-name">Ephemeral Moogle</span></span>
+                stores crystals — trade any crystals/clusters to deposit, talk to retrieve.
+                <span class="npc-loc"><span class="npc-name">9 Guild Material Vendors</span></span>
+                — one per craft, always open, no guild rank required.</li>
             <li><strong>Campaign Battles</strong> — custom Wings of the Goddess campaign
                 system. Beastmen armies attack WotG zones on a regular schedule. Defeat them
                 to earn Allied Notes. Battles fire automatically across multiple zones.</li>
@@ -61,8 +74,9 @@
             <li><strong>Login Announcements</strong> — welcome messages when players
                 log in, keeping the community informed of news and events.</li>
             <li><strong>Permanent Login Campaign</strong> — earn 500 points on your first
-                login each day, 100 on each subsequent login. Spend points at the Greeter
-                Moogle on Trust Ciphers, mounts, rings, seals, and more.
+                login each Earth day, 100 on each subsequent login. Spend points at the
+                <span class="npc-loc"><span class="npc-name">Greeter Moogle</span> · <span class="npc-zone">Port San d'Oria / Port Bastok / Port Windurst</span></span>
+                on Trust Ciphers, mounts, rings, seals, and more.
                 <a href="login-points.html">Full prize list &rarr;</a></li>
             <li><strong>Trust Alter Ego Extravaganza</strong> — all seasonal trust events
                 are permanently active. Summer, spring, autumn, and New Year trust NPCs
@@ -117,16 +131,46 @@
         </ul>
 
         <h3 style="color: var(--text-bright); margin: 1.5rem 0 1rem;">Custom Commands</h3>
+        <p>Type these in any chat window (say, tell, shout — all work). They only affect you.</p>
         <ul class="content-list">
-            <li><strong><code>!buff</code></strong> — toggle leveling buffs. Levels 1&ndash;98:
-                scaling Regen + Refresh + 250 TP + 200% EXP. Level 99: 200% Capacity
-                Points bonus. Type <code>!buff</code> to toggle on or off.</li>
-            <li><strong><code>!af</code> / <code>!relic</code> / <code>!empy</code></strong>
-                — open shops for your current main job's Artifact, Relic, and Empyrean armor
-                sets (base versions, free).</li>
-            <li><strong><code>!shop</code> / <code>!shop 2</code></strong> — buy Rare/Ex
-                items needed for mission progression at 1 gil each. No more being stuck
-                because you missed a key item.</li>
+            <li><strong><code>!buff</code></strong> — toggle the levelling buff. Levels 1–98:
+                scaling Regen + Refresh + Regain + 200% EXP bonus. Level 99: 200% Capacity
+                Points bonus for Master Level grinding. Toggle on/off with the same command.</li>
+            <li><strong><code>!cc</code></strong> — warp to Chocobo Circuit (the hub zone with
+                auction house, crafting vendors, Advanced Support NPC).</li>
+            <li><strong><code>!headto</code></strong> — open a menu of cities and hub zones to
+                warp to. Covers all three nations, Jeuno, Al Zahbi, Aht Urhgan Whitegate, and
+                more.</li>
+            <li><strong><code>!home</code></strong> — warp to your current home-point. Home-points
+                also restore full HP/MP on touch — no need to rest.</li>
+            <li><strong><code>!ah</code></strong> — open the Auction House from anywhere in
+                Vana'diel (not just in a city).</li>
+            <li><strong><code>!shop</code> / <code>!shop 2</code></strong> — buy Rare/Ex items
+                needed for mission progression at 1 gil each. <code>!shop</code> covers the
+                nations' mission items; <code>!shop 2</code> covers expansions. Fixes the
+                classic "I missed a key item" problem.</li>
+            <li><strong><code>!af</code> / <code>!relic</code> / <code>!empy</code></strong> —
+                open shops for your <em>currently equipped main job's</em> Artifact, Relic, or
+                Empyrean armor set (base versions, free). Change jobs first if you need gear
+                for a different one.</li>
+            <li><strong><code>!rema</code></strong> — shop for base REMA weapons (Relic 75,
+                Mythic 75, Empyrean 80, Ergon for GEO/RUN) for your current main job.
+                <strong>Gated:</strong> nation rank 10 + 10 gate-HNM kills + 5,000,000 gil per
+                weapon. See progress/gate status in the error message if you're not yet eligible.</li>
+            <li><strong><code>!signet</code></strong> (also <code>!sanction</code>,
+                <code>!sigil</code>, <code>!ionis</code>) — apply the matching region buff
+                without hunting down the NPC. Each does the retail version of the buff for the
+                corresponding region.</li>
+            <li><strong><code>!speed &lt;value&gt;</code></strong> — set your movement speed.
+                Default is 125 base / 175 cap.</li>
+            <li><strong><code>!stats &lt;category&gt;</code></strong> — view your stats. Categories
+                include <em>base</em>, <em>offensive</em>, <em>haste</em>, and more. Useful for
+                gear-testing.</li>
+            <li><strong><code>!trustengage &lt;0-2&gt;</code></strong> — set Trust engagement
+                behavior. 0 = never engage, 1 = follow you, 2 = engage on their own.</li>
+            <li><strong><code>!huntstatus</code></strong> — view your NM hunt progress. Shows
+                unique kills, next milestone, recent kills, and what's left to hunt by zone.</li>
+            <li><strong><code>!help</code></strong> — print the full player command list in chat.</li>
         </ul>
 
         <h3 style="color: var(--text-bright); margin: 1.5rem 0 1rem;">Quality of Life</h3>

@@ -18,6 +18,7 @@
             <li><a href="features.html" class="active">Features</a></li>
             <li><a href="server-info.html">Server Info</a></li>
             <li><a href="getting-started.html">Play</a></li>
+            <li><a href="guides.html">Guides</a></li>
             <li><a href="rules.html">Rules</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="database.html">Database</a></li>
@@ -31,11 +32,50 @@
     <p class="page-subtitle">500 hunt NMs — 475 regular + 25 elite across 146 zones</p>
 </section>
 
+<!-- ============ WHAT THIS IS ============ -->
+<section class="section">
+    <div class="content-block">
+        <p>
+            Scythe's core endgame loop. 475 custom Notorious Monsters are scattered across 146
+            zones throughout Vana'diel. Kill them to earn <strong>Scyld</strong> (the hunt currency),
+            fill out your unique-kill counter, and unlock milestone rewards — including
+            Mog Kupons for free job armor and eventually a free REMA weapon of your choice.
+        </p>
+        <p>
+            After you've killed all 475, the <a href="elite-hunts.html">Elite Hunt system</a>
+            unlocks on top — 25 gated bosses drawn from FFXI's story.
+        </p>
+
+        <div class="howto-block">
+            <span class="howto-label">How to start</span>
+            <ol>
+                <li>Reach level 99. Hunt NMs are level-100 with 10× stat multipliers — you need
+                    a real endgame-ready job to fight them (see the
+                    <a href="guides.html">Recommended Paths</a> for a levelling plan).</li>
+                <li>Warp to <strong>Eastern Adoulin</strong> and talk to
+                    <span class="npc-loc"><span class="npc-name">Eppel-Treppel</span></span>
+                    to enter Celennia Memorial Library.</li>
+                <li>Inside the library, talk to the
+                    <span class="npc-loc"><span class="npc-name">NM Hunts Master</span> · <span class="npc-zone">Celennia Memorial Library</span></span>
+                    to view your hunt progress, pick up a daily / hard / weekly bounty, and see
+                    what's left to kill. Use <code>!huntstatus</code> any time in chat for a quick
+                    progress check.</li>
+                <li>Pick a zone from the table further down this page, travel there, find the NM
+                    on its grid square, and kill it.</li>
+                <li>Spend your Scyld at the
+                    <span class="npc-loc"><span class="npc-name">NM Hunt</span> · <span class="npc-zone">Celennia Memorial Library</span></span>
+                    shop NPC (right next to the Hunts Master) on cosmetics and milestone Kupons
+                    — see the <a href="scyld-shop.html">full Scyld shop list</a>.</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
 <!-- ============ REGULAR NMs ============ -->
 <div class="section-alt">
 <section class="section">
     <div class="section-header">
-        <h2 class="section-title">Regular Hunt NMs</h2>
+        <h2 class="section-title">Regular Hunt NMs — The Basics</h2>
         <div class="divider"></div>
     </div>
 
@@ -46,10 +86,11 @@
                 <tr><td>Total NMs</td><td>475</td></tr>
                 <tr><td>Zones</td><td>146 zones across the entire world</td></tr>
                 <tr><td>NMs per zone</td><td>3–4 per zone</td></tr>
-                <tr><td>Level</td><td>100 with 10x HP/MP/stat multipliers</td></tr>
-                <tr><td>Respawn</td><td>9–11 minutes</td></tr>
-                <tr><td>Scyld reward</td><td>25 Scyld per kill (awarded to party)</td></tr>
-                <tr><td>Kill tracking</td><td>Per-character, unique kills only</td></tr>
+                <tr><td>Level</td><td>100 with 10× HP/MP/stat multipliers</td></tr>
+                <tr><td>Respawn</td><td>9–11 minutes after kill (no long ToD camping)</td></tr>
+                <tr><td>Scyld reward</td><td>25 Scyld per kill (awarded to every party member)</td></tr>
+                <tr><td>Kill tracking</td><td>Per-character, unique kills only — re-killing the same NM does not count toward your milestones</td></tr>
+                <tr><td>Claim rule</td><td>First-to-engage gets the kill — no stealing</td></tr>
             </table>
         </div>
 
@@ -57,8 +98,13 @@
             <li><strong>Unique names</strong> — drawn from real-world mythology and folklore.
                 Chelona, Nuckelavee, Girtablilu, Lamashtu, Brollachan. No generic names, no duplicates.</li>
             <li><strong>Distinct models</strong> — every NM uses a unique model. No two share the same appearance.</li>
-            <li><strong>Dynamic entity spawning</strong> — NMs appear in the overworld with no instancing. Walk up and fight them.</li>
-            <li><strong>Scyld currency</strong> — every kill awards Scyld to your party. Spend it at the Hunts Master NPC.</li>
+            <li><strong>Open-world, no instancing</strong> — NMs spawn in the zone itself. Walk up and fight. No pop-items, no flag quests.</li>
+            <li><strong>Scyld currency</strong> — every kill awards 25 Scyld to every party member.
+                Daily and weekly bounties (from the Hunts Master) give bonus Scyld for a
+                randomly assigned NM.</li>
+            <li><strong>Party-safe credit</strong> — if you're in a party, every member earns
+                unique-kill credit individually. Group up freely without worrying about
+                "stealing" progress.</li>
         </ul>
     </div>
 </section>
@@ -72,21 +118,23 @@
     </div>
 
     <div class="content-block">
-        <p>Rewards are granted automatically on reaching each unique kill milestone.</p>
+        <p>At each unique-kill milestone, you get a reward — either auto-awarded on the kill
+        that crosses the threshold (50-kill mount), or redeemable at the NM Hunt shop NPC for
+        a specified Scyld cost. Full pricing is on the <a href="scyld-shop.html">Scyld shop page</a>.</p>
 
         <div class="info-table-wrapper">
             <table class="info-table">
-                <tr><th>Unique Kills</th><th>Reward</th><th>Description</th></tr>
-                <tr><td>50</td><td>Golden Bomb Mount</td><td>Exclusive mount, auto-awarded</td></tr>
-                <tr><td>100</td><td>Kupon I-Skill</td><td>Skill book</td></tr>
-                <tr><td>150</td><td>Kupon AW-WK</td><td>Wildskeeper Reive gear</td></tr>
-                <tr><td>200</td><td>Kupon I-Seal</td><td>Empyrean +1 seals</td></tr>
-                <tr><td>250</td><td>Kupon AW-UWIII</td><td>Unity gear</td></tr>
-                <tr><td>300</td><td>Kupon I-AF119</td><td>Omen scales</td></tr>
-                <tr><td>350</td><td>Kupon AW-GFIII</td><td>Geas Fete gear</td></tr>
-                <tr><td>400</td><td>Kupon I-RME</td><td>300 REMA upgrade materials</td></tr>
-                <tr><td>450</td><td>Kupon W-A119</td><td>Aeonic weapon of your choice</td></tr>
-                <tr><td>500</td><td>Kupon W-RMEA</td><td>Any REMA weapon 119-III</td></tr>
+                <tr><th>Unique Kills</th><th>Reward</th><th>What it is</th></tr>
+                <tr><td>50</td><td>Golden Bomb Mount</td><td>Exclusive mount. Auto-awarded on your 50th unique kill.</td></tr>
+                <tr><td>100</td><td>Kupon I-Skill</td><td>Redeems for a skill-up book (raises a crafting or combat skill).</td></tr>
+                <tr><td>150</td><td>Kupon AW-WK</td><td>Redeems for one Wildskeeper Reive Ambuscade weapon (retail WK Reive rewards).</td></tr>
+                <tr><td>200</td><td>Kupon I-Seal</td><td>Redeems for an Abdhaljs seal — upgrades AF/Relic/Empyrean armor to +2 or +3.</td></tr>
+                <tr><td>250</td><td>Kupon AW-UWIII</td><td>Redeems for one Tier-III Unity Concord armor upgrade.</td></tr>
+                <tr><td>300</td><td>Kupon I-AF119</td><td>Redeems for any Artifact/Relic/Empyrean armor piece at item level 119.</td></tr>
+                <tr><td>350</td><td>Kupon AW-GFIII</td><td>Redeems for one Tier-III Geas Fete (Reisenjima) armor upgrade.</td></tr>
+                <tr><td>400</td><td>Kupon I-RME</td><td>Redeems for 300 Relic/Mythic/Empyrean weapon upgrade materials — enough to finish one weapon upgrade path.</td></tr>
+                <tr><td>450</td><td>Kupon W-A119</td><td>Redeems for any Ambuscade weapon at item level 119.</td></tr>
+                <tr><td>500</td><td>Kupon W-RMEA</td><td><strong>Ultimate reward.</strong> Redeems for any Relic / Mythic / Empyrean / Aeonic weapon at 119-III — completely free, fully upgraded.</td></tr>
             </table>
         </div>
     </div>

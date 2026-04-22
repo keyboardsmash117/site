@@ -18,6 +18,7 @@
             <li><a href="features.html" class="active">Features</a></li>
             <li><a href="server-info.html">Server Info</a></li>
             <li><a href="getting-started.html">Play</a></li>
+            <li><a href="guides.html">Guides</a></li>
             <li><a href="rules.html">Rules</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="database.html">Database</a></li>
@@ -41,27 +42,53 @@
 
     <div class="content-block">
         <p>
-            Kill all 475 regular hunt NMs and the elite system unlocks. Elite NMs are
-            characters drawn from FFXI's own story — reimagined as open-world endgame encounters
-            with custom dialogue, spawn conditions, and AI.
+            Once you've killed all 475 <a href="nm-hunt.html">regular hunt NMs</a>, the Elite
+            system unlocks on top. 25 story characters reimagined as open-world endgame
+            encounters with custom AI, dialogue, and spawn conditions.
         </p>
         <p>
-            <strong>There is no skipping.</strong> The tiers must be cleared in sequence.
-            You cannot access Humanoid Champions until you've cleared the Elemental Gyves.
-            You cannot reach the Special Bosses without clearing the Champions. Every
-            elite also has its own individual prerequisites — time of day, weather, moon phase,
-            player titles, kill counts in the zone — on top of the tier requirement.
+            <strong>There is no skipping.</strong> The tiers must be cleared in order:
+            Seals (Tier 4) → Champions (Tier 3) → Specials (Tier 2) → Supremes (Tier 1) →
+            Absolute Virtue. Every elite also has its own spawn conditions on top of the tier
+            gate — specific Vana'diel days, weather, moon phase, player titles, and zone-state
+            kill counters.
         </p>
+
+        <div class="howto-block">
+            <span class="howto-label">How to start</span>
+            <ol>
+                <li>Finish the 475-NM sweep first. <code>!huntstatus</code> confirms your
+                    eligibility.</li>
+                <li>Talk to the <a href="nm-hunt.html">NM Hunts Master</a> in Celennia Memorial
+                    Library — once eligible, a new menu option appears for the Elite board.</li>
+                <li><strong>Start in Tier 4 — Elemental Seals.</strong> Pick one (Fire Seal at
+                    Cape Teriggan is a common first clear). Fly there, kill the matching
+                    elemental family to build your counter, then wait for the listed weather.</li>
+                <li>Progress upward through the tiers using the tables below — each row lists the
+                    prereq and spawn condition.</li>
+                <li>Elites award <strong>250 Scyld</strong> per kill (10× the regular rate).</li>
+            </ol>
+        </div>
 
         <div class="info-table-wrapper">
             <table class="info-table">
                 <tr><th>Detail</th><th>Value</th></tr>
-                <tr><td>Entry requirement</td><td>All 475 regular NMs cleared</td></tr>
-                <tr><td>Level</td><td>119 with 15x HP/MP, 5x combat stats</td></tr>
-                <tr><td>Scyld reward</td><td>250 Scyld per kill</td></tr>
+                <tr><td>Entry requirement</td><td>All 475 regular NMs cleared (per-character)</td></tr>
+                <tr><td>Level</td><td>119 with 15× HP/MP, 5× combat stats</td></tr>
+                <tr><td>Scyld reward</td><td>250 per kill</td></tr>
                 <tr><td>Progression</td><td>Strict — tiers must be cleared in order</td></tr>
+                <tr><td>Group size</td><td>Tuned for full parties (6); some Tier 4 Seals doable with strong solo setups</td></tr>
             </table>
         </div>
+
+        <p style="margin-top: 1.5rem; color: var(--text-dim); font-size: 0.9rem;">
+            <strong>Terminology:</strong> "Seal" and "Gyve" are used interchangeably — they're
+            the 8 elemental Tier-4 bosses. "Vana'diel day" means the in-game 8-day week
+            (Firesday, Iceday, Windsday, Earthsday, Lightningday, Waterday, Lightsday, Darksday);
+            one full Vana'diel day ≈ 58 real minutes. "Reive" is the Seekers-of-Adoulin
+            outdoor battle system; several spawns require specific Reive state in a zone.
+            "Moon" refers to the 84-day Vana'diel lunar cycle — check <code>/clock</code>.
+        </p>
     </div>
 </section>
 </div>
