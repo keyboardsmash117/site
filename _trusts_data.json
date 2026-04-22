@@ -1,0 +1,5313 @@
+{
+  "aaev": {
+    "doc": "PLD/WHM - Tank with Fast Cast enmity, Chivalry, Palisade local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [
+        "FLASH",
+        "PHALANX",
+        "REPRISAL",
+        "ENLIGHT"
+      ],
+      "spell_families": [
+        "CURE"
+      ],
+      "jas": [
+        "SHIELD_BASH",
+        "SENTINEL",
+        "PALISADE",
+        "RAMPART",
+        "CHIVALRY"
+      ],
+      "mods": [
+        [
+          "CURE_POTENCY",
+          "50"
+        ],
+        [
+          "DMG",
+          "-100"
+        ],
+        [
+          "HPP",
+          "20"
+        ],
+        [
+          "MPP",
+          "50"
+        ],
+        [
+          "ENMITY",
+          "15"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": true,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ENMITY",
+            "5"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "CHIVALRY"
+        ],
+        "mods": [
+          [
+            "ENMITY",
+            "5"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [
+          "RAISE"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ENMITY",
+            "5"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "RAISE"
+        ]
+      }
+    }
+  },
+  "aagk": {
+    "doc": "SAM/DRG - Melee DD with Tachi WS, Jump, self-skillchains local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "HASSO",
+        "MEDITATE",
+        "THIRD_EYE",
+        "JUMP",
+        "HIGH_JUMP"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "aahm": {
+    "doc": "WAR/NIN - Melee DD / Off-Tank with Utsusemi, Provoke local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [
+        "MIGAWARI_ICHI"
+      ],
+      "spell_families": [
+        "UTSUSEMI",
+        "HOJO",
+        "KURAYAMI"
+      ],
+      "jas": [
+        "YONIN",
+        "WARCRY",
+        "PROVOKE",
+        "INNIN",
+        "BERSERK",
+        "AGGRESSOR"
+      ],
+      "mods": [
+        [
+          "HP",
+          "hpBoost"
+        ],
+        [
+          "ENMITY",
+          "15"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": true,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [
+          "HASTE"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "BERSERK"
+        ],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "aamr": {
+    "doc": "BST/THF - Melee DD with Cloudsplitter, SA/TA local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "SNEAK_ATTACK",
+        "TRICK_ATTACK"
+      ],
+      "mods": [
+        [
+          "HP",
+          "hpBoost"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "aatt": {
+    "doc": "BLM/DRK - Nuker with Elemental Seal, Sleepga, magic burst focus local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [
+        "STUN",
+        "ASPIR"
+      ],
+      "spell_families": [
+        "NONE"
+      ],
+      "jas": [
+        "LAST_RESORT"
+      ],
+      "mods": [
+        [
+          "MATT",
+          "30"
+        ],
+        [
+          "MACC",
+          "30"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "abenzio": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [],
+      "mods": [
+        [
+          "HP",
+          "hpBoost"
+        ],
+        [
+          "COUNTER",
+          "15"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "abquhbah": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "BERSERK",
+        "WARCRY",
+        "RESTRAINT"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "adelheid": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "STUN"
+      ],
+      "spell_families": [
+        "CURE",
+        "NONE"
+      ],
+      "jas": [
+        "DARK_ARTS",
+        "ADDENDUM_BLACK"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [
+          "REGEN",
+          "REGEN_II"
+        ],
+        "spell_families": [
+          "REGEN"
+        ],
+        "jas": [
+          "ACCESSION",
+          "LIGHT_ARTS",
+          "DARK_ARTS"
+        ],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "REGEN",
+          "REGEN_II"
+        ]
+      },
+      "2": {
+        "spells": [
+          "HASTE",
+          "REGEN_III",
+          "POISONA",
+          "PARALYNA",
+          "SILENA",
+          "BLINDNA",
+          "CURSNA",
+          "ERASE"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "HASTE",
+          "REGEN_III",
+          "POISONA",
+          "PARALYNA",
+          "SILENA",
+          "BLINDNA",
+          "CURSNA",
+          "ERASE"
+        ]
+      },
+      "3": {
+        "spells": [
+          "RAISE",
+          "REGEN_IV"
+        ],
+        "spell_families": [],
+        "jas": [
+          "CELERITY",
+          "ALACRITY",
+          "SUBLIMATION"
+        ],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "20"
+          ],
+          [
+            "FASTCAST",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "RAISE",
+          "REGEN_IV"
+        ]
+      }
+    }
+  },
+  "ajido-marujido": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "CURE",
+        "NONE",
+        "SLOW"
+      ],
+      "jas": [],
+      "mods": [],
+      "tiered_mods": [
+        "MATT",
+        "MACC"
+      ],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "aldo": {
+    "doc": "THF - Melee DD with SC focus, dual-wield daggers local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "BULLY",
+        "SNEAK_ATTACK",
+        "ASSASSINS_CHARGE"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "aldo_uc": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.ALDO)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "BULLY",
+        "SNEAK_ATTACK"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "amchuchu": {
+    "doc": "RUN/WAR - Magic tank with Vallation, Flash, Foil, Stoneskin, Phalanx local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [
+        "FLASH",
+        "STONESKIN",
+        "PHALANX",
+        "FOIL"
+      ],
+      "spell_families": [
+        "CURE",
+        "REGEN",
+        "PROTECT",
+        "SHELL"
+      ],
+      "jas": [
+        "PROVOKE",
+        "VALLATION",
+        "BATTUTA",
+        "SWORDPLAY",
+        "ONE_FOR_ALL",
+        "VIVACIOUS_PULSE"
+      ],
+      "mods": [
+        [
+          "DMG",
+          "-100"
+        ],
+        [
+          "MEVA",
+          "50"
+        ],
+        [
+          "MDEF",
+          "20"
+        ],
+        [
+          "ENMITY",
+          "25"
+        ],
+        [
+          "FASTCAST",
+          "30"
+        ],
+        [
+          "REFRESH",
+          "5"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": true,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DMG",
+            "-100"
+          ],
+          [
+            "MEVA",
+            "20"
+          ],
+          [
+            "MDEF",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [
+          "BARFIRE",
+          "BARBLIZZARD",
+          "BARAERO"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DMG",
+            "-150"
+          ],
+          [
+            "MEVA",
+            "20"
+          ],
+          [
+            "MDEF",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "VALIANCE"
+        ],
+        "mods": [
+          [
+            "DMG",
+            "-150"
+          ],
+          [
+            "MEVA",
+            "30"
+          ],
+          [
+            "MDEF",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "apururu_uc": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "CURAGA",
+        "POISONA",
+        "PARALYNA",
+        "BLINDNA",
+        "SILENA",
+        "STONA",
+        "VIRUNA",
+        "CURSNA",
+        "ERASE",
+        "STONESKIN"
+      ],
+      "spell_families": [
+        "CURE",
+        "PROTECTRA",
+        "SHELLRA",
+        "HASTE"
+      ],
+      "jas": [
+        "CONVERT"
+      ],
+      "mods": [
+        [
+          "REGAIN",
+          "75"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [
+          "REGEN",
+          "REGEN_II"
+        ],
+        "spell_families": [
+          "REGEN"
+        ],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "REGEN",
+          "REGEN_II"
+        ]
+      },
+      "2": {
+        "spells": [
+          "REGEN_III",
+          "HASTE_II"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "REGEN_III",
+          "HASTE_II"
+        ]
+      },
+      "3": {
+        "spells": [
+          "REGEN_IV",
+          "RAISE"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "REGEN_IV",
+          "RAISE"
+        ]
+      }
+    }
+  },
+  "arciela": {
+    "doc": "RDM - Support buffer (Haste II, Refresh II, Protect/Shell, enfeebles) local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "CURE",
+        "HASTE",
+        "REFRESH",
+        "PROTECT",
+        "SHELL",
+        "SLOW",
+        "PARALYZE"
+      ],
+      "jas": [],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [
+          "HASTE_II"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "HASTE_II"
+        ]
+      },
+      "2": {
+        "spells": [
+          "REFRESH_II",
+          "PHALANX_II"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "REFRESH_II"
+        ]
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "FASTCAST",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "arciela_ii": {
+    "doc": "RDM - Elite support buffer with Haste II, Refresh II, Flurry II, dispel, magic burst nukes local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "HASTE",
+        "REFRESH",
+        "PROTECT",
+        "SHELL",
+        "SLOW",
+        "PARALYZE",
+        "NONE"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "FASTCAST",
+          "30"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [
+          "ADDLE",
+          "GRAVITY"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "FASTCAST",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "ADDLE",
+          "GRAVITY"
+        ]
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "FASTCAST",
+            "15"
+          ],
+          [
+            "MATT",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [
+          "DISPEL"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "DISPEL"
+        ]
+      }
+    }
+  },
+  "areuhat": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "AGGRESSOR",
+        "BERSERK",
+        "BLOOD_RAGE"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "august": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "FLASH",
+        "HOLY_II",
+        "REPRISAL"
+      ],
+      "spell_families": [
+        "CURE"
+      ],
+      "jas": [
+        "PROVOKE",
+        "SENTINEL",
+        "PALISADE",
+        "DIVINE_EMBLEM"
+      ],
+      "mods": [
+        [
+          "DMG",
+          "-500"
+        ],
+        [
+          "ENMITY",
+          "25"
+        ],
+        [
+          "FASTCAST",
+          "20"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": true,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "SHIELDBLOCKRATE",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "SHIELDBLOCKRATE",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [
+          "RAISE"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "SHIELDBLOCKRATE",
+            "60"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "RAISE"
+        ]
+      }
+    }
+  },
+  "ayame": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.AYAME_UC)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "HASSO",
+        "THIRD_EYE",
+        "MEDITATE"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "ayame_uc": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.AYAME)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "HASSO",
+        "MEDITATE",
+        "THIRD_EYE"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "babban": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [],
+      "mods": [
+        [
+          "HPP",
+          "-10"
+        ],
+        [
+          "COUNTER",
+          "25"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "balamor": {
+    "doc": "DRK - Undead DD with dark magical auto-attacks, Absorb spells Note: Undead type \u2014 takes damage from Cure, immune to Drain local spellObject = {}",
+    "base": {
+      "spells": [
+        "ABSORB_STR",
+        "ABSORB_DEX",
+        "ABSORB_VIT",
+        "ABSORB_AGI",
+        "ABSORB_INT",
+        "ABSORB_MND",
+        "ABSORB_CHR"
+      ],
+      "spell_families": [],
+      "jas": [],
+      "mods": [
+        [
+          "HP",
+          "hpBoost"
+        ],
+        [
+          "MPP",
+          "100"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "brygid": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "chacharoon": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [],
+      "mods": [
+        [
+          "HPP",
+          "-10"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "cherukiki": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "SILENCE"
+      ],
+      "spell_families": [
+        "CURE",
+        "REGEN",
+        "PROTECTRA",
+        "SHELLRA",
+        "HASTE",
+        "PARALYZE",
+        "SLOW"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "REGEN",
+          "5"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [
+          "POISONA",
+          "PARALYNA"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "POISONA",
+          "PARALYNA"
+        ]
+      },
+      "2": {
+        "spells": [
+          "SILENA",
+          "BLINDNA",
+          "CURSNA"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "SILENA",
+          "BLINDNA",
+          "CURSNA"
+        ]
+      },
+      "3": {
+        "spells": [
+          "ERASE"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "ERASE"
+        ]
+      }
+    }
+  },
+  "cid": {
+    "doc": "Pattern based on LevelDown Prishe SCH trust. Accession at top (instant JA \u2192 re-eval \u2192 spell fires same cycle) Sublimation via COMBAT_TICK (not gambit) local spellObject = {}",
+    "base": {
+      "spells": [
+        "CURE",
+        "CURE_II",
+        "CURE_III",
+        "CURE_IV",
+        "CURE_V",
+        "CURE_VI",
+        "REGEN",
+        "REGEN_II",
+        "REGEN_III",
+        "REGEN_IV",
+        "REGEN_V",
+        "HASTE",
+        "HASTE_II",
+        "PROTECT_V",
+        "SHELL_V",
+        "STONESKIN",
+        "BLINK",
+        "AQUAVEIL",
+        "POISONA",
+        "PARALYNA",
+        "SILENA",
+        "BLINDNA",
+        "CURSNA",
+        "ERASE",
+        "RAISE",
+        "RAISE_II",
+        "ADLOQUIUM",
+        "FIRESTORM",
+        "HAILSTORM",
+        "WINDSTORM",
+        "SANDSTORM",
+        "THUNDERSTORM",
+        "RAINSTORM",
+        "VOIDSTORM",
+        "AURORASTORM"
+      ],
+      "spell_families": [
+        "CURE"
+      ],
+      "jas": [
+        "LIGHT_ARTS",
+        "ADDENDUM_WHITE",
+        "ACCESSION",
+        "PERPETUANCE",
+        "CELERITY"
+      ],
+      "mods": [
+        [
+          "CURE_POTENCY",
+          "30"
+        ],
+        [
+          "FASTCAST",
+          "80"
+        ],
+        [
+          "REFRESH",
+          "5"
+        ],
+        [
+          "MND",
+          "30"
+        ],
+        [
+          "ENH_MAGIC_DURATION",
+          "100"
+        ],
+        [
+          "REGEN_DURATION",
+          "100"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": [
+        "CURE",
+        "CURE_II",
+        "CURE_III",
+        "CURE_IV",
+        "CURE_V",
+        "CURE_VI",
+        "REGEN",
+        "REGEN_II",
+        "REGEN_III",
+        "REGEN_IV",
+        "REGEN_V",
+        "HASTE",
+        "HASTE_II",
+        "PROTECT_V",
+        "SHELL_V",
+        "STONESKIN",
+        "BLINK",
+        "AQUAVEIL",
+        "POISONA",
+        "PARALYNA",
+        "SILENA",
+        "BLINDNA",
+        "CURSNA",
+        "ERASE",
+        "RAISE",
+        "RAISE_II",
+        "ADLOQUIUM",
+        "FIRESTORM",
+        "HAILSTORM",
+        "WINDSTORM",
+        "SANDSTORM",
+        "THUNDERSTORM",
+        "RAINSTORM",
+        "VOIDSTORM",
+        "AURORASTORM"
+      ]
+    },
+    "tiers": {
+      "1": {
+        "spells": [
+          "FIRESTORM_II",
+          "HAILSTORM_II",
+          "WINDSTORM_II",
+          "SANDSTORM_II",
+          "THUNDERSTORM_II",
+          "RAINSTORM_II",
+          "VOIDSTORM_II",
+          "AURORASTORM_II"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "FIRESTORM_II",
+          "HAILSTORM_II",
+          "WINDSTORM_II",
+          "SANDSTORM_II",
+          "THUNDERSTORM_II",
+          "RAINSTORM_II",
+          "VOIDSTORM_II",
+          "AURORASTORM_II"
+        ]
+      },
+      "2": {
+        "spells": [
+          "EMBRAVA"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "EMBRAVA"
+        ]
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "cornelia": {
+    "doc": "Passive support trust \u2014 Indi-Haste aura Retail: Haste+, Accuracy+, Ranged Accuracy+, Magic Accuracy+ Does not fight, does not cast, cannot be interacted with. local spellObject = {}",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [],
+      "mods": [
+        [
+          "ACC",
+          "20"
+        ],
+        [
+          "RACC",
+          "20"
+        ],
+        [
+          "MACC",
+          "20"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "curilla": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "FLASH"
+      ],
+      "spell_families": [
+        "CURE"
+      ],
+      "jas": [
+        "PROVOKE",
+        "SENTINEL"
+      ],
+      "mods": [
+        [
+          "DMG",
+          "-50"
+        ],
+        [
+          "ENMITY",
+          "15"
+        ],
+        [
+          "MPP",
+          "30"
+        ],
+        [
+          "CURE_POTENCY",
+          "25"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": true,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "PALISADE"
+        ],
+        "mods": [
+          [
+            "DEF",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "RAMPART"
+        ],
+        "mods": [
+          [
+            "DEF",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "SHIELD_BASH"
+        ],
+        "mods": [
+          [
+            "DEF",
+            "40"
+          ],
+          [
+            "CURE_POTENCY",
+            "25"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "d_shantotto": {
+    "doc": "BLM/DRK - Scythe melee + nuke hybrid, darkness-element focus local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "NONE"
+      ],
+      "jas": [
+        "LAST_RESORT",
+        "SOULEATER"
+      ],
+      "mods": [
+        [
+          "MATT",
+          "20"
+        ],
+        [
+          "MACC",
+          "20"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "darrcuiln": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [],
+      "mods": [
+        [
+          "HP",
+          "hpBoost"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "elivira": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "BARRAGE",
+        "DOUBLE_SHOT",
+        "BERSERK",
+        "DECOY_SHOT"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "excenmille": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.EXCENMILLE_S)",
+    "base": {
+      "spells": [
+        "FLASH"
+      ],
+      "spell_families": [
+        "CURE"
+      ],
+      "jas": [
+        "PROVOKE",
+        "SENTINEL"
+      ],
+      "mods": [
+        [
+          "STORETP",
+          "25"
+        ],
+        [
+          "DMG",
+          "-50"
+        ],
+        [
+          "ENMITY",
+          "15"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": true,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "PALISADE"
+        ],
+        "mods": [
+          [
+            "DEF",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "RAMPART"
+        ],
+        "mods": [
+          [
+            "DEF",
+            "30"
+          ],
+          [
+            "STORETP",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "SHIELD_BASH"
+        ],
+        "mods": [
+          [
+            "DEF",
+            "40"
+          ],
+          [
+            "STORETP",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "excenmille_s": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.EXCENMILLE)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "BERSERK",
+        "AGGRESSOR"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "fablinix": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "STUN",
+        "CURE",
+        "ENWATER"
+      ],
+      "spell_families": [
+        "CURE"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "MPP",
+          "250"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "ferreous_coffin": {
+    "doc": "Auto Refresh II (Cleric's Bliaut +2). HP-10%, MP+35% Will only cast Raise III on KO party members in casting range. Will only cast status ailment removal spells on the player with the highest enmity. ",
+    "base": {
+      "spells": [
+        "CURE",
+        "ERASE",
+        "HASTE",
+        "POISONA",
+        "PARALYNA",
+        "BLINDNA",
+        "SILENA",
+        "STONA",
+        "VIRUNA",
+        "CURSNA"
+      ],
+      "spell_families": [
+        "CURE",
+        "RAISE"
+      ],
+      "jas": [
+        "DIVINE_SEAL"
+      ],
+      "mods": [
+        [
+          "REFRESH",
+          "2"
+        ],
+        [
+          "ENHANCES_CURSNA",
+          "20"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "15"
+          ],
+          [
+            "ENHANCES_CURSNA",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [
+          "RAISE_II"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "15"
+          ],
+          [
+            "ENHANCES_CURSNA",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "RAISE_II"
+        ]
+      },
+      "3": {
+        "spells": [
+          "RAISE_III"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "20"
+          ],
+          [
+            "ENHANCES_CURSNA",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "RAISE_III"
+        ]
+      }
+    }
+  },
+  "flaviria_uc": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "BERSERK",
+        "ANGON",
+        "JUMP",
+        "HIGH_JUMP",
+        "SUPER_JUMP"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "gadalar": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "NONE"
+      ],
+      "jas": [],
+      "mods": [],
+      "tiered_mods": [
+        "MATT",
+        "MACC"
+      ],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "gessho": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "UTSUSEMI",
+        "KURAYAMI",
+        "HOJO"
+      ],
+      "jas": [
+        "PROVOKE",
+        "YONIN"
+      ],
+      "mods": [
+        [
+          "MEVA",
+          "30"
+        ],
+        [
+          "ENMITY",
+          "15"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": true,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [
+          "MIGAWARI_ICHI"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "FASTCAST",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "MIGAWARI_ICHI"
+        ]
+      },
+      "2": {
+        "spells": [
+          "UTSUSEMI_SAN"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "EVA",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "UTSUSEMI_SAN"
+        ]
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "EVA",
+            "30"
+          ],
+          [
+            "FASTCAST",
+            "20"
+          ],
+          [
+            "ENMITY",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "gilgamesh": {
+    "doc": "SAM - Melee DD with Tachi WS, Hasso, Meditate, Sekkanoki, self-skillchains local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "HASSO",
+        "MEDITATE",
+        "THIRD_EYE",
+        "HAGAKURE",
+        "SEKKANOKI"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "halver": {
+    "doc": "PLD/WAR - Polearm tank/DD hybrid, Provoke, Sentinel, Cure, Flash local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [
+        "FLASH"
+      ],
+      "spell_families": [
+        "CURE"
+      ],
+      "jas": [
+        "PROVOKE",
+        "BERSERK",
+        "SENTINEL",
+        "RAMPART"
+      ],
+      "mods": [
+        [
+          "MPP",
+          "30"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": true,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "CURE_POTENCY",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "i_shield_uc": {
+    "doc": "WAR/MNK - Melee DD with Berserk, Aggressor, Warcry local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "PROVOKE",
+        "WARCRY",
+        "BLOOD_RAGE",
+        "RESTRAINT",
+        "TOMAHAWK"
+      ],
+      "mods": [],
+      "tiered_mods": [
+        "DMG"
+      ],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "ingrid": {
+    "doc": "WHM - Hybrid divine caster with Banish, Haste, Cursna local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [
+        "HASTE",
+        "CURSNA"
+      ],
+      "spell_families": [
+        "CURE",
+        "BANISH"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "REFRESH",
+          "3"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "ingrid_ii": {
+    "doc": "WHM/WAR - Melee DD / Support hybrid, Banish, Cursna, Holy magic burst local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [
+        "CURSNA"
+      ],
+      "spell_families": [
+        "NONE",
+        "BANISH"
+      ],
+      "jas": [],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "iroha": {
+    "doc": "SAM/BLM - Melee DD with Protectra/Shellra support local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "PROTECTRA",
+        "SHELLRA"
+      ],
+      "jas": [
+        "HASSO",
+        "THIRD_EYE",
+        "HAGAKURE",
+        "MEDITATE"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "iroha_ii": {
+    "doc": "SAM/WHM - Melee DD with self-skillchains, Protectra/Shellra, Flare II magic burst local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "PROTECTRA",
+        "SHELLRA",
+        "NONE"
+      ],
+      "jas": [
+        "HASSO",
+        "THIRD_EYE",
+        "MEDITATE"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "iron_eater": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "PROVOKE",
+        "BERSERK",
+        "RESTRAINT"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "jakoh_uc": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "CONSPIRATOR",
+        "FEINT",
+        "SNEAK_ATTACK"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "joachim": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "POISONA",
+        "PARALYNA",
+        "BLINDNA",
+        "SILENA",
+        "STONA",
+        "VIRUNA",
+        "CURSNA"
+      ],
+      "spell_families": [
+        "MARCH",
+        "MAGES_BALLAD",
+        "CURE"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "REFRESH",
+          "3"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "SONG_DURATION_BONUS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "SONG_DURATION_BONUS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [
+          "SENTINELS_SCHERZO"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "SONG_DURATION_BONUS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "SENTINELS_SCHERZO"
+        ]
+      }
+    }
+  },
+  "karaha-baruha": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "CURSNA",
+        "PARALYNA",
+        "BLINDNA",
+        "SILENA",
+        "STONA",
+        "VIRUNA"
+      ],
+      "spell_families": [
+        "CURE",
+        "PROTECTRA",
+        "SHELLRA",
+        "HASTE"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "REFRESH",
+          "3"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MPP",
+            "30"
+          ],
+          [
+            "CURE_POTENCY",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MPP",
+            "30"
+          ],
+          [
+            "CURE_POTENCY",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MPP",
+            "40"
+          ],
+          [
+            "CURE_POTENCY",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "kayeel-payeel": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "NONE"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "MATT",
+          "power"
+        ],
+        [
+          "MACC",
+          "power"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "king_of_hearts": {
+    "doc": "RDM/WHM - Support buffer with Composure (extended enhancing), Haste II, Refresh II, Phalanx II local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [
+        "ERASE",
+        "POISONA",
+        "PARALYNA",
+        "BLINDNA",
+        "SILENA",
+        "CURSNA"
+      ],
+      "spell_families": [
+        "CURE",
+        "HASTE",
+        "REFRESH",
+        "PHALANX",
+        "PROTECT",
+        "SHELL",
+        "DIA",
+        "NONE"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "FASTCAST",
+          "20"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [
+          "REFRESH_III"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "FASTCAST",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "REFRESH_III"
+        ]
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "FASTCAST",
+            "10"
+          ],
+          [
+            "MND",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [
+          "TEMPER"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "FASTCAST",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "TEMPER"
+        ]
+      }
+    }
+  },
+  "klara": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "PROVOKE",
+        "BERSERK",
+        "AGGRESSOR",
+        "WARCRY"
+      ],
+      "mods": [],
+      "tiered_mods": [
+        "DOUBLE_ATTACK",
+        "STORETP"
+      ],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "koru-moru": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "PHALANX_II",
+        "DISPEL"
+      ],
+      "spell_families": [
+        "CURE",
+        "HASTE",
+        "REFRESH",
+        "FLURRY",
+        "DIA",
+        "SLOW",
+        "DISTRACT",
+        "PROTECT",
+        "SHELL"
+      ],
+      "jas": [
+        "CONVERT"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "FASTCAST",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "FASTCAST",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "FASTCAST",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "kukki-chebukki": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "NONE"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "MATT",
+          "power"
+        ],
+        [
+          "MACC",
+          "power"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "kupipi": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "CURE",
+        "POISONA",
+        "PARALYNA",
+        "BLINDNA",
+        "SILENA",
+        "STONA",
+        "VIRUNA",
+        "CURSNA",
+        "ERASE",
+        "FLASH"
+      ],
+      "spell_families": [
+        "CURE",
+        "PROTECTRA",
+        "SHELLRA",
+        "PARALYZE",
+        "SLOW"
+      ],
+      "jas": [
+        "AFFLATUS_SOLACE",
+        "DIVINE_SEAL"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [
+          "REGEN",
+          "REGEN_II"
+        ],
+        "spell_families": [
+          "REGEN"
+        ],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "REGEN",
+          "REGEN_II"
+        ]
+      },
+      "2": {
+        "spells": [
+          "REGEN_III"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "REGEN_III"
+        ]
+      },
+      "3": {
+        "spells": [
+          "REGEN_IV",
+          "HASTEGA"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "REGEN_IV",
+          "HASTEGA"
+        ]
+      }
+    }
+  },
+  "kupofried": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "kuyin_hathdenna": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "lehko_habhoka": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "NONE"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "MACC",
+          "power"
+        ],
+        [
+          "DOUBLE_ATTACK",
+          "15"
+        ],
+        [
+          "TRIPLE_ATTACK",
+          "10"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "leonoyne": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "NONE"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "MPP",
+          "25"
+        ],
+        [
+          "ENSPELL_DMG",
+          "30"
+        ],
+        [
+          "MATT",
+          "power"
+        ],
+        [
+          "MACC",
+          "power"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "lhe_lhangavo": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "DODGE",
+        "CHAKRA",
+        "IMPETUS",
+        "FOCUS",
+        "PROVOKE"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "lhu_mhakaracca": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "BERSERK",
+        "AGGRESSOR",
+        "FERAL_HOWL"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "lilisette": {
+    "doc": "DNC - Support with healing waltz and samba TP moves local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "QUICKSTEP",
+        "VIOLENT_FLOURISH"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "WALTZ_POTENCY",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "WALTZ_POTENCY",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "DIVINE_WALTZ"
+        ],
+        "mods": [
+          [
+            "WALTZ_POTENCY",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "lilisette_ii": {
+    "doc": "DNC/WAR - Melee DD with fast TP, SC focus, Rousing Samba crit buff local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "QUICKSTEP"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "BOX_STEP"
+        ],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "STUTTER_STEP"
+        ],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "CLIMACTIC_FLOURISH"
+        ],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "lion": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.LION_II)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "lion_ii": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.LION)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "UTSUSEMI"
+      ],
+      "jas": [],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "luzaf": {
+    "doc": "COR/NIN - Melee DD with sword + gun, SC opener, no Phantom Roll local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "QUICK_DRAW",
+        "TRIPLE_SHOT"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "WIZARDS_ROLL"
+        ],
+        "mods": [],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "EVOKERS_ROLL"
+        ],
+        "mods": [],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "WARLOCKS_ROLL"
+        ],
+        "mods": [],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "maat": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.MAAT_UC)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "MANTRA",
+        "FORMLESS_STRIKES",
+        "PERFECT_COUNTER"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "maat_uc": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.MAAT)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "CHAKRA",
+        "COUNTERSTANCE",
+        "IMPETUS"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "makki-chebukki": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "BARRAGE",
+        "SHARPSHOT",
+        "FLASHY_SHOT"
+      ],
+      "mods": [
+        [
+          "MPP",
+          "100"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "margret": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "BARRAGE",
+        "SHARPSHOT",
+        "DOUBLE_SHOT",
+        "DECOY_SHOT"
+      ],
+      "mods": [],
+      "tiered_mods": [
+        "STORETP"
+      ],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "matsui-p": {
+    "doc": "NIN/BLM \u2014 Katana melee + elemental ninjutsu + BLM magic bursts Uses Innin, Futae, Migawari, Kakka/Myoshu self-buffs Double MB: ninjutsu then BLM nuke on skillchain local spellObject = {}",
+    "base": {
+      "spells": [
+        "MIGAWARI_ICHI",
+        "KAKKA_ICHI",
+        "MYOSHU_ICHI",
+        "STUN"
+      ],
+      "spell_families": [
+        "UTSUSEMI",
+        "NONE"
+      ],
+      "jas": [
+        "INNIN",
+        "FUTAE"
+      ],
+      "mods": [
+        [
+          "MATT",
+          "30"
+        ],
+        [
+          "MACC",
+          "40"
+        ],
+        [
+          "STORE_TP",
+          "20"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": [
+        "KAKKA_ICHI",
+        "MYOSHU_ICHI"
+      ]
+    },
+    "tiers": {}
+  },
+  "maximilian": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [],
+      "mods": [],
+      "tiered_mods": [
+        "TRIPLE_ATTACK",
+        "DOUBLE_ATTACK"
+      ],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "mayakov": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "SABER_DANCE",
+        "FEATHER_STEP",
+        "CLIMACTIC_FLOURISH"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "HEALING_WALTZ"
+        ],
+        "mods": [
+          [
+            "ATT",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "DIVINE_WALTZ"
+        ],
+        "mods": [
+          [
+            "ATT",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "REVERSE_FLOURISH"
+        ],
+        "mods": [
+          [
+            "ATT",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "mihli_aliapoh": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "CURE",
+        "POISONA",
+        "PARALYNA",
+        "BLINDNA",
+        "SILENA",
+        "STONA",
+        "VIRUNA",
+        "CURSNA",
+        "ERASE"
+      ],
+      "spell_families": [
+        "CURE",
+        "PROTECTRA",
+        "SHELLRA",
+        "PARALYZE",
+        "SLOW"
+      ],
+      "jas": [
+        "AFFLATUS_SOLACE",
+        "DIVINE_SEAL"
+      ],
+      "mods": [
+        [
+          "REFRESH",
+          "3"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [
+          "BLINK"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "BLINK"
+        ]
+      },
+      "2": {
+        "spells": [
+          "STONESKIN"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ATT",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "STONESKIN"
+        ]
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ATT",
+            "20"
+          ],
+          [
+            "DEF",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "mildaurion": {
+    "doc": "https://ffxiclopedia.fandom.com/wiki/Trust:_Mildaurion https://www.bg-wiki.com/ffxi/Cipher:_Mildaurion From wikis: \"Tries to open skillchains when the player reaches 1500 TP. Does not try to open skil",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [],
+      "mods": [
+        [
+          "MPP",
+          "100"
+        ]
+      ],
+      "tiered_mods": [
+        "DOUBLE_ATTACK"
+      ],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "mnejing": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "FLASH"
+      ],
+      "spell_families": [],
+      "jas": [
+        "PROVOKE",
+        "SENTINEL",
+        "SHIELD_BASH"
+      ],
+      "mods": [
+        [
+          "DMG",
+          "-80"
+        ],
+        [
+          "ENMITY",
+          "15"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": true,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [
+          "CURE",
+          "CURE_II",
+          "CURE_III",
+          "CURE_IV"
+        ],
+        "spell_families": [
+          "CURE"
+        ],
+        "jas": [],
+        "mods": [],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "CURE",
+          "CURE_II",
+          "CURE_III",
+          "CURE_IV"
+        ]
+      },
+      "2": {
+        "spells": [
+          "DISPEL"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DEF",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "DISPEL"
+        ]
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "SHIELDBLOCKRATE",
+            "30"
+          ],
+          [
+            "DEF",
+            "30"
+          ],
+          [
+            "HP",
+            "hpBoost"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "monberaux": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MND",
+            "15"
+          ],
+          [
+            "VIT",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MND",
+            "15"
+          ],
+          [
+            "VIT",
+            "15"
+          ],
+          [
+            "FASTCAST",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MND",
+            "20"
+          ],
+          [
+            "VIT",
+            "20"
+          ],
+          [
+            "FASTCAST",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "moogle": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "morimar": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [],
+      "mods": [
+        [
+          "HP",
+          "hpBoost"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "mumor": {
+    "doc": "local spellObject = {} Define the main jobs with access to primary healing used to toggle Samba type local healingJobs =",
+    "base": {
+      "spells": [
+        "UKA_TOTLIHN"
+      ],
+      "spell_families": [],
+      "jas": [
+        "SABER_DANCE",
+        "STUTTER_STEP",
+        "VIOLENT_FLOURISH",
+        "HASTE_SAMBA",
+        "DRAIN_SAMBA"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "CURING_WALTZ_II"
+        ],
+        "mods": [],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "CURING_WALTZ_III"
+        ],
+        "mods": [],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "DIVINE_WALTZ"
+        ],
+        "mods": [],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "mumor_ii": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.MUMOR)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "NONE"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "HPP",
+          "15"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "naja_salaheem": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.NAJA_UC)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "FOCUS",
+        "DODGE",
+        "COUNTERSTANCE"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "naja_uc": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.NAJA_SALAHEEM)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "FOCUS",
+        "DODGE",
+        "COUNTERSTANCE"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "najelith": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "naji": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "PROVOKE",
+        "BERSERK",
+        "WARCRY"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "nanaa_mihgo": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "BULLY",
+        "SNEAK_ATTACK",
+        "ASSASSINS_CHARGE"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "nashmeira": {
+    "doc": "PUP/WHM - Melee with light healing (Cure, Erase, Poisona) local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [
+        "POISONA",
+        "PARALYNA",
+        "BLINDNA",
+        "SILENA",
+        "STONA",
+        "VIRUNA",
+        "CURSNA",
+        "ERASE"
+      ],
+      "spell_families": [
+        "CURE"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "REFRESH",
+          "3"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "nashmeira_ii": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.NASHMEIRA)",
+    "base": {
+      "spells": [
+        "POISONA",
+        "PARALYNA",
+        "BLINDNA",
+        "SILENA",
+        "STONA",
+        "VIRUNA",
+        "CURSNA",
+        "ERASE"
+      ],
+      "spell_families": [
+        "CURE",
+        "CURAGA"
+      ],
+      "jas": [
+        "AFFLATUS_SOLACE"
+      ],
+      "mods": [
+        [
+          "REFRESH",
+          "3"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [
+          "HASTE"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "15"
+          ],
+          [
+            "FASTCAST",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "HASTE"
+        ]
+      },
+      "2": {
+        "spells": [
+          "REFRESH",
+          "HASTE_II"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "15"
+          ],
+          [
+            "FASTCAST",
+            "10"
+          ],
+          [
+            "CONSERVE_MP",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "REFRESH",
+          "HASTE_II"
+        ]
+      },
+      "3": {
+        "spells": [
+          "PHALANX",
+          "RAISE"
+        ],
+        "spell_families": [],
+        "jas": [
+          "CONVERT"
+        ],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "20"
+          ],
+          [
+            "FASTCAST",
+            "10"
+          ],
+          [
+            "CONSERVE_MP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "PHALANX",
+          "RAISE"
+        ]
+      }
+    }
+  },
+  "noillurie": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "CURE"
+      ],
+      "jas": [
+        "HASSO",
+        "MEDITATE",
+        "THIRD_EYE",
+        "SEKKANOKI"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "ovjang": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "SILENCE",
+        "DISPEL"
+      ],
+      "spell_families": [
+        "HASTE",
+        "REFRESH",
+        "SLOW",
+        "PARALYZE",
+        "NONE"
+      ],
+      "jas": [],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "FASTCAST",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [
+          "ADDLE"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "FASTCAST",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "ADDLE"
+        ]
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "FASTCAST",
+            "15"
+          ],
+          [
+            "MATT",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "pieuje_uc": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "AUSPICE",
+        "CURE",
+        "HASTE",
+        "POISONA",
+        "PARALYNA",
+        "BLINDNA",
+        "SILENA",
+        "STONA",
+        "VIRUNA",
+        "CURSNA",
+        "ERASE"
+      ],
+      "spell_families": [
+        "CURE",
+        "PROTECTRA",
+        "SHELLRA"
+      ],
+      "jas": [
+        "AFFLATUS_MISERY",
+        "DIVINE_SEAL"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [
+          "HOLY"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MND",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "HOLY"
+        ]
+      },
+      "2": {
+        "spells": [
+          "HOLY_II",
+          "BANISH_III"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MND",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "HOLY_II",
+          "BANISH_III"
+        ]
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MND",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "prishe": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.PRISHE_II)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "CURE"
+      ],
+      "jas": [
+        "DODGE",
+        "CHAKRA"
+      ],
+      "mods": [
+        [
+          "HP",
+          "hpBoost"
+        ],
+        [
+          "MPP",
+          "75"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "prishe_ii": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.PRISHE)",
+    "base": {
+      "spells": [
+        "CURAGA"
+      ],
+      "spell_families": [
+        "CURAGA"
+      ],
+      "jas": [],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "qultada": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "CORSAIRS_ROLL",
+        "CHAOS_ROLL",
+        "HUNTERS_ROLL",
+        "FIGHTERS_ROLL",
+        "TRIPLE_SHOT",
+        "DARK_SHOT"
+      ],
+      "mods": [
+        [
+          "MACC",
+          "power"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "EVOKERS_ROLL"
+        ],
+        "mods": [],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "WIZARDS_ROLL"
+        ],
+        "mods": [],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "WARLOCKS_ROLL"
+        ],
+        "mods": [],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "rahal": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "CURE",
+        "FLASH"
+      ],
+      "spell_families": [
+        "CURE",
+        "ENLIGHT",
+        "PHALANX"
+      ],
+      "jas": [
+        "PROVOKE",
+        "SHIELD_BASH",
+        "SENTINEL",
+        "RAMPART",
+        "BERSERK"
+      ],
+      "mods": [
+        [
+          "DMG",
+          "-100"
+        ],
+        [
+          "ENMITY",
+          "15"
+        ],
+        [
+          "CURE_POTENCY",
+          "15"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": true,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ATT",
+            "20"
+          ],
+          [
+            "SHIELDBLOCKRATE",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ATT",
+            "20"
+          ],
+          [
+            "SHIELDBLOCKRATE",
+            "15"
+          ],
+          [
+            "DRAGON_KILLER",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ATT",
+            "20"
+          ],
+          [
+            "SHIELDBLOCKRATE",
+            "20"
+          ],
+          [
+            "DRAGON_KILLER",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "rainemard": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "REFRESH",
+        "PHALANX_II"
+      ],
+      "spell_families": [
+        "DISTRACT",
+        "PHALANX",
+        "HASTE",
+        "REFRESH",
+        "PROTECT",
+        "SHELL"
+      ],
+      "jas": [],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ENSPELL_DMG_BONUS",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ENSPELL_DMG_BONUS",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ENSPELL_DMG_BONUS",
+            "40"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "robel-akbel": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "NONE"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "MATT",
+          "power"
+        ],
+        [
+          "MACC",
+          "power"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "romaa_mihgo": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "STEAL",
+        "SNEAK_ATTACK",
+        "TRICK_ATTACK",
+        "FEINT"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "rongelouts": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "BERSERK",
+        "AGGRESSOR",
+        "WARCRY"
+      ],
+      "mods": [],
+      "tiered_mods": [
+        "STORETP"
+      ],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "rosulatia": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "NONE"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "HP",
+          "hpBoost"
+        ],
+        [
+          "MPP",
+          "100"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "rughadjeen": {
+    "doc": "Possesses Fast Cast, Cure Potency Received +30%, Damage Taken -5%. He wields the Algol and so has an enfire effect (TODO) and a 3% triple attack rate. Uses Holy Circle if the enemy is Undead. Will onl",
+    "base": {
+      "spells": [
+        "CURE",
+        "FLASH",
+        "HOLY"
+      ],
+      "spell_families": [
+        "CURE"
+      ],
+      "jas": [
+        "PROVOKE",
+        "SENTINEL",
+        "DIVINE_EMBLEM",
+        "HOLY_CIRCLE",
+        "CHIVALRY"
+      ],
+      "mods": [
+        [
+          "FASTCAST",
+          "30"
+        ],
+        [
+          "CURE_POTENCY_RCVD",
+          "30"
+        ],
+        [
+          "DMG",
+          "-500"
+        ],
+        [
+          "TRIPLE_ATTACK",
+          "3"
+        ],
+        [
+          "ENMITY",
+          "20"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": true,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [
+          "HOLY"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "PARRY",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [
+          "RAISE_II"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "PARRY",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "RAISE_II"
+        ]
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "PARRY",
+            "20"
+          ],
+          [
+            "DEF",
+            "50"
+          ],
+          [
+            "VIT",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "sakura": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "selh_teus": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "PROVOKE",
+        "SENTINEL"
+      ],
+      "mods": [
+        [
+          "REGAIN",
+          "25"
+        ],
+        [
+          "MPP",
+          "30"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "REGAIN",
+            "25"
+          ],
+          [
+            "MPP",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "REGAIN",
+            "25"
+          ],
+          [
+            "MPP",
+            "40"
+          ],
+          [
+            "CURE_POTENCY",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "semih_lafihna": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "BARRAGE",
+        "SHARPSHOT",
+        "DOUBLE_SHOT",
+        "STEALTH_SHOT"
+      ],
+      "mods": [],
+      "tiered_mods": [
+        "STORETP"
+      ],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "shantotto": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.SHANTOTTO_II)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "NONE"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "HASTE_MAGIC",
+          "1000"
+        ]
+      ],
+      "tiered_mods": [
+        "MATT",
+        "MACC"
+      ],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "shantotto_ii": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.SHANTOTTO)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "NONE"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "MATT",
+          "power"
+        ],
+        [
+          "MACC",
+          "power"
+        ],
+        [
+          "HASTE_MAGIC",
+          "1000"
+        ],
+        [
+          "MAGIC_DAMAGE",
+          "spellDamage"
+        ],
+        [
+          "ACC",
+          "1000"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "shikaree_z": {
+    "doc": "Possesses MP+100% Uses Ancient Circle if the enemy is a dragon Super Jump is used when ShikareeZ is in the top enmity slot Gains 205 TP on hit; has high TP return on Jump (655 TP) and High Jump (1065 ",
+    "base": {
+      "spells": [
+        "CURE",
+        "ERASE",
+        "HASTE",
+        "POISONA",
+        "PARALYNA",
+        "BLINDNA",
+        "SILENA",
+        "STONA",
+        "VIRUNA",
+        "CURSNA"
+      ],
+      "spell_families": [
+        "CURE"
+      ],
+      "jas": [
+        "ANCIENT_CIRCLE",
+        "JUMP",
+        "HIGH_JUMP",
+        "SUPER_JUMP"
+      ],
+      "mods": [
+        [
+          "JUMP_TP_BONUS",
+          "164"
+        ]
+      ],
+      "tiered_mods": [
+        "STORETP"
+      ],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "star_sibyl": {
+    "doc": "GEO - Passive support aura: permanent Indi-Acumen (MAB+19, MACC+19) Incorporeal \u2014 cannot die, does not attack, does not cast local spellObject = {}",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [],
+      "mods": [
+        [
+          "MATT",
+          "19"
+        ],
+        [
+          "MACC",
+          "19"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "sylvie_uc": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "CURE",
+        "ERASE",
+        "HASTE"
+      ],
+      "spell_families": [
+        "CURE",
+        "NONE",
+        "INDI_BUFF"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "INDI_DURATION",
+          "180"
+        ],
+        [
+          "REGAIN",
+          "50"
+        ],
+        [
+          "GEOMANCY_BONUS",
+          "3"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "GEOMANCY_BONUS",
+            "3"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "GEOMANCY_BONUS",
+            "3"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "GEOMANCY_BONUS",
+            "3"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "tenzen": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.TENZEN_II)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "HASSO",
+        "THIRD_EYE",
+        "HAGAKURE",
+        "MEDITATE"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "tenzen_ii": {
+    "doc": "Todo: Constantly adjusts his distance for optimal ranged damage (always shot from sweet spot). BIG Todo: make his TP gains per shot match retail at all levels Tenzen II Gets 252 TP per hit at lv 90+ O",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "MEDITATE"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "teodor": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "NONE"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "HP",
+          "hpBoost"
+        ],
+        [
+          "MPP",
+          "50"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "trion": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "FLASH"
+      ],
+      "spell_families": [
+        "CURE"
+      ],
+      "jas": [
+        "PROVOKE",
+        "SENTINEL",
+        "RAMPART"
+      ],
+      "mods": [
+        [
+          "DMG",
+          "-50"
+        ],
+        [
+          "ENMITY",
+          "10"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": true,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "SHIELD_BASH"
+        ],
+        "mods": [
+          [
+            "DEF",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "PALISADE"
+        ],
+        "mods": [
+          [
+            "DEF",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "RAMPART"
+        ],
+        "mods": [
+          [
+            "DEF",
+            "40"
+          ],
+          [
+            "ENMITY",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "uka_totlihn": {
+    "doc": "local spellObject = {} Define the main jobs with access to primary healing used to toggle Samba type local healingJobs =",
+    "base": {
+      "spells": [
+        "MUMOR",
+        "MUMOR_II"
+      ],
+      "spell_families": [],
+      "jas": [
+        "HASTE_SAMBA",
+        "QUICKSTEP",
+        "VIOLENT_FLOURISH",
+        "CURING_WALTZ",
+        "DRAIN_SAMBA",
+        "HEALING_WALTZ",
+        "REVERSE_FLOURISH"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "HASTE_GEAR",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "HASTE_GEAR",
+            "10"
+          ],
+          [
+            "WALTZ_POTENCY",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
+  },
+  "ullegore": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "NONE"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "MPP",
+          "300"
+        ]
+      ],
+      "tiered_mods": [
+        "MATT",
+        "MACC"
+      ],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "ulmia": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [
+        "VALOR_MINUET",
+        "MADRIGAL",
+        "CURE"
+      ],
+      "jas": [],
+      "mods": [
+        [
+          "REFRESH",
+          "3"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "SONG_DURATION_BONUS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "SONG_DURATION_BONUS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [
+          "ADVANCING_MARCH"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "SONG_DURATION_BONUS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "ADVANCING_MARCH"
+        ]
+      }
+    }
+  },
+  "valaineral": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "FLASH",
+        "PHALANX",
+        "REPRISAL",
+        "ENLIGHT",
+        "CURE",
+        "CURE_II",
+        "CURE_III",
+        "CURE_IV"
+      ],
+      "spell_families": [
+        "CURE"
+      ],
+      "jas": [
+        "MAJESTY",
+        "PROVOKE",
+        "SENTINEL",
+        "RAMPART"
+      ],
+      "mods": [
+        [
+          "DMG",
+          "-80"
+        ],
+        [
+          "ENMITY",
+          "20"
+        ],
+        [
+          "CURE_POTENCY",
+          "50"
+        ],
+        [
+          "HPP",
+          "10"
+        ],
+        [
+          "MPP",
+          "20"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": true,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DMG",
+            "-120"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DMG",
+            "-150"
+          ],
+          [
+            "CURE_POTENCY",
+            "25"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [
+          "RAISE"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DMG",
+            "-150"
+          ],
+          [
+            "CURE_POTENCY",
+            "25"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "RAISE"
+        ]
+      }
+    }
+  },
+  "volker": {
+    "doc": "If there is a NIN, PLD, or RUN in the party, behaves as a damage dealer: Uses Aggressor, Berserk. If there are no other tanks in the party, behaves as a tank: Uses Defender, Retaliation. Uses Provoke ",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "BERSERK",
+        "AGGRESSOR",
+        "WARCRY",
+        "PROVOKE",
+        "DEFENDER",
+        "RETALIATION"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "ygnas": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [
+        "HASTE",
+        "POISONA",
+        "PARALYNA",
+        "BLINDNA",
+        "SILENA",
+        "STONA",
+        "VIRUNA",
+        "CURSNA",
+        "ERASE"
+      ],
+      "spell_families": [
+        "CURE",
+        "PROTECTRA",
+        "SHELLRA"
+      ],
+      "jas": [],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "15"
+          ],
+          [
+            "MND",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "15"
+          ],
+          [
+            "MND",
+            "15"
+          ],
+          [
+            "VIT",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [
+          "RAISE"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "RAISE"
+        ]
+      }
+    }
+  },
+  "yoran-oran_uc": {
+    "doc": "All changes made are from BGWiki and in game observations. Wiki says he has Fast Cast, but doesn't specify how much so it has been left out. local spellObject = {} spellObject.onMagicCastingCheck = fu",
+    "base": {
+      "spells": [
+        "HASTE",
+        "POISONA",
+        "PARALYNA",
+        "BLINDNA",
+        "SILENA",
+        "STONA",
+        "VIRUNA",
+        "CURSNA",
+        "ERASE",
+        "STONESKIN"
+      ],
+      "spell_families": [
+        "CURE",
+        "PROTECTRA",
+        "SHELLRA"
+      ],
+      "jas": [
+        "AFFLATUS_SOLACE",
+        "DIVINE_SEAL"
+      ],
+      "mods": [
+        [
+          "REGAIN",
+          "50"
+        ],
+        [
+          "MPP",
+          "15"
+        ]
+      ],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {
+      "1": {
+        "spells": [
+          "HASTE_II"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "HASTE_II"
+        ]
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [
+          "ESUNA"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "CURE_POTENCY",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "ESUNA"
+        ]
+      }
+    }
+  },
+  "zazarg": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
+    "base": {
+      "spells": [],
+      "spell_families": [],
+      "jas": [
+        "BERSERK",
+        "WARCRY",
+        "RESTRAINT"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "zeid": {
+    "doc": "DRK - Melee DD with Absorb spells, Drain, Last Resort, Souleater local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
+    "base": {
+      "spells": [
+        "STUN",
+        "ABSORB_ACC",
+        "ABSORB_TP",
+        "ASPIR"
+      ],
+      "spell_families": [
+        "DRAIN"
+      ],
+      "jas": [
+        "LAST_RESORT",
+        "SOULEATER",
+        "NETHER_VOID"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  },
+  "zeid_ii": {
+    "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.ZEID)",
+    "base": {
+      "spells": [
+        "STUN"
+      ],
+      "spell_families": [],
+      "jas": [
+        "SOULEATER",
+        "LAST_RESORT"
+      ],
+      "mods": [],
+      "tiered_mods": [],
+      "has_enmity_siphon": false,
+      "spells_added": []
+    },
+    "tiers": {}
+  }
+}
