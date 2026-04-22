@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-palette="oxblood">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scythe — Final Fantasy XI Private Server</title>
-    <meta name="description" content="Scythe is a free FFXI private server with 4x EXP, 500 custom hunt NMs, 25 elite bosses, a Colosseum arena, siege raids, rebalanced relics, and all expansions enabled.">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Scythe is a free FFXI private server with 4x EXP, 475 custom hunt NMs, 25 elite bosses, a 5-tier Colosseum arena, siege raids, rebalanced relics, and all expansions enabled.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
 
@@ -16,7 +19,7 @@
         <ul class="navbar-links">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="features.html">Features</a></li>
-            <li><a href="server-info.html">Server Info</a></li>
+            <li><a href="server-info.html">Server</a></li>
             <li><a href="getting-started.html">Play</a></li>
             <li><a href="rules.html">Rules</a></li>
             <li><a href="faq.html">FAQ</a></li>
@@ -28,227 +31,372 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero">
-    <h1 class="hero-title">Scythe</h1>
-    <p class="hero-subtitle">A Final Fantasy XI Private Server</p>
-    <p class="hero-tagline">
-        All expansions through Rhapsodies of Vana'diel. 475 custom Notorious Monsters across 146 zones.
-        A Colosseum arena. Siege raids. Rebalanced relic weapons.
-        4x EXP, no death penalty, all jobs unlocked from level 1.
-        Free forever.
-    </p>
-    <div class="hero-buttons">
-        <a href="getting-started.html" class="btn btn-primary">Start Playing</a>
-        <a href="server-info.html" class="btn btn-outline">Server Details</a>
-    </div>
+    <div class="hero-eyebrow">FFXI · PRIVATE SERVER · EST. MMXXV</div>
 
-    <div class="stats-bar">
-        <div class="stat">
-            <div class="stat-number">500</div>
-            <div class="stat-label">Hunt NMs</div>
+    <div class="hero-grid">
+        <div>
+            <h1 class="hero-title">Scythe<em>.</em></h1>
+            <p class="hero-subtitle">A Final Fantasy XI Private Server</p>
+            <p class="hero-tagline">
+                <strong>All expansions</strong> through Rhapsodies of Vana'diel. <strong>475 custom
+                Notorious Monsters</strong> across 146 zones, with a 25-boss gated elite progression
+                on top. A 5-tier Colosseum and 50 Master Levels. Server-wide Siege raids.
+                Rebalanced REMA weapons. 4× EXP, no death penalty, all jobs unlocked from level 1.
+                <strong>Free, forever.</strong>
+            </p>
+            <div class="hero-buttons">
+                <a href="getting-started.html" class="btn btn-primary">Start Playing</a>
+                <a href="server-info.html" class="btn btn-outline">Server Details</a>
+            </div>
         </div>
-        <div class="stat">
-            <div class="stat-number">150</div>
-            <div class="stat-label">Zones</div>
-        </div>
-        <div class="stat">
-            <div class="stat-number">4x</div>
-            <div class="stat-label">EXP Rate</div>
-        </div>
-        <div class="stat">
-            <div class="stat-number">0%</div>
-            <div class="stat-label">Death Penalty</div>
-        </div>
+
+        <aside class="hero-console">
+            <div class="console-header">
+                <span>// server.status</span>
+                <span class="dot"></span>
+            </div>
+            <div class="console-row"><span class="k">status</span><span class="v">online</span></div>
+            <div class="console-row"><span class="k">uptime</span><span class="v">99.8%</span></div>
+            <div class="console-row"><span class="k">host</span><span class="v">212.28.177.210</span></div>
+            <div class="console-row"><span class="k">version</span><span class="v">RoV · ML50</span></div>
+            <div class="console-row"><span class="k">cost</span><span class="v">free</span></div>
+        </aside>
     </div>
 </section>
+
+<!-- ============ STAT RIBBON ============ -->
+<div class="stat-ribbon">
+    <div class="stat-ribbon-inner">
+        <div class="stat">
+            <div class="stat-label">Hunt NMs</div>
+            <div class="stat-number" data-count="475">475<span class="stat-unit">+25</span></div>
+        </div>
+        <div class="stat">
+            <div class="stat-label">Zones</div>
+            <div class="stat-number" data-count="146">146</div>
+        </div>
+        <div class="stat">
+            <div class="stat-label">EXP Rate</div>
+            <div class="stat-number">4<span class="stat-unit">×</span></div>
+        </div>
+        <div class="stat">
+            <div class="stat-label">Death Penalty</div>
+            <div class="stat-number">0<span class="stat-unit">%</span></div>
+        </div>
+    </div>
+</div>
 
 <!-- ============ AT A GLANCE ============ -->
 <div class="section-alt">
 <section class="section">
     <div class="section-header">
-        <h2 class="section-title">At a Glance</h2>
-        <div class="divider"></div>
+        <div class="section-label"><span class="section-label-num">01 —</span>AT A GLANCE</div>
+        <div>
+            <h2 class="section-title">The server, <em>by the numbers.</em></h2>
+            <p class="section-subtitle">
+                Every modern convenience the FFXI community has asked for, tuned for endgame hunters
+                who still want the fight to mean something.
+            </p>
+        </div>
     </div>
 
     <div class="info-table-wrapper">
         <table class="info-table">
             <tr><td>Level Cap</td><td>99 + Master Levels (up to 50)</td></tr>
             <tr><td>Expansions</td><td>All enabled (ZM through RoV)</td></tr>
-            <tr><td>EXP Rate</td><td>4x (FoV/GoV/RoE at 1x)</td></tr>
+            <tr><td>EXP Rate</td><td>4× (FoV/GoV/RoE at 1×)</td></tr>
+            <tr><td>Skillup Rate</td><td>2.5× combat &amp; magic · accelerated craft</td></tr>
+            <tr><td>Gathering Rates</td><td>50% harvest/mine/log/dig base · 85% chocobo digging</td></tr>
             <tr><td>Death Penalty</td><td>None (0% EXP loss)</td></tr>
-            <tr><td>Gil / Drop Rates</td><td>1x (retail)</td></tr>
+            <tr><td>Gil / Drop Rates</td><td>1× (retail)</td></tr>
             <tr><td>Subjob Ratio</td><td>Equal (99/99 instead of 99/49)</td></tr>
-            <tr><td>Movement Speed</td><td>Faster than retail (125 base / 175 cap)</td></tr>
+            <tr><td>Movement Speed</td><td>125 base · 175 cap</td></tr>
             <tr><td>Jobs</td><td>All 22 unlocked at character creation</td></tr>
-            <tr><td>Subjob</td><td>Unlocked at character creation</td></tr>
+            <tr><td>Subjob / Advanced Jobs</td><td>Unlocked from level 1</td></tr>
             <tr><td>Trusts</td><td>Enabled</td></tr>
-            <tr><td>Homepoint Teleport</td><td>Enabled</td></tr>
-            <tr><td>Outpost Warps</td><td>All unlocked (including Tu'Lia + Tavnazia)</td></tr>
+            <tr><td>Homepoint Teleport</td><td>Enabled (heals to full)</td></tr>
+            <tr><td>Outpost Warps</td><td>All unlocked (incl. Tu'Lia + Tavnazia)</td></tr>
             <tr><td>Fields/Grounds of Valor</td><td>Enabled</td></tr>
             <tr><td>Records of Eminence</td><td>Enabled</td></tr>
-            <tr><td>Crafting</td><td>Modern system, retail rates, 700 common cap</td></tr>
-            <tr><td>Fishing</td><td>Enabled</td></tr>
+            <tr><td>Crafting</td><td>All 8 crafts to 110 · dedicated crafting hub</td></tr>
             <tr><td>Merits</td><td>30 cap (Abyssea era)</td></tr>
             <tr><td>Multiboxing</td><td>2 accounts per player (expanding to 3)</td></tr>
         </table>
     </div>
 
-    <div style="text-align: center; margin-top: 2rem;">
+    <div style="text-align: center; margin-top: 2.5rem;">
         <a href="server-info.html" class="btn btn-outline">Full Server Details</a>
     </div>
 </section>
 </div>
 
 <!-- ============ CUSTOM CONTENT ============ -->
-<section class="section">
+<section class="section section-wide">
     <div class="section-header">
-        <h2 class="section-title">Custom Content</h2>
-        <div class="divider"></div>
-        <p class="section-subtitle">
-            Everything below is original content built on top of the full FFXI game.
-        </p>
+        <div class="section-label"><span class="section-label-num">02 —</span>CUSTOM CONTENT</div>
+        <div>
+            <h2 class="section-title">Eleven pieces of <em>original endgame.</em></h2>
+            <p class="section-subtitle">
+                Everything below is built on top of the full FFXI game. Not a rebalance —
+                new content, new systems, new reasons to stay logged in.
+            </p>
+        </div>
     </div>
 
     <div class="features-grid">
 
-        <div class="feature-card">
+        <a href="nm-hunt.html" class="feature-card feat-xl">
+            <div class="feature-card-num">N°01 · FLAGSHIP</div>
             <h3>The NM Hunt</h3>
             <p>
-                475 regular hunt NMs across 146 zones + gated elite bosses. Unique mythological
-                names, distinct models, hand-tuned AI. Level 100 with 10x stat multipliers.
-                Respawn every 9-11 minutes. Earn Scyld currency on kill.
+                475 regular hunt NMs across 146 zones. Unique mythological names drawn from
+                real folklore — Chelona, Nuckelavee, Girtablilu, Lamashtu — distinct models,
+                hand-tuned AI. Level 100 with 10× stat multipliers. 9–11 minute respawn.
+                25 Scyld per kill, awarded to the party. Kill tracking is per-character,
+                unique kills only.
             </p>
             <span class="tag">Endgame</span>
-        </div>
+        </a>
 
-        <div class="feature-card">
+        <a href="elite-hunts.html" class="feature-card feat-sm">
+            <div class="feature-card-num">N°02</div>
             <h3>Elite Hunts</h3>
             <p>
-                Kill all 475 hunt NMs to unlock 25 legendary bosses. Linear progression,
-                unique dialogue, custom weaponskills. The final boss costs 25,000 Scyld
-                to attempt.
+                25 gated bosses drawn from FFXI's story. Unlocks after 475/475. Four tiers,
+                strict order — Seals → Champions → Special → Supreme. Conditional spawns:
+                weather, moon, day, titles, zone-state.
             </p>
-            <span class="tag">Ultimate Challenge</span>
-        </div>
+            <span class="tag">Ultimate</span>
+        </a>
 
-        <div class="feature-card">
+        <div class="feature-card feat-lg coming-soon" aria-disabled="true">
+            <span class="soon-badge">Coming Soon</span>
+            <div class="feature-card-num">N°03</div>
             <h3>The Colosseum</h3>
             <p>
-                Timed boss fights in a custom arena zone. 7 tiers (Bronze through Adamant,
-                up to 8M HP). 5 challenge modes: Normal, Hard, Speed Kill, Solo, No Magic.
-                Gauntlet mode for consecutive fights. Rewards Exemplar Points for Master Levels.
+                Timed boss fights in a custom arena zone. 5 tiers — Bronze, Silver, Gold,
+                Platinum, Mythril — with base EP rewards from 1,250 up to 125,000 per clear.
+                5 modes: Normal, Hard, Speed Kill, Solo, No Magic — each with its own EP
+                multiplier. Gauntlet runs chain fights across tiers. Primary path for
+                Exemplar Points.
             </p>
             <span class="tag">Arena</span>
         </div>
 
-        <div class="feature-card">
+        <a href="siege.html" class="feature-card feat-sm">
+            <div class="feature-card-num">N°04</div>
             <h3>Siege Raids</h3>
             <p>
-                5-wave raid events with FFXIV-style mechanics: vulnerability windows,
-                boss AI phases, siege abilities and spells, visual callouts. Server-wide
-                event with scaling difficulty.
+                Server-wide 5-wave events with FFXIV-inspired mechanics. Boss AI phases,
+                vulnerability windows, siege-specific abilities, on-screen callouts.
+                Awards Exemplar Points on participation.
             </p>
             <span class="tag">Raid</span>
-        </div>
+        </a>
 
-        <div class="feature-card">
-            <h3>Relic Weapons Reborn</h3>
+        <a href="relic-weapons.html" class="feature-card feat-sm">
+            <div class="feature-card-num">N°05</div>
+            <h3>REMA Custom Mods</h3>
             <p>
-                All 14 relic weapons rebalanced. fTP 5.0/9.0/13.0, multi-hit fTP
-                replication, 35% OCC 3x (Mandau 40%). Full REMA stats on the
-                custom mods page.
+                All 14 relics rebalanced at every tier (75 / 119 / 119-III). 35% OCC 3×
+                on relic WS (Mandau 40%), with multi-hit fTP replication. Full stat tables
+                on the mods page.
             </p>
             <span class="tag">Balance</span>
-        </div>
+        </a>
 
-        <div class="feature-card">
+        <a href="dynamis-divergence.html" class="feature-card feat-sm">
+            <div class="feature-card-num">N°06</div>
             <h3>Dynamis Divergence</h3>
             <p>
-                Instanced high-difficulty Dynamis. Four zones: Bastok, San d'Oria,
-                Windurst, Jeuno. Custom mob pools, divergence-specific droplists.
+                Instanced high-difficulty Dynamis. Four zones: Bastok, San d'Oria, Windurst,
+                Jeuno. Custom mob pools and droplists.
             </p>
-            <span class="tag">Group Content</span>
-        </div>
+            <span class="tag">Group</span>
+        </a>
 
-        <div class="feature-card">
+        <a href="master-levels.html" class="feature-card feat-sm">
+            <div class="feature-card-num">N°07</div>
             <h3>Master Levels</h3>
             <p>
-                50 master levels earned through Colosseum fights. Tiers scale from
-                Bronze (ML 0, 150K HP bosses) to Adamant (ML 50, 8M HP bosses).
-                Each tier awards increasing Exemplar Points.
+                50 levels of post-cap progression, tracked per-job via Exemplar Points from
+                the Colosseum. +1 to all stats, +7 HP, +2 MP per level. Retail EP curve —
+                ML 50 costs ~3.3M EP on the final push.
             </p>
             <span class="tag">Progression</span>
-        </div>
+        </a>
 
-        <div class="feature-card">
+        <a href="fay-weapons.html" class="feature-card feat-lg">
+            <div class="feature-card-num">N°08</div>
             <h3>Fay Weapon Augments</h3>
             <p>
-                Succor to the Sidhe quest system. Trade a Fay/Erlking weapon to Callisto,
-                fight Pixie NMs across 14 Shadowreign zones, receive randomly augmented
-                weapons. 20 weapons covering all jobs. Up to 5 reroll attempts.
+                Succor to the Sidhe quest. Trade a Fay, Erlking, Dweomer, or Ogre weapon
+                to Callisto in Grauberg [S], fight Pixie NMs across 14 Shadowreign zones,
+                receive up to 2 random augments from that zone's pool. 20 weapons covering
+                every job. 5 rerolls per weapon.
             </p>
             <span class="tag">Quest</span>
-        </div>
+        </a>
 
-        <div class="feature-card">
+        <a href="scyld-shop.html" class="feature-card feat-sm">
+            <div class="feature-card-num">N°09</div>
             <h3>Scyld Reward Shop</h3>
             <p>
-                Spend Scyld on monster suits, event gear, anniversary sets, and
-                milestone Mog Kupons. The final milestone at 500 unique kills
-                awards a Kupon W-RMEA — any RMEA weapon of your choice.
+                Spend hunt currency at the NM Hunts NPC in Celennia Memorial Library.
+                Monster suits, event gear, anniversary sets, milestone Mog Kupons — plus
+                auto-awarded milestone rewards that scale with unique kills.
             </p>
             <span class="tag">Rewards</span>
-        </div>
+        </a>
 
-        <div class="feature-card">
+        <a href="missions.html" class="feature-card feat-sm">
+            <div class="feature-card-num">N°10</div>
             <h3>All Missions Complete</h3>
             <p>
-                Every expansion mission line through Rhapsodies of Vana'diel fully
-                implemented. Mission skip NPC available. Magian Trials enabled.
+                Every expansion mission line through Rhapsodies fully implemented. Mission
+                skip NPC available. Magian Trials enabled.
             </p>
             <span class="tag">Story</span>
-        </div>
+        </a>
 
-        <div class="feature-card">
-            <h3>Ferry Pirates</h3>
+        <a href="other-features.html" class="feature-card feat-sm">
+            <div class="feature-card-num">N°11</div>
+            <h3>QoL &amp; More</h3>
             <p>
-                Pirate crews board the ferries. Scaled mobs spawn on deck with linked
-                aggro. Clear the boarding party before you reach port.
+                30+ QoL improvements, Omen, Abyssea boosted NMs, wedding ceremony,
+                Chocobo raising, custom commands. Ferry Pirates, Delve, and Synergy
+                in active development.
             </p>
             <span class="tag">Event</span>
-        </div>
+        </a>
 
     </div>
 
     <div style="text-align: center; margin-top: 2.5rem;">
-        <a href="features.html" class="btn btn-outline">Detailed Feature Breakdown</a>
+        <a href="features.html" class="btn btn-outline">Detailed Breakdown</a>
     </div>
 </section>
 
 <!-- ============ CTA ============ -->
 <div class="section-alt">
-<section class="section" style="text-align: center;">
-    <h2 class="section-title">Ready?</h2>
-    <div class="divider"></div>
-    <p class="section-subtitle" style="margin-bottom: 2rem;">
+<section class="cta-block">
+    <div class="section-label" style="display: inline-block; border: none; padding: 0; margin-bottom: 1.5rem;">
+        <span class="section-label-num">03 —</span>JOIN
+    </div>
+    <h2 class="section-title">Ready to <em>draw the scythe?</em></h2>
+    <p class="section-subtitle">
         Install the FFXI client, grab Ashita or Windower, connect, and play.
         Connection info is in Discord.
     </p>
-    <a href="getting-started.html" class="btn btn-primary">Setup Guide</a>
-    <a href="community.html" class="btn btn-outline" style="margin-left: 1rem;">Join Discord</a>
+    <div class="cta-buttons">
+        <a href="getting-started.html" class="btn btn-primary">Setup Guide</a>
+        <a href="community.html" class="btn btn-outline">Join Discord</a>
+    </div>
 </section>
 </div>
 
 <footer class="footer">
-    <p>
-        Scythe is a fan-made project and is not affiliated with or endorsed by Square Enix Co., Ltd.
-        FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.
-    </p>
-    <p style="margin-top: 0.5rem;">
-        Powered by <a href="https://github.com/LandSandBoat/server" target="_blank" rel="noopener">LandSandBoat</a>.
-    </p>
+    <div>
+        <div class="footer-brand">SCYTHE</div>
+        <p>
+            Scythe is a fan-made project and is not affiliated with or endorsed by Square Enix Co., Ltd.
+            FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.
+        </p>
+        <p style="margin-top: 0.6rem;">
+            Powered by <a href="https://github.com/LandSandBoat/server" target="_blank" rel="noopener">LandSandBoat</a>.
+        </p>
+    </div>
+    <div class="footer-meta">
+        <div>// server.online</div>
+        <div style="margin-top: 0.4rem; color: var(--accent);">212.28.177.210</div>
+    </div>
 </footer>
 
+<!-- ============ TWEAKS PANEL ============ -->
+<div class="tweaks-panel" id="tweaks-panel">
+    <div class="tweaks-header">
+        <span>// tweaks</span>
+        <button onclick="document.getElementById('tweaks-panel').classList.remove('open')" aria-label="Close">×</button>
+    </div>
+    <div class="tweaks-row">
+        <label>Palette</label>
+        <div class="palette-swatches" id="palette-swatches">
+            <button data-palette="oxblood" class="active">Oxblood</button>
+            <button data-palette="iron">Iron</button>
+            <button data-palette="bone">Bone</button>
+        </div>
+    </div>
+</div>
+
 <script>
+/*EDITMODE-BEGIN*/
+const TWEAK_DEFAULTS = {
+    "palette": "oxblood"
+};
+/*EDITMODE-END*/
+
+// Apply saved tweaks on load
+(function() {
+    const saved = TWEAK_DEFAULTS.palette || 'oxblood';
+    document.documentElement.setAttribute('data-palette', saved);
+    document.querySelectorAll('#palette-swatches button').forEach(b => {
+        b.classList.toggle('active', b.dataset.palette === saved);
+    });
+})();
+
+// Tweaks panel: edit mode protocol
+window.addEventListener('message', (e) => {
+    if (!e.data || !e.data.type) return;
+    if (e.data.type === '__activate_edit_mode') {
+        document.getElementById('tweaks-panel').classList.add('open');
+    } else if (e.data.type === '__deactivate_edit_mode') {
+        document.getElementById('tweaks-panel').classList.remove('open');
+    }
+});
+try { window.parent.postMessage({ type: '__edit_mode_available' }, '*'); } catch(_) {}
+
+// Palette switching
+document.querySelectorAll('#palette-swatches button').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const p = btn.dataset.palette;
+        document.documentElement.setAttribute('data-palette', p);
+        document.querySelectorAll('#palette-swatches button').forEach(b =>
+            b.classList.toggle('active', b === btn));
+        try {
+            window.parent.postMessage({
+                type: '__edit_mode_set_keys',
+                edits: { palette: p }
+            }, '*');
+        } catch(_) {}
+    });
+});
+
+// Stat counter animation
+const counters = document.querySelectorAll('[data-count]');
+const animateCount = (el) => {
+    const target = parseInt(el.dataset.count, 10);
+    const duration = 1400;
+    const start = performance.now();
+    const tick = (now) => {
+        const t = Math.min(1, (now - start) / duration);
+        const eased = 1 - Math.pow(1 - t, 3);
+        el.textContent = Math.floor(target * eased);
+        if (t < 1) requestAnimationFrame(tick);
+        else el.textContent = target;
+    };
+    requestAnimationFrame(tick);
+};
+const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            animateCount(e.target);
+            obs.unobserve(e.target);
+        }
+    });
+}, { threshold: 0.4 });
+counters.forEach(c => obs.observe(c));
+
+// Mobile menu close
 document.querySelectorAll('.navbar-links a').forEach(link => {
     link.addEventListener('click', () => {
         document.querySelector('.navbar-links').classList.remove('open');

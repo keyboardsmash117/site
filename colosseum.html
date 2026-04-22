@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Colosseum — Scythe FFXI</title>
-    <meta name="description" content="Timed arena boss fights with 7 tiers and 5 challenge modes. The primary path for Exemplar Points and Master Levels.">
+    <meta name="description" content="Timed arena boss fights with 5 tiers and 5 challenge modes. The primary path for Exemplar Points and Master Levels.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -28,8 +28,13 @@
 
 <section class="page-header">
     <h1 class="page-title">The Colosseum</h1>
-    <p class="page-subtitle">Timed arena boss fights with 7 tiers and 5 modes</p>
+    <p class="page-subtitle">Timed arena boss fights with 5 tiers and 5 modes</p>
 </section>
+
+<div class="coming-soon-banner">
+    <span class="cs-tag">Coming Soon</span>
+    <span class="cs-msg">The Colosseum is in active development and not yet available on the live server. The design below documents the intended system — tiers, rewards, and modes may change before launch.</span>
+</div>
 
 <section class="section">
     <div class="content-block">
@@ -38,19 +43,21 @@
             Exemplar Points and leveling up Master Levels.
         </p>
 
-        <h3 style="color: var(--text-bright); margin: 1.5rem 0 0.75rem;">7 Tiers</h3>
+        <h3 style="color: var(--text-bright); margin: 1.5rem 0 0.75rem;">5 Tiers</h3>
         <div class="info-table-wrapper">
             <table class="info-table">
-                <tr><th>Tier</th><th>ML Required</th><th>Boss Level</th><th>Boss HP</th><th>Time Limit</th><th>EP Reward</th></tr>
-                <tr><td>Bronze</td><td>0</td><td>119</td><td>150,000</td><td>5 min</td><td>1,250</td></tr>
-                <tr><td>Silver</td><td>5</td><td>125</td><td>400,000</td><td>8 min</td><td>5,000</td></tr>
-                <tr><td>Gold</td><td>15</td><td>130</td><td>800,000</td><td>12 min</td><td>18,750</td></tr>
-                <tr><td>Platinum</td><td>30</td><td>135</td><td>1,500,000</td><td>15 min</td><td>50,000</td></tr>
-                <tr><td>Mythril</td><td>40</td><td>140</td><td>3,000,000</td><td>20 min</td><td>125,000</td></tr>
-                <tr><td>Diamond</td><td>45</td><td>145</td><td>5,000,000</td><td>25 min</td><td>250,000</td></tr>
-                <tr><td>Adamant</td><td>50</td><td>150</td><td>8,000,000</td><td>30 min</td><td>500,000</td></tr>
+                <tr><th>Tier</th><th>ML Required</th><th>EP Reward</th></tr>
+                <tr><td>Bronze</td><td>0</td><td>1,250</td></tr>
+                <tr><td>Silver</td><td>5</td><td>5,000</td></tr>
+                <tr><td>Gold</td><td>15</td><td>18,750</td></tr>
+                <tr><td>Platinum</td><td>30</td><td>50,000</td></tr>
+                <tr><td>Mythril</td><td>40</td><td>125,000</td></tr>
             </table>
         </div>
+        <p style="margin-top: 0.75rem; color: var(--text-muted); font-size: 0.9rem;">
+            Each tier holds multiple unique boss fights with their own mechanics.
+            Boss level and HP scale with tier. EP rewards above are the base value — challenge modes multiply.
+        </p>
 
         <h3 style="color: var(--text-bright); margin: 1.5rem 0 0.75rem;">5 Challenge Modes</h3>
         <ul class="content-list">

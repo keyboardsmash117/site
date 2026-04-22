@@ -1,13 +1,20 @@
-image: alpine:latest
+# GitLab Pages deploy
+# Copies the site into the `public/` folder that GitLab Pages serves.
+# Change `main` below if your default branch has a different name.
 
 pages:
   stage: deploy
+  image: alpine:latest
   script:
-    - mkdir .public
-    - cp -r * .public
-    - mv .public public
+    - mkdir -p public
+    # Copy everything except the public dir itself and CI/VCS metadata
+    - find . -maxdepth 1 -mindepth 1 \
+        ! -name public \
+        ! -name .git \
+        ! -name .gitlab-ci.yml \
+        -exec cp -r {} public/ \;
   artifacts:
     paths:
       - public
-  only:
-    - main
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

@@ -4,18 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon — Scythe FFXI</title>
-    <meta name="description" content="Upcoming and in-development features for the Scythe FFXI private server.">
+    <meta name="description" content="Systems currently in development for Scythe: Colosseum, Ferry Pirates, Synergy, and Delve.">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .status-badge { display: inline-block; padding: 3px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-left: 0.5rem; }
-        .status-partial { background: #3a3a1a; color: #d4c44a; }
-        .status-planned { background: #1a2a3a; color: #5b9bd5; }
-        .coming-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; }
-        .coming-card h3 { color: var(--text-bright); margin: 0 0 0.5rem 0; }
-        .coming-card p { color: var(--text); margin: 0.5rem 0; }
-        .coming-card .detail-list { margin-top: 1rem; }
-        .coming-card .detail-list li { color: var(--text-dim); margin-bottom: 0.25rem; }
-    </style>
 </head>
 <body>
 
@@ -38,117 +28,47 @@
 
 <section class="page-header">
     <h1 class="page-title">Coming Soon</h1>
-    <p class="page-subtitle">Features in development</p>
+    <p class="page-subtitle">Systems in active development. Partial implementations may exist on the server but are not yet released.</p>
 </section>
 
 <section class="section">
     <div class="content-block">
 
-        <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 2rem;">
-            <p style="color: var(--text); margin: 0;">These features are actively being worked on. Some may be
-                <strong>partially implemented</strong> &mdash; you might see pieces of them in-game,
-                but they are not yet polished or fully functional. They will be moved to the
-                main features page once they are ready.</p>
-        </div>
+        <h3 style="color: var(--text-bright); margin-bottom: 1rem;">The Colosseum</h3>
+        <p>
+            Timed arena boss fights across 5 tiers (Bronze → Mythril) with 5 modes
+            (Normal, Hard, Speed Kill, Solo, No Magic) and a Gauntlet chain mode.
+            Designed as the primary path for Exemplar Points.
+            <a href="colosseum.html">System design &rarr;</a>
+        </p>
 
-        <div class="coming-card">
-            <h3>The Colosseum <span class="status-badge status-partial">Partial</span></h3>
-            <p>Timed arena boss fights with multiple difficulty tiers and challenge modes.
-                Fight increasingly powerful bosses for Exemplar Points used toward Master Levels.</p>
-            <ul class="detail-list content-list">
-                <li>7 planned tiers: Bronze, Iron, Mythril, Darksteel, Titanium, Orichalcum, Adamant</li>
-                <li>5 challenge modes: Normal, Hard, Speed Kill, Solo, No Magic</li>
-                <li>Gauntlet mode &mdash; fight all bosses in a tier back-to-back</li>
-                <li>Exemplar Points (EP) earned per clear</li>
-            </ul>
-        </div>
+        <h3 style="color: var(--text-bright); margin: 1.5rem 0 1rem;">Ferry Pirates</h3>
+        <p>
+            Pirate crews will board the Selbina/Mhaura and Nashmau ferries with scaled
+            mobs and linked aggro. The ride becomes a real event rather than a travel
+            timer.
+        </p>
 
-        <div class="coming-card">
-            <h3>Master Levels <span class="status-badge status-partial">Partial</span></h3>
-            <p>A progression system beyond level 99. Earn Master Levels through Exemplar Points
-                from the Colosseum. Tied to the Colosseum system.</p>
-            <ul class="detail-list content-list">
-                <li>50 master levels, tracked per-job</li>
-                <li>Higher ML unlocks harder Colosseum tiers</li>
-                <li>Adamant tier (ML 50) features bosses with 8M+ HP</li>
-            </ul>
-        </div>
+        <h3 style="color: var(--text-bright); margin: 1.5rem 0 1rem;">Synergy</h3>
+        <p>
+            The Wings of the Goddess elemental-fusion crafting system. Synergy Furnaces
+            and Engineers will be placed in 17 zones including all major cities and
+            Aht Urhgan Whitegate. Produces HQ monster suits, event gear, and select
+            weapons.
+            <a href="synergy.html">System design &rarr;</a>
+        </p>
 
-        <div class="coming-card">
-            <h3>Siege Raids <span class="status-badge status-partial">Partial</span></h3>
-            <p>Server-wide raid events inspired by FFXIV's FATE system. Large-scale battles
-                with multi-phase bosses and mechanics that require coordination.</p>
-            <ul class="detail-list content-list">
-                <li>5-wave format with escalating difficulty</li>
-                <li>FFXIV-style mechanics: vulnerability windows, visual callouts, boss phase transitions</li>
-                <li>EP rewards for participating</li>
-            </ul>
-        </div>
+        <h3 style="color: var(--text-bright); margin: 1.5rem 0 1rem;">Delve</h3>
+        <p>
+            The Seekers of Adoulin instanced content. Bosses, Plasm currency,
+            segmented progression, and the associated gear sets — to be scoped and
+            tuned to fit Scythe's endgame curve.
+        </p>
 
-        <div class="coming-card">
-            <h3>Dynamis Divergence <span class="status-badge status-partial">Partial</span></h3>
-            <p>High-difficulty instanced versions of the four Dynamis city zones with custom
-                mob pools, unique droplists, and tougher encounters.</p>
-            <ul class="detail-list content-list">
-                <li>4 zones: Bastok, San d'Oria, Windurst, Jeuno</li>
-                <li>Custom mob pools and AI</li>
-                <li>Unique droplists separate from regular Dynamis</li>
-                <li>Instanced &mdash; each group gets their own copy</li>
-            </ul>
-        </div>
-
-        <div class="coming-card">
-            <h3>Fay Weapon Augments <span class="status-badge status-planned">Planned</span></h3>
-            <p>A quest system where players earn augmentable weapons by completing tasks in
-                Wings of the Goddess Shadowreign zones. Each weapon can be customized with
-                random augments.</p>
-            <ul class="detail-list content-list">
-                <li>20 weapons across 14 Shadowreign zones</li>
-                <li>Random augments with up to 5 reroll attempts</li>
-                <li>One weapon per job</li>
-            </ul>
-        </div>
-
-        <div class="coming-card">
-            <h3>Synergy <span class="status-badge status-partial">Partial</span></h3>
-            <p>A specialized crafting system separate from the standard 8 crafts. Uses Synergy
-                Furnaces found in cities and field areas to create unique items.</p>
-            <ul class="detail-list content-list">
-                <li>Synergy Furnaces and Engineers planned for 17 zones</li>
-                <li>Unique recipes not available through standard crafting</li>
-                <li>Requires multiple players working together at the furnace</li>
-            </ul>
-        </div>
-
-        <div class="coming-card">
-            <h3>Ferry Pirates <span class="status-badge status-partial">Partial</span></h3>
-            <p>Pirate crews board the ferry routes between Mhaura and Selbina. Scaled mobs
-                with linked aggro spawn on deck mid-voyage. Clear them before port.</p>
-        </div>
-
-        <div class="coming-card">
-            <h3>Abyssea Boosted NMs <span class="status-badge status-partial">Partial</span></h3>
-            <p>Enhanced Abyssea Notorious Monsters with increased Atma and light drop rates
-                (80% instead of retail). Makes Abyssea progression much faster.</p>
-        </div>
-
-        <div class="coming-card">
-            <h3>Omen <span class="status-badge status-partial">Partial</span></h3>
-            <p>Omen objectives and content with custom global settings for the Escha system.
-                Includes boss encounters and unique rewards.</p>
-        </div>
-
-        <div class="coming-card">
-            <h3>Chocobo Raising QoL <span class="status-badge status-planned">Planned</span></h3>
-            <p>Quality of life improvements to the Chocobo raising system, making the process
-                smoother and less tedious.</p>
-        </div>
-
-        <div class="coming-card">
-            <h3>World First Announcements <span class="status-badge status-partial">Partial</span></h3>
-            <p>Server-wide broadcast when a player achieves a first on the server &mdash;
-                first to clear content, first to obtain items, etc.</p>
-        </div>
+        <p style="margin-top: 2.5rem; color: var(--text-dim); font-style: italic;">
+            No ETAs. Development is ongoing and prioritized by the team. This list may
+            change as systems ship or new ones enter planning.
+        </p>
 
         <p style="margin-top: 2rem;">
             <a href="features.html">&larr; Back to Features</a>
