@@ -172,6 +172,20 @@
                 behavior. 0 = never engage, 1 = follow you, 2 = engage on their own.</li>
             <li><strong><code>!huntstatus</code></strong> — view your NM hunt progress. Shows
                 unique kills, next milestone, recent kills, and what's left to hunt by zone.</li>
+            <li><strong><code>!tlp</code></strong> — personal teleport bookmarks. Save up to
+                <strong>15 locations</strong> and warp back to any of them at will. Subcommands:
+                <ul style="margin-top: 0.5rem;">
+                    <li><code>!tlp set &lt;1-15&gt; [label]</code> — save your current position,
+                        rotation, and zone to that slot. The optional label (up to 16 characters)
+                        shows up in the list so you can tell slots apart, e.g.
+                        <code>!tlp set 1 Behemoth</code>.</li>
+                    <li><code>!tlp list</code> — print all saved slots with their label, zone, and
+                        coordinates.</li>
+                    <li><code>!tlp warp &lt;1-15&gt;</code> — instantly warp to the saved slot.
+                        Works across zones.</li>
+                </ul>
+                Slots are per-character and persist through logout. Use it for camp spots, HNM
+                windows, crafting guild rotations, or any place you return to often.</li>
             <li><strong><code>!help</code></strong> — print the full player command list in chat.</li>
         </ul>
 
