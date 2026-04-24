@@ -6,12 +6,14 @@
     <title>Synergy — Scythe FFXI</title>
     <meta name="description" content="Synergy crafting system fully implemented on Scythe. Synergy Furnaces and Engineers in 17 zones including all major cities and Whitegate.">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search.css">
 </head>
 <body>
 
 <nav class="navbar">
     <div class="navbar-inner">
         <a href="index.html" class="navbar-brand">SCYTHE</a>
+        <div class="navbar-search"><input type="text" class="navbar-search-input" placeholder="Search site… (press /)" autocomplete="off" aria-label="Search the site"><div class="search-results" role="listbox"></div></div>
         <button class="mobile-toggle" onclick="document.querySelector('.navbar-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
         <ul class="navbar-links">
             <li><a href="index.html">Home</a></li>
@@ -124,5 +126,6 @@ document.querySelectorAll('.navbar-links a').forEach(link => {
 });
 </script>
 
+    <script src="js/site-search.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,354 @@
+[
+  {
+    "url": "colosseum.html",
+    "title": "The Colosseum",
+    "subtitle": "Timed arena boss fights with 5 tiers and 5 modes",
+    "headings": [
+      "Intended Design — 5 Tiers",
+      "5 Challenge Modes"
+    ],
+    "content": "Timed arena boss fights with 5 tiers and 5 modes A custom arena zone with timed boss fights. When it launches, the Colosseum will be the primary source of Exemplar Points (EP) — the currency used for Master Levels. The design below documents the intended system; values are subject to change before release. The Colosseum itself is not yet playable. Right now, Exemplar Points come from: Siege raids — server-wide 5-wave events awarding EP on participation. Watch linkshell chat for the siege-start announcement. Boosted Abyssea NMs — selected Abyssea NMs award bonus EP alongside retail Abyssea rewards. See the Other Features page. When the Colosseum ships it slots in alongside these as the highest-throughput EP source. Your Master Level progress carries forward — no reset. Tier ML Required EP Reward Bronze 0 1,250 Silver 5 5,000 Gold 15 18,750 Platinum 30 50,000 Mythril 40 125,000 Each tier holds multiple unique boss fights with their own mechanics. Boss level and HP scale with tier. EP rewards above are the base value — challenge modes multiply. Normal — standard fight, up to 6 players Hard — 1.5x HP, 1.3x stats, extra adds spawn, 1.5x EP reward Speed Kill — 0.8x HP but only 40% of the"
+  },
+  {
+    "url": "coming-soon.html",
+    "title": "Coming Soon",
+    "subtitle": "Systems in active development. Partial implementations may exist on the server but are not yet released.",
+    "headings": [
+      "The Colosseum",
+      "Ferry Pirates",
+      "Chocobo Raising",
+      "Delve"
+    ],
+    "content": "Systems in active development. Partial implementations may exist on the server but are not yet released. Timed arena boss fights across 5 tiers (Bronze → Mythril) with 5 modes (Normal, Hard, Speed Kill, Solo, No Magic) and a Gauntlet chain mode. Designed as the primary path for Exemplar Points. System design → Pirate crews will board the Selbina/Mhaura and Nashmau ferries with scaled mobs and linked aggro. The ride becomes a real event rather than a travel timer. The Chocobo raising / breeding mini-game. Raise a personal chocobo from egg to adult via daily care actions (feeding, grooming, training), with various colour and stat outcomes depending on parentage and care choices. Currently available for testing but not yet feature-complete. The Seekers of Adoulin instanced content. Bosses, Plasm currency, segmented progression, and the associated gear sets — to be scoped and tuned to fit Scythe's endgame curve. Recently shipped: Synergy crafting is now live in 17 zones. No ETAs. Development is ongoing and prioritized by the team. This list may change as systems ship or new ones enter planning. ← Back to Features"
+  },
+  {
+    "url": "community.html",
+    "title": "Community",
+    "subtitle": "Everything starts in Discord",
+    "headings": [
+      "Discord",
+      "Bug Reports",
+      "New Player Help",
+      "Discord Channels",
+      "#connection-info",
+      "#announcements",
+      "#general",
+      "#new-player-guide",
+      "#bug-reports",
+      "#nm-hunt"
+    ],
+    "content": "Everything starts in Discord The hub for everything Scythe. Get the server IP and connection info, find a group, ask questions, report bugs, and keep up with development updates. All announcements go here first. Found something broken? The #bug-reports channel in Discord is the fastest way to get it fixed. Include the zone name, what you were doing, what happened, and screenshots if possible. Never played FFXI before? Returning after years away? The #new-player-guide channel has setup help, job recommendations, and veteran players happy to answer questions. Here's what you'll find when you join: Server IP, port, and account registration instructions. This is where you go first to get connected. Server updates, patch notes, maintenance windows, and new content releases. Follow this channel to stay current. General chat about the server, FFXI, and whatever else. This is where the community hangs out. Setup help, beginner tips, recommended jobs, leveling guides, and trust unlocks. Ask anything — no question is too basic. Found a bug? Report it here with zone, steps to reproduce, and what you expected to happen. Bug reporters are appreciated. Discussion about the NM hunt system — strat"
+  },
+  {
+    "url": "crafting-event.html",
+    "title": "Empress's Repair Decree",
+    "subtitle": "Server-wide crafting event",
+    "headings": [
+      "Overview",
+      "How It Works",
+      "Imperial Herald — Signed Equipment",
+      "Imperial Quartermaster — Raw Materials",
+      "Participating Guilds & GP Rewards",
+      "Artisan Marks & Artisan's Focus",
+      "Artisan's Focus — Synthesis Buffs",
+      "Tips"
+    ],
+    "content": "Server-wide crafting event By order of Empress Nashmeira II, all skilled craftsmen are called to aid in Al Zahbi's restoration. Two Imperial officials appear in Aht Urhgan Whitegate twice per week, issuing an emergency repair decree for the city's defenses. Detail Value Location Aht Urhgan Whitegate (Imperial Herald & Imperial Quartermaster) Duration 45 minutes per event Frequency Twice weekly (every 3.5 days) Announcement Server-wide at 30, 15, 5, and 1 minute before start Reward Guild Points (GP) + Artisan Marks per accepted item Each event, one signed equipment item is chosen at random from each guild's pool. The Herald posts a list of required gear at the start of the decree. Donate items you have crafted yourself (signed with your character name) to earn guild points — the Empire only accepts gear wrought by the artisan who presents it. Purchased items are rejected. HQ crafted items earn a 50% GP bonus. After 12 total turn-ins to the Herald, your manifest reshuffles to a fresh set of 8 items. The Quartermaster accepts stackable raw materials (ingots, cloth bolts, logs, leather, etc.) — no signature required. You receive one requisition per guild; once a guild's stack is delive"
+  },
+  {
+    "url": "database.html",
+    "title": "Database",
+    "subtitle": "Search 22,000+ items, 72,000+ drop entries, 938 spells, and more",
+    "headings": [],
+    "content": "Search 22,000+ items, 72,000+ drop entries, 938 spells, and more"
+  },
+  {
+    "url": "dynamis-divergence.html",
+    "title": "Dynamis Divergence",
+    "subtitle": "Instanced high-difficulty Dynamis",
+    "headings": [
+      "Available Zones",
+      "What Makes Divergence Different"
+    ],
+    "content": "Instanced high-difficulty Dynamis Dynamis Divergence is the Seekers-era re-imagining of classic Dynamis — fully instanced, much harder than original Dynamis, with its own custom mob pools and drop tables. On Scythe, all four \"Divergence\" zones are available at retail-faithful difficulty, tuned for a coordinated group (alliance-size recommended for the original nation zones, full party for Jeuno). Complete Rhapsodies of Vana'diel. Divergence entry is gated behind A Rhapsody for the Ages (final RoV mission). See the Missions page; mission skip is available from the hub NPC if you want to jump to endgame. Gather a currency piece. You need one of: One Hundred Byne Bill, Montiont Silverpiece, or Lungo-Nango Jadeshell (standard Dynamis currency — drops from original Dynamis, bought on the AH, or traded from guildmates). Visit Aurix. Aurix · Ru'Lude Gardens Trade your currency piece. In return you receive an Empty Hourglass key item — this is your Divergence pass. Buy a Prismatic Hourglass. 50,000 gil at the in-city Enigmatic Footprints NPCs (Windurst Walls, Bastok Mines, Southern San d'Oria, or Ru'Lude Gardens) — this converts the empty hourglass into a timed entry. Talk to the same Enig"
+  },
+  {
+    "url": "elite-hunts.html",
+    "title": "Elite Hunts",
+    "subtitle": "Progressive gated bosses — no skipping",
+    "headings": [
+      "Overview",
+      "Tier 4 — Elemental Seals (Entry Point)",
+      "Tier 3 — Humanoid Champions",
+      "Tier 2 — Special Bosses",
+      "Final — Absolute Virtue",
+      "Tier 1 — Supreme Beings",
+      "BCNM — Time Devourer"
+    ],
+    "content": "Progressive gated bosses — no skipping Once you've killed all 475 regular hunt NMs, the Elite system unlocks on top. 25 story characters reimagined as open-world endgame encounters with custom AI, dialogue, and spawn conditions. There is no skipping. The tiers must be cleared in order: Seals (Tier 4) → Champions (Tier 3) → Specials (Tier 2) → Supremes (Tier 1) → Absolute Virtue. Every elite also has its own spawn conditions on top of the tier gate — specific Vana'diel days, weather, moon phase, player titles, and zone-state kill counters. Finish the 475-NM sweep first. !huntstatus confirms your eligibility. Talk to the NM Hunts Master in Celennia Memorial Library — once eligible, a new menu option appears for the Elite board. Start in Tier 4 — Elemental Seals. Pick one (Fire Seal at Cape Teriggan is a common first clear). Fly there, kill the matching elemental family to build your counter, then wait for the listed weather. Progress upward through the tiers using the tables below — each row lists the prereq and spawn condition. Elites award 250 Scyld per kill (10× the regular rate). Detail Value Entry requirement All 475 regular NMs cleared (per-character) Level 119 with 15× HP/MP, "
+  },
+  {
+    "url": "faq.html",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Common questions about Scythe",
+    "headings": [
+      "Is this server free?",
+      "What level cap / era is the server?",
+      "Is the server active? How many people play?",
+      "What's the NM hunt system?",
+      "Are relic / mythic / empyrean weapons available?",
+      "Can I solo? Or do I need a group?",
+      "Is multiboxing allowed?",
+      "Will my progress be wiped?",
+      "What makes this different from other private servers?",
+      "Where do I actually start the hunt once I'm 99?",
+      "What is Chocobo Circuit used for?",
+      "How do I unlock Elite Hunts? Can I skip ahead?",
+      "What are Exemplar Points and how do I get them?",
+      "How do I report a bug?",
+      "Is this legal?"
+    ],
+    "content": "Common questions about Scythe Yes, completely free. You need a copy of the FFXI client (free to install — no active retail subscription required) and a bootloader like Ashita or Windower (also free). That's it. There will never be a cash shop, donation perks, or premium tier — FFXI private servers cannot legally monetize. All expansions are enabled through Rhapsodies of Vana'diel. The level cap is 99 with Master Levels available beyond that. This is not an era-locked server — you get the full modern FFXI experience with custom additions on top. We're a growing community. Join our Discord to see current player counts and activity. The NM hunt system is designed to be fun whether you're solo or in a group, so even during off-peak hours there's always something meaningful to do. 475 regular hunt NMs spread across 146 zones throughout Vana'diel, plus 25 elite bosses gated behind full completion (500 total). Each NM has a unique name from real-world mythology, a distinct visual model, and hand-crafted combat behavior. Level 100 with 10x stat multipliers, respawning every 9-11 minutes. Kills award Scyld currency — spend it on rewards including Mog Kupons for gear and weapons. Kill all 47"
+  },
+  {
+    "url": "fay-weapons.html",
+    "title": "Fay Weapon Augments",
+    "subtitle": "Succor to the Sidhe quest system",
+    "headings": [
+      "The Details"
+    ],
+    "content": "Succor to the Sidhe quest system Succor to the Sidhe is a repeatable quest chain that augments one of 20 job-specific Fay-line weapons. You pick the zone, fight a Pixie NM in that zone, and come back to receive a random augment roll from that zone's pool. Good way to squeeze extra stats out of a second- or third-tier weapon before you commit to a REMA. Obtain a base Fay-line weapon. These are the Fay, Erlking, Dweomer, and Ogre weapons from the original WotG Campaign / Allied Notes shops and retail quests. 20 exist, one per job — Oberon's Rapier (RDM), Erlking's Sword (PLD), Rindomaru (SAM), Dweomer Maul (WHM), Fay Lance (DRG), and so on. Check the full list with /checkparam on the weapon, or ask in Discord. Travel to Grauberg [S]. Warp to the closest outpost and head to Callisto · Grauberg [S] (-102, 538) near the reive area. Trade your weapon. Callisto accepts any of the 20 eligible Fay-line weapons. She returns the quest dialogue and points you to a Shadowreign zone. Hunt the Pixie NM. Each Shadowreign zone has one Pixie NM for this quest. Kill it (they're overworld spawns, not instanced). The zone determines which augment pool you roll from. Return to Callisto. She offers your "
+  },
+  {
+    "url": "features.html",
+    "title": "Features",
+    "subtitle": "Everything Scythe adds to the FFXI experience",
+    "headings": [
+      "The NM Hunt",
+      "Elite Hunts",
+      "REMA Custom Mods",
+      "Weapon Progression",
+      "Scyld Reward Shop",
+      "Missions & Story",
+      "Empress's Repair Decree",
+      "Trust Guide",
+      "Login Points",
+      "More Features & QoL",
+      "Coming Soon"
+    ],
+    "content": "Everything Scythe adds to the FFXI experience 475 regular NMs across 146 zones. Unique mythological names, distinct models, Level 100 with 10x stat multipliers. 9-11 min respawn. Scyld currency on kill. Progressive elite system gated behind full completion. 25 legendary bosses gated behind 475/475 completion. Story characters as bosses with custom dialogue and weaponskills. Linear progression to The Time Devourer. All 14 relics rebalanced: fTP 5.0/9.0/13.0, multi-hit fTP replication, 35% OCC 3x. Full stats table for every relic WS. Empyrean aftermath procs on WSes. Streamlined paths to Relic, Mythic, Empyrean, Aeonic, and Prime weapons. Adjusted requirements plus hunt shortcut via Kupon W-RMEA. Spend hunt currency on monster suits, event gear, anniversary sets, and milestone Mog Kupons. Final reward: any RMEA weapon at 500 unique kills. Every expansion mission line through Rhapsodies fully implemented. Mission skip NPC. Magian Trials enabled (streamlined kill counts). Blue Magic fully implemented (67+ spells). Server-wide crafting event in Aht Urhgan Whitegate. Donate signed self-crafted materials to 8 guilds for GP rewards. 45-minute window, twice weekly. Complete guide to every T"
+  },
+  {
+    "url": "getting-started.html",
+    "title": "Getting Started",
+    "subtitle": "You can be playing in about 30 minutes",
+    "headings": [
+      "Install Final Fantasy XI",
+      "Download a Private Server Bootloader",
+      "Create an Account",
+      "Configure the Connection",
+      "Launch and Play",
+      "What's next?"
+    ],
+    "content": "You can be playing in about 30 minutes You need an existing FFXI client installation with all expansions through Seekers of Adoulin. If you don't have one, install it through the official PlayOnline installer — you do not need an active subscription. Once installed, download our DAT files and replace the ones in your FFXI installation folder. These contain updated client data needed to connect to Scythe. Download DAT Files Extract the downloaded files into your FFXI installation directory (typically C:\\Program Files (x86)\\PlayOnline\\SquareEnix\\FINAL FANTASY XI\\), replacing existing files when prompted. Private servers use a bootloader to connect your FFXI client to our server instead of the official Square Enix servers. We recommend Ashita v4 — it's a free, open-source FFXI launcher with addon support, windowed mode, and quality-of-life features. Download Ashita v4 Windower is also supported if you prefer it. Both work fine. The key requirement is that the bootloader can redirect the FFXI client to a custom server address. Account creation is self-service and takes about a minute. Because Scythe uses the standard LandSandBoat registration flow, you have two options: Enter your desi"
+  },
+  {
+    "url": "guides.html",
+    "title": "Guides",
+    "subtitle": "Your first hour, and the recommended paths after that.",
+    "headings": [
+      "Your First Hour",
+      "Recommended Paths",
+      "Path A — Never Played FFXI",
+      "Path B — Returning Retail Player",
+      "Path C — Solo Player",
+      "Path D — Endgame Hunter"
+    ],
+    "content": "Your first hour, and the recommended paths after that. What to actually do once you're logged in. Each step assumes the previous one is done. If you haven't connected yet, start with the Play page. Read the welcome message. On first login you automatically get every map, a server linkpearl, and a welcome packet. Keep the linkpearl — it's how the server announces events and sieges. Turn on the levelling buff. Type !buff in any chat window. You get scaling Regen/Refresh/Regain and +200% EXP while below 99. At 99 it switches to +200% Capacity Points. Type !buff again to turn it off. Visit the hub. Type !cc to warp to Chocobo Circuit. This is the server's custom hub zone. It has the auction house, all 9 crafting guild material vendors (no rank required), a crystal vendor, a crystal storage moogle, the Advanced Support NPC for the 15-minute Imagery craft buff, and the mission-item shop (!shop or !shop 2). Collect your daily Login Points. In any of the three starting nations — Port San d'Oria, Port Bastok, Port Windurst — talk to the Greeter Moogle. You earn 500 points on your first login per Earth day and 100 on each login after. Spend them on Trust Ciphers, mounts, rings, and upgrade i"
+  },
+  {
+    "url": "index.html",
+    "title": "Scythe — Final Fantasy XI Private Server",
+    "subtitle": "Scythe is a free FFXI private server with 4x EXP, 475 custom hunt NMs, 25 elite bosses, a 5-tier Colosseum arena, siege raids, rebalanced relics, and all expansions enabled.",
+    "headings": [
+      "The server, by the numbers.",
+      "Eleven pieces of original endgame.",
+      "The NM Hunt",
+      "Elite Hunts",
+      "The Colosseum",
+      "Siege Raids",
+      "REMA Custom Mods",
+      "Dynamis Divergence",
+      "Master Levels",
+      "Fay Weapon Augments",
+      "Scyld Reward Shop",
+      "All Missions Complete",
+      "QoL & More",
+      "Ready to draw the scythe?"
+    ],
+    "content": "A Final Fantasy XI Private Server Play the full modern FFXI — every expansion enabled, every job unlocked from level 1 — with hundreds of hours of original endgame piled on top. 475 custom world boss NMs, 25 gated elite hunts, server-wide siege raids, rebalanced relic weapons, 50 Master Levels. 4× EXP, no death penalty. Free, forever. Every modern convenience the FFXI community has asked for, tuned for endgame hunters who still want the fight to mean something. Level Cap 99 + Master Levels (up to 50) Expansions All enabled (ZM through RoV) EXP Rate 4× (FoV/GoV/RoE at 1×) Skillup Rate 2.5× combat & magic · accelerated craft Gathering Rates 50% harvest/mine/log/dig base · 85% chocobo digging Death Penalty None (0% EXP loss) Gil / Drop Rates 1× (retail) Subjob Ratio Equal (99/99 instead of 99/49) Movement Speed 125 base · 175 cap Jobs All 22 unlocked at character creation Subjob / Advanced Jobs Unlocked from level 1 Trusts Enabled Homepoint Teleport Enabled (heals to full) Outpost Warps All unlocked (incl. Tu'Lia + Tavnazia) Fields/Grounds of Valor Enabled Records of Eminence Enabled Crafting All 8 crafts to 110 · dedicated crafting hub Merits 30 cap (Abyssea era) Multiboxing 2 accoun"
+  },
+  {
+    "url": "login-points.html",
+    "title": "Login Points",
+    "subtitle": "Permanent Login Campaign — earn points just by playing",
+    "headings": [
+      "How It Works",
+      "Where to Spend",
+      "Prize List"
+    ],
+    "content": "Permanent Login Campaign — earn points just by playing Scythe runs a permanent Login Campaign. Every day you log in, you earn points to spend on Trust Ciphers, mounts, rings, and other useful items from the Greeter Moogle. New to Trusts? Check the Trust Guide for a full breakdown of every trust — what they do, which roles they fill, and how to build your party. Login Points Earned First login of the day 500 points Each additional daily login 100 points Points carry over each month (capped at 1,500 carried). There is no monthly reset — the campaign is always active. Talk to the Greeter Moogle in any of the three starting nations (South San d'Oria, Bastok Markets, Windurst Woods) to browse the prize list. Item Type Beastmen's Seal Seal Kindred's Seal Seal Kindred's Crest Crest High Kindred's Crest Crest Sacred Kindred's Crest Crest Item Type Cipher: Zeid Trust Cipher: Lion Trust Cipher: Naja Salaheem Trust Cipher: Lehko Habhoka Trust Cipher: Luzaf Trust Cipher: Najelith Trust Cipher: D. Shantotto Trust Cipher: Star Sibyl Trust Cipher: Karaha-Baruha Trust Cipher: Areuhat Trust Mog Kupon I-S1 Kupon Eudaemon Blade Weapon Eudaemon Cape Back Eudaemon Ring Ring Eudaemon Sash Waist Eudaemon"
+  },
+  {
+    "url": "master-levels.html",
+    "title": "Master Levels",
+    "subtitle": "50 levels of post-cap progression",
+    "headings": [
+      "EP Cost Per Level",
+      "What You Actually Get"
+    ],
+    "content": "50 levels of post-cap progression Master Levels are FFXI's post-99 progression system. You gain them by earning Exemplar Points (EP) — a currency from high-end content. Each ML gives +1 to every stat, +7 HP, and +2 MP. Master Levels are tracked per-job — your WAR ML is separate from your BLM ML, so mains progress faster than alts. The cap is ML 50. Getting there takes long-term commitment — the final levels each cost millions of EP. On Scythe, while the Colosseum is still in development, EP is earned from: Siege raids — main live source. Show up when one fires and participate. EP is awarded proportional to contribution, with a baseline for anyone who stays through the end. Boosted Abyssea NMs — selected Abyssea NMs award bonus EP on top of retail drops. Details on the Other Features page. Elite Hunt clears — elite-tier kills award small EP alongside the 250 Scyld. When the Colosseum ships it becomes the highest-throughput source (125,000 EP per Mythril-tier clear). Existing ML progress carries forward — nothing resets. Retail curve, not inflated — the climb is real. Range EP per level Total for the range ML 0 → 10 2,500 – 31,147 ~150,000 ML 10 → 20 41,205 – 85,775 ~620,000 ML 20 → "
+  },
+  {
+    "url": "missions.html",
+    "title": "Missions & Story Content",
+    "subtitle": "Every expansion fully playable",
+    "headings": [],
+    "content": "Every expansion fully playable All Missions Implemented — every expansion mission line is fully implemented and playable from start to finish. Zilart, CoP, ToAU, WotG, Adoulin, Rhapsodies of Vana'diel — all complete with proper cutscenes, battlefields, and rewards. Mission Skip — already cleared an expansion's story on retail? Skip completed mission lines and jump straight to endgame content. No replaying hours of cutscenes you've already seen. Magian Trials — enabled with streamlined kill counts and adjusted conditions. Magian trial items available through standard quest NPCs. Blue Magic — fully implemented with 67+ spells. Proper damage formulas (alpha/WSC scaling), stat-based damage calculations, and all blue magic set point bonuses. SOA Missions — Seekers of Adoulin story accessible without imprimatur requirements. WotG story missions are not gated behind nation quests. ← Back to Features"
+  },
+  {
+    "url": "nm-hunt.html",
+    "title": "The NM Hunt",
+    "subtitle": "500 hunt NMs — 475 regular + 25 elite across 146 zones",
+    "headings": [
+      "Regular Hunt NMs — The Basics",
+      "Milestone Rewards",
+      "Daily & Weekly Bounties",
+      "Elite Hunt NMs",
+      "Tier Breakdown",
+      "Elemental Gyves",
+      "NM Locations by Zone"
+    ],
+    "content": "500 hunt NMs — 475 regular + 25 elite across 146 zones Scythe's core endgame loop. 475 custom Notorious Monsters are scattered across 146 zones throughout Vana'diel. Kill them to earn Scyld (the hunt currency), fill out your unique-kill counter, and unlock milestone rewards — including Mog Kupons for free job armor and eventually a free REMA weapon of your choice. After you've killed all 475, the Elite Hunt system unlocks on top — 25 gated bosses drawn from FFXI's story. Reach level 99. Hunt NMs are level-100 with 10× stat multipliers — you need a real endgame-ready job to fight them (see the Recommended Paths for a levelling plan). Warp to Eastern Adoulin and talk to Eppel-Treppel to enter Celennia Memorial Library. Inside the library, talk to the NM Hunts Master · Celennia Memorial Library to view your hunt progress, pick up a daily / hard / weekly bounty, and see what's left to kill. Use !huntstatus any time in chat for a quick progress check. Pick a zone from the table further down this page, travel there, find the NM on its grid square, and kill it. Spend your Scyld at the NM Hunt · Celennia Memorial Library shop NPC (right next to the Hunts Master) on cosmetics and milestone "
+  },
+  {
+    "url": "other-features.html",
+    "title": "More Features & QoL",
+    "subtitle": "Custom content, systems, and quality of life improvements",
+    "headings": [
+      "Custom Content",
+      "Server Events",
+      "Progression & Systems",
+      "Custom Commands",
+      "Quality of Life"
+    ],
+    "content": "Custom content, systems, and quality of life improvements Most of what's described below lives in one place: Chocobo Circuit, the server's custom hub zone. Warp there at any level by typing !cc. It has the auction house, all 9 crafting-guild material vendors (always open, no rank requirement), a crystal vendor, a crystal storage moogle, the Advanced Support NPC for the Imagery craft buff, and the mission-item shop. Hub Crafting Area (Chocobo Circuit) — four custom NPCs at the hub make all crafting accessible from one zone: Advanced Support grants 15 minutes of any craft's Imagery buff (all 9 crafts: Fishing, Woodworking, Smithing, Goldsmithing, Clothcraft, Leathercraft, Bonecraft, Alchemy, Cooking). Crystal Vendor stocks all 8 crystals and their clusters. Ephemeral Moogle stores crystals — trade any crystals/clusters to deposit, talk to retrieve. 9 Guild Material Vendors — one per craft, always open, no guild rank required. Campaign Battles — custom Wings of the Goddess campaign system. Beastmen armies attack WotG zones on a regular schedule. Defeat them to earn Allied Notes. Battles fire automatically across multiple zones. Wedding Ceremony — full player wedding system. Two player"
+  },
+  {
+    "url": "relic-weapons.html",
+    "title": "REMA Custom Mods",
+    "subtitle": "Detailed custom modifications to endgame weapons",
+    "headings": [
+      "Relic Weapons (119-III)",
+      "Weapon Stats (119-III)",
+      "Relic Weaponskills",
+      "Mythic Weapons (119-III)",
+      "Empyrean Weapons",
+      "Aeonic Weapons"
+    ],
+    "content": "Detailed custom modifications to endgame weapons REMA is shorthand for Relic / Empyrean / Mythic / Aeonic — the four top-tier weapon categories in endgame FFXI. All 14 Scythe relics have been rebalanced with custom stats at every upgrade tier (75, 119, 119-III), plus a buffed OCC modifier on their weapon skills. Mythic, Empyrean, and Aeonic weapons follow their normal retail upgrade paths. OCC 35% / 3× on relic WS means: the relic's weapon skill has a 35% chance (\"occasionally\") to deal 3× damage. Mandau is the outlier at 40%. Multi-hit fTP replication means every hit of a multi-hit relic WS gets the full fTP damage multiplier — on retail, only the first hit does. See the Weapon Progression page for the full upgrade flow. All 14 relic weapons have custom buffs at every tier (75, 119, 119-III). Each weapon is tuned for its job with unique stat loadouts. Stats below are for 119-III from live DB. Weapon Job OCC Key Stats Unique Mods Spharai MNK 35%/3x STR+30, DEX+30, ATT+70, ACC+50, STP+15, Haste+5% DA+5%, Kick+20, Counter+14, MagDmg+186 Mandau THF 40%/3x DEX+30, AGI+30, ATT+60, ACC+50, STP+15 TA+5%, Crit+5%, CritDmg+5, MagDmg+186 Excalibur PLD 35%/3x STR+30, VIT+30, ATT+60, ACC+50, S"
+  },
+  {
+    "url": "rules.html",
+    "title": "Server Rules",
+    "subtitle": "Keep it simple. Respect the game and respect each other.",
+    "headings": [
+      "General Conduct",
+      "Gameplay",
+      "Enforcement"
+    ],
+    "content": "Keep it simple. Respect the game and respect each other. Be respectful. No harassment, hate speech, slurs, or targeted abuse. Disagreements happen — handle them like adults. No real-money trading (RMT). Selling in-game items, currency, or accounts for real money is an immediate permanent ban. No exceptions. No cheating or exploits. Third-party tools that automate gameplay (bots), speed hacks, packet manipulation, or any exploit that gives an unfair advantage are prohibited. If you find a bug, report it. Two accounts per player. You may run up to 2 accounts simultaneously. A third account slot is planned for a future update. English in public channels. /shout and /yell should be in English so everyone can participate. Private conversations can be in any language. NM claim rules. First to engage a Notorious Monster has claim. Do not intentionally MPK, train mobs onto other players, or interfere with someone else's fight. No camping disruption. If someone is clearly camping an NM spawn, don't grief them. If there's a dispute, bring it to staff. Report bugs, don't abuse them. If something gives unintended rewards, lets you skip content, or seems broken — report it in Discord. Players w"
+  },
+  {
+    "url": "scyld-shop.html",
+    "title": "The Scyld Reward Shop",
+    "subtitle": "Spend your hunt currency on rewards",
+    "headings": [
+      "Scyld Shop — Cosmetics",
+      "Milestone Rewards"
+    ],
+    "content": "Spend your hunt currency on rewards Every hunt NM kill awards Scyld — the hunt currency. 25 per regular NM kill (shared to every party member), 250 per elite kill, plus 50–500 bonus Scyld when you complete the right daily/hard/weekly bounty. Spend Scyld at the NM Hunt shop NPC, right next to the Hunts Master in Celennia Memorial Library. Two things to spend it on: pure-cosmetic gear (monster suits, event gear, anniversary sets) and milestone Kupons — Mog Kupons redeemable for real endgame rewards as you hit unique-kill thresholds. Accumulate Scyld by killing hunt NMs. Enter Celennia Memorial Library via Eppel-Treppel · Eastern Adoulin. Talk to NM Hunt · Celennia Memorial Library — the shop NPC, directly next to the Hunts Master. Browse the three cosmetic pages, or redeem a milestone Kupon if you're eligible. Milestone Kupons are item vouchers. Trade them to the appropriate Mog Bonanza Moogle (any starting city) to redeem the actual reward (weapon / armor piece / seal). Three pages of collectible gear purchased with Scyld: Item Scyld Moogle Suit 100 Chocobo Suit 100 Mandragora Suit 150 Goblin Suit 150 Green Moogle Suit 200 Korrigan Suit 200 Onca Suit 200 Botulus Suit 250 Behemoth Su"
+  },
+  {
+    "url": "server-info.html",
+    "title": "Server Info",
+    "subtitle": "Exact rates, settings, and what's different from retail",
+    "headings": [
+      "Connection",
+      "Rates",
+      "Death & Progression",
+      "Quality of Life",
+      "Content Availability",
+      "Crafting",
+      "Combat Settings",
+      "Dynamis Settings",
+      "Custom Systems Summary"
+    ],
+    "content": "Exact rates, settings, and what's different from retail Server Address 212.28.177.210 Bootloader Ashita v4 or Windower (either works) Account Registration See #connection-info in Discord EXP Rate 4x (mob kills and quest rewards) FoV / GoV Book EXP 1x (retail) Records of Eminence EXP 1x (retail) Capacity Points 1x (retail) Gil Rate 1x (retail) Mob Gil Drop 1x (retail) Item Drop Rate 1x (retail) NM Lottery Chance 1x (retail) Sparks Rate 1x (retail) Bayld Rate 1x (retail) Combat / Magic Skill-up 2.5x Craft Skill-up Chance Dramatically accelerated (skillups guaranteed up to recipe level) HQ Craft Chance 1x (retail) Harvest / Excavate / Log / Mine 50% success (retail ~15%) Chocobo Digging 85% during favorable weather Treasure Casket Drop 10% (retail) Abyssea Lights Drop 80% EXP Loss on Death 0% (completely disabled) Level Cap 99 Initial Level Cap 50 (limit break quests required) Master Level Cap 50 (earned via Exemplar Points) Merit Point Cap 30 Starting Inventory 30 slots (retail starts with 30, expanded via quests) Starting Gil 10 gil Sparks Weekly Exchange Cap 100,000 Sparks / Accolades Currency Cap 99,999 All Jobs Unlocked Yes — all 22 jobs available at character creation, no quests"
+  },
+  {
+    "url": "siege.html",
+    "title": "Siege Raids",
+    "subtitle": "Server-wide 5-wave raid events",
+    "headings": [
+      "What's Different About Siege Bosses",
+      "Rewards"
+    ],
+    "content": "Server-wide 5-wave raid events Server-wide 5-wave raid events with FFXIV-inspired mechanics. When a siege starts, the whole server is notified — anyone who wants to participate converges on the battle zone to fight escalating waves of enemies, culminating in a phased boss. Siege is currently the primary live source of Exemplar Points for Master Level progression. Watch for the announcement. When a siege begins, every online player receives a linkshell-chat notification and on-screen callout naming the zone. Warp in. Type !headto and pick the city nearest the siege zone, or use your home-point / Warp spell. The siege zone stays open for the duration of the event. Engage. Join any existing party or fight solo — EP is tracked per-player, so you don't need a fixed group. Trusts scale up for siege and can fill gaps in a small party. Survive the 5 waves. Each wave is harder than the last. Waves 1–3 are the approach, wave 4 is a gauntlet, wave 5 is the boss. Collect rewards on completion. EP is awarded proportional to contribution, with a baseline for anyone who stays through the end. Phase-based AI — the boss moves through distinct combat phases. Each phase changes the ability rotation a"
+  },
+  {
+    "url": "synergy.html",
+    "title": "Synergy",
+    "subtitle": "Advanced crafting via elemental fusion — live, available worldwide",
+    "headings": [
+      "Overview",
+      "Available Locations"
+    ],
+    "content": "Advanced crafting via elemental fusion — live, available worldwide Synergy is a Wings-of-the-Goddess crafting system that fuses materials using elemental energy instead of the standard single-craft skill-up flow. Instead of being tied to one of the 9 retail crafts, Synergy combines elemental \"fewell\" with catalyst materials at a Synergy Furnace, producing items you cannot make any other way — monster suits, HQ event gear, select weapons, and unique cosmetics. On Scythe, Synergy is enabled and available in 17 zones covering every capital and major outpost. No guild rank requirement, no unlock quest — just find the nearest Synergy Engineer and start. Find a Synergy Engineer and a Synergy Furnace. Any of the 17 zones listed below. The Engineer teaches recipes and converts your crystals into fewell; the Furnace is the actual crafting device. Pick a recipe. The Engineer walks through what materials are needed. Synergy recipes require elemental fewell (made from crystals) plus the recipe's specific catalysts. Run the session at the Furnace. Synergy is an active mini-game — balance the elemental flow during the session. Higher instability risks destroying the materials. Skill-up as you go"
+  },
+  {
+    "url": "trusts.html",
+    "title": "Trust Guide",
+    "subtitle": "Your NPC party members, explained",
+    "headings": [
+      "What Are Trusts?",
+      "Level up your trusts through four tiers",
+      "How to upgrade a trust",
+      "Tank Tanks",
+      "Healer Healers",
+      "Support Support & Buffers",
+      "Melee DD Melee Damage Dealers",
+      "Magic DD Magic Damage Dealers",
+      "Ranged DD Ranged Damage Dealers"
+    ],
+    "content": "Your NPC party members, explained Trusts are NPC companions you can summon to fight alongside you. They fill party roles just like real players — tanking, healing, dealing damage, and casting buffs. You can have up to 5 trusts active at once (filling a full party of 6 with you). Each trust has a specific job and role. Some trusts have upgraded II versions that are stronger or behave differently. Building a good trust party is the key to soloing most content in FFXI. Scythe has 122 trusts total. Many come from story missions, nation quests, and Records of Eminence. Others can be purchased with Login Points from the Greeter Moogle. This guide covers every single one. Every party needs a healer. Start with Karaha-Baruha (available at 100 pts). Apururu (UC), Yoran-Oran (UC), and Nashmeira II are solid upgrades as you progress. A tank makes everything safer. August is the strongest tank trust in the game. Rughadjeen and Amchuchu are solid budget picks. Support trusts multiply your damage. Koru-Moru (Haste + Refresh), Ovjang (Haste + Refresh), and Qultada (Corsair rolls) are top-tier. Fill remaining slots with damage. Zeid II, Prishe II, and Gilgamesh are strong melee. Shantotto II and U"
+  },
+  {
+    "url": "weapon-progression.html",
+    "title": "Weapon Progression",
+    "subtitle": "Streamlined paths to endgame weapons",
+    "headings": [
+      "Overview",
+      "Step 0 — The !rema Shop",
+      "The 10 Gate HNMs",
+      "What's in the Shop",
+      "Relic Weapons",
+      "Mythic Weapons",
+      "Empyrean Weapons",
+      "Aeonic Weapons",
+      "Prime Weapons",
+      "The Hunt Shortcut"
+    ],
+    "content": "Streamlined paths to endgame weapons Scythe offers streamlined progression paths to all five categories of endgame weapons. The retail grind has been adjusted to be achievable without spending months on a single weapon, while still requiring meaningful effort. There are three ways to get started: The !rema shop (skip the base-weapon grind) — once you meet the gate, buy a base Relic 75 / Mythic 75 / Empyrean 80 weapon for your current job at 5M gil each. Full detail below. Traditional routes — Dynamis for Relic, Nyzul Isle / Einherjar / Assault for Mythic, Abyssea / Magian Trials for Empyrean, Escha for Aeonic, Odyssey for Prime. Hunt shortcut Kupons — Kupon I-RME at 400 unique NM kills (upgrade materials) and Kupon W-RMEA at 500 (a completely free 119-III weapon of your choice). See the Scyld milestone page. Getting a base REMA weapon on retail means months of farming currency and NM drops before you can even start upgrading. Scythe replaces that bottleneck with the !rema command — once you've proven yourself by rank-10 fame and the classic HNM gauntlet, you can buy the base weapon outright for 5 million gil. Reach nation rank 10 on any of the three starting nations. This is the fu"
+  }
+]

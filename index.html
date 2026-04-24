@@ -9,12 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css?v=2">
+    <link rel="stylesheet" href="css/search.css">
 </head>
 <body>
 
 <nav class="navbar">
     <div class="navbar-inner">
         <a href="index.html" class="navbar-brand">SCYTHE</a>
+        <div class="navbar-search"><input type="text" class="navbar-search-input" placeholder="Search site… (press /)" autocomplete="off" aria-label="Search the site"><div class="search-results" role="listbox"></div></div>
         <button class="mobile-toggle" onclick="document.querySelector('.navbar-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
         <ul class="navbar-links">
             <li><a href="index.html" class="active">Home</a></li>
@@ -405,5 +407,6 @@ document.querySelectorAll('.navbar-links a').forEach(link => {
 });
 </script>
 
+    <script src="js/site-search.js" defer></script>
 </body>
 </html>

@@ -6,6 +6,7 @@
     <title>Database — Scythe FFXI</title>
     <meta name="description" content="Searchable database of items, equipment, spells, weapon skills, mob skills, zones, and NM hunts on the Scythe FFXI private server.">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/database.css">
 </head>
 <body>
@@ -13,6 +14,7 @@
 <nav class="navbar">
     <div class="navbar-inner">
         <a href="index.html" class="navbar-brand">SCYTHE</a>
+        <div class="navbar-search"><input type="text" class="navbar-search-input" placeholder="Search site… (press /)" autocomplete="off" aria-label="Search the site"><div class="search-results" role="listbox"></div></div>
         <button class="mobile-toggle" onclick="document.querySelector('.navbar-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
         <ul class="navbar-links">
             <li><a href="index.html">Home</a></li>
@@ -93,5 +95,6 @@ document.querySelectorAll('.navbar-links a').forEach(link => {
 </script>
 <script src="js/database.js"></script>
 
+    <script src="js/site-search.js" defer></script>
 </body>
 </html>
