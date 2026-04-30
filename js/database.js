@@ -53,12 +53,15 @@ const COLUMNS = {
         {key:'delay', label:'Delay', cls:'num-cell', w:60},
         {key:'skill_name', label:'Skill', w:90},
         {key:'jobs_str', label:'Jobs', w:200},
+        {key:'ah_single_str', label:'AH', cls:'num-cell', w:110, sortKey:'ah_single'},
     ],
     items: [
         {key:'id', label:'ID', cls:'num-cell', w:60},
         {key:'name', label:'Name', cls:'name-cell clickable', w:300, click:'itemDetail'},
         {key:'stack', label:'Stack', cls:'num-cell', w:60},
         {key:'sell', label:'Sell', cls:'num-cell', w:70},
+        {key:'ah_single_str', label:'AH (1)', cls:'num-cell', w:110, sortKey:'ah_single'},
+        {key:'ah_stack_str', label:'AH (stack)', cls:'num-cell', w:110, sortKey:'ah_stack'},
     ],
     mobs: [
         {key:'name', label:'Name', cls:'name-cell clickable', w:200, click:'mobDetail'},
@@ -186,6 +189,11 @@ function formatName(s) {
     return s.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 }
 
+function formatGil(n) {
+    if (n == null || n === '' || n === 0) return '';
+    return Number(n).toLocaleString('en-US') + 'g';
+}
+
 // === DETAIL PANEL ===
 function showDetail(html) {
     let panel = document.getElementById('db-detail');
@@ -226,6 +234,8 @@ function equipDetail(row) {
     if (row.delay) html += `<tr><td>Delay</td><td>${row.delay}</td></tr>`;
     if (row.skill_name && row.skill_name !== 'None') html += `<tr><td>Weapon Type</td><td>${row.skill_name}</td></tr>`;
     html += `<tr><td>Jobs</td><td>${row.jobs_str}</td></tr>`;
+    if (row.ah_single) html += `<tr><td>AH Price</td><td>${formatGil(row.ah_single)}</td></tr>`;
+    if (row.ah_stack) html += `<tr><td>AH Price (stack)</td><td>${formatGil(row.ah_stack)}</td></tr>`;
     html += `</table></div>`;
 
     // Mods
@@ -270,7 +280,9 @@ function itemDetail(row) {
     let html = `<h3>${row.name}</h3>`;
     html += `<table class="detail-table"><tr><td>Item ID</td><td>${row.id}</td></tr>`;
     if (row.stack) html += `<tr><td>Stack</td><td>${row.stack}</td></tr>`;
-    if (row.sell) html += `<tr><td>Sell Price</td><td>${row.sell} gil</td></tr>`;
+    if (row.sell) html += `<tr><td>NPC Sell</td><td>${row.sell} gil</td></tr>`;
+    if (row.ah_single) html += `<tr><td>AH Price</td><td>${formatGil(row.ah_single)}</td></tr>`;
+    if (row.ah_stack) html += `<tr><td>AH Price (stack)</td><td>${formatGil(row.ah_stack)}</td></tr>`;
     html += `</table>`;
 
     if (mods.length > 0) {
@@ -379,8 +391,14 @@ function enrichData() {
         r.slot_name = slotName(r.slot);
         r.skill_name = SKILLS[r.skill] || '';
         r.jobs_str = jobsStr(r.jobs);
+        r.ah_single_str = formatGil(r.ah_single);
+        r.ah_stack_str = formatGil(r.ah_stack);
     });
-    (DB.data.items || []).forEach(r => { r.name = formatName(r.name); });
+    (DB.data.items || []).forEach(r => {
+        r.name = formatName(r.name);
+        r.ah_single_str = formatGil(r.ah_single);
+        r.ah_stack_str = formatGil(r.ah_stack);
+    });
     (DB.data.spells || []).forEach(r => {
         r.name = formatName(r.name);
         r.skill_name = MAGIC_SKILLS[r.skill] || '';
@@ -496,9 +514,10 @@ function render() {
 
     const thead = document.getElementById('db-thead');
     thead.innerHTML = '<tr>' + cols.map(c => {
-        const arrow = DB.sortCol === c.key ? (DB.sortDir === 1 ? ' &#9650;' : ' &#9660;') : ' &#9650;';
-        const cls = DB.sortCol === c.key ? ' sorted' : '';
-        return `<th class="${cls}" data-col="${c.key}" style="min-width:${c.w||60}px">
+        const sortKey = c.sortKey || c.key;
+        const arrow = DB.sortCol === sortKey ? (DB.sortDir === 1 ? ' &#9650;' : ' &#9660;') : ' &#9650;';
+        const cls = DB.sortCol === sortKey ? ' sorted' : '';
+        return `<th class="${cls}" data-col="${c.key}" data-sort-col="${sortKey}" style="min-width:${c.w||60}px">
             ${c.label}<span class="sort-arrow">${arrow}</span></th>`;
     }).join('') + '</tr>';
 
@@ -590,8 +609,9 @@ document.addEventListener('click', e => {
     const th = e.target.closest('th[data-col]');
     if (th) {
         const col = th.dataset.col;
-        if (DB.sortCol === col) { DB.sortDir *= -1; }
-        else { DB.sortCol = col; DB.sortDir = 1; }
+        const sortCol = th.dataset.sortCol || col;
+        if (DB.sortCol === sortCol) { DB.sortDir *= -1; }
+        else { DB.sortCol = sortCol; DB.sortDir = 1; }
         applyFilters();
         return;
     }

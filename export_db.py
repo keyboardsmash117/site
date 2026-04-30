@@ -90,17 +90,29 @@ def load_mod_names():
 
 MOD_NAMES = load_mod_names()
 
+# AH bot seller ID — restocker account that mirrors auction_house prices.
+# MIN(price) per (itemid, stack) collapses duplicate restock listings.
+AH_BOT_SELLER = 999
+
 # === EQUIPMENT ===
 print("Exporting equipment...")
-equip = query("""
+equip = query(f"""
     SELECT ib.itemid as id,
            REPLACE(ib.name, '_', ' ') as name,
            ie.level as lvl, ie.ilevel as ilvl, ie.jobs, ie.slot,
            COALESCE(iw.dmg, 0) as dmg, COALESCE(iw.delay, 0) as delay,
-           COALESCE(iw.skill, 0) as skill
+           COALESCE(iw.skill, 0) as skill,
+           ah1.price as ah_single,
+           ahs.price as ah_stack
     FROM item_basic ib
     JOIN item_equipment ie ON ib.itemid = ie.itemid
     LEFT JOIN item_weapon iw ON ib.itemid = iw.itemid
+    LEFT JOIN (SELECT itemid, MIN(price) AS price FROM auction_house
+               WHERE seller = {AH_BOT_SELLER} AND stack = 0 AND sale = 0
+               GROUP BY itemid) ah1 ON ah1.itemid = ib.itemid
+    LEFT JOIN (SELECT itemid, MIN(price) AS price FROM auction_house
+               WHERE seller = {AH_BOT_SELLER} AND stack = 1 AND sale = 0
+               GROUP BY itemid) ahs ON ahs.itemid = ib.itemid
     WHERE ie.level > 0 OR ie.ilevel > 0
     ORDER BY ie.ilevel DESC, ie.level DESC, ib.itemid
 """)
@@ -124,12 +136,20 @@ save("item_mods", item_mods)
 
 # === ITEMS ===
 print("Exporting items...")
-items = query("""
+items = query(f"""
     SELECT ib.itemid as id,
            REPLACE(ib.name, '_', ' ') as name,
-           ib.stackSize as stack, ib.BaseSell as sell
+           ib.stackSize as stack, ib.BaseSell as sell,
+           ah1.price as ah_single,
+           ahs.price as ah_stack
     FROM item_basic ib
     LEFT JOIN item_equipment ie ON ib.itemid = ie.itemid
+    LEFT JOIN (SELECT itemid, MIN(price) AS price FROM auction_house
+               WHERE seller = {AH_BOT_SELLER} AND stack = 0 AND sale = 0
+               GROUP BY itemid) ah1 ON ah1.itemid = ib.itemid
+    LEFT JOIN (SELECT itemid, MIN(price) AS price FROM auction_house
+               WHERE seller = {AH_BOT_SELLER} AND stack = 1 AND sale = 0
+               GROUP BY itemid) ahs ON ahs.itemid = ib.itemid
     WHERE ie.itemid IS NULL
     AND ib.itemid > 0
     AND ib.name != ''

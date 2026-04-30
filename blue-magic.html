@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Magic Learning Guide — Scythe FFXI</title>
+    <meta name="description" content="Every Blue Magic spell on Scythe, which mob family teaches it, and where to find them. 160 learnable spells across 70+ mob families.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search.css">
+    <style>
+        .elem-badge {
+            display: inline-block;
+            padding: 1px 7px;
+            border-radius: 3px;
+            font-size: 0.7rem;
+            font-family: var(--font-mono);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .elem-fire     { background: #3d1a0a; color: #ff7a3d; border: 1px solid #6b2a10; }
+        .elem-ice      { background: #0a1f3d; color: #5bc8ff; border: 1px solid #1a4070; }
+        .elem-wind     { background: #0a2d1a; color: #5dff9a; border: 1px solid #1a5530; }
+        .elem-earth    { background: #2d1a0a; color: #d4915a; border: 1px solid #5a3518; }
+        .elem-thunder  { background: #2d2a0a; color: #ffee44; border: 1px solid #6a6010; }
+        .elem-water    { background: #0a1a3d; color: #5a9fff; border: 1px solid #1a3a70; }
+        .elem-light    { background: #2d2d0a; color: #fff07a; border: 1px solid #6a6a18; }
+        .elem-dark     { background: #2a0a3d; color: #c05aff; border: 1px solid #5a1870; }
+        .elem-none     { background: var(--bg-card); color: var(--text-dim); border: 1px solid var(--border); }
+
+        .filter-row {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+            margin: 1rem 0 0.75rem;
+        }
+        .filter-btn {
+            padding: 0.3rem 0.75rem;
+            border: 1px solid var(--border);
+            background: var(--bg-card);
+            color: var(--text-dim);
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .filter-btn:hover { border-color: var(--border-bright); color: var(--text); }
+        .filter-btn.active { background: var(--accent-ink); border-color: var(--accent); color: var(--accent-bright); }
+
+        .blu-table-wrapper {
+            overflow-x: auto;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            max-height: 640px;
+            overflow-y: auto;
+        }
+        .blu-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+        }
+        .blu-table thead {
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            background: var(--bg-dark);
+        }
+        .blu-table th {
+            text-align: left;
+            padding: 0.7rem 1rem;
+            color: var(--accent);
+            font-weight: 500;
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            border-bottom: 1px solid var(--border);
+            font-family: var(--font-mono);
+            white-space: nowrap;
+        }
+        .blu-table td {
+            padding: 0.55rem 1rem;
+            border-bottom: 1px solid var(--border);
+            vertical-align: middle;
+        }
+        .blu-table tbody tr:last-child td { border-bottom: none; }
+        .blu-table tbody tr:hover { background: var(--bg-card); }
+        .spell-name { color: var(--text-bright); font-weight: 500; }
+        .spell-stat { color: var(--text-dim); font-family: var(--font-mono); font-size: 0.82rem; }
+        .spell-family { color: var(--text); font-size: 0.85rem; }
+
+        .search-bar {
+            width: 100%;
+            padding: 0.6rem 1rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-bright);
+            border-radius: 4px;
+            font-size: 0.95rem;
+            font-family: var(--font-body);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .search-bar:focus { border-color: var(--accent); }
+        .search-bar::placeholder { color: var(--text-dim); }
+
+        .result-count {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--text-dim);
+            margin-bottom: 0.5rem;
+        }
+        .howto-block code { font-size: 0.88rem; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-brand">SCYTHE</a>
+        <div class="navbar-search"><input type="text" class="navbar-search-input" placeholder="Search site… (press /)" autocomplete="off" aria-label="Search the site"><div class="search-results" role="listbox"></div></div>
+        <button class="mobile-toggle" onclick="document.querySelector('.navbar-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html" class="active">Features</a></li>
+            <li><a href="server-info.html">Server</a></li>
+            <li><a href="getting-started.html">Play</a></li>
+            <li><a href="guides.html">Guides</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="database.html">Database</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="page-header">
+    <h1 class="page-title">Blue Magic Learning Guide</h1>
+    <p class="page-subtitle">Every learnable spell — which mob teaches it, and where to find them</p>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section">
+    <div class="content-block">
+        <p>
+            Blue Mages learn spells by being struck by a mob's ability during combat.
+            You don't need to cast anything — you just need to <strong>survive the hit</strong>
+            while Blue Mage is your main job. After the mob is dead (or you zone out),
+            there's a chance you learn the spell. Learning isn't guaranteed on the first fight;
+            it typically takes a handful of attempts.
+        </p>
+
+        <div class="howto-block" style="margin: 1.5rem 0;">
+            <span class="howto-label">Learning Checklist</span>
+            <ol>
+                <li><strong>Set BLU as your main job.</strong> You cannot learn spells on a subjob.</li>
+                <li><strong>Find the mob family</strong> listed in the table below and locate it in a zone appropriate for your level. Any zone with that mob family works — retail zone locations apply.</li>
+                <li><strong>Engage the mob and let it use its TP move.</strong> The move must actually hit you (or at least resolve against you for AoEs). Resist or miss does not block learning.</li>
+                <li><strong>Kill the mob</strong> (or zone out) to trigger the learning check. The message "<em>You learned [spell]!</em>" appears in the log.</li>
+                <li><strong>Set the spell.</strong> Open the Blue Magic menu (<code>Magic → Set Spells</code>) and equip it. Each spell costs Set Points; you have 20 by default (gear can raise this).</li>
+            </ol>
+        </div>
+
+        <div class="info-table-wrapper" style="max-width: 500px;">
+            <table class="info-table">
+                <tr><th>Detail</th><th>Value</th></tr>
+                <tr><td>Learnable spells</td><td>160 (148 from regular mobs + 12 from NMs)</td></tr>
+                <tr><td>Mob families</td><td>70+ unique families</td></tr>
+                <tr><td>Set Points base</td><td>20 (extendable via equipment)</td></tr>
+                <tr><td>Spells per job</td><td>All 22 jobs — BLU is unlocked at character creation</td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ============ MAIN SPELL TABLE ============ -->
+<div class="section-alt">
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Regular Spells — Learned from Mob Families</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block" style="max-width: 1100px;">
+        <p style="margin-bottom: 1rem;">
+            148 spells learned from regular mob families. The mob family listed is the <strong>primary teacher</strong>; variant subtypes (e.g. Wyvern → Guivre, Simorg, Seiryu) also teach the same spell.
+            For exact zone locations use <a href="https://www.bg-wiki.com/" target="_blank" rel="noopener">BG-Wiki</a> — all retail zones are active on Scythe.
+        </p>
+
+        <input type="text" id="spellSearch" class="search-bar" placeholder="Search by spell name or mob family…" oninput="filterSpells()" autocomplete="off">
+
+        <div class="filter-row">
+            <button class="filter-btn active" data-elem="all"     onclick="setFilter(this)">All</button>
+            <button class="filter-btn" data-elem="fire"     onclick="setFilter(this)"><span class="elem-badge elem-fire">Fire</span></button>
+            <button class="filter-btn" data-elem="ice"      onclick="setFilter(this)"><span class="elem-badge elem-ice">Ice</span></button>
+            <button class="filter-btn" data-elem="wind"     onclick="setFilter(this)"><span class="elem-badge elem-wind">Wind</span></button>
+            <button class="filter-btn" data-elem="earth"    onclick="setFilter(this)"><span class="elem-badge elem-earth">Earth</span></button>
+            <button class="filter-btn" data-elem="thunder"  onclick="setFilter(this)"><span class="elem-badge elem-thunder">Thunder</span></button>
+            <button class="filter-btn" data-elem="water"    onclick="setFilter(this)"><span class="elem-badge elem-water">Water</span></button>
+            <button class="filter-btn" data-elem="light"    onclick="setFilter(this)"><span class="elem-badge elem-light">Light</span></button>
+            <button class="filter-btn" data-elem="dark"     onclick="setFilter(this)"><span class="elem-badge elem-dark">Dark</span></button>
+            <button class="filter-btn" data-elem="none"     onclick="setFilter(this)">Physical</button>
+        </div>
+
+        <div class="result-count" id="resultCount">148 spells</div>
+
+        <div class="blu-table-wrapper">
+            <table class="blu-table" id="spellTable">
+                <thead>
+                    <tr>
+                        <th>Spell</th>
+                        <th>Element</th>
+                        <th>MP</th>
+                        <th>Cast</th>
+                        <th>Recast</th>
+                        <th>Learned From (Mob Family)</th>
+                    </tr>
+                </thead>
+                <tbody>
+<tr data-name="1000 needles" data-elem="light" data-family="sabotender"><td class="spell-name">1000 Needles</td><td><span class="elem-badge elem-light">Light</span></td><td class="spell-stat">350</td><td class="spell-stat">12.0</td><td class="spell-stat">56</td><td class="spell-family">Sabotender</td></tr>
+<tr data-name="acrid stream" data-elem="water" data-family="clionid"><td class="spell-name">Acrid Stream</td><td><span class="elem-badge elem-water">Water</span></td><td class="spell-stat">89</td><td class="spell-stat">3.0</td><td class="spell-stat">23</td><td class="spell-family">Clionid</td></tr>
+<tr data-name="actinic burst" data-elem="light" data-family="ghrah"><td class="spell-name">Actinic Burst</td><td><span class="elem-badge elem-light">Light</span></td><td class="spell-stat">24</td><td class="spell-stat">0.5</td><td class="spell-stat">60</td><td class="spell-family">Ghrah</td></tr>
+<tr data-name="amplification" data-elem="none" data-family="flan botuli"><td class="spell-name">Amplification</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">48</td><td class="spell-stat">4.0</td><td class="spell-stat">56</td><td class="spell-family">Flan</td></tr>
+<tr data-name="animating wail" data-elem="wind" data-family="qutrub"><td class="spell-name">Animating Wail</td><td><span class="elem-badge elem-wind">Wind</span></td><td class="spell-stat">53</td><td class="spell-stat">2.0</td><td class="spell-stat">45</td><td class="spell-family">Qutrub</td></tr>
+<tr data-name="amorphic spikes" data-elem="none" data-family="flan botuli"><td class="spell-name">Amorphic Spikes</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">79</td><td class="spell-stat">0.5</td><td class="spell-stat">58</td><td class="spell-family">Flan</td></tr>
+<tr data-name="asuran claws" data-elem="none" data-family="gnole"><td class="spell-name">Asuran Claws</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">81</td><td class="spell-stat">2.0</td><td class="spell-stat">60</td><td class="spell-family">Gnole</td></tr>
+<tr data-name="auroral drape" data-elem="wind" data-family="weeper"><td class="spell-name">Auroral Drape</td><td><span class="elem-badge elem-wind">Wind</span></td><td class="spell-stat">51</td><td class="spell-stat">4.0</td><td class="spell-stat">60</td><td class="spell-family">Weeper</td></tr>
+<tr data-name="awful eye" data-elem="water" data-family="bugard"><td class="spell-name">Awful Eye</td><td><span class="elem-badge elem-water">Water</span></td><td class="spell-stat">32</td><td class="spell-stat">2.5</td><td class="spell-stat">60</td><td class="spell-family">Bugard</td></tr>
+<tr data-name="bad breath" data-elem="earth" data-family="morbol"><td class="spell-name">Bad Breath</td><td><span class="elem-badge elem-earth">Earth</span></td><td class="spell-stat">212</td><td class="spell-stat">8.75</td><td class="spell-stat">56</td><td class="spell-family">Morbol</td></tr>
+<tr data-name="barbed crescent" data-elem="none" data-family="fomor shadow yagudo"><td class="spell-name">Barbed Crescent</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">52</td><td class="spell-stat">0.5</td><td class="spell-stat">22</td><td class="spell-family">Fomor / Shadow</td></tr>
+<tr data-name="barrier tusk" data-elem="earth" data-family="marid irizima"><td class="spell-name">Barrier Tusk</td><td><span class="elem-badge elem-earth">Earth</span></td><td class="spell-stat">41</td><td class="spell-stat">6.0</td><td class="spell-stat">60</td><td class="spell-family">Marid / IrizIma</td></tr>
+<tr data-name="battle dance" data-elem="none" data-family="orc mimic"><td class="spell-name">Battle Dance</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">12</td><td class="spell-stat">1.0</td><td class="spell-stat">10</td><td class="spell-family">Orc / Mimic</td></tr>
+<tr data-name="battery charge" data-elem="light" data-family="magic pot"><td class="spell-name">Battery Charge</td><td><span class="elem-badge elem-light">Light</span></td><td class="spell-stat">50</td><td class="spell-stat">5.0</td><td class="spell-stat">75</td><td class="spell-family">Magic Pot</td></tr>
+<tr data-name="benthic typhoon" data-elem="none" data-family="murex"><td class="spell-name">Benthic Typhoon</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">56</td><td class="spell-stat">0.5</td><td class="spell-stat">48</td><td class="spell-family">Murex</td></tr>
+<tr data-name="blank gaze" data-elem="light" data-family="opo-opo"><td class="spell-name">Blank Gaze</td><td><span class="elem-badge elem-light">Light</span></td><td class="spell-stat">25</td><td class="spell-stat">3.0</td><td class="spell-stat">10</td><td class="spell-family">Opo-opo</td></tr>
+<tr data-name="blitzstrahl" data-elem="thunder" data-family="doll spheroid"><td class="spell-name">Blitzstrahl</td><td><span class="elem-badge elem-thunder">Thunder</span></td><td class="spell-stat">70</td><td class="spell-stat">4.5</td><td class="spell-stat">29</td><td class="spell-family">Doll / Spheroid</td></tr>
+<tr data-name="blazing bound" data-elem="fire" data-family="limule"><td class="spell-name">Blazing Bound</td><td><span class="elem-badge elem-fire">Fire</span></td><td class="spell-stat">113</td><td class="spell-stat">4.0</td><td class="spell-stat">45</td><td class="spell-family">Limule</td></tr>
+<tr data-name="blood drain" data-elem="dark" data-family="bat bat trio"><td class="spell-name">Blood Drain</td><td><span class="elem-badge elem-dark">Dark</span></td><td class="spell-stat">10</td><td class="spell-stat">4.0</td><td class="spell-stat">26</td><td class="spell-family">Bat / Bat Trio</td></tr>
+<tr data-name="blood saber" data-elem="dark" data-family="skeleton draugar naraka velionis"><td class="spell-name">Blood Saber</td><td><span class="elem-badge elem-dark">Dark</span></td><td class="spell-stat">25</td><td class="spell-stat">4.0</td><td class="spell-stat">26</td><td class="spell-family">Skeleton / Draugar / Naraka</td></tr>
+<tr data-name="bludgeon" data-elem="none" data-family="cardian gnat lizard"><td class="spell-name">Bludgeon</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">16</td><td class="spell-stat">0.5</td><td class="spell-stat">12</td><td class="spell-family">Cardian / Gnat / Lizard</td></tr>
+<tr data-name="body slam" data-elem="none" data-family="dragon"><td class="spell-name">Body Slam</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">74</td><td class="spell-stat">1.0</td><td class="spell-stat">28</td><td class="spell-family">Dragon</td></tr>
+<tr data-name="bomb toss" data-elem="fire" data-family="goblin"><td class="spell-name">Bomb Toss</td><td><span class="elem-badge elem-fire">Fire</span></td><td class="spell-stat">42</td><td class="spell-stat">3.75</td><td class="spell-stat">25</td><td class="spell-family">Goblin</td></tr>
+<tr data-name="cannonball" data-elem="none" data-family="wamouracampa"><td class="spell-name">Cannonball</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">66</td><td class="spell-stat">0.5</td><td class="spell-stat">29</td><td class="spell-family">Wamouracampa</td></tr>
+<tr data-name="chaotic eye" data-elem="wind" data-family="coeurl atomos"><td class="spell-name">Chaotic Eye</td><td><span class="elem-badge elem-wind">Wind</span></td><td class="spell-stat">13</td><td class="spell-stat">3.0</td><td class="spell-stat">10</td><td class="spell-family">Coeurl</td></tr>
+<tr data-name="charged whisker" data-elem="thunder" data-family="coeurl"><td class="spell-name">Charged Whisker</td><td><span class="elem-badge elem-thunder">Thunder</span></td><td class="spell-stat">183</td><td class="spell-stat">5.0</td><td class="spell-stat">23</td><td class="spell-family">Coeurl</td></tr>
+<tr data-name="cimicine discharge" data-elem="earth" data-family="gnat"><td class="spell-name">Cimicine Discharge</td><td><span class="elem-badge elem-earth">Earth</span></td><td class="spell-stat">32</td><td class="spell-stat">1.5</td><td class="spell-stat">20</td><td class="spell-family">Gnat</td></tr>
+<tr data-name="claw cyclone" data-elem="none" data-family="tiger byakko"><td class="spell-name">Claw Cyclone</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">24</td><td class="spell-stat">1.0</td><td class="spell-stat">20</td><td class="spell-family">Tiger</td></tr>
+<tr data-name="cocoon" data-elem="none" data-family="crawler eruca"><td class="spell-name">Cocoon</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">10</td><td class="spell-stat">1.75</td><td class="spell-stat">60</td><td class="spell-family">Crawler / Eruca</td></tr>
+<tr data-name="cold wave" data-elem="ice" data-family="snoll"><td class="spell-name">Cold Wave</td><td><span class="elem-badge elem-ice">Ice</span></td><td class="spell-stat">37</td><td class="spell-stat">4.0</td><td class="spell-stat">60</td><td class="spell-family">Snoll</td></tr>
+<tr data-name="corrosive ooze" data-elem="water" data-family="slug"><td class="spell-name">Corrosive Ooze</td><td><span class="elem-badge elem-water">Water</span></td><td class="spell-stat">55</td><td class="spell-stat">3.5</td><td class="spell-stat">30</td><td class="spell-family">Slug</td></tr>
+<tr data-name="cursed sphere" data-elem="water" data-family="fly animated weapon"><td class="spell-name">Cursed Sphere</td><td><span class="elem-badge elem-water">Water</span></td><td class="spell-stat">36</td><td class="spell-stat">3.0</td><td class="spell-stat">20</td><td class="spell-family">Fly / Animated Weapon</td></tr>
+<tr data-name="dark orb" data-elem="dark" data-family="gargouille"><td class="spell-name">Dark Orb</td><td><span class="elem-badge elem-dark">Dark</span></td><td class="spell-stat">124</td><td class="spell-stat">7.0</td><td class="spell-stat">8</td><td class="spell-family">Gargouille</td></tr>
+<tr data-name="death ray" data-elem="dark" data-family="hecteyes defiant balamor"><td class="spell-name">Death Ray</td><td><span class="elem-badge elem-dark">Dark</span></td><td class="spell-stat">49</td><td class="spell-stat">4.5</td><td class="spell-stat">29</td><td class="spell-family">Hecteyes</td></tr>
+<tr data-name="death scissors" data-elem="none" data-family="scorpion"><td class="spell-name">Death Scissors</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">51</td><td class="spell-stat">0.5</td><td class="spell-stat">25</td><td class="spell-family">Scorpion</td></tr>
+<tr data-name="delta thrust" data-elem="none" data-family="peiste"><td class="spell-name">Delta Thrust</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">28</td><td class="spell-stat">0.5</td><td class="spell-stat">15</td><td class="spell-family">Peiste</td></tr>
+<tr data-name="demoralizing roar" data-elem="water" data-family="wivre"><td class="spell-name">Demoralizing Roar</td><td><span class="elem-badge elem-water">Water</span></td><td class="spell-stat">46</td><td class="spell-stat">2.75</td><td class="spell-stat">25</td><td class="spell-family">Wivre</td></tr>
+<tr data-name="diamondhide" data-elem="none" data-family="troll tubes"><td class="spell-name">Diamondhide</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">99</td><td class="spell-stat">7.0</td><td class="spell-stat">90</td><td class="spell-family">Troll</td></tr>
+<tr data-name="digest" data-elem="dark" data-family="slime clot"><td class="spell-name">Digest</td><td><span class="elem-badge elem-dark">Dark</span></td><td class="spell-stat">20</td><td class="spell-stat">4.0</td><td class="spell-stat">26</td><td class="spell-family">Slime</td></tr>
+<tr data-name="dimensional death" data-elem="none" data-family="shadow"><td class="spell-name">Dimensional Death</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">48</td><td class="spell-stat">0.5</td><td class="spell-stat">24</td><td class="spell-family">Shadow</td></tr>
+<tr data-name="disseverment" data-elem="none" data-family="aern absolute virtue"><td class="spell-name">Disseverment</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">74</td><td class="spell-stat">0.5</td><td class="spell-stat">33</td><td class="spell-family">Aern</td></tr>
+<tr data-name="dream flower" data-elem="dark" data-family="mandragora"><td class="spell-name">Dream Flower</td><td><span class="elem-badge elem-dark">Dark</span></td><td class="spell-stat">68</td><td class="spell-stat">2.5</td><td class="spell-stat">45</td><td class="spell-family">Mandragora</td></tr>
+<tr data-name="empty thrash" data-elem="none" data-family="craver omen"><td class="spell-name">Empty Thrash</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">33</td><td class="spell-stat">0.5</td><td class="spell-stat">41</td><td class="spell-family">Craver (Omen)</td></tr>
+<tr data-name="enervation" data-elem="dark" data-family="troll"><td class="spell-name">Enervation</td><td><span class="elem-badge elem-dark">Dark</span></td><td class="spell-stat">48</td><td class="spell-stat">3.5</td><td class="spell-stat">60</td><td class="spell-family">Troll</td></tr>
+<tr data-name="evryone's grudge" data-elem="dark" data-family="tonberry kuluu"><td class="spell-name">Evryone's Grudge</td><td><span class="elem-badge elem-dark">Dark</span></td><td class="spell-stat">185</td><td class="spell-stat">6.0</td><td class="spell-stat">19</td><td class="spell-family">Tonberry</td></tr>
+<tr data-name="exuviation" data-elem="fire" data-family="wamoura achamoth"><td class="spell-name">Exuviation</td><td><span class="elem-badge elem-fire">Fire</span></td><td class="spell-stat">40</td><td class="spell-stat">3.0</td><td class="spell-stat">60</td><td class="spell-family">Wamoura</td></tr>
+<tr data-name="eyes on me" data-elem="dark" data-family="ahriman"><td class="spell-name">Eyes on Me</td><td><span class="elem-badge elem-dark">Dark</span></td><td class="spell-stat">112</td><td class="spell-stat">4.5</td><td class="spell-stat">29</td><td class="spell-family">Ahriman</td></tr>
+<tr data-name="fantod" data-elem="fire" data-family="hippogryph"><td class="spell-name">Fantod</td><td><span class="elem-badge elem-fire">Fire</span></td><td class="spell-stat">12</td><td class="spell-stat">0.5</td><td class="spell-stat">10</td><td class="spell-family">Hippogryph</td></tr>
+<tr data-name="feather barrier" data-elem="none" data-family="greater bird suzaku"><td class="spell-name">Feather Barrier</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">29</td><td class="spell-stat">2.0</td><td class="spell-stat">56</td><td class="spell-family">Greater Bird</td></tr>
+<tr data-name="feather storm" data-elem="none" data-family="yagudo goblin"><td class="spell-name">Feather Storm</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">12</td><td class="spell-stat">0.5</td><td class="spell-stat">10</td><td class="spell-family">Yagudo / Goblin</td></tr>
+<tr data-name="feather tickle" data-elem="wind" data-family="colibri chamrosh"><td class="spell-name">Feather Tickle</td><td><span class="elem-badge elem-wind">Wind</span></td><td class="spell-stat">48</td><td class="spell-stat">4.0</td><td class="spell-stat">26</td><td class="spell-family">Colibri</td></tr>
+<tr data-name="filamented hold" data-elem="earth" data-family="diremite"><td class="spell-name">Filamented Hold</td><td><span class="elem-badge elem-earth">Earth</span></td><td class="spell-stat">38</td><td class="spell-stat">2.0</td><td class="spell-stat">20</td><td class="spell-family">Diremite</td></tr>
+<tr data-name="final sting" data-elem="none" data-family="bee"><td class="spell-name">Final Sting</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">88</td><td class="spell-stat">5.0</td><td class="spell-stat">11</td><td class="spell-family">Bee</td></tr>
+<tr data-name="firespit" data-elem="fire" data-family="mamool ja"><td class="spell-name">Firespit</td><td><span class="elem-badge elem-fire">Fire</span></td><td class="spell-stat">121</td><td class="spell-stat">6.5</td><td class="spell-stat">43</td><td class="spell-family">Mamool Ja</td></tr>
+<tr data-name="flying hip press" data-elem="wind" data-family="bugbear"><td class="spell-name">Flying Hip Press</td><td><span class="elem-badge elem-wind">Wind</span></td><td class="spell-stat">125</td><td class="spell-stat">5.75</td><td class="spell-stat">35</td><td class="spell-family">Bugbear</td></tr>
+<tr data-name="foot kick" data-elem="none" data-family="rabbit"><td class="spell-name">Foot Kick</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">5</td><td class="spell-stat">0.5</td><td class="spell-stat">7</td><td class="spell-family">Rabbit</td></tr>
+<tr data-name="frenetic rip" data-elem="none" data-family="imp verdelet"><td class="spell-name">Frenetic Rip</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">61</td><td class="spell-stat">0.5</td><td class="spell-stat">29</td><td class="spell-family">Imp</td></tr>
+<tr data-name="frightful roar" data-elem="wind" data-family="tauri"><td class="spell-name">Frightful Roar</td><td><span class="elem-badge elem-wind">Wind</span></td><td class="spell-stat">32</td><td class="spell-stat">2.0</td><td class="spell-stat">20</td><td class="spell-family">Tauri</td></tr>
+<tr data-name="frost breath" data-elem="ice" data-family="raptor"><td class="spell-name">Frost Breath</td><td><span class="elem-badge elem-ice">Ice</span></td><td class="spell-stat">136</td><td class="spell-stat">6.5</td><td class="spell-stat">43</td><td class="spell-family">Raptor</td></tr>
+<tr data-name="frypan" data-elem="none" data-family="goblin moblin"><td class="spell-name">Frypan</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">65</td><td class="spell-stat">1.0</td><td class="spell-stat">26</td><td class="spell-family">Goblin / Moblin</td></tr>
+<tr data-name="geist wall" data-elem="dark" data-family="eft"><td class="spell-name">Geist Wall</td><td><span class="elem-badge elem-dark">Dark</span></td><td class="spell-stat">35</td><td class="spell-stat">3.0</td><td class="spell-stat">30</td><td class="spell-family">Eft</td></tr>
+<tr data-name="goblin rush" data-elem="none" data-family="goblin"><td class="spell-name">Goblin Rush</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">76</td><td class="spell-stat">0.5</td><td class="spell-stat">26</td><td class="spell-family">Goblin</td></tr>
+<tr data-name="grand slam" data-elem="none" data-family="gigas"><td class="spell-name">Grand Slam</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">24</td><td class="spell-stat">1.0</td><td class="spell-stat">14</td><td class="spell-family">Gigas</td></tr>
+<tr data-name="head butt" data-elem="none" data-family="quadav umbril"><td class="spell-name">Head Butt</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">12</td><td class="spell-stat">0.5</td><td class="spell-stat">10</td><td class="spell-family">Quadav / Umbril</td></tr>
+<tr data-name="healing breeze" data-elem="none" data-family="dhalmel"><td class="spell-name">Healing Breeze</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">55</td><td class="spell-stat">4.5</td><td class="spell-stat">15</td><td class="spell-family">Dhalmel</td></tr>
+<tr data-name="heat breath" data-elem="fire" data-family="manticore kirin"><td class="spell-name">Heat Breath</td><td><span class="elem-badge elem-fire">Fire</span></td><td class="spell-stat">169</td><td class="spell-stat">7.5</td><td class="spell-stat">49</td><td class="spell-family">Manticore</td></tr>
+<tr data-name="heavy strike" data-elem="none" data-family="golem mandragora mokkurkalfi"><td class="spell-name">Heavy Strike</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">32</td><td class="spell-stat">0.5</td><td class="spell-stat">28</td><td class="spell-family">Golem / Mandragora</td></tr>
+<tr data-name="hecatomb wave" data-elem="wind" data-family="kindred"><td class="spell-name">Hecatomb Wave</td><td><span class="elem-badge elem-wind">Wind</span></td><td class="spell-stat">116</td><td class="spell-stat">5.25</td><td class="spell-stat">34</td><td class="spell-family">Kindred</td></tr>
+<tr data-name="helldive" data-elem="none" data-family="bird"><td class="spell-name">Helldive</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">16</td><td class="spell-stat">0.5</td><td class="spell-stat">11</td><td class="spell-family">Bird</td></tr>
+<tr data-name="hydro shot" data-elem="none" data-family="sahagin"><td class="spell-name">Hydro Shot</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">55</td><td class="spell-stat">0.5</td><td class="spell-stat">26</td><td class="spell-family">Sahagin</td></tr>
+<tr data-name="hysteric barrage" data-elem="none" data-family="lamiae experimentallamia"><td class="spell-name">Hysteric Barrage</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">61</td><td class="spell-stat">0.5</td><td class="spell-stat">29</td><td class="spell-family">Lamiae</td></tr>
+<tr data-name="ice break" data-elem="ice" data-family="golem mandragora mokkurkalfi"><td class="spell-name">Ice Break</td><td><span class="elem-badge elem-ice">Ice</span></td><td class="spell-stat">142</td><td class="spell-stat">5.25</td><td class="spell-stat">34</td><td class="spell-family">Golem / Mandragora</td></tr>
+<tr data-name="infrasonics" data-elem="ice" data-family="lizard"><td class="spell-name">Infrasonics</td><td><span class="elem-badge elem-ice">Ice</span></td><td class="spell-stat">42</td><td class="spell-stat">3.0</td><td class="spell-stat">60</td><td class="spell-family">Lizard</td></tr>
+<tr data-name="jettatura" data-elem="dark" data-family="hippogryph"><td class="spell-name">Jettatura</td><td><span class="elem-badge elem-dark">Dark</span></td><td class="spell-stat">37</td><td class="spell-stat">0.5</td><td class="spell-stat">56</td><td class="spell-family">Hippogryph</td></tr>
+<tr data-name="jet stream" data-elem="none" data-family="bat trio"><td class="spell-name">Jet Stream</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">47</td><td class="spell-stat">0.5</td><td class="spell-stat">23</td><td class="spell-family">Bat Trio</td></tr>
+<tr data-name="leafstorm" data-elem="wind" data-family="treant"><td class="spell-name">Leafstorm</td><td><span class="elem-badge elem-wind">Wind</span></td><td class="spell-stat">132</td><td class="spell-stat">6.0</td><td class="spell-stat">1</td><td class="spell-family">Treant</td></tr>
+<tr data-name="light of penance" data-elem="light" data-family="tonberry kuluu"><td class="spell-name">Light of Penance</td><td><span class="elem-badge elem-light">Light</span></td><td class="spell-stat">53</td><td class="spell-stat">3.0</td><td class="spell-stat">60</td><td class="spell-family">Tonberry</td></tr>
+<tr data-name="lowing" data-elem="fire" data-family="buffalo"><td class="spell-name">Lowing</td><td><span class="elem-badge elem-fire">Fire</span></td><td class="spell-stat">66</td><td class="spell-stat">7.0</td><td class="spell-stat">56</td><td class="spell-family">Buffalo</td></tr>
+<tr data-name="maelstrom" data-elem="water" data-family="sea monk"><td class="spell-name">Maelstrom</td><td><span class="elem-badge elem-water">Water</span></td><td class="spell-stat">162</td><td class="spell-stat">6.0</td><td class="spell-stat">39</td><td class="spell-family">Sea Monk</td></tr>
+<tr data-name="magic barrier" data-elem="dark" data-family="ahriman"><td class="spell-name">Magic Barrier</td><td><span class="elem-badge elem-dark">Dark</span></td><td class="spell-stat">29</td><td class="spell-stat">5.0</td><td class="spell-stat">60</td><td class="spell-family">Ahriman</td></tr>
+<tr data-name="magic fruit" data-elem="none" data-family="opo-opo"><td class="spell-name">Magic Fruit</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">72</td><td class="spell-stat">3.5</td><td class="spell-stat">6</td><td class="spell-family">Opo-opo</td></tr>
+<tr data-name="magic hammer" data-elem="light" data-family="poroggo iriri samariri"><td class="spell-name">Magic Hammer</td><td><span class="elem-badge elem-light">Light</span></td><td class="spell-stat">40</td><td class="spell-stat">4.0</td><td class="spell-stat">180</td><td class="spell-family">Poroggo</td></tr>
+<tr data-name="magnetite cloud" data-elem="earth" data-family="antica"><td class="spell-name">Magnetite Cloud</td><td><span class="elem-badge elem-earth">Earth</span></td><td class="spell-stat">86</td><td class="spell-stat">4.5</td><td class="spell-stat">29</td><td class="spell-family">Antica</td></tr>
+<tr data-name="mandibular bite" data-elem="none" data-family="antlion ambush"><td class="spell-name">Mandibular Bite</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">38</td><td class="spell-stat">0.5</td><td class="spell-stat">19</td><td class="spell-family">Antlion</td></tr>
+<tr data-name="memento mori" data-elem="none" data-family="corse corpselights dvergr skull"><td class="spell-name">Memento Mori</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">46</td><td class="spell-stat">3.5</td><td class="spell-stat">120</td><td class="spell-family">Corse / Dvergr</td></tr>
+<tr data-name="metallic body" data-elem="none" data-family="crab"><td class="spell-name">Metallic Body</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">19</td><td class="spell-stat">7.0</td><td class="spell-stat">60</td><td class="spell-family">Crab</td></tr>
+<tr data-name="mind blast" data-elem="thunder" data-family="soulflayer humanoid hume"><td class="spell-name">Mind Blast</td><td><span class="elem-badge elem-thunder">Thunder</span></td><td class="spell-stat">82</td><td class="spell-stat">3.0</td><td class="spell-stat">30</td><td class="spell-family">Soulflayer</td></tr>
+<tr data-name="mortal ray" data-elem="dark" data-family="tauri"><td class="spell-name">Mortal Ray</td><td><span class="elem-badge elem-dark">Dark</span></td><td class="spell-stat">267</td><td class="spell-stat">8.5</td><td class="spell-stat">22</td><td class="spell-family">Tauri</td></tr>
+<tr data-name="mp drainkiss" data-elem="dark" data-family="leech"><td class="spell-name">MP Drainkiss</td><td><span class="elem-badge elem-dark">Dark</span></td><td class="spell-stat">20</td><td class="spell-stat">4.0</td><td class="spell-stat">90</td><td class="spell-family">Leech</td></tr>
+<tr data-name="mysterious light" data-elem="wind" data-family="magic pot"><td class="spell-name">Mysterious Light</td><td><span class="elem-badge elem-wind">Wind</span></td><td class="spell-stat">73</td><td class="spell-stat">3.75</td><td class="spell-stat">25</td><td class="spell-family">Magic Pot</td></tr>
+<tr data-name="occultation" data-elem="wind" data-family="seether"><td class="spell-name">Occultation</td><td><span class="elem-badge elem-wind">Wind</span></td><td class="spell-stat">138</td><td class="spell-stat">2.0</td><td class="spell-stat">90</td><td class="spell-family">Seether</td></tr>
+<tr data-name="osmosis" data-elem="dark" data-family="amoeban"><td class="spell-name">Osmosis</td><td><span class="elem-badge elem-dark">Dark</span></td><td class="spell-stat">47</td><td class="spell-stat">6.0</td><td class="spell-stat">56</td><td class="spell-family">Amoeban</td></tr>
+<tr data-name="pinecone bomb" data-elem="none" data-family="treant"><td class="spell-name">Pinecone Bomb</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">48</td><td class="spell-stat">2.5</td><td class="spell-stat">27</td><td class="spell-family">Treant</td></tr>
+<tr data-name="plasma charge" data-elem="none" data-family="phuabo"><td class="spell-name">Plasma Charge</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">24</td><td class="spell-stat">3.0</td><td class="spell-stat">60</td><td class="spell-family">Phuabo</td></tr>
+<tr data-name="plenilune embrace" data-elem="light" data-family="gnole"><td class="spell-name">Plenilune Embrace</td><td><span class="elem-badge elem-light">Light</span></td><td class="spell-stat">106</td><td class="spell-stat">2.75</td><td class="spell-stat">12</td><td class="spell-family">Gnole</td></tr>
+<tr data-name="poison breath" data-elem="water" data-family="hound"><td class="spell-name">Poison Breath</td><td><span class="elem-badge elem-water">Water</span></td><td class="spell-stat">22</td><td class="spell-stat">3.0</td><td class="spell-stat">20</td><td class="spell-family">Hound</td></tr>
+<tr data-name="pollen" data-elem="none" data-family="bee"><td class="spell-name">Pollen</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">5</td><td class="spell-stat">2.0</td><td class="spell-stat">5</td><td class="spell-family">Bee</td></tr>
+<tr data-name="power attack" data-elem="none" data-family="beetle"><td class="spell-name">Power Attack</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">5</td><td class="spell-stat">0.5</td><td class="spell-stat">7</td><td class="spell-family">Beetle</td></tr>
+<tr data-name="quad continuum" data-elem="none" data-family="gorger leech omen"><td class="spell-name">Quad Continuum</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">91</td><td class="spell-stat">1.0</td><td class="spell-stat">32</td><td class="spell-family">Gorger (Omen) / Leech</td></tr>
+<tr data-name="quadrastrike" data-elem="none" data-family="kindred"><td class="spell-name">Quadrastrike</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">98</td><td class="spell-stat">0.5</td><td class="spell-stat">43</td><td class="spell-family">Kindred</td></tr>
+<tr data-name="queasyshroom" data-elem="none" data-family="funguar"><td class="spell-name">Queasyshroom</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">20</td><td class="spell-stat">2.0</td><td class="spell-stat">15</td><td class="spell-family">Funguar</td></tr>
+<tr data-name="radiant breath" data-elem="light" data-family="wyvern guivre simorg seiryu undead"><td class="spell-name">Radiant Breath</td><td><span class="elem-badge elem-light">Light</span></td><td class="spell-stat">116</td><td class="spell-stat">5.25</td><td class="spell-stat">34</td><td class="spell-family">Wyvern</td></tr>
+<tr data-name="ram charge" data-elem="none" data-family="ram"><td class="spell-name">Ram Charge</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">79</td><td class="spell-stat">0.5</td><td class="spell-stat">35</td><td class="spell-family">Ram</td></tr>
+<tr data-name="reactor cool" data-elem="none" data-family="zdei"><td class="spell-name">Reactor Cool</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">28</td><td class="spell-stat">3.0</td><td class="spell-stat">60</td><td class="spell-family">Zdei</td></tr>
+<tr data-name="reaving wind" data-elem="wind" data-family="amphiptere pugil"><td class="spell-name">Reaving Wind</td><td><span class="elem-badge elem-wind">Wind</span></td><td class="spell-stat">84</td><td class="spell-stat">4.0</td><td class="spell-stat">26</td><td class="spell-family">Amphiptere / Pugil</td></tr>
+<tr data-name="refueling" data-elem="none" data-family="cluster"><td class="spell-name">Refueling</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">29</td><td class="spell-stat">1.5</td><td class="spell-stat">30</td><td class="spell-family">Cluster</td></tr>
+<tr data-name="regeneration" data-elem="light" data-family="sea monk"><td class="spell-name">Regeneration</td><td><span class="elem-badge elem-light">Light</span></td><td class="spell-stat">36</td><td class="spell-stat">1.5</td><td class="spell-stat">60</td><td class="spell-family">Sea Monk</td></tr>
+<tr data-name="regurgitation" data-elem="water" data-family="peiste"><td class="spell-name">Regurgitation</td><td><span class="elem-badge elem-water">Water</span></td><td class="spell-stat">69</td><td class="spell-stat">3.0</td><td class="spell-stat">25</td><td class="spell-family">Peiste</td></tr>
+<tr data-name="saline coat" data-elem="none" data-family="xzomit"><td class="spell-name">Saline Coat</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">66</td><td class="spell-stat">3.0</td><td class="spell-stat">60</td><td class="spell-family">Xzomit</td></tr>
+<tr data-name="sandspin" data-elem="earth" data-family="worm"><td class="spell-name">Sandspin</td><td><span class="elem-badge elem-earth">Earth</span></td><td class="spell-stat">10</td><td class="spell-stat">1.5</td><td class="spell-stat">10</td><td class="spell-family">Worm</td></tr>
+<tr data-name="sandspray" data-elem="dark" data-family="qiqirn cheese hoarder"><td class="spell-name">Sandspray</td><td><span class="elem-badge elem-dark">Dark</span></td><td class="spell-stat">43</td><td class="spell-stat">3.0</td><td class="spell-stat">26</td><td class="spell-family">Qiqirn</td></tr>
+<tr data-name="screwdriver" data-elem="none" data-family="pugil"><td class="spell-name">Screwdriver</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">21</td><td class="spell-stat">0.5</td><td class="spell-stat">14</td><td class="spell-family">Pugil</td></tr>
+<tr data-name="seedspray" data-elem="earth" data-family="rafflesia"><td class="spell-name">Seedspray</td><td><span class="elem-badge elem-earth">Earth</span></td><td class="spell-stat">61</td><td class="spell-stat">2.5</td><td class="spell-stat">36</td><td class="spell-family">Rafflesia</td></tr>
+<tr data-name="self-destruct" data-elem="fire" data-family="bomb reacton"><td class="spell-name">Self-Destruct</td><td><span class="elem-badge elem-fire">Fire</span></td><td class="spell-stat">100</td><td class="spell-stat">3.25</td><td class="spell-stat">21</td><td class="spell-family">Bomb</td></tr>
+<tr data-name="sheep song" data-elem="light" data-family="sheep karakul"><td class="spell-name">Sheep Song</td><td><span class="elem-badge elem-light">Light</span></td><td class="spell-stat">22</td><td class="spell-stat">3.0</td><td class="spell-stat">60</td><td class="spell-family">Sheep / Karakul</td></tr>
+<tr data-name="sickle slash" data-elem="none" data-family="spider"><td class="spell-name">Sickle Slash</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">41</td><td class="spell-stat">0.5</td><td class="spell-stat">20</td><td class="spell-family">Spider</td></tr>
+<tr data-name="smite of rage" data-elem="none" data-family="evil weapon"><td class="spell-name">Smite of Rage</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">28</td><td class="spell-stat">0.5</td><td class="spell-stat">13</td><td class="spell-family">Evil Weapon</td></tr>
+<tr data-name="sound blast" data-elem="fire" data-family="cockatrice"><td class="spell-name">Sound Blast</td><td><span class="elem-badge elem-fire">Fire</span></td><td class="spell-stat">25</td><td class="spell-stat">4.0</td><td class="spell-stat">30</td><td class="spell-family">Cockatrice</td></tr>
+<tr data-name="soporific" data-elem="dark" data-family="flytrap"><td class="spell-name">Soporific</td><td><span class="elem-badge elem-dark">Dark</span></td><td class="spell-stat">38</td><td class="spell-stat">3.0</td><td class="spell-stat">26</td><td class="spell-family">Flytrap</td></tr>
+<tr data-name="spinal cleave" data-elem="none" data-family="qutrub"><td class="spell-name">Spinal Cleave</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">61</td><td class="spell-stat">0.5</td><td class="spell-stat">29</td><td class="spell-family">Qutrub</td></tr>
+<tr data-name="spiral spin" data-elem="none" data-family="ladybug"><td class="spell-name">Spiral Spin</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">39</td><td class="spell-stat">2.5</td><td class="spell-stat">45</td><td class="spell-family">Ladybug</td></tr>
+<tr data-name="sprout smack" data-elem="none" data-family="sapling lizard"><td class="spell-name">Sprout Smack</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">6</td><td class="spell-stat">0.5</td><td class="spell-stat">7</td><td class="spell-family">Sapling / Lizard</td></tr>
+<tr data-name="stinking gas" data-elem="wind" data-family="doomed"><td class="spell-name">Stinking Gas</td><td><span class="elem-badge elem-wind">Wind</span></td><td class="spell-stat">37</td><td class="spell-stat">4.0</td><td class="spell-stat">60</td><td class="spell-family">Doomed</td></tr>
+<tr data-name="sub-zero smash" data-elem="none" data-family="ruszor"><td class="spell-name">Sub-Zero Smash</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">44</td><td class="spell-stat">1.0</td><td class="spell-stat">33</td><td class="spell-family">Ruszor</td></tr>
+<tr data-name="sudden lunge" data-elem="none" data-family="ladybug"><td class="spell-name">Sudden Lunge</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">18</td><td class="spell-stat">0.5</td><td class="spell-stat">15</td><td class="spell-family">Ladybug</td></tr>
+<tr data-name="tail slap" data-elem="none" data-family="merrow"><td class="spell-name">Tail Slap</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">77</td><td class="spell-stat">1.0</td><td class="spell-stat">29</td><td class="spell-family">Merrow</td></tr>
+<tr data-name="temporal shift" data-elem="thunder" data-family="hpemde"><td class="spell-name">Temporal Shift</td><td><span class="elem-badge elem-thunder">Thunder</span></td><td class="spell-stat">48</td><td class="spell-stat">0.5</td><td class="spell-stat">56</td><td class="spell-family">Hpemde</td></tr>
+<tr data-name="terror touch" data-elem="none" data-family="ghost bhoot"><td class="spell-name">Terror Touch</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">62</td><td class="spell-stat">3.25</td><td class="spell-stat">21</td><td class="spell-family">Ghost / Bhoot</td></tr>
+<tr data-name="thermal pulse" data-elem="fire" data-family="wamouracampa brass borer"><td class="spell-name">Thermal Pulse</td><td><span class="elem-badge elem-fire">Fire</span></td><td class="spell-stat">151</td><td class="spell-stat">5.5</td><td class="spell-stat">8</td><td class="spell-family">Wamouracampa</td></tr>
+<tr data-name="thunder breath" data-elem="thunder" data-family="wyvern simorg seiryu"><td class="spell-name">Thunder Breath</td><td><span class="elem-badge elem-thunder">Thunder</span></td><td class="spell-stat">193</td><td class="spell-stat">7.0</td><td class="spell-stat">48</td><td class="spell-family">Wyvern</td></tr>
+<tr data-name="triumphant roar" data-elem="fire" data-family="gargouille"><td class="spell-name">Triumphant Roar</td><td><span class="elem-badge elem-fire">Fire</span></td><td class="spell-stat">36</td><td class="spell-stat">1.75</td><td class="spell-stat">26</td><td class="spell-family">Gargouille</td></tr>
+<tr data-name="uppercut" data-elem="none" data-family="goobbue"><td class="spell-name">Uppercut</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">31</td><td class="spell-stat">0.5</td><td class="spell-stat">18</td><td class="spell-family">Goobbue</td></tr>
+<tr data-name="vanity dive" data-elem="none" data-family="wanderer"><td class="spell-name">Vanity Dive</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">58</td><td class="spell-stat">0.5</td><td class="spell-stat">42</td><td class="spell-family">Wanderer</td></tr>
+<tr data-name="vapor spray" data-elem="water" data-family="phuabo"><td class="spell-name">Vapor Spray</td><td><span class="elem-badge elem-water">Water</span></td><td class="spell-stat">172</td><td class="spell-stat">3.0</td><td class="spell-stat">19</td><td class="spell-family">Phuabo</td></tr>
+<tr data-name="venom shell" data-elem="water" data-family="uragnite"><td class="spell-name">Venom Shell</td><td><span class="elem-badge elem-water">Water</span></td><td class="spell-stat">86</td><td class="spell-stat">3.0</td><td class="spell-stat">45</td><td class="spell-family">Uragnite</td></tr>
+<tr data-name="vertical cleave" data-elem="none" data-family="euvhi"><td class="spell-name">Vertical Cleave</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">86</td><td class="spell-stat">0.5</td><td class="spell-stat">37</td><td class="spell-family">Euvhi</td></tr>
+<tr data-name="voracious trunk" data-elem="wind" data-family="marid irizima"><td class="spell-name">Voracious Trunk</td><td><span class="elem-badge elem-wind">Wind</span></td><td class="spell-stat">72</td><td class="spell-stat">10.0</td><td class="spell-stat">56</td><td class="spell-family">Marid / IrizIma</td></tr>
+<tr data-name="warm-up" data-elem="none" data-family="mamool ja"><td class="spell-name">Warm-Up</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">59</td><td class="spell-stat">3.0</td><td class="spell-stat">56</td><td class="spell-family">Mamool Ja</td></tr>
+<tr data-name="water bomb" data-elem="water" data-family="poroggo"><td class="spell-name">Water Bomb</td><td><span class="elem-badge elem-water">Water</span></td><td class="spell-stat">67</td><td class="spell-stat">2.5</td><td class="spell-stat">32</td><td class="spell-family">Poroggo</td></tr>
+<tr data-name="whirl of rage" data-elem="none" data-family="evil weapon"><td class="spell-name">Whirl of Rage</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">73</td><td class="spell-stat">1.0</td><td class="spell-stat">31</td><td class="spell-family">Evil Weapon</td></tr>
+<tr data-name="white wind" data-elem="wind" data-family="puk vulpangue"><td class="spell-name">White Wind</td><td><span class="elem-badge elem-wind">Wind</span></td><td class="spell-stat">145</td><td class="spell-stat">7.0</td><td class="spell-stat">20</td><td class="spell-family">Puk</td></tr>
+<tr data-name="wild carrot" data-elem="none" data-family="rabbit"><td class="spell-name">Wild Carrot</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">37</td><td class="spell-stat">2.5</td><td class="spell-stat">6</td><td class="spell-family">Rabbit</td></tr>
+<tr data-name="wild oats" data-elem="none" data-family="mandragora"><td class="spell-name">Wild Oats</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">9</td><td class="spell-stat">0.5</td><td class="spell-stat">7</td><td class="spell-family">Mandragora</td></tr>
+<tr data-name="wind breath" data-elem="wind" data-family="dragon"><td class="spell-name">Wind Breath</td><td><span class="elem-badge elem-wind">Wind</span></td><td class="spell-stat">26</td><td class="spell-stat">1.0</td><td class="spell-stat">30</td><td class="spell-family">Dragon</td></tr>
+<tr data-name="winds of promy" data-elem="light" data-family="thinker omen"><td class="spell-name">Winds of Promy</td><td><span class="elem-badge elem-light">Light</span></td><td class="spell-stat">36</td><td class="spell-stat">2.5</td><td class="spell-stat">18</td><td class="spell-family">Thinker (Omen)</td></tr>
+<tr data-name="yawn" data-elem="light" data-family="apkallu"><td class="spell-name">Yawn</td><td><span class="elem-badge elem-light">Light</span></td><td class="spell-stat">55</td><td class="spell-stat">3.0</td><td class="spell-stat">60</td><td class="spell-family">Apkallu</td></tr>
+<tr data-name="zephyr mantle" data-elem="wind" data-family="puk vulpangue"><td class="spell-name">Zephyr Mantle</td><td><span class="elem-badge elem-wind">Wind</span></td><td class="spell-stat">31</td><td class="spell-stat">4.0</td><td class="spell-stat">60</td><td class="spell-family">Puk</td></tr>
+<tr data-name="blastbomb" data-elem="fire" data-family="orc warmachine"><td class="spell-name">Blastbomb</td><td><span class="elem-badge elem-fire">Fire</span></td><td class="spell-stat">36</td><td class="spell-stat">2.25</td><td class="spell-stat">15</td><td class="spell-family">Orc</td></tr>
+<tr data-name="dimensional death" data-elem="none" data-family="shadow fomor"><td class="spell-name">Dimensional Death</td><td><span class="elem-badge elem-none">Physical</span></td><td class="spell-stat">48</td><td class="spell-stat">0.5</td><td class="spell-stat">24</td><td class="spell-family">Shadow</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+</div>
+
+<!-- ============ NM / BOSS SPELLS ============ -->
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Notorious Monster Spells</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>
+            12 spells are taught exclusively by high-tier Notorious Monsters — sky gods,
+            sea kings, and Aht Urhgan bosses. You must survive the specific NM's TP move
+            in the same way as regular learning. These NMs are all accessible on Scythe.
+        </p>
+
+        <div class="info-table-wrapper" style="max-width: 1000px;">
+            <table class="info-table">
+                <tr>
+                    <th>Spell</th>
+                    <th>Element</th>
+                    <th>MP</th>
+                    <th>Cast</th>
+                    <th>Recast</th>
+                    <th>NM Teacher</th>
+                    <th>Location</th>
+                </tr>
+                <tr>
+                    <td>Thrashing Assault</td>
+                    <td><span class="elem-badge elem-none">Physical</span></td>
+                    <td>119</td><td>0.5</td><td>60</td>
+                    <td>Mammet</td>
+                    <td>Alzadaal Undersea Ruins</td>
+                </tr>
+                <tr>
+                    <td>Thunderbolt</td>
+                    <td><span class="elem-badge elem-thunder">Thunder</span></td>
+                    <td>138</td><td>3.5</td><td>30</td>
+                    <td>Behemoth / King Behemoth</td>
+                    <td>Behemoth's Dominion</td>
+                </tr>
+                <tr>
+                    <td>Harden Shell</td>
+                    <td><span class="elem-badge elem-earth">Earth</span></td>
+                    <td>20</td><td>1.5</td><td>30</td>
+                    <td>Adamantoise / King Adamantoise</td>
+                    <td>Ru'Aun Gardens</td>
+                </tr>
+                <tr>
+                    <td>Absolute Terror</td>
+                    <td><span class="elem-badge elem-dark">Dark</span></td>
+                    <td>29</td><td>0.5</td><td>30</td>
+                    <td>Ouryu / Wyrm</td>
+                    <td>Riverne Site #B01</td>
+                </tr>
+                <tr>
+                    <td>Gates of Hades</td>
+                    <td><span class="elem-badge elem-fire">Fire</span></td>
+                    <td>156</td><td>3.5</td><td>30</td>
+                    <td>Cerberus</td>
+                    <td>Multi-zone (Temenos etc.)</td>
+                </tr>
+                <tr>
+                    <td>Tourbillion</td>
+                    <td><span class="elem-badge elem-none">Physical</span></td>
+                    <td>108</td><td>1.0</td><td>30</td>
+                    <td>Khimaira</td>
+                    <td>Caedarva Mire (NM)</td>
+                </tr>
+                <tr>
+                    <td>Pyric Bulwark</td>
+                    <td><span class="elem-badge elem-light">Light</span></td>
+                    <td>50</td><td>1.5</td><td>30</td>
+                    <td>Hydra</td>
+                    <td>Wajaom Woodlands (NM)</td>
+                </tr>
+                <tr>
+                    <td>Bilgestorm</td>
+                    <td><span class="elem-badge elem-none">Physical</span></td>
+                    <td>122</td><td>1.0</td><td>30</td>
+                    <td>Pandemonium Warden (Dvergr)</td>
+                    <td>Aydeewa Subterrane</td>
+                </tr>
+                <tr>
+                    <td>Bloodrake</td>
+                    <td><span class="elem-badge elem-none">Physical</span></td>
+                    <td>99</td><td>0.5</td><td>30</td>
+                    <td>Vampyr / Nosferatu</td>
+                    <td>Various (Nosferatu: Caedarva Mire)</td>
+                </tr>
+                <tr>
+                    <td>Droning Whirlwind</td>
+                    <td><span class="elem-badge elem-earth">Earth</span></td>
+                    <td>76</td><td>3.0</td><td>30</td>
+                    <td>Colkhab (Bztavian NM)</td>
+                    <td>Bhaflau Thickets</td>
+                </tr>
+                <tr>
+                    <td>Carcharian Verve</td>
+                    <td><span class="elem-badge elem-thunder">Thunder</span></td>
+                    <td>52</td><td>3.0</td><td>30</td>
+                    <td>Rockfin</td>
+                    <td>Arrapago Reef</td>
+                </tr>
+                <tr>
+                    <td>Blistering Roar</td>
+                    <td><span class="elem-badge elem-light">Light</span></td>
+                    <td>28</td><td>3.0</td><td>30</td>
+                    <td>Gabbrath</td>
+                    <td>Halvung</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ============ NOT YET IMPLEMENTED ============ -->
+<div class="section-alt">
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Not Yet Implemented</h2>
+        <div class="divider"></div>
+    </div>
+    <div class="content-block">
+        <p>
+            The following spells exist in the game data as Blue Magic IDs but do not yet have mob teacher
+            assignments — they cannot currently be learned on Scythe. Most are Seekers of Adoulin and
+            Omen-era spells. They will be added in a future update.
+        </p>
+        <p style="margin-top: 0.75rem; color: var(--text-dim); font-family: var(--font-mono); font-size: 0.82rem; line-height: 1.9;">
+            Tempestuous Upheaval &middot; Rending Deluge &middot; Embalming Earth &middot; Paralyzing Triad &middot;
+            Foul Waters &middot; Glutinous Dart &middot; Retinal Glare &middot; Subduction &middot;
+            Erratic Flutter &middot; Restoral &middot; Rail Cannon &middot; Diffusion Ray &middot;
+            Sinker Drill &middot; Molting Plumage &middot; Nectarous Deluge &middot; Sweeping Gouge &middot;
+            Atra Libations &middot; Searing Tempest &middot; Spectral Floe &middot; Anvil Lightning &middot;
+            Entomb &middot; Saurian Slide &middot; Palling Salvo &middot; Blinding Fulgor &middot;
+            Scouring Spate &middot; Silent Storm &middot; Tenebral Crush &middot; Uproot &middot;
+            Crashing Thunder &middot; Polar Roar &middot; Mighty Guard &middot; Cruel Joke &middot;
+            Cesspool &middot; Tearing Gust
+        </p>
+    </div>
+</section>
+</div>
+
+<script src="js/search.js"></script>
+<script>
+    const TOTAL = document.querySelectorAll('#spellTable tbody tr').length;
+
+    function filterSpells() {
+        const query = document.getElementById('spellSearch').value.toLowerCase().trim();
+        const activeBtn = document.querySelector('.filter-btn.active');
+        const activeElem = activeBtn ? activeBtn.dataset.elem : 'all';
+        const rows = document.querySelectorAll('#spellTable tbody tr');
+        let visible = 0;
+        rows.forEach(row => {
+            const name   = (row.dataset.name   || '').toLowerCase();
+            const family = (row.dataset.family || '').toLowerCase();
+            const elem   = row.dataset.elem || '';
+            const matchText = !query || name.includes(query) || family.includes(query);
+            const matchElem = activeElem === 'all' || elem === activeElem;
+            const show = matchText && matchElem;
+            row.style.display = show ? '' : 'none';
+            if (show) visible++;
+        });
+        document.getElementById('resultCount').textContent =
+            visible === TOTAL ? `${TOTAL} spells` : `${visible} of ${TOTAL} spells`;
+    }
+
+    function setFilter(btn) {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        filterSpells();
+    }
+</script>
+</body>
+</html>
