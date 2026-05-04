@@ -411,6 +411,59 @@
 </section>
 </div>
 
+<!-- ============ HUNTSTATUS COMMAND ============ -->
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Tracking Your Progress — <code>!huntstatus</code></h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>Type <code>!huntstatus</code> in chat at any time to check your hunt progress without
+        visiting the Hunts Master NPC. All subcommands work from anywhere in the world.</p>
+
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Command</th><th>What it shows</th></tr>
+                <tr>
+                    <td><code>!huntstatus</code></td>
+                    <td>Overall stats — unique kills out of total, total kills, Scyld balance, Regular/Elite breakdown.</td>
+                </tr>
+                <tr>
+                    <td><code>!huntstatus zone</code></td>
+                    <td>Every missing NM in your <strong>current zone</strong>, sorted Regular then Elite, alphabetically. Tells you exactly what's left before you leave.</td>
+                </tr>
+                <tr>
+                    <td><code>!huntstatus zone &lt;name&gt;</code></td>
+                    <td>Every missing NM in any zone matching the partial name — e.g. <code>!huntstatus zone jugner</code> shows all remaining NMs in Jugner Forest before you travel there. Up to 3 matching zones shown.</td>
+                </tr>
+                <tr>
+                    <td><code>!huntstatus missing</code></td>
+                    <td>Full list of every NM you still need, grouped by zone. Each zone prints a header with the count remaining, then the names. Use this to plan a hunting route across multiple zones.</td>
+                </tr>
+                <tr>
+                    <td><code>!huntstatus next</code></td>
+                    <td>Suggests a random NM you haven't killed yet. Prefers your current zone if any are left there, otherwise picks from the whole world.</td>
+                </tr>
+                <tr>
+                    <td><code>!huntstatus regions</code></td>
+                    <td>Missing counts grouped by region (San d'Oria, Bastok, Zilart, etc.) — good for a high-level view of where your gaps are.</td>
+                </tr>
+                <tr>
+                    <td><code>!huntstatus check &lt;name&gt;</code></td>
+                    <td>Search for a specific NM by partial name and see whether your kill was recorded — shows <strong>DONE</strong> or <strong>NEED</strong> with zone location. Up to 10 matches.</td>
+                </tr>
+            </table>
+        </div>
+
+        <p style="margin-top: 1rem;">
+            Each NM is tagged <strong>[R]</strong> (Regular) or <strong>[E]</strong> (Elite) in the output
+            so you always know what you're looking at. Kill data is stored per-character in the
+            database — if a kill registered, <code>check</code> will show it as DONE.
+        </p>
+    </div>
+</section>
+
 <div style="text-align: center; padding: 2rem;">
     <a href="elite-hunts.html" class="btn btn-outline">Elite Hunts Detail</a>
     <a href="scyld-shop.html" class="btn btn-outline" style="margin-left: 1rem;">Scyld Reward Shop</a>
