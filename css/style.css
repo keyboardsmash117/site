@@ -1209,6 +1209,63 @@ img {
     white-space: nowrap;
 }
 
+/* Elite NM tag in NM Locations table */
+.elite-tag {
+    display: inline-block;
+    margin-left: 0.3em;
+    padding: 0 0.35em;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--accent-bright);
+    border: 1px solid var(--accent);
+    border-radius: 2px;
+    letter-spacing: 0.06em;
+    vertical-align: 1px;
+}
+
+/* Hard lock banner for Elite Hunts page */
+.lock-banner {
+    max-width: 820px;
+    margin: 1.5rem auto 0;
+    padding: 1.5rem 1.8rem;
+    background: rgba(180, 40, 40, 0.10);
+    border: 2px solid var(--accent);
+    border-left-width: 6px;
+    border-radius: 2px;
+}
+.lock-banner .lock-label {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent-bright);
+    margin-bottom: 0.6rem;
+}
+.lock-banner h3 {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: var(--text-bright);
+    margin: 0 0 0.8rem;
+}
+.lock-banner p { margin-bottom: 0.6rem; color: var(--text); }
+.lock-banner code {
+    background: var(--bg-card);
+    color: var(--accent-bright);
+    padding: 0.1rem 0.4rem;
+    border-radius: 2px;
+    font-size: 0.85rem;
+}
+
+/* Per-tier lock reminder line */
+.tier-lock {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--accent-bright);
+    margin: 0 0 1rem;
+    letter-spacing: 0.04em;
+}
+
 /* --- Tweaks Panel --- */
 .tweaks-panel {
     position: fixed;
