@@ -465,6 +465,7 @@
       "y": 7.0,
       "z": 197.5,
       "grid": null,
+      "map": 2,
       "elite": false,
       "commented": false
     },
@@ -2673,6 +2674,7 @@
       "y": -3.7,
       "z": 99.8,
       "grid": "",
+      "map": 3,
       "elite": false,
       "commented": false
     },
@@ -3441,6 +3443,7 @@
       "y": -40.7,
       "z": 151.1,
       "grid": "",
+      "map": 2,
       "elite": false,
       "commented": false
     },
@@ -8253,6 +8256,7 @@
         "y": 7.0,
         "z": 197.5,
         "grid": null,
+        "map": 2,
         "elite": false,
         "commented": false
       },
@@ -8277,6 +8281,7 @@
         "y": -3.7,
         "z": 99.8,
         "grid": "",
+        "map": 3,
         "elite": false,
         "commented": false
       }
@@ -12171,6 +12176,7 @@
         "y": -40.7,
         "z": 151.1,
         "grid": "",
+        "map": 2,
         "elite": false,
         "commented": false
       }
