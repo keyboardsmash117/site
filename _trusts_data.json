@@ -112,7 +112,66 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "SKILLCHAINDMG",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "aahm": {
     "doc": "WAR/NIN - Melee DD / Off-Tank with Utsusemi, Provoke local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
@@ -227,7 +286,66 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "CRITHITRATE",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "aatt": {
     "doc": "BLM/DRK - Nuker with Elemental Seal, Sleepga, magic burst focus local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
@@ -256,7 +374,90 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "20"
+          ],
+          [
+            "MACC",
+            "20"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "20"
+          ],
+          [
+            "MACC",
+            "20"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "20"
+          ],
+          [
+            "MACC",
+            "20"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "DARK_MAB",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "abenzio": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -278,7 +479,50 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "COUNTER",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "COUNTER",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "COUNTER",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "abquhbah": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -295,7 +539,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "ATT",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "ATT",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "ATT",
+            "15"
+          ],
+          [
+            "STORETP",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "adelheid": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -423,7 +738,68 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "FASTCAST",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "FASTCAST",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [
+          "DISPEL",
+          "PARALYZE_II"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "FASTCAST",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "DISPEL",
+          "PARALYZE_II"
+        ]
+      }
+    }
   },
   "aldo": {
     "doc": "THF - Melee DD with SC focus, dual-wield daggers local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
@@ -440,7 +816,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "5"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "5"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "5"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "SKILLCHAINDMG",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "aldo_uc": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.ALDO)",
@@ -456,7 +903,66 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "20"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "20"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "20"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "amchuchu": {
     "doc": "RUN/WAR - Magic tank with Vallation, Flash, Foil, Stoneskin, Phalanx local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
@@ -846,7 +1352,66 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "CRITHITRATE",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "august": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -947,7 +1512,64 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "SHIKIKOYO"
+        ],
+        "mods": [
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "ayame_uc": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.AYAME)",
@@ -964,7 +1586,66 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "SKILLCHAINDMG",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "babban": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -986,7 +1667,74 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "HPP",
+            "10"
+          ],
+          [
+            "COUNTER",
+            "10"
+          ],
+          [
+            "REGEN",
+            "3"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "HPP",
+            "10"
+          ],
+          [
+            "COUNTER",
+            "10"
+          ],
+          [
+            "REGEN",
+            "3"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "HPP",
+            "10"
+          ],
+          [
+            "COUNTER",
+            "10"
+          ],
+          [
+            "REGEN",
+            "4"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "balamor": {
     "doc": "DRK - Undead DD with dark magical auto-attacks, Absorb spells Note: Undead type \u2014 takes damage from Cure, immune to Drain local spellObject = {}",
@@ -1016,7 +1764,66 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "15"
+          ],
+          [
+            "ENH_DRAIN_ASPIR",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "15"
+          ],
+          [
+            "ENH_DRAIN_ASPIR",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "15"
+          ],
+          [
+            "ENH_DRAIN_ASPIR",
+            "20"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "brygid": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -1024,7 +1831,24 @@
       "spells": [],
       "spell_families": [],
       "jas": [],
-      "mods": [],
+      "mods": [
+        [
+          "CHR",
+          "5"
+        ],
+        [
+          "DEF",
+          "20"
+        ],
+        [
+          "CHR",
+          "chrBonus"
+        ],
+        [
+          "DEF",
+          "defBonus"
+        ]
+      ],
       "tiered_mods": [],
       "has_enmity_siphon": false,
       "spells_added": []
@@ -1047,7 +1871,66 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "HPP",
+            "5"
+          ],
+          [
+            "ATT",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "HPP",
+            "5"
+          ],
+          [
+            "ATT",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "HPP",
+            "10"
+          ],
+          [
+            "ATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "cherukiki": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -1339,6 +2222,18 @@
         [
           "MACC",
           "20"
+        ],
+        [
+          "ACC",
+          "bonus"
+        ],
+        [
+          "RACC",
+          "bonus"
+        ],
+        [
+          "MACC",
+          "bonus"
         ]
       ],
       "tiered_mods": [],
@@ -1462,7 +2357,90 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "20"
+          ],
+          [
+            "MACC",
+            "20"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "20"
+          ],
+          [
+            "MACC",
+            "20"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "20"
+          ],
+          [
+            "MACC",
+            "20"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "DARK_MAB",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "darrcuiln": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -1480,7 +2458,66 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "COUNTER",
+            "10"
+          ],
+          [
+            "ATT",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "COUNTER",
+            "10"
+          ],
+          [
+            "ATT",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "COUNTER",
+            "10"
+          ],
+          [
+            "ATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "elivira": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -1498,7 +2535,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "RATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "RATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "RATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "RACC",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "excenmille": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.EXCENMILLE_S)",
@@ -1604,7 +2712,66 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "ATT",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "fablinix": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -1628,7 +2795,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MPP",
+            "50"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "CURE_POTENCY",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MPP",
+            "50"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "CURE_POTENCY",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MPP",
+            "100"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "CURE_POTENCY",
+            "10"
+          ],
+          [
+            "ENSPELL_DMG",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "ferreous_coffin": {
     "doc": "Auto Refresh II (Cleric's Bliaut +2). HP-10%, MP+35% Will only cast Raise III on KO party members in casting range. Will only cast status ailment removal spells on the player with the highest enmity. ",
@@ -1748,7 +2986,66 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "ATT",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "gadalar": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -1766,7 +3063,74 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "20"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "30"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "gessho": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -1873,7 +3237,66 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "SKILLCHAINDMG",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "halver": {
     "doc": "PLD/WAR - Polearm tank/DD hybrid, Provoke, Sentinel, Cure, Flash local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
@@ -1976,7 +3399,62 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "20"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "ingrid": {
     "doc": "WHM - Hybrid divine caster with Banish, Haste, Cursna local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
@@ -2000,7 +3478,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "CURE_POTENCY",
+            "10"
+          ],
+          [
+            "LIGHT_MAB",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "CURE_POTENCY",
+            "10"
+          ],
+          [
+            "LIGHT_MAB",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "CURE_POTENCY",
+            "10"
+          ],
+          [
+            "LIGHT_MAB",
+            "10"
+          ],
+          [
+            "MATT",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "ingrid_ii": {
     "doc": "WHM/WAR - Melee DD / Support hybrid, Banish, Cursna, Holy magic burst local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
@@ -2018,7 +3567,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "LIGHT_MAB",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "iroha": {
     "doc": "SAM/BLM - Melee DD with Protectra/Shellra support local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
@@ -2039,7 +3659,66 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "MAGIC_DAMAGE",
+            "50"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "MAGIC_DAMAGE",
+            "50"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "MAGIC_DAMAGE",
+            "50"
+          ],
+          [
+            "SKILLCHAINDMG",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "iroha_ii": {
     "doc": "SAM/WHM - Melee DD with self-skillchains, Protectra/Shellra, Flare II magic burst local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
@@ -2060,7 +3739,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "MAGIC_DAMAGE",
+            "50"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "MAGIC_DAMAGE",
+            "50"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "MAGIC_DAMAGE",
+            "50"
+          ],
+          [
+            "MATT",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "iron_eater": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -2077,7 +3827,66 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "20"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "20"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "20"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ATT",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "jakoh_uc": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -2094,7 +3903,66 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "joachim": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -2133,6 +4001,10 @@
           [
             "SONG_DURATION_BONUS",
             "10"
+          ],
+          [
+            "ALL_SONGS_EFFECT",
+            "1"
           ]
         ],
         "tiered_mods": [],
@@ -2147,6 +4019,10 @@
           [
             "SONG_DURATION_BONUS",
             "10"
+          ],
+          [
+            "ALL_SONGS_EFFECT",
+            "1"
           ]
         ],
         "tiered_mods": [],
@@ -2163,6 +4039,14 @@
           [
             "SONG_DURATION_BONUS",
             "10"
+          ],
+          [
+            "ALL_SONGS_EFFECT",
+            "1"
+          ],
+          [
+            "MAXIMUM_SONGS_BONUS",
+            "1"
           ]
         ],
         "tiered_mods": [],
@@ -2280,7 +4164,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "15"
+          ],
+          [
+            "FASTCAST",
+            "15"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "15"
+          ],
+          [
+            "FASTCAST",
+            "15"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "15"
+          ],
+          [
+            "FASTCAST",
+            "15"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "REFRESH",
+            "5"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "king_of_hearts": {
     "doc": "RDM/WHM - Support buffer with Composure (extended enhancing), Haste II, Refresh II, Phalanx II local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
@@ -2390,7 +4345,54 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "30"
+          ],
+          [
+            "CHARMRES",
+            "100"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "koru-moru": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -2427,6 +4429,10 @@
           [
             "FASTCAST",
             "10"
+          ],
+          [
+            "ENH_MAGIC_DURATION",
+            "50"
           ]
         ],
         "tiered_mods": [],
@@ -2441,6 +4447,10 @@
           [
             "FASTCAST",
             "10"
+          ],
+          [
+            "ENH_MAGIC_DURATION",
+            "50"
           ]
         ],
         "tiered_mods": [],
@@ -2455,6 +4465,10 @@
           [
             "FASTCAST",
             "10"
+          ],
+          [
+            "ENH_MAGIC_DURATION",
+            "100"
           ]
         ],
         "tiered_mods": [],
@@ -2485,7 +4499,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "15"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "FASTCAST",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "15"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "FASTCAST",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "15"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "FASTCAST",
+            "10"
+          ],
+          [
+            "MAGIC_DAMAGE",
+            "50"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "kupipi": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -2587,7 +4672,20 @@
       "spells": [],
       "spell_families": [],
       "jas": [],
-      "mods": [],
+      "mods": [
+        [
+          "STORETP",
+          "stpBonus"
+        ],
+        [
+          "EXP_BONUS",
+          "expBonus"
+        ],
+        [
+          "CAPACITY_BONUS",
+          "capBonus"
+        ]
+      ],
       "tiered_mods": [],
       "has_enmity_siphon": false,
       "spells_added": []
@@ -2600,7 +4698,32 @@
       "spells": [],
       "spell_families": [],
       "jas": [],
-      "mods": [],
+      "mods": [
+        [
+          "ACC",
+          "10"
+        ],
+        [
+          "RACC",
+          "10"
+        ],
+        [
+          "ACC",
+          "accBonus"
+        ],
+        [
+          "RACC",
+          "accBonus"
+        ],
+        [
+          "DEX",
+          "dexBonus"
+        ],
+        [
+          "SUBTLE_BLOW",
+          "sbBonus"
+        ]
+      ],
       "tiered_mods": [],
       "has_enmity_siphon": false,
       "spells_added": []
@@ -2633,7 +4756,86 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "5"
+          ],
+          [
+            "MATT",
+            "10"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "5"
+          ],
+          [
+            "MATT",
+            "10"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "10"
+          ],
+          [
+            "MATT",
+            "10"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "leonoyne": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -2665,7 +4867,90 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ENSPELL_DMG",
+            "30"
+          ],
+          [
+            "MATT",
+            "10"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "MPP",
+            "25"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ENSPELL_DMG",
+            "30"
+          ],
+          [
+            "MATT",
+            "10"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "MPP",
+            "25"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ENSPELL_DMG",
+            "40"
+          ],
+          [
+            "MATT",
+            "10"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "MPP",
+            "25"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "lhe_lhangavo": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -2684,7 +4969,90 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "COUNTER",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "COUNTER",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "COUNTER",
+            "10"
+          ],
+          [
+            "CRITHITRATE",
+            "5"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "lhu_mhakaracca": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -2701,7 +5069,66 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "DEF",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "lilisette": {
     "doc": "DNC - Support with healing waltz and samba TP moves local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
@@ -2839,7 +5266,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "5"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "5"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "5"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "TREASURE_HUNTER",
+            "2"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "lion_ii": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.LION)",
@@ -2854,7 +5352,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "5"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "5"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "5"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "TREASURE_HUNTER",
+            "2"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "luzaf": {
     "doc": "COR/NIN - Melee DD with sword + gun, SC opener, no Phantom Roll local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
@@ -2921,7 +5490,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ],
+          [
+            "COUNTER",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ],
+          [
+            "COUNTER",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ],
+          [
+            "COUNTER",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "maat_uc": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.MAAT)",
@@ -2938,7 +5578,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "20"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "20"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "20"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ],
+          [
+            "CRITHITRATE",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "makki-chebukki": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -2960,7 +5671,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "RATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "MPP",
+            "50"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "RATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "MPP",
+            "50"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "RATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "MPP",
+            "100"
+          ],
+          [
+            "RACC",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "margret": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -2980,7 +5762,76 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "RATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "TREASURE_HUNTER",
+            "1"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "RATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "TREASURE_HUNTER",
+            "1"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "STEALTH_SHOT"
+        ],
+        "mods": [
+          [
+            "RATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "TREASURE_HUNTER",
+            "1"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "matsui-p": {
     "doc": "NIN/BLM \u2014 Katana melee + elemental ninjutsu + BLM magic bursts Uses Innin, Futae, Migawari, Kakka/Myoshu self-buffs Double MB: ninjutsu then BLM nuke on skillchain local spellObject = {}",
@@ -3009,7 +5860,7 @@
           "40"
         ],
         [
-          "STORE_TP",
+          "STORETP",
           "20"
         ]
       ],
@@ -3020,7 +5871,78 @@
         "MYOSHU_ICHI"
       ]
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "10"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "10"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "10"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "maximilian": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -3028,7 +5950,12 @@
       "spells": [],
       "spell_families": [],
       "jas": [],
-      "mods": [],
+      "mods": [
+        [
+          "TREASURE_HUNTER",
+          "1"
+        ]
+      ],
       "tiered_mods": [
         "TRIPLE_ATTACK",
         "DOUBLE_ATTACK"
@@ -3036,7 +5963,74 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "TREASURE_HUNTER",
+            "1"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "TREASURE_HUNTER",
+            "1"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "30"
+          ],
+          [
+            "TREASURE_HUNTER",
+            "1"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "mayakov": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -3209,7 +6203,54 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "30"
+          ],
+          [
+            "SKILLCHAINDMG",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "mnejing": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -3319,12 +6360,12 @@
         "jas": [],
         "mods": [
           [
-            "MND",
+            "HPP",
             "15"
           ],
           [
-            "VIT",
-            "15"
+            "DEF",
+            "10"
           ]
         ],
         "tiered_mods": [],
@@ -3337,16 +6378,12 @@
         "jas": [],
         "mods": [
           [
-            "MND",
+            "HPP",
             "15"
           ],
           [
-            "VIT",
-            "15"
-          ],
-          [
-            "FASTCAST",
-            "15"
+            "DEF",
+            "10"
           ]
         ],
         "tiered_mods": [],
@@ -3359,16 +6396,12 @@
         "jas": [],
         "mods": [
           [
-            "MND",
+            "HPP",
             "20"
           ],
           [
-            "VIT",
-            "20"
-          ],
-          [
-            "FASTCAST",
-            "15"
+            "DEF",
+            "10"
           ]
         ],
         "tiered_mods": [],
@@ -3383,7 +6416,16 @@
       "spells": [],
       "spell_families": [],
       "jas": [],
-      "mods": [],
+      "mods": [
+        [
+          "EXP_BONUS",
+          "expBonus"
+        ],
+        [
+          "GILFINDER",
+          "gilBonus"
+        ]
+      ],
       "tiered_mods": [],
       "has_enmity_siphon": false,
       "spells_added": []
@@ -3406,7 +6448,62 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "ATT",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "ATT",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "ATT",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "mumor": {
     "doc": "local spellObject = {} Define the main jobs with access to primary healing used to toggle Samba type local healingJobs =",
@@ -3481,7 +6578,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "HPP",
+            "10"
+          ],
+          [
+            "MATT",
+            "15"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "HPP",
+            "10"
+          ],
+          [
+            "MATT",
+            "15"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "HPP",
+            "10"
+          ],
+          [
+            "MATT",
+            "15"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "naja_salaheem": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.NAJA_UC)",
@@ -3498,7 +6666,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "naja_uc": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.NAJA_SALAHEEM)",
@@ -3515,7 +6754,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "5"
+          ],
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "5"
+          ],
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "5"
+          ],
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "najelith": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -3528,7 +6838,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "RATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "RATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "RATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "RACC",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "naji": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -3545,7 +6926,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "ATT",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "nanaa_mihgo": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -3562,7 +7014,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "TREASURE_HUNTER",
+            "1"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "TREASURE_HUNTER",
+            "1"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "TREASURE_HUNTER",
+            "1"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "CRITHITRATE",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "nashmeira": {
     "doc": "PUP/WHM - Melee with light healing (Cure, Erase, Poisona) local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
@@ -3591,7 +7114,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "CURE_POTENCY",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "CURE_POTENCY",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "CURE_POTENCY",
+            "10"
+          ],
+          [
+            "ATT",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "nashmeira_ii": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.NASHMEIRA)",
@@ -3724,7 +7318,66 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "CURE_POTENCY",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "CURE_POTENCY",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "CURE_POTENCY",
+            "10"
+          ],
+          [
+            "SKILLCHAINDMG",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "ovjang": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -3909,7 +7562,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "CURE_POTENCY",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "prishe_ii": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.PRISHE)",
@@ -3926,7 +7650,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "CURE_POTENCY",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "qultada": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -4119,6 +7914,14 @@
           [
             "ENSPELL_DMG_BONUS",
             "30"
+          ],
+          [
+            "MATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
           ]
         ],
         "tiered_mods": [],
@@ -4133,6 +7936,14 @@
           [
             "ENSPELL_DMG_BONUS",
             "30"
+          ],
+          [
+            "MATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
           ]
         ],
         "tiered_mods": [],
@@ -4147,6 +7958,14 @@
           [
             "ENSPELL_DMG_BONUS",
             "40"
+          ],
+          [
+            "MATT",
+            "20"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "30"
           ]
         ],
         "tiered_mods": [],
@@ -4177,7 +7996,74 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "15"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "REFRESH",
+            "2"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "15"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "REFRESH",
+            "2"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MATT",
+            "15"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "REFRESH",
+            "4"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "romaa_mihgo": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -4195,7 +8081,66 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "rongelouts": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -4214,7 +8159,58 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "WARCRY_DURATION",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "20"
+          ],
+          [
+            "WARCRY_DURATION",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "rosulatia": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -4238,7 +8234,66 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MPP",
+            "50"
+          ],
+          [
+            "COUNTER",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MPP",
+            "50"
+          ],
+          [
+            "COUNTER",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MPP",
+            "100"
+          ],
+          [
+            "COUNTER",
+            "10"
+          ],
+          [
+            "EARTH_MAB",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "rughadjeen": {
     "doc": "Possesses Fast Cast, Cure Potency Received +30%, Damage Taken -5%. He wields the Algol and so has an enfire effect (TODO) and a 3% triple attack rate. Uses Holy Circle if the enemy is Undead. Will onl",
@@ -4349,7 +8404,12 @@
       "spells": [],
       "spell_families": [],
       "jas": [],
-      "mods": [],
+      "mods": [
+        [
+          "REFRESH",
+          "refreshBonus"
+        ]
+      ],
       "tiered_mods": [],
       "has_enmity_siphon": false,
       "spells_added": []
@@ -4440,7 +8500,64 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "RATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "RATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "VELOCITY_SHOT"
+        ],
+        "mods": [
+          [
+            "RATT",
+            "30"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "shantotto": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.SHANTOTTO_II)",
@@ -4463,7 +8580,76 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "FASTCAST",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "FASTCAST",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [
+          "FLARE_II",
+          "FREEZE_II",
+          "TORNADO_II",
+          "QUAKE_II",
+          "BURST_II",
+          "FLOOD_II"
+        ],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "FASTCAST",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": [
+          "FLARE_II",
+          "FREEZE_II",
+          "TORNADO_II",
+          "QUAKE_II",
+          "BURST_II",
+          "FLOOD_II"
+        ]
+      }
+    }
   },
   "shantotto_ii": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.SHANTOTTO)",
@@ -4499,7 +8685,74 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "MAGIC_DAMAGE",
+            "50"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "MAGIC_DAMAGE",
+            "50"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "MAGIC_DAMAGE",
+            "100"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "shikaree_z": {
     "doc": "Possesses MP+100% Uses Ancient Circle if the enemy is a dragon Super Jump is used when ShikareeZ is in the top enmity slot Gains 205 TP on hit; has high TP return on Jump (655 TP) and High Jump (1065 ",
@@ -4537,7 +8790,68 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [
+          "ANGON"
+        ],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "30"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "20"
+          ],
+          [
+            "JUMP_TP_BONUS",
+            "60"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "star_sibyl": {
     "doc": "GEO - Passive support aura: permanent Indi-Acumen (MAB+19, MACC+19) Incorporeal \u2014 cannot die, does not attack, does not cast local spellObject = {}",
@@ -4553,13 +8867,64 @@
         [
           "MACC",
           "19"
+        ],
+        [
+          "MDEF",
+          "mdefBonus"
+        ],
+        [
+          "MEVA",
+          "mevaBonus"
         ]
       ],
       "tiered_mods": [],
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "FIRE_MEVA",
+            "10"
+          ],
+          [
+            "ICE_MEVA",
+            "10"
+          ],
+          [
+            "WIND_MEVA",
+            "10"
+          ],
+          [
+            "EARTH_MEVA",
+            "10"
+          ],
+          [
+            "THUNDER_MEVA",
+            "10"
+          ],
+          [
+            "WATER_MEVA",
+            "10"
+          ],
+          [
+            "LIGHT_MEVA",
+            "10"
+          ],
+          [
+            "DARK_MEVA",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "sylvie_uc": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -4602,6 +8967,14 @@
           [
             "GEOMANCY_BONUS",
             "3"
+          ],
+          [
+            "INDI_DURATION",
+            "60"
+          ],
+          [
+            "CURE_POTENCY",
+            "10"
           ]
         ],
         "tiered_mods": [],
@@ -4616,6 +8989,14 @@
           [
             "GEOMANCY_BONUS",
             "3"
+          ],
+          [
+            "INDI_DURATION",
+            "60"
+          ],
+          [
+            "CURE_POTENCY",
+            "10"
           ]
         ],
         "tiered_mods": [],
@@ -4630,6 +9011,18 @@
           [
             "GEOMANCY_BONUS",
             "3"
+          ],
+          [
+            "INDI_DURATION",
+            "120"
+          ],
+          [
+            "CURE_POTENCY",
+            "20"
+          ],
+          [
+            "FASTCAST",
+            "15"
           ]
         ],
         "tiered_mods": [],
@@ -4654,7 +9047,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "SAVETP",
+            "100"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "SAVETP",
+            "100"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "SAVETP",
+            "100"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "tenzen_ii": {
     "doc": "Todo: Constantly adjusts his distance for optimal ranged damage (always shot from sweet spot). BIG Todo: make his TP gains per shot match retail at all levels Tenzen II Gets 252 TP per hit at lv 90+ O",
@@ -4669,7 +9133,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "RATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "RATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "RATT",
+            "15"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "RACC",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "teodor": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -4693,7 +9228,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "DARK_MAB",
+            "20"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "trion": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -4878,7 +9484,66 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MPP",
+            "50"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MPP",
+            "50"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "MPP",
+            "100"
+          ],
+          [
+            "MAGIC_BURST_BONUS_UNCAPPED",
+            "10"
+          ],
+          [
+            "MAGIC_DAMAGE",
+            "50"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "ulmia": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -4909,6 +9574,10 @@
           [
             "SONG_DURATION_BONUS",
             "10"
+          ],
+          [
+            "ALL_SONGS_EFFECT",
+            "1"
           ]
         ],
         "tiered_mods": [],
@@ -4923,6 +9592,10 @@
           [
             "SONG_DURATION_BONUS",
             "10"
+          ],
+          [
+            "ALL_SONGS_EFFECT",
+            "1"
           ]
         ],
         "tiered_mods": [],
@@ -4939,6 +9612,14 @@
           [
             "SONG_DURATION_BONUS",
             "10"
+          ],
+          [
+            "ALL_SONGS_EFFECT",
+            "1"
+          ],
+          [
+            "MAXIMUM_SONGS_BONUS",
+            "1"
           ]
         ],
         "tiered_mods": [],
@@ -5072,7 +9753,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "15"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "5"
+          ],
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "5"
+          ],
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "TRIPLE_ATTACK",
+            "5"
+          ],
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "ygnas": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell)",
@@ -5266,7 +10018,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "10"
+          ],
+          [
+            "KICK_ATTACK_RATE",
+            "10"
+          ],
+          [
+            "ATT",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "zeid": {
     "doc": "DRK - Melee DD with Absorb spells, Drain, Last Resort, Souleater local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell)",
@@ -5290,7 +10113,78 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "ENH_DRAIN_ASPIR",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "ENH_DRAIN_ASPIR",
+            "15"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "15"
+          ],
+          [
+            "ENH_DRAIN_ASPIR",
+            "20"
+          ],
+          [
+            "ATT",
+            "30"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   },
   "zeid_ii": {
     "doc": "local spellObject = {} spellObject.onMagicCastingCheck = function(caster, target, spell) return xi.trust.canCast(caster, spell, xi.magic.spell.ZEID)",
@@ -5308,6 +10202,77 @@
       "has_enmity_siphon": false,
       "spells_added": []
     },
-    "tiers": {}
+    "tiers": {
+      "1": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "20"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "2": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "20"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "STORETP",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      },
+      "3": {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [
+          [
+            "ALL_WSDMG_ALL_HITS",
+            "20"
+          ],
+          [
+            "DOUBLE_ATTACK",
+            "10"
+          ],
+          [
+            "STORETP",
+            "10"
+          ],
+          [
+            "CRITHITRATE",
+            "10"
+          ]
+        ],
+        "tiered_mods": [],
+        "has_enmity_siphon": false,
+        "spells_added": []
+      }
+    }
   }
 }

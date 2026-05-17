@@ -19,17 +19,28 @@ FRIENDLY = {
     "MATT": "Magic Attack", "MACC": "Magic Accuracy",
     "MEVA": "Magic Evasion", "MDEF": "Magic Defense",
     "DEF": "Defense", "ATT": "Attack",
+    "RATT": "Ranged Attack", "RACC": "Ranged Accuracy",
     "FASTCAST": "Fast Cast", "CONSERVE_MP": "Conserve MP",
     "SHIELDBLOCKRATE": "Shield Block Rate",
     "DOUBLE_ATTACK": "Double Attack", "TRIPLE_ATTACK": "Triple Attack",
     "DMG": "Damage Taken reduction",
+    "ALL_WSDMG_ALL_HITS": "Weapon Skill Damage",
+    "SKILLCHAINDMG": "Skillchain Damage",
+    "CRITHITRATE": "Critical Hit Rate",
     "CURE_POTENCY": "Cure Potency",
     "CURE_POTENCY_RCVD": "Cure Potency Received",
+    "ENHANCES_CURSNA": "Cursna Potency",
+    "ENH_DRAIN_ASPIR": "Drain/Aspir Potency",
+    "ENH_MAGIC_DURATION": "Enhancing Magic Duration",
     "STORETP": "Store TP", "STORE_TP": "Store TP",
     "SONG_DURATION_BONUS": "Song Duration",
+    "ALL_SONGS_EFFECT": "Song Potency",
+    "MAXIMUM_SONGS_BONUS": "Maximum Songs",
     "DRAGON_KILLER": "Dragon Killer",
     "HASTE_MAGIC": "Magic Haste",
+    "HASTE_GEAR": "Gear Haste",
     "REGEN": "Regen", "REFRESH": "Refresh", "REGAIN": "Regain",
+    "REGEN_DURATION": "Regen Duration",
     "ENMITY": "Enmity",
     "MND": "MND", "INT": "INT", "STR": "STR", "DEX": "DEX",
     "AGI": "AGI", "VIT": "VIT", "CHR": "CHR",
@@ -37,8 +48,37 @@ FRIENDLY = {
     "SUBTLE_BLOW": "Subtle Blow",
     "HASTE": "Haste",
     "ACC": "Accuracy",
+    "EVA": "Evasion",
     "TH": "Treasure Hunter",
+    "TREASURE_HUNTER": "Treasure Hunter",
     "AUTO_STEAL": "Auto Steal",
+    "GEOMANCY_BONUS": "Geomancy Bonus",
+    "INDI_DURATION": "Indi Duration",
+    "ENSPELL_DMG": "Enspell Damage",
+    "ENSPELL_DMG_BONUS": "Enspell Damage",
+    "MAGIC_BURST_BONUS_UNCAPPED": "Magic Burst Damage",
+    "MAGIC_DAMAGE": "Magic Damage",
+    "SAVETP": "Save TP",
+    "WALTZ_POTENCY": "Waltz Potency",
+    "KICK_ATTACK_RATE": "Kick Attack Rate",
+    "COUNTER": "Counter",
+    "JUMP_TP_BONUS": "Jump TP Bonus",
+    "WARCRY_DURATION": "Warcry Duration",
+    "CAPACITY_BONUS": "Capacity Point Bonus",
+    "EXP_BONUS": "EXP Bonus",
+    "GILFINDER": "Gilfinder",
+    "CHARMRES": "Charm Resist",
+    "FIRE_MEVA": "Fire Magic Evasion",
+    "ICE_MEVA": "Ice Magic Evasion",
+    "WIND_MEVA": "Wind Magic Evasion",
+    "EARTH_MEVA": "Earth Magic Evasion",
+    "THUNDER_MEVA": "Thunder Magic Evasion",
+    "WATER_MEVA": "Water Magic Evasion",
+    "LIGHT_MEVA": "Light Magic Evasion",
+    "DARK_MEVA": "Dark Magic Evasion",
+    "LIGHT_MAB": "Light Magic Attack",
+    "DARK_MAB": "Dark Magic Attack",
+    "EARTH_MAB": "Earth Magic Attack",
 }
 
 # Known abbreviations that should stay uppercase
@@ -130,6 +170,57 @@ def list_abilities(section: dict) -> list:
         pieces.append("Tank enmity siphon (Scythe-custom: drains enmity from party onto this trust every ~3s while engaged)")
     return pieces
 
+def empty_section() -> dict:
+    return {
+        "spells": [],
+        "spell_families": [],
+        "jas": [],
+        "mods": [],
+        "tiered_mods": [],
+        "has_enmity_siphon": False,
+        "spells_added": [],
+    }
+
+def extend_unique(target: list, source: list):
+    for item in source:
+        if item not in target:
+            target.append(item)
+
+def merge_sections(current: dict, extra: dict) -> dict:
+    merged = {
+        "spells": list(current["spells"]),
+        "spell_families": list(current["spell_families"]),
+        "jas": list(current["jas"]),
+        "mods": list(current["mods"]),
+        "tiered_mods": list(current["tiered_mods"]),
+        "has_enmity_siphon": current["has_enmity_siphon"] or extra["has_enmity_siphon"],
+        "spells_added": list(current["spells_added"]),
+    }
+
+    extend_unique(merged["spells"], extra["spells"])
+    extend_unique(merged["spell_families"], extra["spell_families"])
+    extend_unique(merged["jas"], extra["jas"])
+    extend_unique(merged["tiered_mods"], extra["tiered_mods"])
+    extend_unique(merged["spells_added"], extra["spells_added"])
+
+    mod_totals = {}
+    mod_order = []
+    non_numeric = []
+    for name, raw in merged["mods"] + extra["mods"]:
+        try:
+            value = int(raw)
+        except ValueError:
+            non_numeric.append((name, raw))
+            continue
+
+        if name not in mod_totals:
+            mod_order.append(name)
+            mod_totals[name] = 0
+        mod_totals[name] += value
+
+    merged["mods"] = [(name, str(mod_totals[name])) for name in mod_order] + non_numeric
+    return merged
+
 def build_html_block(trust_data: dict, trust_name: str) -> str:
     base_items = list_abilities(trust_data["base"])
     tiers = trust_data.get("tiers", {})
@@ -145,12 +236,14 @@ def build_html_block(trust_data: dict, trust_name: str) -> str:
 
     if tiers:
         parts.append('<h3 style="color: var(--text-bright); margin: 2rem 0 1rem;">Scythe Tier Upgrades</h3>')
-        parts.append('<p>Trade <strong>Trust Stones / Gems / Jewels</strong> plus the quest item at the upgrade NPC to progress this trust through tiers.</p>')
+        parts.append('<p>Trade <strong>Trust Stones / Gems / Jewels</strong> plus the quest item at the upgrade NPC to progress this trust through tiers. Rows show the active bonuses after lower-tier bonuses are included.</p>')
         parts.append('<table class="info-table"><tbody>')
         parts.append("  <tr><th>Tier</th><th>Unlocks</th></tr>")
+        cumulative = empty_section()
         for t in ("1", "2", "3"):
             if t in tiers:
-                bullets = list_abilities(tiers[t])
+                cumulative = merge_sections(cumulative, tiers[t])
+                bullets = list_abilities(cumulative)
                 if bullets:
                     label = f"Tier {'I' * int(t)}"
                     if t == "3":
@@ -176,6 +269,8 @@ MANUAL_OVERRIDE = {  # Pages we handcrafted — skip auto-injection
     "nashmeira_ii", "apururu_uc", "august",
     "curilla", "king_of_hearts", "koru-moru",
     "ovjang", "qultada", "shantotto",
+    "brygid", "cornelia", "kupofried", "kuyin_hathdenna",
+    "moogle", "sakura",
 }
 
 INJECT_AFTER_MARKERS = [
