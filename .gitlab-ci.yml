@@ -8,11 +8,13 @@ pages:
   script:
     - mkdir -p public
     # Copy everything except the public dir itself and CI/VCS metadata
-    - find . -maxdepth 1 -mindepth 1 \
+    - |
+      find . -maxdepth 1 -mindepth 1 \
         ! -name public \
         ! -name .git \
         ! -name .gitlab-ci.yml \
         -exec cp -r {} public/ \;
+    - test -s public/index.html
   artifacts:
     paths:
       - public
