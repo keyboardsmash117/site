@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FATE — Scythe FFXI</title>
+    <meta name="description" content="Open-world FFXIV-style dynamic events. 78 timed FATEs across 38 zones covering the full 1-99 leveling path. Level sync, contribution-graded rewards, Luminas currency, and bonus EXP.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-brand">SCYTHE</a>
+        <div class="navbar-search"><input type="text" class="navbar-search-input" placeholder="Search site… (press /)" autocomplete="off" aria-label="Search the site"><div class="search-results" role="listbox"></div></div>
+        <button class="mobile-toggle" onclick="document.querySelector('.navbar-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html" class="active">Features</a></li>
+            <li><a href="server-info.html">Server Info</a></li>
+            <li><a href="getting-started.html">Play</a></li>
+            <li><a href="guides.html">Guides</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="database.html">Database</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="page-header">
+    <h1 class="page-title">FATE</h1>
+    <p class="page-subtitle">Open-world dynamic events across the leveling path — 78 FATEs in 38 zones</p>
+</section>
+
+<!-- ============ OVERVIEW ============ -->
+<div class="section-alt">
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Overview</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>
+            FATEs are open-world timed events modeled on the system of the same name from
+            another well-known online Final Fantasy. While you are exploring, an event can
+            erupt in your current zone — a sudden swarm of enemies or a powerful boss appears
+            in a defined area. Everyone in the zone is invited, everyone shares the rewards,
+            and your contribution is scored individually.
+        </p>
+        <p>
+            Scythe ships <strong>78 FATEs across 38 outdoor zones</strong> covering the full
+            1-99 leveling path, with extras in the Abyssea, Adoulin, and Escha endgame zones.
+            Each zone has its own level cap — when you engage a FATE above your level, you
+            are <strong>synced down</strong> so the encounter scales properly.
+        </p>
+
+        <div class="howto-block">
+            <span class="howto-label">How to participate</span>
+            <ol>
+                <li>Travel to any FATE-enabled zone. A FATE has a chance to spawn whenever
+                    the in-game hour changes, provided the zone's per-FATE cooldown is up
+                    (annihilation FATEs reset in 40 minutes, notorious FATEs in up to 2 hours).</li>
+                <li>Watch zone chat for the <code>[FATE]</code> announcement — it names the
+                    event, the landmark/map grid, and the time limit.</li>
+                <li>Go to the landmark and find the <strong>FATE Sync</strong> NPC at the
+                    center of the event circle. Talk to it to apply the level sync.</li>
+                <li>FATE mobs are <strong>untargetable</strong> until at least one synced
+                    player engages — this prevents stealth-pulls before parties form. Once
+                    unlocked, the mobs activate for everyone.</li>
+                <li>Fight. Your kills and your time inside the FATE radius (default
+                    60 yalms) both count toward your contribution score.</li>
+                <li>When the FATE completes, rewards are distributed automatically based on
+                    your individual score — no looting, no party setup required.</li>
+            </ol>
+        </div>
+
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Detail</th><th>Value</th></tr>
+                <tr><td>Total FATEs</td><td>78 across 38 zones</td></tr>
+                <tr><td>Level cap range</td><td>15 → 99 (zone-dependent)</td></tr>
+                <tr><td>Spawn check</td><td>Every in-game hour, max one FATE active per zone</td></tr>
+                <tr><td>Annihilation cooldown</td><td>40 minutes after completion</td></tr>
+                <tr><td>Notorious cooldown</td><td>60-120 minutes after completion</td></tr>
+                <tr><td>FATE radius</td><td>55-85 yalms from center (event-specific)</td></tr>
+                <tr><td>Currency</td><td>Luminas — tracked on charvar <code>[FATE]Luminas</code></td></tr>
+                <tr><td>EXP bonus</td><td>Up to 20% of your next level on Gold contributions</td></tr>
+                <tr><td>Solo viable?</td><td>Yes — Abyssea/Escha bands recommend a party</td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+</div>
+
+<!-- ============ REWARDS ============ -->
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Contribution &amp; Rewards</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>
+            Your contribution is scored from two sources: <strong>kill credit</strong>
+            (10 per trash kill, 120 per notorious boss) and <strong>time in the FATE
+            radius</strong> (1 point per second). The total determines your tier — Gold,
+            Silver, or Bronze.
+        </p>
+        <p>
+            Pets and trusts credit their master. The killer's full party is added to the
+            contribution list automatically, so traditional XP party play works as
+            expected. Enmity-list participants get credit too, so support roles are not
+            shut out.
+        </p>
+
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Tier</th><th>Score Required</th><th>Luminas</th><th>EXP Reward</th></tr>
+                <tr><td>Gold</td><td>120+</td><td>10</td><td>20% of your next level</td></tr>
+                <tr><td>Silver</td><td>40-119</td><td>4</td><td>8% of your next level</td></tr>
+                <tr><td>Bronze</td><td>1-39</td><td>1</td><td>2% of your next level</td></tr>
+            </table>
+        </div>
+
+        <p style="margin-top: 1.5rem; color: var(--text-dim); font-size: 0.9rem;">
+            <strong>EXP scaling:</strong> The percentage is taken from the EXP required to
+            reach the level cap of the zone you're in. So a Gold finish in a level-85
+            Abyssea FATE awards ~9,800 raw EXP, while a Gold finish in a level-99 Adoulin
+            FATE awards ~11,200 raw EXP. The <code>map.EXP_RATE</code> multiplier (4× on
+            Scythe) is then applied on top by the server.
+        </p>
+    </div>
+</section>
+
+<!-- ============ FATE TYPES ============ -->
+<div class="section-alt">
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">FATE Types</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>
+            Every FATE is one of two types. The announcement names the event but does not
+            tell you which type — you'll see at a glance: a crowd of enemies means
+            annihilation; one large mob means notorious.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">Annihilation</h3>
+        <p>
+            Kill a target number of mobs (10-24 depending on the zone's level band) inside
+            the time limit. Mobs spawn in two waves — when the first wave is roughly half
+            cleared, <strong>reinforcements arrive</strong> with additional spawns, raising
+            your kill target. Each mob has 3× HP and 2× attack/defense over its native pool.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">Notorious</h3>
+        <p>
+            A single boss spawn. The boss has <strong>10-15× HP</strong>, full stat
+            scaling (5-8× combat stats), and uses the family's native mob skills. Defeat the
+            boss before the timer expires to clear. These are tuned for a coordinated party
+            at the listed level cap — solo clears require gear and class advantage.
+        </p>
+
+        <div class="info-table-wrapper" style="margin-top: 1.5rem;">
+            <table class="info-table">
+                <tr><th>Type</th><th>Timer</th><th>Trash Targets</th><th>Mob HP Mult</th><th>Mob Stat Mult</th></tr>
+                <tr><td>Annihilation</td><td>15 minutes</td><td>10-24 kills (waves)</td><td>3×</td><td>2×</td></tr>
+                <tr><td>Notorious (low)</td><td>20-25 minutes</td><td>1 boss</td><td>10×</td><td>5×</td></tr>
+                <tr><td>Notorious (mid)</td><td>30 minutes</td><td>1 boss</td><td>12×</td><td>6×</td></tr>
+                <tr><td>Notorious (high)</td><td>35-40 minutes</td><td>1 boss</td><td>15×</td><td>7-8×</td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+</div>
+
+<!-- ============ ZONE LIST: LOW (15-30) ============ -->
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Zone Roster — Starter (Lv 15-30)</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>
+            The starter band — first FATEs you'll encounter while leveling. Most are
+            solo-friendly with a trust party.
+        </p>
+
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Zone</th><th>Cap</th><th>FATE</th><th>Type</th><th>Landmark</th></tr>
+                <tr><td>West Ronfaure</td><td>15</td><td>Hound Pack Assault</td><td>Annihilation</td><td>the western plains <span class="grid-pos">(H-8)</span></td></tr>
+                <tr><td>West Ronfaure</td><td>15</td><td>Alpha Hound Uprising</td><td>Notorious</td><td>the shepherd's plain <span class="grid-pos">(H-9)</span></td></tr>
+                <tr><td>North Gustaberg</td><td>15</td><td>Goblin Raiding Party</td><td>Annihilation</td><td>the northern crater flats <span class="grid-pos">(L-7)</span></td></tr>
+                <tr><td>North Gustaberg</td><td>15</td><td>Ancient Rock Eater</td><td>Notorious</td><td>the iron ruins <span class="grid-pos">(D-10)</span></td></tr>
+                <tr><td>South Gustaberg</td><td>15</td><td>South Gustaberg Skirmish</td><td>Annihilation</td><td>the highlands <span class="grid-pos">(E-9)</span></td></tr>
+                <tr><td>West Sarutabaruta</td><td>15</td><td>Sarutabaruta Procession</td><td>Annihilation</td><td>the western plain <span class="grid-pos">(J-8)</span></td></tr>
+                <tr><td>West Sarutabaruta</td><td>15</td><td>Sarutabaruta Raptor Tyrant</td><td>Notorious</td><td>the windward pass <span class="grid-pos">(H-11)</span></td></tr>
+                <tr><td>La Theine Plateau</td><td>30</td><td>Orc Warband Advance</td><td>Annihilation</td><td>the central plateau <span class="grid-pos">(H-11)</span></td></tr>
+                <tr><td>La Theine Plateau</td><td>30</td><td>Plateau Overlord</td><td>Notorious</td><td>the stone circle <span class="grid-pos">(E-7)</span></td></tr>
+                <tr><td>La Theine Plateau</td><td>30</td><td>Plateau Hare Stampede</td><td>Annihilation</td><td>the plateau <span class="grid-pos">(H-9)</span></td></tr>
+                <tr><td>Valkurm Dunes</td><td>30</td><td>Shore Fiend Surge</td><td>Annihilation</td><td>the eastern beach <span class="grid-pos">(G-8)</span></td></tr>
+                <tr><td>Valkurm Dunes</td><td>30</td><td>Dune Horror Awakened</td><td>Notorious</td><td>the dune crest <span class="grid-pos">(L-6)</span></td></tr>
+                <tr><td>Tahrongi Canyon</td><td>30</td><td>Tahrongi Canyon Swarm</td><td>Annihilation</td><td>the canyon <span class="grid-pos">(I-8)</span></td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ============ ZONE LIST: EARLY (35-50) ============ -->
+<div class="section-alt">
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Zone Roster — Early (Lv 35-50)</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>
+            The early-game band. Larger zones with multiple FATE spawn points —
+            Pashhow Marshlands and Sauromugue Champaign rotate between four FATEs each.
+        </p>
+
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Zone</th><th>Cap</th><th>FATE</th><th>Type</th><th>Landmark</th></tr>
+                <tr><td>Jugner Forest</td><td>35</td><td>Jugner Forest Horde</td><td>Annihilation</td><td>the woods <span class="grid-pos">(I-8)</span></td></tr>
+                <tr><td>Konschtat Highlands</td><td>35</td><td>Highland Horror Swarm</td><td>Annihilation</td><td>the central highlands <span class="grid-pos">(H-6)</span></td></tr>
+                <tr><td>Konschtat Highlands</td><td>35</td><td>Konschtat Ancient</td><td>Notorious</td><td>the windswept ridge <span class="grid-pos">(E-9)</span></td></tr>
+                <tr><td>Pashhow Marshlands</td><td>35</td><td>Pashhow Marsh Swarm</td><td>Annihilation</td><td>the marsh <span class="grid-pos">(K-6)</span></td></tr>
+                <tr><td>Pashhow Marshlands</td><td>35</td><td>Marsh Goobbue Rising</td><td>Notorious</td><td>the marsh <span class="grid-pos">(E-11)</span></td></tr>
+                <tr><td>Pashhow Marshlands</td><td>35</td><td>Quadav Marsh Patrol</td><td>Annihilation</td><td>the marsh <span class="grid-pos">(I-7)</span></td></tr>
+                <tr><td>Pashhow Marshlands</td><td>35</td><td>Pashhow Malboro Bloom</td><td>Notorious</td><td>the marsh <span class="grid-pos">(I-10)</span></td></tr>
+                <tr><td>Sauromugue Champaign</td><td>35</td><td>Champaign Beast Rush</td><td>Annihilation</td><td>the central plains <span class="grid-pos">(F-6)</span></td></tr>
+                <tr><td>Sauromugue Champaign</td><td>35</td><td>Sauromugue Tyrant</td><td>Notorious</td><td>the ancient ruins <span class="grid-pos">(K-10)</span></td></tr>
+                <tr><td>Sauromugue Champaign</td><td>35</td><td>Champaign Yagudo Rally</td><td>Annihilation</td><td>the camp <span class="grid-pos">(K-8)</span></td></tr>
+                <tr><td>Sauromugue Champaign</td><td>35</td><td>Champaign Coeurl Stalker</td><td>Notorious</td><td>the rise <span class="grid-pos">(J-7)</span></td></tr>
+                <tr><td>Qufim Island</td><td>35</td><td>Qufim Weapon Surge</td><td>Annihilation</td><td>the island <span class="grid-pos">(H-7)</span></td></tr>
+                <tr><td>Batallia Downs</td><td>45</td><td>Undead Legion Rising</td><td>Annihilation</td><td>the lowlands <span class="grid-pos">(K-9)</span></td></tr>
+                <tr><td>Batallia Downs</td><td>45</td><td>Barrow Wight Lord</td><td>Notorious</td><td>the dark barrow mounds <span class="grid-pos">(F-8)</span></td></tr>
+                <tr><td>East Sarutabaruta</td><td>45</td><td>Sarutabaruta Bloom Frenzy</td><td>Annihilation</td><td>the eastern fields <span class="grid-pos">(H-11)</span></td></tr>
+                <tr><td>East Sarutabaruta</td><td>45</td><td>Sarutabaruta Crawler Queen</td><td>Notorious</td><td>the sunken basin <span class="grid-pos">(J-9)</span></td></tr>
+                <tr><td>Lufaise Meadows</td><td>50</td><td>Lufaise Bugard Charge</td><td>Annihilation</td><td>the meadows <span class="grid-pos">(K-9)</span></td></tr>
+                <tr><td>Meriphataud Mountains</td><td>50</td><td>Meriphataud Raptor Surge <span class="repair-tag">⚠ broken</span></td><td>Annihilation</td><td>the mountains <span class="grid-pos">(E-11)</span></td></tr>
+                <tr><td>Meriphataud Mountains</td><td>50</td><td>Axe Beak Ascendant</td><td>Notorious</td><td>the mountains <span class="grid-pos">(E-6)</span></td></tr>
+                <tr><td>Meriphataud Mountains</td><td>50</td><td>Meriphataud Beetle Swarm</td><td>Annihilation</td><td>the ridge <span class="grid-pos">(E-6)</span></td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+</div>
+
+<!-- ============ ZONE LIST: MID (55-75) ============ -->
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Zone Roster — Mid (Lv 55-75)</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>
+            Mid-band FATEs. Boss HP scales up to 12× and combat stats to 6× — most
+            notorious FATEs in this band want a tight party.
+        </p>
+
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Zone</th><th>Cap</th><th>FATE</th><th>Type</th><th>Landmark</th></tr>
+                <tr><td>Misareaux Coast</td><td>55</td><td>Misareaux Shore Surge</td><td>Annihilation</td><td>the coast <span class="grid-pos">(K-11)</span></td></tr>
+                <tr><td>Misareaux Coast</td><td>55</td><td>Misareaux Goaftrap Bloom</td><td>Notorious</td><td>the coast <span class="grid-pos">(G-7)</span></td></tr>
+                <tr><td>Misareaux Coast</td><td>55</td><td>Orcish Coast Raid</td><td>Annihilation</td><td>the coast <span class="grid-pos">(K-7)</span></td></tr>
+                <tr><td>Buburimu Peninsula</td><td>55</td><td>Buburimu Dhalmel Stampede</td><td>Annihilation</td><td>the peninsula plains <span class="grid-pos">(H-9)</span></td></tr>
+                <tr><td>Buburimu Peninsula</td><td>55</td><td>Buburimu Sky Wyrm</td><td>Notorious</td><td>the ancient ruin plaza <span class="grid-pos">(I-7)</span></td></tr>
+                <tr><td>Bibiki Bay</td><td>60</td><td>Bibiki Bay Shore Swarm</td><td>Annihilation</td><td>the shore <span class="grid-pos">(H-6)</span></td></tr>
+                <tr><td>Rolanberry Fields</td><td>60</td><td>Rolanberry War Party</td><td>Annihilation</td><td>the plains <span class="grid-pos">(J-6)</span></td></tr>
+                <tr><td>Rolanberry Fields</td><td>60</td><td>Rolanberry Ochu</td><td>Notorious</td><td>the sunken grove <span class="grid-pos">(I-13)</span></td></tr>
+                <tr><td>Sanctuary of Zi'Tah</td><td>60</td><td>Sanctuary Pilgrimage Surge</td><td>Annihilation</td><td>the ancient sanctuary <span class="grid-pos">(H-8)</span></td></tr>
+                <tr><td>Sanctuary of Zi'Tah</td><td>60</td><td>Zi'Tah Stone Colossus</td><td>Notorious</td><td>the elder stones <span class="grid-pos">(G-11)</span></td></tr>
+                <tr><td>Xarcabard</td><td>65</td><td>Shadow Tide</td><td>Annihilation</td><td>the dark wastes <span class="grid-pos">(H-8)</span></td></tr>
+                <tr><td>Xarcabard</td><td>65</td><td>Xarcabard Shadow Drake</td><td>Notorious</td><td>the obsidian cliff <span class="grid-pos">(I-9)</span></td></tr>
+                <tr><td>Cape Teriggan</td><td>65</td><td>Teriggan Raptor Hunt</td><td>Annihilation</td><td>the cape <span class="grid-pos">(G-8)</span></td></tr>
+                <tr><td>Cape Teriggan</td><td>65</td><td>Cape Manticore Tyrant</td><td>Notorious</td><td>the cape <span class="grid-pos">(I-9)</span></td></tr>
+                <tr><td>Beaucedine Glacier</td><td>70</td><td>Glacier Horde <span class="repair-tag">⚠ broken</span></td><td>Annihilation</td><td>the frozen plain <span class="grid-pos">(G-7)</span></td></tr>
+                <tr><td>Beaucedine Glacier</td><td>70</td><td>Glacier Stone Warden</td><td>Notorious</td><td>the ice spire <span class="grid-pos">(H-9)</span></td></tr>
+                <tr><td>Beaucedine Glacier</td><td>70</td><td>Glacier Gigas Reinforcements</td><td>Annihilation</td><td>the glacier shelf <span class="grid-pos">(H-10)</span></td></tr>
+                <tr><td>West Altepa Desert</td><td>70</td><td>Antican War Party</td><td>Annihilation</td><td>the desert flats <span class="grid-pos">(I-5)</span></td></tr>
+                <tr><td>West Altepa Desert</td><td>70</td><td>Desert Ancient</td><td>Notorious</td><td>the dune wastes <span class="grid-pos">(K-7)</span></td></tr>
+                <tr><td>West Altepa Desert</td><td>70</td><td>Altepa Scorpion March</td><td>Annihilation</td><td>the dunes <span class="grid-pos">(H-10)</span></td></tr>
+                <tr><td>Uleguerand Range</td><td>75</td><td>Uleguerand Snowpack</td><td>Annihilation</td><td>the slope <span class="grid-pos">(G-11)</span></td></tr>
+                <tr><td>Newton Movalpolos</td><td>75</td><td>Newton Moblin Works</td><td>Annihilation</td><td>the works <span class="grid-pos">(F-10)</span></td></tr>
+                <tr><td>Newton Movalpolos</td><td>75</td><td>Newton Bugbear Watchman</td><td>Notorious</td><td>the works <span class="grid-pos">(F-10)</span></td></tr>
+                <tr><td>Beadeaux [S]</td><td>75</td><td>Beadeaux Quadav Vanguard</td><td>Annihilation</td><td>the tunnels <span class="grid-pos">(F-7)</span></td></tr>
+                <tr><td>Meriphataud Mountains [S]</td><td>75</td><td>Meriphataud Lynx Ambush</td><td>Annihilation</td><td>the pass <span class="grid-pos">(E-5)</span></td></tr>
+                <tr><td>Valley of Sorrows</td><td>75</td><td>Valley Raptor Rampage</td><td>Annihilation</td><td>the valley floor <span class="grid-pos">(J-8)</span></td></tr>
+                <tr><td>Valley of Sorrows</td><td>75</td><td>Valley Sea Terror</td><td>Notorious</td><td>the deep valley <span class="grid-pos">(G-8)</span></td></tr>
+                <tr><td>Ru'Aun Gardens</td><td>75</td><td>Ru'Aun Elemental Surge</td><td>Annihilation</td><td>the celestial garden <span class="grid-pos">(H-11)</span></td></tr>
+                <tr><td>Ru'Aun Gardens</td><td>75</td><td>Ru'Aun Despot Awakens</td><td>Notorious</td><td>the celestial ruins <span class="grid-pos">(J-8)</span></td></tr>
+            </table>
+        </div>
+
+        <p style="margin-top: 1rem; color: var(--text-dim); font-size: 0.9rem;">
+            <strong>⚠ broken</strong> — Two FATEs are currently flagged for repair and will
+            not spawn: <em>Glacier Horde</em> (Beaucedine Glacier, G-7) cannot complete due
+            to final-wave mob spawn failures, and <em>Meriphataud Raptor Surge</em> has the
+            same issue. Both were reported during live testing and will return when fixed.
+        </p>
+    </div>
+</section>
+
+<!-- ============ ZONE LIST: ENDGAME (85-99) ============ -->
+<div class="section-alt">
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Zone Roster — Endgame (Lv 85-99)</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <p>
+            Abyssea, Adoulin, and Escha FATEs. Higher mob counts (20-24 kills per
+            annihilation), longer timers, and 15× HP bosses with 7-8× combat stats.
+            Bring a party.
+        </p>
+
+        <div class="info-table-wrapper">
+            <table class="info-table">
+                <tr><th>Zone</th><th>Cap</th><th>FATE</th><th>Type</th><th>Landmark</th></tr>
+                <tr><td>Abyssea – La Theine</td><td>85</td><td>Abyssean Beast Surge</td><td>Annihilation</td><td>the abyssal plains <span class="grid-pos">(J-8)</span></td></tr>
+                <tr><td>Abyssea – La Theine</td><td>85</td><td>Abyssal Geier</td><td>Notorious</td><td>the rift cliffside <span class="grid-pos">(I-8)</span></td></tr>
+                <tr><td>Abyssea – Tahrongi</td><td>85</td><td>Twisted Nightmare Swarm</td><td>Annihilation</td><td>the distorted canyon <span class="grid-pos">(H-7)</span></td></tr>
+                <tr><td>Abyssea – Tahrongi</td><td>85</td><td>Canyon Abyssite Titan</td><td>Notorious</td><td>the fractured mesa <span class="grid-pos">(G-5)</span></td></tr>
+                <tr><td>Abyssea – Attohwa</td><td>85</td><td>Toxic Horror Eruption</td><td>Annihilation</td><td>the chasm floor <span class="grid-pos">(L-9)</span></td></tr>
+                <tr><td>Abyssea – Attohwa</td><td>85</td><td>Attohwa Rift Predator</td><td>Notorious</td><td>the sulfur flats <span class="grid-pos">(J-8)</span></td></tr>
+                <tr><td>Ceizak Battlegrounds</td><td>99</td><td>Ceizak Beastmen Siege</td><td>Annihilation</td><td>the battleground <span class="grid-pos">(J-10)</span></td></tr>
+                <tr><td>Ceizak Battlegrounds</td><td>99</td><td>Ceizak Warlord</td><td>Notorious</td><td>the war plaza <span class="grid-pos">(H-10)</span></td></tr>
+                <tr><td>Yorcia Weald</td><td>99</td><td>Weald Beast Rampage</td><td>Annihilation</td><td>the deep weald <span class="grid-pos">(J-11)</span></td></tr>
+                <tr><td>Yorcia Weald</td><td>99</td><td>Weald Ancient Treant</td><td>Notorious</td><td>the elder grove <span class="grid-pos">(G-9)</span></td></tr>
+                <tr><td>Kamihr Drifts</td><td>99</td><td>Kamihr Beast Horde</td><td>Annihilation</td><td>the windswept drifts <span class="grid-pos">(H-9)</span></td></tr>
+                <tr><td>Kamihr Drifts</td><td>99</td><td>Kamihr Sovereign</td><td>Notorious</td><td>the elemental spire <span class="grid-pos">(J-7)</span></td></tr>
+                <tr><td>Escha – Zi'Tah</td><td>99</td><td>Escha Legion Surge</td><td>Annihilation</td><td>the escha rift <span class="grid-pos">(H-8)</span></td></tr>
+                <tr><td>Escha – Zi'Tah</td><td>99</td><td>Escha Zi'Tah Entity</td><td>Notorious</td><td>the dimensional rift <span class="grid-pos">(J-10)</span></td></tr>
+                <tr><td>Escha – Ru'Aun</td><td>99</td><td>Ru'Aun Predator Surge</td><td>Annihilation</td><td>the celestial platform <span class="grid-pos">(I-10)</span></td></tr>
+                <tr><td>Escha – Ru'Aun</td><td>99</td><td>Escha Ru'Aun Sovereign</td><td>Notorious</td><td>the celestial vertex <span class="grid-pos">(G-10)</span></td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+</div>
+
+<!-- ============ TIPS ============ -->
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Tips</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="content-block">
+        <ul style="line-height: 1.8;">
+            <li><strong>Always sync first.</strong> Talk to the FATE Sync NPC before
+                attacking — if you try to engage without sync, the mob resets and disengages.</li>
+            <li><strong>Trusts work, but…</strong> If a trust starts engaging before you've
+                synced, the mobs may stay locked. Always touch the Sync NPC yourself.</li>
+            <li><strong>Stay inside the radius.</strong> The tick loop credits 5 seconds of
+                "time score" every 5 real seconds you remain inside the FATE circle. Stepping
+                out stops your time accrual but doesn't lose existing contribution.</li>
+            <li><strong>Pets and trusts credit their master.</strong> BST charm pets, SMN
+                avatars, and trust kills all count for you. So do enmity-list participants —
+                support roles share in the reward.</li>
+            <li><strong>Cooldowns are per-FATE.</strong> One zone can have 4 FATEs (Pashhow,
+                Sauromugue) that rotate, so a zone with active players will usually have
+                something to do within 10-15 minutes.</li>
+            <li><strong>Solo Bronze is fine.</strong> Even minimal participation yields
+                1 Lumina and a small EXP boost — don't skip a FATE just because you're alone.</li>
+            <li><strong>Level-restrict pre-existing.</strong> If you already have a
+                LEVEL_RESTRICTION effect from another source, FATE sync won't override it —
+                the FATE message will tell you to clear it first.</li>
+        </ul>
+    </div>
+</section>
+
+<div style="text-align: center; padding: 2rem;">
+    <a href="features.html" class="btn btn-outline">Back to Features</a>
+    <a href="nm-hunt.html" class="btn btn-outline" style="margin-left: 1rem;">NM Hunt</a>
+    <a href="elite-hunts.html" class="btn btn-outline" style="margin-left: 1rem;">Elite Hunts</a>
+</div>
+
+<footer class="footer">
+    <p>Scythe is a fan-made project and is not affiliated with or endorsed by Square Enix Co., Ltd. FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</p>
+    <p style="margin-top: 0.5rem;">Powered by <a href="https://github.com/LandSandBoat/server" target="_blank" rel="noopener">LandSandBoat</a>.</p>
+</footer>
+
+<script>
+document.querySelectorAll('.navbar-links a').forEach(link => {
+    link.addEventListener('click', () => { document.querySelector('.navbar-links').classList.remove('open'); });
+});
+</script>
+
+<script src="js/site-search.js" defer></script>
+</body>
+</html>
