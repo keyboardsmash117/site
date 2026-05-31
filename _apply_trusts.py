@@ -1,16 +1,121 @@
 #!/usr/bin/env python3
 """
 For each trust HTML page, inject a data-driven "What They Do" section
-(ability list, passive mods, and tier upgrades if present).
+(ability list, passive mods, tier upgrades, and quest requirements if present).
 
 Pages already manually curated (the ones with 'Tier Upgrades' heading)
-are SKIPPED so we don't clobber hand-crafted writing.
+keep their hand-crafted writing and only receive the generated requirements block.
 """
 import json, re
+from html import escape
 from pathlib import Path
 
 HTML_DIR = Path(r"C:/Users/PC/scythe-website/trusts")
 DATA_FILE = Path(r"C:/Users/PC/scythe-website/_trusts_data.json")
+SERVER_ROOT = Path(r"C:/Users/PC/bla")
+QUEST_DATA_FILE = SERVER_ROOT / "modules/custom/lua/trust_quest_data.lua"
+ITEM_ENUM_FILE = SERVER_ROOT / "scripts/enum/item.lua"
+
+REQ_BEGIN = "<!-- TRUST-REQ-BEGIN -->"
+REQ_END = "<!-- TRUST-REQ-END -->"
+
+QUEST_KEY_TO_STEM = {
+    "Ark EV": "aaev",
+    "Ark GK": "aagk",
+    "Ark HM": "aahm",
+    "Ark MR": "aamr",
+    "Ark TT": "aatt",
+    "Apururu": "apururu_uc",
+    "Yoran": "yoran-oran_uc",
+    "Mihli": "mihli_aliapoh",
+    "Pieuje": "pieuje_uc",
+    "Karaha": "karaha-baruha",
+    "Sylvie": "sylvie_uc",
+    "Uka": "uka_totlihn",
+    "I.Shield": "i_shield_uc",
+    "Naja": "naja_salaheem",
+    "Naja UC": "naja_uc",
+    "Lhe": "lhe_lhangavo",
+    "Lhu": "lhu_mhakaracca",
+    "Jakoh UC": "jakoh_uc",
+    "Flaviria": "flaviria_uc",
+    "Ajido": "ajido-marujido",
+    "Semih": "semih_lafihna",
+    "Makki": "makki-chebukki",
+    "Lehko": "lehko_habhoka",
+    "Kukki": "kukki-chebukki",
+    "Kayeel": "kayeel-payeel",
+    "Kuyin": "kuyin_hathdenna",
+}
+
+NATIONS = {
+    "0": "San d'Oria",
+    "1": "Bastok",
+    "2": "Windurst",
+    "SANDY": "San d'Oria",
+    "BASTOK": "Bastok",
+    "WINDY": "Windurst",
+}
+
+FAME_AREAS = {
+    "0": "San d'Oria",
+    "1": "Bastok",
+    "2": "Windurst",
+    "3": "Jeuno",
+    "4": "Norg",
+    "5": "Aht Urhgan",
+    "6": "Adoulin",
+}
+
+JOBS = {
+    "1": "WAR",
+    "2": "MNK",
+    "3": "WHM",
+    "4": "BLM",
+    "5": "RDM",
+    "6": "THF",
+    "7": "PLD",
+    "8": "DRK",
+    "9": "BST",
+    "10": "BRD",
+    "11": "RNG",
+    "12": "SAM",
+    "13": "NIN",
+    "14": "DRG",
+    "15": "SMN",
+    "16": "BLU",
+    "17": "COR",
+    "18": "PUP",
+    "19": "DNC",
+    "20": "SCH",
+    "21": "GEO",
+    "22": "RUN",
+}
+
+CRAFTS = {
+    "48": "Fishing",
+    "49": "Woodworking",
+    "50": "Smithing",
+    "51": "Goldsmithing",
+    "52": "Clothcraft",
+    "53": "Leathercraft",
+    "54": "Bonecraft",
+    "55": "Alchemy",
+    "56": "Cooking",
+    "57": "Synergy",
+}
+
+CURRENCY_BY_TIER = {
+    1: "5 Trust Stones",
+    2: "10 Trust Gems",
+    3: "5 Trust Jewels",
+}
+
+TIER_LABELS = {
+    1: "Tier I",
+    2: "Tier II",
+    3: "Tier III (MAX)",
+}
 
 # Friendly name overrides — enum names that don't humanise cleanly.
 FRIENDLY = {
@@ -86,6 +191,182 @@ KEEP_UPPER = {"TP", "HP", "MP", "AF", "MND", "INT", "STR", "DEX", "AGI", "VIT", 
               "II", "III", "IV", "V", "VI", "COR", "WHM", "BLM", "RDM", "PLD", "DRK",
               "WAR", "MNK", "THF", "BRD", "RNG", "SAM", "NIN", "DRG", "SMN", "BLU",
               "PUP", "DNC", "SCH", "GEO", "RUN", "BST"}
+
+def normalize_lookup(text: str) -> str:
+    text = text.lower().replace("&amp;", "and")
+    text = re.sub(r"\bark angel\b", "ark", text)
+    text = text.replace("'", "")
+    return re.sub(r"[^a-z0-9]+", "", text)
+
+def load_page_title_map() -> dict:
+    titles = {}
+    for path in HTML_DIR.glob("*.html"):
+        content = path.read_text(encoding="utf-8", errors="replace")
+        match = re.search(r'<h1 class="page-title">([^<]+)</h1>', content)
+        if match:
+            titles[normalize_lookup(match.group(1))] = path.stem
+    return titles
+
+def load_item_enum_names() -> dict:
+    if not ITEM_ENUM_FILE.exists():
+        return {}
+
+    enum_names = {}
+    for line in ITEM_ENUM_FILE.read_text(encoding="utf-8", errors="replace").splitlines():
+        match = re.search(r"\b([A-Z0-9_]+)\s*=\s*(\d+),", line)
+        if match:
+            enum_names[int(match.group(2))] = match.group(1)
+    return enum_names
+
+def humanise_item_enum(enum_name: str) -> str:
+    if not enum_name:
+        return ""
+
+    enum_name = re.sub(r"_P([123])\b", r"_+\1", enum_name)
+    pieces = []
+    for piece in enum_name.split("_"):
+        if not piece:
+            continue
+        if piece.startswith("+") or piece.isdigit() or piece in KEEP_UPPER:
+            pieces.append(piece)
+        else:
+            pieces.append(piece.capitalize())
+    return " ".join(pieces)
+
+def clean_requirement_desc(desc: str, qty: int) -> str:
+    desc = desc.replace("\\'", "'").replace("â€™", "'").replace("’", "'")
+    desc = re.sub(r"\s+\+\s+(?:San d'Oria|Bastok|Windurst)\s+Rank\s+\d+\s*$", "", desc)
+    if qty > 1:
+        desc = re.sub(rf"\s+x{qty}\b", "", desc)
+    return re.sub(r"\s+", " ", desc).strip()
+
+def split_item_note(desc: str) -> tuple[str, str]:
+    match = re.match(r"(.+?)\s*\(([^)]*)\)\s*$", desc)
+    if match:
+        return match.group(1).strip(), match.group(2).strip()
+    return desc, ""
+
+def exact_item_name(base_name: str, item_id: int, enum_names: dict) -> str:
+    enum_pretty = humanise_item_enum(enum_names.get(item_id, ""))
+    if not enum_pretty:
+        return base_name
+
+    base_norm = normalize_lookup(base_name)
+    enum_norm = normalize_lookup(enum_pretty)
+    if enum_norm.startswith(base_norm) and enum_norm != base_norm:
+        return enum_pretty
+    return base_name
+
+def format_trade_item(item_id: int, qty: int, desc: str, enum_names: dict) -> str:
+    cleaned = clean_requirement_desc(desc, qty)
+    base_name, note = split_item_note(cleaned)
+    item_name = exact_item_name(base_name, item_id, enum_names)
+
+    if note:
+        detail = f"{note}; item ID {item_id}"
+    else:
+        detail = f"item ID {item_id}"
+
+    return f"{qty}x {item_name} ({detail})"
+
+def parse_conditions(conds: str | None) -> list[str]:
+    if not conds:
+        return []
+
+    out = []
+    for nation, rank in re.findall(r"rank\(([^,]+),\s*(\d+)\)", conds):
+        out.append(f"{NATIONS.get(nation.strip(), nation.strip())} Rank {rank}")
+    for job_id, level in re.findall(r"job\(([^,]+),\s*(\d+)\)", conds):
+        out.append(f"{JOBS.get(job_id.strip(), 'Job ' + job_id.strip())} level {level}+")
+    for level in re.findall(r"anyjob\((\d+)\)", conds):
+        out.append(f"Any job level {level}+")
+    for skill_id, level in re.findall(r"craft\(([^,]+),\s*(\d+)\)", conds):
+        out.append(f"{CRAFTS.get(skill_id.strip(), 'Craft skill ' + skill_id.strip())} skill {level}+")
+    for area, level in re.findall(r"fame\(([^,]+),\s*(\d+)\)", conds):
+        out.append(f"{FAME_AREAS.get(area.strip(), 'Area ' + area.strip())} fame level {level}")
+    for var_name, count in re.findall(r"kills\('([^']+)',\s*(\d+)\)", conds):
+        out.append(f"{var_name} kills: {count}+")
+    for var_name, minimum in re.findall(r"charvar\('([^']+)',\s*(\d+)\)", conds):
+        out.append(f"{var_name} at least {minimum}")
+    return out
+
+def parse_trust_requirements() -> dict:
+    if not QUEST_DATA_FILE.exists():
+        return {}
+
+    enum_names = load_item_enum_names()
+    page_titles = load_page_title_map()
+    requirements = {}
+    current_key = None
+
+    quest_re = re.compile(r"\s*questData\['([^']+)'\]\s*=\s*\{")
+    tier_re = re.compile(
+        r'T([123])\((\d+),\s*(\d+),\s*([\'"])((?:\\.|(?!\4).)*)\4(?:,\s*(\{.*\}))?\s*\),'
+    )
+
+    for line in QUEST_DATA_FILE.read_text(encoding="utf-8", errors="replace").splitlines():
+        quest_match = quest_re.match(line)
+        if quest_match:
+            current_key = quest_match.group(1)
+            continue
+
+        if current_key is None:
+            continue
+
+        if line.strip().startswith("}"):
+            current_key = None
+            continue
+
+        tier_match = tier_re.search(line)
+        if not tier_match:
+            continue
+
+        tier = int(tier_match.group(1))
+        item_id = int(tier_match.group(2))
+        item_qty = int(tier_match.group(3))
+        desc = tier_match.group(5)
+        conds = tier_match.group(6)
+
+        stem = QUEST_KEY_TO_STEM.get(current_key) or page_titles.get(normalize_lookup(current_key))
+        if not stem:
+            continue
+
+        requirements.setdefault(stem, []).append({
+            "tier": tier,
+            "currency": CURRENCY_BY_TIER[tier],
+            "trade_item": format_trade_item(item_id, item_qty, desc, enum_names),
+            "conditions": parse_conditions(conds),
+        })
+
+    return requirements
+
+def build_requirements_block(requirements: list[dict], with_sentinel: bool = False) -> str:
+    if not requirements:
+        return ""
+
+    parts = [
+        '<h3 style="color: var(--text-bright); margin: 2rem 0 1rem;">Upgrade Requirements</h3>',
+        '<p>These are the exact items and extra gates checked by the upgrade NPC. Trust currency is stored on your character, not in inventory.</p>',
+        '<table class="info-table"><tbody>',
+        '  <tr><th>Tier</th><th>Currency</th><th>Trade Item</th><th>Extra Requirement</th></tr>',
+    ]
+
+    for req in sorted(requirements, key=lambda item: item["tier"]):
+        condition = ", ".join(req["conditions"]) if req["conditions"] else "None"
+        parts.append(
+            "  <tr>"
+            f"<td>{escape(TIER_LABELS[req['tier']])}</td>"
+            f"<td>{escape(req['currency'])}</td>"
+            f"<td>{escape(req['trade_item'])}</td>"
+            f"<td>{escape(condition)}</td>"
+            "</tr>"
+        )
+
+    parts.append("</tbody></table>")
+    block = "\n        ".join(parts)
+    if with_sentinel:
+        return f"{REQ_BEGIN}\n        {block}\n        {REQ_END}"
+    return block
 
 # Spell / JA enums we want to present in English. Fallback: title-case.
 def humanise(enum: str) -> str:
@@ -221,7 +502,7 @@ def merge_sections(current: dict, extra: dict) -> dict:
     merged["mods"] = [(name, str(mod_totals[name])) for name in mod_order] + non_numeric
     return merged
 
-def build_html_block(trust_data: dict, trust_name: str) -> str:
+def build_html_block(trust_data: dict, trust_name: str, requirements: list[dict] | None = None) -> str:
     base_items = list_abilities(trust_data["base"])
     tiers = trust_data.get("tiers", {})
 
@@ -251,6 +532,8 @@ def build_html_block(trust_data: dict, trust_name: str) -> str:
                     body = "<br>".join(bullets)
                     parts.append(f"  <tr><td>{label}</td><td>{body}</td></tr>")
         parts.append('</tbody></table>')
+        if requirements:
+            parts.append(build_requirements_block(requirements))
     return "\n        ".join(parts)
 
 # Mapping file-stem → HTML filename variations (they match 1:1 today)
@@ -302,28 +585,58 @@ def inject(html: str, block: str) -> str:
         return html[:m.start(2)] + "\n        " + wrapped.rstrip() + html[m.start(2):]
     return html  # give up silently
 
+def inject_requirements(html: str, block: str) -> str:
+    if not block:
+        return html
+
+    wrapped = block.rstrip() + "\n\n        "
+    if REQ_BEGIN in html and REQ_END in html:
+        return re.sub(
+            re.escape(REQ_BEGIN) + r".*?" + re.escape(REQ_END) + r"\s*",
+            wrapped,
+            html,
+            count=1,
+            flags=re.DOTALL,
+        )
+
+    for marker, _mode in INJECT_AFTER_MARKERS:
+        idx = html.find(marker)
+        if idx != -1:
+            return html[:idx] + wrapped + html[idx:]
+
+    return html
+
 def main():
     data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
+    requirements = parse_trust_requirements()
     updated = 0
     skipped = 0
     missing = []
+    missing_requirements = []
     for stem, info in data.items():
-        if stem in MANUAL_OVERRIDE:
-            skipped += 1
-            continue
         html_path = find_html(stem)
         if not html_path:
             missing.append(stem)
             continue
         original = html_path.read_text(encoding="utf-8")
-        block = build_html_block(info, stem)
-        new_html = inject(original, block)
+        reqs = requirements.get(stem)
+        if not reqs:
+            missing_requirements.append(stem)
+
+        if stem in MANUAL_OVERRIDE:
+            skipped += 1
+            new_html = inject_requirements(original, build_requirements_block(reqs or [], with_sentinel=True))
+        else:
+            block = build_html_block(info, stem, reqs)
+            new_html = inject(original, block)
         if new_html != original:
             html_path.write_text(new_html, encoding="utf-8")
             updated += 1
     print(f"Updated: {updated}  Skipped (manual): {skipped}  Missing html: {len(missing)}")
     if missing:
         print("Missing:", missing)
+    if missing_requirements:
+        print("Missing requirements:", missing_requirements)
 
 if __name__ == "__main__":
     main()
